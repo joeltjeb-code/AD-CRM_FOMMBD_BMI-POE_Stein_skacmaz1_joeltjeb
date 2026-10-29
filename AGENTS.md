@@ -22,3 +22,10 @@ Skills live in `.vibe/skills` and are invoked when they fit the task, so this
 file does not repeat their content. MCP servers (your tools for real docs, the
 browser, and the web) are listed by `/mcp`. Keep secrets in `~/.vibe/.env`,
 never in this repository.
+
+## Dokumentation für Hausarbeit
+
+- Dokumentiere JEDE **fertige Aufgabe** automatisch in `docs/hausarbeit/`
+- Nutze den Skill `.vibe/skills/dokumentation/SKILL.md` als Referenz
+- Erstelle bei Session-Start die Tagesdatei unter `docs/hausarbeit/tagebuch/[heute].md`, falls sie nicht existiert
+- Bei "Feierabend" oder "Schluss für heute": finale Zusammenfassung + Commit aller Änderungen
