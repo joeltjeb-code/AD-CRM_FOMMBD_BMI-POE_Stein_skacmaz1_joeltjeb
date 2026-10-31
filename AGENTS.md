@@ -23,9 +23,24 @@ file does not repeat their content. MCP servers (your tools for real docs, the
 browser, and the web) are listed by `/mcp`. Keep secrets in `~/.vibe/.env`,
 never in this repository.
 
-## Dokumentation für Hausarbeit
+## Außendienst-Assistent
 
-- Dokumentiere JEDE **fertige Aufgabe** automatisch in `docs/hausarbeit/`
-- Nutze den Skill `.vibe/skills/dokumentation/SKILL.md` als Referenz
-- Erstelle bei Session-Start die Tagesdatei unter `docs/hausarbeit/tagebuch/[heute].md`, falls sie nicht existiert
-- Bei "Feierabend" oder "Schluss für heute": finale Zusammenfassung + Commit aller Änderungen
+- Einfache Web-App mit HTML/JS und lokalen JSON-Dateien im Codespace.
+- Ein Nutzer: Außendienst.
+- **Briefing vor Termin**: Letzte Gespräche, Vereinbarungen, offene Aufgaben, KPIs, korrekte Anrede (aus Wissensbasis).
+- **Bericht nach Termin**: Stichpunkte eingeben → fertiger Bericht mit: Händler, Datum, Teilnehmer, Themen, Vereinbarungen, Aufgaben (Verantwortlicher + Frist), offene Punkte.
+- **Freigabe & Wissensbasis**: Geprüfte Berichte werden in der Wissensbasis gespeichert und beim nächsten Briefing mitgenutzt.
+- **Daten**: Nur ausgedachte Daten, keine echten Firmen- oder Personendaten.
+- Die App holt Daten nur über einen Adapter, damit man später die Datenquelle austauschen kann, ohne den Rest zu ändern.
+
+## Dokumentation
+
+- Automatische Dokumentation jeder fertigen Aufgabe in `docs/hausarbeit/` (siehe `.vibe/skills/dokumentation/SKILL.md`).
+- Tagesdatei wird bei Session-Start in `docs/hausarbeit/tagebuch/[heute].md` angelegt.
+- Bei "Feierabend": Finale Zusammenfassung + Commit aller Änderungen (gemäß Dokumentations-Skill).
+
+## Aktueller Stand
+
+*Heute (31.10.2026):*
+- AGENTS.md-Struktur wurde überarbeitet.
+- Nächster Schritt: Umsetzung der App-Spezifikation (Außendienst-Assistent).
