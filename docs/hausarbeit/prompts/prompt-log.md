@@ -34,3 +34,20 @@
 ## 2026-11-16
 - [20:28] "Kurze Frage vorab: Steht in der Agents.md schon drin, dass du automatisch über den Skill dokumentiertst? Und hast du schon für heute die Tagesdatei angelegt?"
   → Ergebnis: Tagesdatei `2026-11-16.md` nachgetragen (letzte vom 31.10.), AGENTS.md verweist auf Dokumentations-Skill
+
+- [20:33] "Ich will für den Außendienst diesen Agenten bauen. Er soll auf Basis einer Händlerliste die Routenplanung übernehmen können. Was waren die anderen Aufgaben, die ich bisher skizziert hatte?"
+- [20:40] "Ich werde dir eine Händlerliste mit Adressen hochladen. Dort wirst du auch die Markt Händlernummern, z.B. DEU1M150 als unique identifier eines Händlerbetriebs finden. Perspektivisch wirst du diese Daten Live aus der Google Cloud Platform abrufen, wenn der Agent in ein Ford System transferiert wird. Der Außendiener soll einmal seine Heimatadresse hinterlegen aber auch andere Startorte wählen können. Die Idee ist, dass an einem Montag die Routenplanung für die kommenden Wochen gemacht wird. Dort sollen dann pro Tag von Di bis Freitag drei Händler besucht werden und der Außendiener kann entweder im Hotel schlafen, da sollte man auch Präferenzen hinterlegen können oder wieder an seiner Heimatadresse schlafen. Es wäre super, wenn der Agent einen Vorschlag macht, den man in dem Interface per Drag & Drop nachbessern kann oder auch über Texteingaben anpassen kann. z.B. wenn man Abends nicht mehr so weit zum Hotel fahren will oder man eher in der nähe des nächsten Morgens Termin im Hotel übernachten will. Reicht dir das so an Fähigkeiten?"
+- [20:50] "Man soll in der Regel drei Betriebe pro Tag besuchen. Die Besuche dauern ca 90 Minuten, manchmal auch 120. Das Pensum für eine Woche sind also 12 Händler (3 Besuche auf vier Tage von Di bis Fr). Ein Gebiet hat 85 bis 95 Betriebe und es sollen alle ca einmal pro Quartal besucht werden. Es gibt auch Prio Betriebe, die dann öfter als einmal pro Quartal angefahren werden. Die oberflächliche Routenplanung findet in der Regel immer mehrere Wochen im voraus statt"
+  → Ergebnis: Planungslogik konkretisiert (12 Besuche/Woche, ~90 Betriebe/Gebiet, Quartalsrhythmus + Prio); Frage nach Auswahlogik + Hotelquelle offen
+
+- [21:00] "Grundsätzlich nach regionalen Clustern, um die Fahrzeiten zu verringern und dort dann nach erst nach Fälligkeit und dann nach Prio. Wenn der erste Termin in der Regel so für 8:30/9:00 Uhr Morgens angesetzt ist und der letzte so gegen 15/16 Uhr startet und jeder Termin so circa 90 bis 120 Minuten lang ist haben die Fahrzeiten zwischen den Terminen auch ein natürliches Limit, um alles mit einer Marge für Staus, ggf Ladestops bei BEV Fahrzeugen zu schaffen"
+  → Ergebnis: Auswahlogik (Cluster → Fälligkeit → Prio) + Tagesskelett (8:30–16:00, 3 × 90–120 min) festgelegt; letzte offene Frage: Hotelquelle/Präferenzen
+
+- [21:15] "Kannst du für die Hotelquelle auf Google Maps, etc zugreifen? Ich habe jetzt per se keine Liste. Der ADler soll eine Präferenz hinterlegen können auf Basis fester Lieblingshotels pro region, Maximale Entfernung zum ersten Termin am nächsten Morning, Benefits bei Hotelstati oder Kreditkarten Treueprogrammen und best case auch noch nach Preis pro Nacht, wenn du über Booking.com, etc darauf Zugriff erhalten kannst"
+  → Ergebnis: Kein Zugriff auf Maps/Booking möglich → fiktive Hotel-Daten mit vollständigem Präferenz-Datenmodell; Klärungsrunde abgeschlossen, Entwurf folgt
+
+- [21:20] "Dann nehmen wir doch Ansatz B, wenn das dein Vorschlag ist"
+  → Ergebnis: Architektur festgelegt: modulares HTML/JS ohne Build-Schritt; Design-Dokument folgt
+
+- [21:30] "Das klingt für mich in Ordnung als Spec"
+  → Ergebnis: Spec geschrieben (2026-11-16-routenplanung-design.md), Selbstreview + AGENTS.md-Update; Implementierungsplan folgt nach Spec-Review

@@ -47,6 +47,7 @@ never in this repository.
 - **Freigabe & Wissensbasis**: Geprüfte Berichte werden in der Wissensbasis gespeichert und beim nächsten Briefing mitgenutzt.
 - **Daten**: Nur ausgedachte Daten, keine echten Firmen- oder Personendaten.
 - Die App holt Daten nur über einen Adapter, damit man später die Datenquelle austauschen kann, ohne den Rest zu ändern.
+- **Routenplanung** (Spec: `docs/superpowers/specs/2026-11-16-routenplanung-design.md`): Wochenplanung Di–Fr mit je 3 Händlerbesuchen, Kaskade Cluster → Fälligkeit → Prio, Tagesskelett 8:30–16:00, Übernachtung Heimat vs. Hotel mit Präferenzen, Nachbesserung per Drag & Drop oder Textbefehl.
 
 ## Dokumentation
 
