@@ -57,6 +57,6 @@ never in this repository.
 
 ## Aktueller Stand
 
-*Heute (16.11.2026):*
-- Session-Start-Checkliste ergänzt (Tagesdatei wird zuverlässig bei jedem Start angelegt).
-- Nächster Schritt: Umsetzung der App-Spezifikation (Außendienst-Assistent).
+*Letzter Stand (16.11.2026):*
+- Routenplanung implementiert auf Branch `feature/routenplanung`: Planungslogik (Cluster → Fälligkeit → Prio, Tagesskelett, Übernachtung) mit 26 Unit-Tests grün, Demo-Daten (90 Händler, 10 Hotels), UI mit Drag & Drop + Textbefehlen (manuell im Browser zu prüfen: `python3 -m http.server 8000`).
+- Nächste Schritte: Browserdurchlauf bestätigen, echte Händlerliste hochladen (Feldformat → Datenmodell), Briefing/Bericht/Wissensbasis aus der bestehenden Spezifikation.
