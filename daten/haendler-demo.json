@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "DEU1M151",
+    "name": "Autohaus Sperl 1",
+    "adresse": "Musterweg 1, Musterstadt",
+    "pos": {
+      "x": 0.3,
+      "y": 0.2
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M152",
+    "name": "Autohaus Kraus 2",
+    "adresse": "Musterweg 2, Musterstadt",
+    "pos": {
+      "x": 1.7,
+      "y": 0.2
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M153",
+    "name": "Autohaus Wagenfeld 3",
+    "adresse": "Musterweg 3, Musterstadt",
+    "pos": {
+      "x": 3.0999999999999996,
+      "y": 0.2
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M154",
+    "name": "Autohaus Lindt 4",
+    "adresse": "Musterweg 4, Musterstadt",
+    "pos": {
+      "x": 4.499999999999999,
+      "y": 0.2
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M155",
+    "name": "Autohaus Hoppe 5",
+    "adresse": "Musterweg 5, Musterstadt",
+    "pos": {
+      "x": 5.8999999999999995,
+      "y": 0.2
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU1M156",
+    "name": "Autohaus Reinhardt 6",
+    "adresse": "Musterweg 6, Musterstadt",
+    "pos": {
+      "x": 0.3,
+      "y": 1.8
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M157",
+    "name": "Autohaus Sommer 7",
+    "adresse": "Musterweg 7, Musterstadt",
+    "pos": {
+      "x": 1.7,
+      "y": 1.8
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M158",
+    "name": "Autohaus Bergmann 8",
+    "adresse": "Musterweg 8, Musterstadt",
+    "pos": {
+      "x": 3.0999999999999996,
+      "y": 1.8
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M159",
+    "name": "Autohaus Sperl 9",
+    "adresse": "Musterweg 9, Musterstadt",
+    "pos": {
+      "x": 4.499999999999999,
+      "y": 1.8
+    },
+    "cluster": 0,
+    "prio": true,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M160",
+    "name": "Autohaus Kraus 10",
+    "adresse": "Musterweg 10, Musterstadt",
+    "pos": {
+      "x": 5.8999999999999995,
+      "y": 1.8
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU1M161",
+    "name": "Autohaus Wagenfeld 11",
+    "adresse": "Musterweg 11, Musterstadt",
+    "pos": {
+      "x": 0.3,
+      "y": 3.4000000000000004
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M162",
+    "name": "Autohaus Lindt 12",
+    "adresse": "Musterweg 12, Musterstadt",
+    "pos": {
+      "x": 1.7,
+      "y": 3.4000000000000004
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M163",
+    "name": "Autohaus Hoppe 13",
+    "adresse": "Musterweg 13, Musterstadt",
+    "pos": {
+      "x": 3.0999999999999996,
+      "y": 3.4000000000000004
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M164",
+    "name": "Autohaus Reinhardt 14",
+    "adresse": "Musterweg 14, Musterstadt",
+    "pos": {
+      "x": 4.499999999999999,
+      "y": 3.4000000000000004
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M165",
+    "name": "Autohaus Sommer 15",
+    "adresse": "Musterweg 15, Musterstadt",
+    "pos": {
+      "x": 5.8999999999999995,
+      "y": 3.4000000000000004
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU1M166",
+    "name": "Autohaus Bergmann 16",
+    "adresse": "Musterweg 16, Musterstadt",
+    "pos": {
+      "x": 0.3,
+      "y": 5.000000000000001
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M167",
+    "name": "Autohaus Sperl 17",
+    "adresse": "Musterweg 17, Musterstadt",
+    "pos": {
+      "x": 1.7,
+      "y": 5.000000000000001
+    },
+    "cluster": 0,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU1M168",
+    "name": "Autohaus Kraus 18",
+    "adresse": "Musterweg 18, Musterstadt",
+    "pos": {
+      "x": 3.0999999999999996,
+      "y": 5.000000000000001
+    },
+    "cluster": 0,
+    "prio": true,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M169",
+    "name": "Autohaus Wagenfeld 19",
+    "adresse": "Musterweg 19, Musterstadt",
+    "pos": {
+      "x": 40.3,
+      "y": 0.2
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M170",
+    "name": "Autohaus Lindt 20",
+    "adresse": "Musterweg 20, Musterstadt",
+    "pos": {
+      "x": 41.699999999999996,
+      "y": 0.2
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU2M171",
+    "name": "Autohaus Hoppe 21",
+    "adresse": "Musterweg 21, Musterstadt",
+    "pos": {
+      "x": 43.099999999999994,
+      "y": 0.2
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M172",
+    "name": "Autohaus Reinhardt 22",
+    "adresse": "Musterweg 22, Musterstadt",
+    "pos": {
+      "x": 44.5,
+      "y": 0.2
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M173",
+    "name": "Autohaus Sommer 23",
+    "adresse": "Musterweg 23, Musterstadt",
+    "pos": {
+      "x": 45.9,
+      "y": 0.2
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M174",
+    "name": "Autohaus Bergmann 24",
+    "adresse": "Musterweg 24, Musterstadt",
+    "pos": {
+      "x": 40.3,
+      "y": 1.8
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M175",
+    "name": "Autohaus Sperl 25",
+    "adresse": "Musterweg 25, Musterstadt",
+    "pos": {
+      "x": 41.699999999999996,
+      "y": 1.8
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU2M176",
+    "name": "Autohaus Kraus 26",
+    "adresse": "Musterweg 26, Musterstadt",
+    "pos": {
+      "x": 43.099999999999994,
+      "y": 1.8
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M177",
+    "name": "Autohaus Wagenfeld 27",
+    "adresse": "Musterweg 27, Musterstadt",
+    "pos": {
+      "x": 44.5,
+      "y": 1.8
+    },
+    "cluster": 1,
+    "prio": true,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M178",
+    "name": "Autohaus Lindt 28",
+    "adresse": "Musterweg 28, Musterstadt",
+    "pos": {
+      "x": 45.9,
+      "y": 1.8
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M179",
+    "name": "Autohaus Hoppe 29",
+    "adresse": "Musterweg 29, Musterstadt",
+    "pos": {
+      "x": 40.3,
+      "y": 3.4000000000000004
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M180",
+    "name": "Autohaus Reinhardt 30",
+    "adresse": "Musterweg 30, Musterstadt",
+    "pos": {
+      "x": 41.699999999999996,
+      "y": 3.4000000000000004
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU2M181",
+    "name": "Autohaus Sommer 31",
+    "adresse": "Musterweg 31, Musterstadt",
+    "pos": {
+      "x": 43.099999999999994,
+      "y": 3.4000000000000004
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M182",
+    "name": "Autohaus Bergmann 32",
+    "adresse": "Musterweg 32, Musterstadt",
+    "pos": {
+      "x": 44.5,
+      "y": 3.4000000000000004
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M183",
+    "name": "Autohaus Sperl 33",
+    "adresse": "Musterweg 33, Musterstadt",
+    "pos": {
+      "x": 45.9,
+      "y": 3.4000000000000004
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M184",
+    "name": "Autohaus Kraus 34",
+    "adresse": "Musterweg 34, Musterstadt",
+    "pos": {
+      "x": 40.3,
+      "y": 5.000000000000001
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU2M185",
+    "name": "Autohaus Wagenfeld 35",
+    "adresse": "Musterweg 35, Musterstadt",
+    "pos": {
+      "x": 41.699999999999996,
+      "y": 5.000000000000001
+    },
+    "cluster": 1,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU2M186",
+    "name": "Autohaus Lindt 36",
+    "adresse": "Musterweg 36, Musterstadt",
+    "pos": {
+      "x": 43.099999999999994,
+      "y": 5.000000000000001
+    },
+    "cluster": 1,
+    "prio": true,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M187",
+    "name": "Autohaus Hoppe 37",
+    "adresse": "Musterweg 37, Musterstadt",
+    "pos": {
+      "x": 0.3,
+      "y": 40.2
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M188",
+    "name": "Autohaus Reinhardt 38",
+    "adresse": "Musterweg 38, Musterstadt",
+    "pos": {
+      "x": 1.7,
+      "y": 40.2
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M189",
+    "name": "Autohaus Sommer 39",
+    "adresse": "Musterweg 39, Musterstadt",
+    "pos": {
+      "x": 3.0999999999999996,
+      "y": 40.2
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M190",
+    "name": "Autohaus Bergmann 40",
+    "adresse": "Musterweg 40, Musterstadt",
+    "pos": {
+      "x": 4.499999999999999,
+      "y": 40.2
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU3M191",
+    "name": "Autohaus Sperl 41",
+    "adresse": "Musterweg 41, Musterstadt",
+    "pos": {
+      "x": 5.8999999999999995,
+      "y": 40.2
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M192",
+    "name": "Autohaus Kraus 42",
+    "adresse": "Musterweg 42, Musterstadt",
+    "pos": {
+      "x": 0.3,
+      "y": 41.800000000000004
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M193",
+    "name": "Autohaus Wagenfeld 43",
+    "adresse": "Musterweg 43, Musterstadt",
+    "pos": {
+      "x": 1.7,
+      "y": 41.800000000000004
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M194",
+    "name": "Autohaus Lindt 44",
+    "adresse": "Musterweg 44, Musterstadt",
+    "pos": {
+      "x": 3.0999999999999996,
+      "y": 41.800000000000004
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M195",
+    "name": "Autohaus Hoppe 45",
+    "adresse": "Musterweg 45, Musterstadt",
+    "pos": {
+      "x": 4.499999999999999,
+      "y": 41.800000000000004
+    },
+    "cluster": 2,
+    "prio": true,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU3M196",
+    "name": "Autohaus Reinhardt 46",
+    "adresse": "Musterweg 46, Musterstadt",
+    "pos": {
+      "x": 5.8999999999999995,
+      "y": 41.800000000000004
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M197",
+    "name": "Autohaus Sommer 47",
+    "adresse": "Musterweg 47, Musterstadt",
+    "pos": {
+      "x": 0.3,
+      "y": 43.400000000000006
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M198",
+    "name": "Autohaus Bergmann 48",
+    "adresse": "Musterweg 48, Musterstadt",
+    "pos": {
+      "x": 1.7,
+      "y": 43.400000000000006
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M199",
+    "name": "Autohaus Sperl 49",
+    "adresse": "Musterweg 49, Musterstadt",
+    "pos": {
+      "x": 3.0999999999999996,
+      "y": 43.400000000000006
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M200",
+    "name": "Autohaus Kraus 50",
+    "adresse": "Musterweg 50, Musterstadt",
+    "pos": {
+      "x": 4.499999999999999,
+      "y": 43.400000000000006
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU3M201",
+    "name": "Autohaus Wagenfeld 51",
+    "adresse": "Musterweg 51, Musterstadt",
+    "pos": {
+      "x": 5.8999999999999995,
+      "y": 43.400000000000006
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M202",
+    "name": "Autohaus Lindt 52",
+    "adresse": "Musterweg 52, Musterstadt",
+    "pos": {
+      "x": 0.3,
+      "y": 45
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M203",
+    "name": "Autohaus Hoppe 53",
+    "adresse": "Musterweg 53, Musterstadt",
+    "pos": {
+      "x": 1.7,
+      "y": 45
+    },
+    "cluster": 2,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU3M204",
+    "name": "Autohaus Reinhardt 54",
+    "adresse": "Musterweg 54, Musterstadt",
+    "pos": {
+      "x": 3.0999999999999996,
+      "y": 45
+    },
+    "cluster": 2,
+    "prio": true,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M205",
+    "name": "Autohaus Sommer 55",
+    "adresse": "Musterweg 55, Musterstadt",
+    "pos": {
+      "x": 40.3,
+      "y": 40.2
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU4M206",
+    "name": "Autohaus Bergmann 56",
+    "adresse": "Musterweg 56, Musterstadt",
+    "pos": {
+      "x": 41.699999999999996,
+      "y": 40.2
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M207",
+    "name": "Autohaus Sperl 57",
+    "adresse": "Musterweg 57, Musterstadt",
+    "pos": {
+      "x": 43.099999999999994,
+      "y": 40.2
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M208",
+    "name": "Autohaus Kraus 58",
+    "adresse": "Musterweg 58, Musterstadt",
+    "pos": {
+      "x": 44.5,
+      "y": 40.2
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M209",
+    "name": "Autohaus Wagenfeld 59",
+    "adresse": "Musterweg 59, Musterstadt",
+    "pos": {
+      "x": 45.9,
+      "y": 40.2
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M210",
+    "name": "Autohaus Lindt 60",
+    "adresse": "Musterweg 60, Musterstadt",
+    "pos": {
+      "x": 40.3,
+      "y": 41.800000000000004
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU4M211",
+    "name": "Autohaus Hoppe 61",
+    "adresse": "Musterweg 61, Musterstadt",
+    "pos": {
+      "x": 41.699999999999996,
+      "y": 41.800000000000004
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M212",
+    "name": "Autohaus Reinhardt 62",
+    "adresse": "Musterweg 62, Musterstadt",
+    "pos": {
+      "x": 43.099999999999994,
+      "y": 41.800000000000004
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M213",
+    "name": "Autohaus Sommer 63",
+    "adresse": "Musterweg 63, Musterstadt",
+    "pos": {
+      "x": 44.5,
+      "y": 41.800000000000004
+    },
+    "cluster": 3,
+    "prio": true,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M214",
+    "name": "Autohaus Bergmann 64",
+    "adresse": "Musterweg 64, Musterstadt",
+    "pos": {
+      "x": 45.9,
+      "y": 41.800000000000004
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M215",
+    "name": "Autohaus Sperl 65",
+    "adresse": "Musterweg 65, Musterstadt",
+    "pos": {
+      "x": 40.3,
+      "y": 43.400000000000006
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU4M216",
+    "name": "Autohaus Kraus 66",
+    "adresse": "Musterweg 66, Musterstadt",
+    "pos": {
+      "x": 41.699999999999996,
+      "y": 43.400000000000006
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M217",
+    "name": "Autohaus Wagenfeld 67",
+    "adresse": "Musterweg 67, Musterstadt",
+    "pos": {
+      "x": 43.099999999999994,
+      "y": 43.400000000000006
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M218",
+    "name": "Autohaus Lindt 68",
+    "adresse": "Musterweg 68, Musterstadt",
+    "pos": {
+      "x": 44.5,
+      "y": 43.400000000000006
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M219",
+    "name": "Autohaus Hoppe 69",
+    "adresse": "Musterweg 69, Musterstadt",
+    "pos": {
+      "x": 45.9,
+      "y": 43.400000000000006
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M220",
+    "name": "Autohaus Reinhardt 70",
+    "adresse": "Musterweg 70, Musterstadt",
+    "pos": {
+      "x": 40.3,
+      "y": 45
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU4M221",
+    "name": "Autohaus Sommer 71",
+    "adresse": "Musterweg 71, Musterstadt",
+    "pos": {
+      "x": 41.699999999999996,
+      "y": 45
+    },
+    "cluster": 3,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU4M222",
+    "name": "Autohaus Bergmann 72",
+    "adresse": "Musterweg 72, Musterstadt",
+    "pos": {
+      "x": 43.099999999999994,
+      "y": 45
+    },
+    "cluster": 3,
+    "prio": true,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M223",
+    "name": "Autohaus Sperl 73",
+    "adresse": "Musterweg 73, Musterstadt",
+    "pos": {
+      "x": 20.3,
+      "y": 20.2
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M224",
+    "name": "Autohaus Kraus 74",
+    "adresse": "Musterweg 74, Musterstadt",
+    "pos": {
+      "x": 21.7,
+      "y": 20.2
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M225",
+    "name": "Autohaus Wagenfeld 75",
+    "adresse": "Musterweg 75, Musterstadt",
+    "pos": {
+      "x": 23.1,
+      "y": 20.2
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU5M226",
+    "name": "Autohaus Lindt 76",
+    "adresse": "Musterweg 76, Musterstadt",
+    "pos": {
+      "x": 24.5,
+      "y": 20.2
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M227",
+    "name": "Autohaus Hoppe 77",
+    "adresse": "Musterweg 77, Musterstadt",
+    "pos": {
+      "x": 25.900000000000002,
+      "y": 20.2
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M228",
+    "name": "Autohaus Reinhardt 78",
+    "adresse": "Musterweg 78, Musterstadt",
+    "pos": {
+      "x": 20.3,
+      "y": 21.8
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M229",
+    "name": "Autohaus Sommer 79",
+    "adresse": "Musterweg 79, Musterstadt",
+    "pos": {
+      "x": 21.7,
+      "y": 21.8
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M230",
+    "name": "Autohaus Bergmann 80",
+    "adresse": "Musterweg 80, Musterstadt",
+    "pos": {
+      "x": 23.1,
+      "y": 21.8
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU5M231",
+    "name": "Autohaus Sperl 81",
+    "adresse": "Musterweg 81, Musterstadt",
+    "pos": {
+      "x": 24.5,
+      "y": 21.8
+    },
+    "cluster": 4,
+    "prio": true,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M232",
+    "name": "Autohaus Kraus 82",
+    "adresse": "Musterweg 82, Musterstadt",
+    "pos": {
+      "x": 25.900000000000002,
+      "y": 21.8
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M233",
+    "name": "Autohaus Wagenfeld 83",
+    "adresse": "Musterweg 83, Musterstadt",
+    "pos": {
+      "x": 20.3,
+      "y": 23.4
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M234",
+    "name": "Autohaus Lindt 84",
+    "adresse": "Musterweg 84, Musterstadt",
+    "pos": {
+      "x": 21.7,
+      "y": 23.4
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M235",
+    "name": "Autohaus Hoppe 85",
+    "adresse": "Musterweg 85, Musterstadt",
+    "pos": {
+      "x": 23.1,
+      "y": 23.4
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "id": "DEU5M236",
+    "name": "Autohaus Reinhardt 86",
+    "adresse": "Musterweg 86, Musterstadt",
+    "pos": {
+      "x": 24.5,
+      "y": 23.4
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M237",
+    "name": "Autohaus Sommer 87",
+    "adresse": "Musterweg 87, Musterstadt",
+    "pos": {
+      "x": 25.900000000000002,
+      "y": 23.4
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M238",
+    "name": "Autohaus Bergmann 88",
+    "adresse": "Musterweg 88, Musterstadt",
+    "pos": {
+      "x": 20.3,
+      "y": 25
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M239",
+    "name": "Autohaus Sperl 89",
+    "adresse": "Musterweg 89, Musterstadt",
+    "pos": {
+      "x": 21.7,
+      "y": 25
+    },
+    "cluster": 4,
+    "prio": false,
+    "dauer": 90,
+    "besuchVerlauf": [
+      "2026-08-01"
+    ]
+  },
+  {
+    "id": "DEU5M240",
+    "name": "Autohaus Kraus 90",
+    "adresse": "Musterweg 90, Musterstadt",
+    "pos": {
+      "x": 23.1,
+      "y": 25
+    },
+    "cluster": 4,
+    "prio": true,
+    "dauer": 120,
+    "besuchVerlauf": [
+      "2026-10-01"
+    ]
+  }
+]

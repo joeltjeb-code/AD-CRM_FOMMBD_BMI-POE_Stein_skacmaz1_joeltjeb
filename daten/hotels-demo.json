@@ -1,0 +1,142 @@
+[
+  {
+    "id": "H00",
+    "name": "Hotel Stadtkreis A",
+    "ort": "Musterstadt-Stadtkreis",
+    "pos": {
+      "x": 2,
+      "y": -1
+    },
+    "region": 0,
+    "programme": [
+      "Hilton Honors"
+    ],
+    "preisNacht": 85
+  },
+  {
+    "id": "H01",
+    "name": "Hotel Stadtkreis B",
+    "ort": "Musterstadt-Stadtkreis",
+    "pos": {
+      "x": 3,
+      "y": 2
+    },
+    "region": 0,
+    "programme": [
+      "Miles & More"
+    ],
+    "preisNacht": 96
+  },
+  {
+    "id": "H10",
+    "name": "Hotel Ostkreis A",
+    "ort": "Musterstadt-Ostkreis",
+    "pos": {
+      "x": 42,
+      "y": -1
+    },
+    "region": 1,
+    "programme": [
+      "Miles & More"
+    ],
+    "preisNacht": 92
+  },
+  {
+    "id": "H11",
+    "name": "Hotel Ostkreis B",
+    "ort": "Musterstadt-Ostkreis",
+    "pos": {
+      "x": 43,
+      "y": 2
+    },
+    "region": 1,
+    "programme": [
+      "Platinum Card"
+    ],
+    "preisNacht": 103
+  },
+  {
+    "id": "H20",
+    "name": "Hotel Südkreis A",
+    "ort": "Musterstadt-Südkreis",
+    "pos": {
+      "x": 2,
+      "y": 39
+    },
+    "region": 2,
+    "programme": [
+      "Platinum Card"
+    ],
+    "preisNacht": 99
+  },
+  {
+    "id": "H21",
+    "name": "Hotel Südkreis B",
+    "ort": "Musterstadt-Südkreis",
+    "pos": {
+      "x": 3,
+      "y": 42
+    },
+    "region": 2,
+    "programme": [
+      "Accor ALL"
+    ],
+    "preisNacht": 110
+  },
+  {
+    "id": "H30",
+    "name": "Hotel Westkreis A",
+    "ort": "Musterstadt-Westkreis",
+    "pos": {
+      "x": 42,
+      "y": 39
+    },
+    "region": 3,
+    "programme": [
+      "Accor ALL"
+    ],
+    "preisNacht": 106
+  },
+  {
+    "id": "H31",
+    "name": "Hotel Westkreis B",
+    "ort": "Musterstadt-Westkreis",
+    "pos": {
+      "x": 43,
+      "y": 42
+    },
+    "region": 3,
+    "programme": [
+      "Hilton Honors"
+    ],
+    "preisNacht": 117
+  },
+  {
+    "id": "H40",
+    "name": "Hotel Zentrum A",
+    "ort": "Musterstadt-Zentrum",
+    "pos": {
+      "x": 22,
+      "y": 19
+    },
+    "region": 4,
+    "programme": [
+      "Hilton Honors"
+    ],
+    "preisNacht": 113
+  },
+  {
+    "id": "H41",
+    "name": "Hotel Zentrum B",
+    "ort": "Musterstadt-Zentrum",
+    "pos": {
+      "x": 23,
+      "y": 22
+    },
+    "region": 4,
+    "programme": [
+      "Miles & More"
+    ],
+    "preisNacht": 124
+  }
+]
