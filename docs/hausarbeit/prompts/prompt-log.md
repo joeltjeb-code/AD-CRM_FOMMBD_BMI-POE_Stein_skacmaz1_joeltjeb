@@ -51,3 +51,6 @@
 
 - [21:30] "Das klingt für mich in Ordnung als Spec"
   → Ergebnis: Spec geschrieben (2026-11-16-routenplanung-design.md), Selbstreview + AGENTS.md-Update; Implementierungsplan folgt nach Spec-Review
+
+- [21:50] "mach den Plan."
+  → Ergebnis: Implementierungsplan erstellt (12 TDD-Tasks, docs/superpowers/plans/2026-11-16-routenplanung.md), Selbstreview durchgeführt
