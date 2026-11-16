@@ -24,12 +24,13 @@ function planeWocheEnsemble(liste, wocheStart, settings, routing, dealersById, h
       continue;
     }
     const res = planeTag(drei, settings.heimat, routing);
-    tage.push({ ...basis, ...res, uebernachtung: { art: 'heim' } });
+    const fehlerTag = { ...basis, ...res, termine: res.termine ?? [], fahrzeiten: res.fahrzeiten ?? [], uebernachtung: { art: 'heim' } };
+    tage.push(fehlerTag);
   }
   for (let ti = 0; ti < tage.length; ti++) {
     const t = tage[ti];
-    if (t.leer) continue;
-    const ersterMorgen = tage[ti + 1] && !tage[ti + 1].leer
+    if (t.leer || !t.ok) continue;
+    const ersterMorgen = tage[ti + 1] && !tage[ti + 1].leer && tage[ti + 1].ok && (tage[ti + 1].termine?.length ?? 0) > 0
       ? dealersById[tage[ti + 1].termine[0].haendlerId]
       : null;
     t.uebernachtung = entscheideUbernachtung({

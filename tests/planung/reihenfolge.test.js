@@ -18,7 +18,7 @@ test('Drei Händler desselben Clusters passen ins Tagesskelett', () => {
   assert.equal(tag.ok, true);
   assert.equal(tag.termine.length, 3);
   const t1 = uhrZuMin(tag.termine[0].start);
-  assert.ok(t1 >= SKELETT.fruehstartMin && t1 <= SKELETT.spaetstartMin);
+  assert.equal(t1, SKELETT.fruehstartMin); // erster Termin startet fix 08:30
   const t3 = uhrZuMin(tag.termine[2].start);
   assert.ok(t3 <= SKELETT.letzterStartMin);
 });

@@ -15,7 +15,7 @@
 - Kein Build-Schritt, kein Framework, keine externen Dienste/API-Keys (Spec Abschnitt 2.7, 3).
 - Händlernummer ist der eindeutige Identifier aller händlerbezogenen Daten (Spec 2.1).
 - Nur ausgedachte Daten (AGENTS.md, Spec 6).
-- Tagesskelett: Abfahrt 08:00, erster Termin 08:30–09:00, letzter Terminstart ≤ 15:30 (konfigurierbar), Besuche 90/120 min, Fahrzeiten mit Staupuffer 6 min und BEV-Aufschlag 10 min/Leg (Spec 2.3).
+- Tagesskelett: erster Termin startet fix 08:30 (Startfahrt zum ersten Termin maximal 120 min, konfigurierbar), letzter Terminstart ≤ 15:30, Besuche 90/120 min, Fahrzeiten mit Staupuffer 6 min und BEV-Aufschlag 10 min/Leg (Spec 2.3).
 - Kaskade Cluster → Fälligkeit → Prio (Spec 2.4); Kadenz Standard 85 Tage, Prio 40 Tage (Spec 2.2).
 - Wochenplanung: Di–Fr, 12 Slots pro Woche, Standardhorizont 4 Wochen (Spec 2.2).
 - Kein Netz-Verkehr in Unit-Tests; alle Logik-Tests deterministisch.
@@ -404,7 +404,7 @@ git commit -m "feat: Fälligkeit, Prio-Sortierung und Wochenverteilung"
 **Interfaces:**
 - Consumes: `erstelleDemoRouting` (Task 1), Dealer (`pos`, `dauer`).
 - Produces:
-  - `SKELETT = { abfahrtMin: 480, fruehstartMin: 510, spaetstartMin: 540, letzterStartMin: 930 }`
+  - `SKELETT = { abfahrtMin: 480, fruehstartMin: 510, maxStartFahrtMin: 120, letzterStartMin: 930 }`
   - `minZuUhr(min): 'HH:MM'` und `uhrZuMin('HH:MM'): number`
   - `validiereReihenfolge(dealerListe, start, routing, skelett): { ok, termine, fahrzeiten, grund? }` — behält die übergebene Reihenfolge; `termine = [{ haendlerId, startMin, endeMin, start, ende }]`, `fahrzeiten = [{ von, nach, min }]`
   - `planeTag(dealerListe, start, routing, skelett): { ok, termine, fahrzeiten, grund? }` — probiert alle 3!-Permutationen, wählt die mit kleinster Gesamt-Fahrzeit unter den zulässigen
@@ -433,7 +433,7 @@ test('Drei Händler desselben Clusters passen ins Tagesskelett', () => {
   assert.equal(tag.ok, true);
   assert.equal(tag.termine.length, 3);
   const t1 = uhrZuMin(tag.termine[0].start);
-  assert.ok(t1 >= SKELETT.fruehstartMin && t1 <= SKELETT.spaetstartMin);
+  assert.equal(t1, SKELETT.fruehstartMin); // erster Termin startet fix 08:30
   const t3 = uhrZuMin(tag.termine[2].start);
   assert.ok(t3 <= SKELETT.letzterStartMin);
 });
@@ -466,10 +466,10 @@ Expected: FAIL (Module nicht gefunden)
 ```js
 // app/planung/reihenfolge.js
 export const SKELETT = {
-  abfahrtMin: 480,      // Abfahrt 08:00
-  fruehstartMin: 510,   // erster Termin ab 08:30
-  spaetstartMin: 540,   // erster Termin spätestens 09:00
-  letzterStartMin: 930, // letzter Termin startet spätestens 15:30
+  abfahrtMin: 480,        // frühester Abfahrtswunsch 08:00 (nur Referenz)
+  fruehstartMin: 510,     // erster Termin startet 08:30
+  maxStartFahrtMin: 120,  // Startfahrt zum ersten Termin max. 120 min
+  letzterStartMin: 930,   // letzter Termin startet spätestens 15:30
 };
 
 export function minZuUhr(min) {
@@ -483,10 +483,13 @@ export function uhrZuMin(uhr) {
 function berechne(liste, start, routing, skelett) {
   const fahrzeiten = [];
   const termine = [];
-  let fahrt = routing.fahrzeitMin(start.pos, liste[0].pos);
-  let t = Math.max(skelett.fruehstartMin, skelett.abfahrtMin + fahrt);
-  if (t > skelett.spaetstartMin) return { ok: false, grund: 'Erster Termin später als ' + minZuUhr(skelett.spaetstartMin) };
-  fahrzeiten.push({ von: start.name, nach: liste[0].id, min: fahrt });
+  const ersteFahrt = routing.fahrzeitMin(start.pos, liste[0].pos);
+  const maxStart = skelett.maxStartFahrtMin ?? 120;
+  if (ersteFahrt > maxStart) {
+    return { ok: false, grund: `Startort zu weit vom ersten Termin (${ersteFahrt} min > ${maxStart} min)` };
+  }
+  let t = skelett.fruehstartMin;
+  fahrzeiten.push({ von: start.name, nach: liste[0].id, min: ersteFahrt });
   for (let i = 0; i < liste.length; i++) {
     const h = liste[i];
     const startMin = t;

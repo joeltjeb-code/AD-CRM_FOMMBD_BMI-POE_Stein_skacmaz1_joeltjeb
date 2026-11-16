@@ -1,8 +1,8 @@
 export const SKELETT = {
-  abfahrtMin: 480,      // Abfahrt 08:00
-  fruehstartMin: 510,   // erster Termin ab 08:30
-  spaetstartMin: 540,   // erster Termin spätestens 09:00
-  letzterStartMin: 930, // letzter Termin startet spätestens 15:30
+  abfahrtMin: 480,        // frühester Abfahrtswunsch 08:00 (nur Referenz)
+  fruehstartMin: 510,     // erster Termin startet 08:30
+  maxStartFahrtMin: 120,  // Startfahrt zum ersten Termin max. 120 min
+  letzterStartMin: 930,   // letzter Termin startet spätestens 15:30
 };
 
 export function minZuUhr(min) {
@@ -16,12 +16,13 @@ export function uhrZuMin(uhr) {
 function berechne(liste, start, routing, skelett) {
   const fahrzeiten = [];
   const termine = [];
-  let fahrt = routing.fahrzeitMin(start.pos, liste[0].pos);
-  let t = Math.max(skelett.fruehstartMin, skelett.abfahrtMin + fahrt);
-  if (t > skelett.spaetstartMin) {
-    return { ok: false, grund: 'Erster Termin später als ' + minZuUhr(skelett.spaetstartMin) };
+  const ersteFahrt = routing.fahrzeitMin(start.pos, liste[0].pos);
+  const maxStart = skelett.maxStartFahrtMin ?? 120;
+  if (ersteFahrt > maxStart) {
+    return { ok: false, grund: `Startort zu weit vom ersten Termin (${ersteFahrt} min > ${maxStart} min)` };
   }
-  fahrzeiten.push({ von: start.name, nach: liste[0].id, min: fahrt });
+  let t = skelett.fruehstartMin;
+  fahrzeiten.push({ von: start.name, nach: liste[0].id, min: ersteFahrt });
   for (let i = 0; i < liste.length; i++) {
     const h = liste[i];
     const startMin = t;
@@ -33,7 +34,7 @@ function berechne(liste, start, routing, skelett) {
       ende: minZuUhr(startMin + h.dauer),
     });
     if (i < liste.length - 1) {
-      fahrt = routing.fahrzeitMin(h.pos, liste[i + 1].pos);
+      const fahrt = routing.fahrzeitMin(h.pos, liste[i + 1].pos);
       fahrzeiten.push({ von: h.id, nach: liste[i + 1].id, min: fahrt });
       t = startMin + h.dauer + fahrt;
     }
