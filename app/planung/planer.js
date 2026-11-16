@@ -1,7 +1,9 @@
 import { bildeCluster } from './cluster.js';
 import { faelligeKandidaten, verteileAufWochen, PRO_WOCHE } from './auswahl.js';
-import { planeTag, validiereReihenfolge } from './reihenfolge.js';
+import { SKELETT, planeTag, validiereReihenfolge } from './reihenfolge.js';
 import { entscheideUbernachtung } from './uebernachtung.js';
+
+export { SKELETT };
 
 export const TAGE_NAMEN = ['Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
 
@@ -54,17 +56,49 @@ export function planeWochen({ haendler, hotels, settings, routing, startMontag, 
   const dealersById = Object.fromEntries(mitCluster.map((h) => [h.id, h]));
   const kandidaten = faelligeKandidaten(mitCluster, startMontag);
   const wochen = verteileAufWochen(kandidaten, anzahlWochen, PRO_WOCHE);
-  return {
+  const plan = {
     erstelltAm: new Date().toISOString(),
     wochen: wochen.map((liste, wi) => ({
       montag: datumZuString(addTage(parseDatum(startMontag), wi * 7)),
       tage: planeWocheEnsemble(liste, addTage(parseDatum(startMontag), wi * 7), settings, routing, dealersById, hotels),
     })),
   };
+  return frischauf(plan, { dealersById, settings, routing, hotels });
 }
 
-// Task 9 ersetzt diesen Stump durch die vollständige Revalidierung
-// (siehe Plan docs/superpowers/plans/2026-11-16-routenplanung.md).
-export function frischauf(plan, settings, routing) {
+// Revalidiert Reihenfolge und Übernachtungen eines bestehenden Plans.
+// Kontext: { dealersById, settings, routing, hotels }. Reihenfolgen bleiben
+// erhalten; manuelle Übernachtungs-Vorgaben (vorgabe: true) werden nicht
+// überschrieben.
+export function frischauf(plan, kontext) {
+  const { dealersById, settings, routing, hotels } = kontext;
+  for (const woche of plan.wochen) {
+    for (let ti = 0; ti < woche.tage.length; ti++) {
+      const t = woche.tage[ti];
+      if (t.leer) continue;
+      const liste = (t.termine ?? []).map((x) => dealersById[x.haendlerId]);
+      if (liste.length === 0) continue;
+      const start = { name: t.startortName, pos: t.startortPos ?? settings.heimat.pos };
+      const skelett = { ...SKELETT, letzterStartMin: t.letzterStartMin ?? SKELETT.letzterStartMin };
+      const res = validiereReihenfolge(liste, start, routing, skelett);
+      Object.assign(t, res, { leer: undefined });
+      const folge = woche.tage[ti + 1];
+      const ersterMorgen = folge && !folge.leer && folge.ok && (folge.termine?.length ?? 0) > 0
+        ? dealersById[folge.termine[0].haendlerId]
+        : null;
+      const letzter = liste[liste.length - 1];
+      if (t.uebernachtung?.vorgabe) {
+        if (t.uebernachtung.art === 'heim' && t.uebernachtung.fahrzeitHeim === undefined) {
+          t.uebernachtung.fahrzeitHeim = routing.fahrzeitMin(letzter.pos, settings.heimat.pos);
+        }
+        continue; // manuelle Vorgabe bleibt stehen
+      }
+      t.uebernachtung = entscheideUbernachtung({ letzterH: letzter, ersterMorgen, hotels, settings, routing });
+      if (!ersterMorgen) {
+        // Letzter Tag der Woche: Wochenend-Heimfahrt bleibt Standard
+        t.uebernachtung = { art: 'heim', fahrzeitHeim: routing.fahrzeitMin(letzter.pos, settings.heimat.pos) };
+      }
+    }
+  }
   return plan;
 }

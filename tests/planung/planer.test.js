@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import { strict as assert } from 'node:assert';
 import { baueFixtures } from '../fixtures.js';
 import { erstelleDemoRouting } from '../../app/adapter/routing-adapter.js';
-import { planeWochen } from '../../app/planung/planer.js';
+import { planeWochen, frischauf } from '../../app/planung/planer.js';
 
 const { haendler, settings } = baueFixtures();
 const r = erstelleDemoRouting();
@@ -33,4 +33,14 @@ test('planeWochen: 4 Wochen mit je 4 Tagen Di-Fr und 3 Terminen', () => {
       assert.ok(t.termine.every((x) => x.startMin <= (t.letzterStartMin ?? 930)));
     }
   }
+});
+
+test('frischauf erhält Reihenfolge und ValidationResult', () => {
+  const dealersById = Object.fromEntries(haendler.map((h) => [h.id, h]));
+  const kontext = { dealersById, settings: SETTINGS, routing: r, hotels: HOTELS };
+  let plan = planeWochen({ haendler, hotels: HOTELS, settings: SETTINGS, routing: r, startMontag: '2026-11-23' });
+  const davor = plan.wochen[0].tage[0].termine.map((t) => t.haendlerId);
+  plan = frischauf(plan, kontext);
+  assert.deepEqual(plan.wochen[0].tage[0].termine.map((t) => t.haendlerId), davor);
+  assert.equal(plan.wochen[0].tage[0].ok, true);
 });
