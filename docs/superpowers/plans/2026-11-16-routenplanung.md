@@ -630,7 +630,7 @@ export function entscheideUbernachtung({ letzterH, ersterMorgen, hotels, setting
   if (bestes && bestes.score < heimScore) {
     return { art: 'hotel', hotelId: bestes.hotel.id, hotelName: bestes.hotel.name, score: Math.round(bestes.score) };
   }
-  return { art: 'heim', fahrzeitHeim };
+  return { art: 'heim', fahrzeitHeim: fahrtHeim };
 }
 ```
 

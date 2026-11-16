@@ -22,7 +22,8 @@ test('Werktag: nahes Lieblingshotel schlägt Heimfahrt', () => {
 });
 
 test('Freitag: ohne morgigen Termin gewinnt die Heimfahrt bei kurzer Strecke', () => {
-  const res = entscheideUbernachtung({ letzterH: LETZTER, ersterMorgen: null, hotels: HOTELS, settings: SETTINGS, routing: r });
+  const s = { ...SETTINGS, praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 60, programme: [] } };
+  const res = entscheideUbernachtung({ letzterH: LETZTER, ersterMorgen: null, hotels: HOTELS, settings: s, routing: r });
   assert.equal(res.art, 'heim');
   assert.ok(res.fahrzeitHeim > 0);
 });
