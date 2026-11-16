@@ -750,9 +750,10 @@ function planesWochenEnsemble(liste, wocheStart, settings, routing, dealersById)
       startortName: startJedenTag.name,
       letzterStartMin: undefined,
     };
-    if (drei.length < 3) { tage.push({ ...basis, ok: true, termine: [], fahrzeiten: [], leer: true, uebernachtung: { art: 'heim' } }); continue; }
+    if (!(drei.length >= 3)) { tage.push({ ...basis, ok: true, termine: [], fahrzeiten: [], leer: true, uebernachtung: { art: 'heim' } }); continue; }
     const res = planeTag(drei, startJedenTag, routing);
-    tage.push({ ...basis, ...res, uebernachtung: { art: 'heim' } });
+    // Fehlgeschlagene Kombinationen werden markiert, nicht weggeworfen (rot in der UI)
+    tage.push({ ...basis, ...res, termine: res.termine ?? [], fahrzeiten: res.fahrzeiten ?? [], uebernachtung: { art: 'heim' } });
   }
   // Übernachtungen streckweise bestimmen
   for (let ti = 0; ti < tage.length; ti++) {
