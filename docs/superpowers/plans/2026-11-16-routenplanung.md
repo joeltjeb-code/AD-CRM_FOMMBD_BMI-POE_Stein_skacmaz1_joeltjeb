@@ -310,13 +310,13 @@ test('faelligeKandidaten: ältester Besuch zuerst, dann Prio, dann id', () => {
   assert.deepEqual(k.map((h) => h.id), ['B', 'C', 'A']);
 });
 
-test('verteileAufWochen: 12 pro Woche, Woche -> ein Cluster', () => {
+test('verteileAufWochen: 12 pro Woche, maximal 2 Cluster je Woche', () => {
   const { haendler } = baueFixtures();
   const wochen = verteileAufWochen(faelligeKandidaten(haendler, HEUTE), 4);
   assert.equal(wochen.length, 4);
   for (const w of wochen) {
     assert.equal(w.length, 12);
-    assert.equal(new Set(w.map((h) => h.cluster)).size, 1);
+    assert.ok(new Set(w.map((h) => h.cluster)).size <= 2, 'maximal 2 Cluster pro Woche');
   }
 });
 ```
@@ -364,9 +364,15 @@ export function verteileAufWochen(kandidaten, anzahlWochen = 4, proWoche = PRO_W
   for (let w = 0; w < anzahlWochen && rest.length > 0; w++) {
     const woche = [];
     while (rest.length > 0 && woche.length < proWoche) {
+      // Kandidaten des ältesten Clusters zuerst; nur wenn das Cluster kleiner
+      // als das Wochensoll ist, wird aus dem nächsten Cluster nachgefüllt
       const cluster = rest[0].cluster;
-      while (rest.length > 0 && rest[0].cluster === cluster && woche.length < proWoche) {
-        woche.push(rest.shift());
+      const inCluster = rest.filter((h) => h.cluster === cluster);
+      const nimm = inCluster.slice(0, proWoche - woche.length);
+      woche.push(...nimm);
+      const ids = new Set(nimm.map((h) => h.id));
+      for (let i = rest.length - 1; i >= 0; i--) {
+        if (ids.has(rest[i].id)) rest.splice(i, 1);
       }
     }
     wochen.push(woche);
