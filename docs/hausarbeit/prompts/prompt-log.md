@@ -54,3 +54,9 @@
 
 - [21:50] "mach den Plan."
   → Ergebnis: Implementierungsplan erstellt (12 TDD-Tasks, docs/superpowers/plans/2026-11-16-routenplanung.md), Selbstreview durchgeführt
+
+- [22:00] "Inline (meine Empfehlung) — Ich arbeite die Tasks hier direkt ab, mit Teil-Commits je Task und Checkpoints."
+  → Ergebnis: Alle 12 Tasks auf feature/routenplanung ausgeführt, 26 Unit-Tests grün
+
+- [22:25] "Das klingt für mich soweit okay. Bitte merge nach main"
+  → Ergebnis: Merge-Commit 7add03d, Tests nach Merge grün; nicht gepusht (Sync durch Nutzer)
