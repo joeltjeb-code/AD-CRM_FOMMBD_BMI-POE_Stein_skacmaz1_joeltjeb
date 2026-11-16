@@ -1,0 +1,46 @@
+export function renderePlanraster(container, plan, { onMove, onBefehl }) {
+  const teile = [];
+  plan.wochen.forEach((woche, wi) => {
+    teile.push(`<h2>Woche ab ${woche.montag}</h2><div class="woche" data-woche="${wi}">`);
+    woche.tage.forEach((tag, ti) => {
+      teile.push(`<section class="tag ${tag.ok ? '' : 'fehler'}" data-woche="${wi}" data-tag="${ti}">
+        <h3>${tag.tag} (${tag.datum})${tag.ok ? '' : ` – ${tag.grund ?? 'ungültig'}`}</h3>
+        <ul>${(tag.termine ?? []).map((x, si) =>
+          `<li draggable="true" data-id="${x.haendlerId}" data-woche="${wi}" data-tag="${ti}" data-slot="${si}">
+             ${x.start}–${x.ende} ${x.haendlerId}</li>`).join('')}
+        ${tag.leer ? '<li class="leer">kein Auftrag</li>' : ''}
+        </ul>
+        <p>Übernachtung: ${tag.uebernachtung?.art === 'hotel'
+            ? `Hotel (${tag.uebernachtung.hotelName ?? ''})` : 'Heimfahrt'}</p>
+        <p class="startort">Start: ${tag.startortName}</p>
+      </section>`);
+    });
+    teile.push('</div>');
+  });
+  teile.push(`
+    <form id="befehlForm">
+      <input name="befehl" placeholder="z. B. übernachte am Mittwoch im Hotel">
+      <button>Anpassen</button>
+      <span id="befehlMeldung"></span>
+    </form>`);
+  container.innerHTML = teile.join('');
+
+  let gezogen = null;
+  container.querySelectorAll('li[draggable]').forEach((li) => {
+    li.addEventListener('dragstart', () => { gezogen = li; });
+  });
+  container.querySelectorAll('section.tag').forEach((section) => {
+    section.addEventListener('dragover', (e) => e.preventDefault());
+    section.addEventListener('drop', (e) => {
+      e.preventDefault();
+      if (!gezogen) return;
+      onMove(gezogen.dataset.id, Number(section.dataset.woche), Number(section.dataset.tag));
+      gezogen = null;
+    });
+  });
+  container.querySelector('#befehlForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const text = e.target.querySelector('[name=befehl]').value;
+    onBefehl(text, e.target.querySelector('#befehlMeldung'));
+  });
+}
