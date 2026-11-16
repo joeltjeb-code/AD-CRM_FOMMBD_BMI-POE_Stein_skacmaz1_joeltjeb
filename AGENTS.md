@@ -2,6 +2,21 @@
 
 This repository is a starter kit for coding with Vibe Code at a hackathon.
 
+## Session-Start (PFLICHT, vor allem anderen)
+
+Sobald eine Session beginnt, tue dies als Erstes, bevor irgendwelche anderen
+Aufgaben laufen:
+
+1. Prüfe, ob `docs/hausarbeit/tagebuch/[HEUTE].md` existiert (HEUTE = aktuelles
+   Datum, YYYY-MM-DD). Falls nein: lege sie an, orientiere dich am Format der
+   bisherigen Tagesdateien und trage die Startzeit ein.
+2. Prüfe, ob `docs/hausarbeit/prompts/prompt-log.md` existiert; falls nein:
+   lege es mit Header an.
+3. Bestätige dem Nutzer in einem Satz, dass die Tagesdatei steht.
+
+Eine fehlende Tagesdatei am Session-Start ist ein Fehler, kein Sonderfall.
+Formate und Details: `.vibe/skills/dokumentation/SKILL.md`
+
 ## How to work here
 
 Devstral is capable but smaller than the largest frontier models, so it does
@@ -41,6 +56,6 @@ never in this repository.
 
 ## Aktueller Stand
 
-*Heute (31.10.2026):*
-- AGENTS.md-Struktur wurde überarbeitet.
+*Heute (16.11.2026):*
+- Session-Start-Checkliste ergänzt (Tagesdatei wird zuverlässig bei jedem Start angelegt).
 - Nächster Schritt: Umsetzung der App-Spezifikation (Außendienst-Assistent).

@@ -30,3 +30,7 @@
 
 - [20:30] "Ja lege das bitte für heute an"
   → Ergebnis: Erste Test-Dokumentation wird erstellt
+
+## 2026-11-16
+- [20:28] "Kurze Frage vorab: Steht in der Agents.md schon drin, dass du automatisch über den Skill dokumentiertst? Und hast du schon für heute die Tagesdatei angelegt?"
+  → Ergebnis: Tagesdatei `2026-11-16.md` nachgetragen (letzte vom 31.10.), AGENTS.md verweist auf Dokumentations-Skill
