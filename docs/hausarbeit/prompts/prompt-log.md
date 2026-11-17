@@ -75,3 +75,6 @@
 - [15:17] "Dann gehen wir mit Ansatz A" (+ Antworten: Demo-Prios, nur D01-D12, PLZ-Tabelle, OBG-Auswahl mit Merken)
   → Ergebnis: Design-Doku `docs/superpowers/specs/2026-11-17-haendlerimport-obg-design.md` erstellt und committed; Spec-Selbstreview (5 mechanische Schreibfehler bereinigt)
 
+- [16:04] "Feierabend"
+  → Ergebnis: Tageszusammenfassung + Prozess-Doku (2026-11-17-16-04-actions.md), Abschluss-Commit
+
