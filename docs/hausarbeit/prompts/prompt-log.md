@@ -63,3 +63,15 @@
 
 - [21:14] "Schluss für heute"
   → Ergebnis: Tageszusammenfassung + Prozess-Doku (2026-11-16-21-16-actions.md), Abschluss-Commit
+
+- [14:33] "Kurze Frage vorab: Steht in der Agents.md schon drin, dass du automatisch über den Skill dokumentierst? Und hast du schon für heute die Tagesdatei angelegt?"
+  → Ergebnis: Tagesdatei 2026-11-17 angelegt, Prompt-Log geprüft (vorhanden), Status aus AGENTS.md bestätigt
+- [15:17] "Ich habe gerade die Excel DEU_Betreuungsliste_20260924_GH_Dummy als Referenz hochgeladen"
+  → Ergebnis: Excel analysiert (1036 Händler, 60 Spalten, eindeutige Markt Händlernummer DEUxxxxx); Mapping-Fragen ans Datenmodell dokumentiert
+
+- [15:17] Mapping-Antworten: Cluster erst nach Region, dann OBG; Prio vom Management definiert; alle 1036 Händler wenn Performance es erlaubt; Nutzer = Außendienstler, der ein OBG betreut
+  → Ergebnis: Verteilungsanalyse (D01-D12: 73-95 Händler je OBG; Sonder-OBGs DE/neu/None; Kapazität 576 Besuche/Jahr vs. 292-380 nötig bei Quartalskadenz) + Brainstorming-Kontext
+
+- [15:17] "Dann gehen wir mit Ansatz A" (+ Antworten: Demo-Prios, nur D01-D12, PLZ-Tabelle, OBG-Auswahl mit Merken)
+  → Ergebnis: Design-Doku `docs/superpowers/specs/2026-11-17-haendlerimport-obg-design.md` erstellt und committed; Spec-Selbstreview (5 mechanische Schreibfehler bereinigt)
+
