@@ -33,6 +33,82 @@
       "offeneMassnahmen": [],
       "prioThemen": ["bremsen"],
       "folgeterminKadenzWochen": 6
+    },
+    {
+      "haendlerId": "DEU95M155",
+      "stammdaten": { "name": "AH Mustermann-Ford", "anrede": "Herr Mustermann (GF1)" },
+      "persoenlicheNotizen": [
+        { "datum": "2026-04-23", "text": "Zweiter Ansprechpartner: Herr Beispiel" }
+      ],
+      "besuchHistorie": [
+        { "terminId": "t-155-1", "datum": "2026-04-23", "teilnehmer": ["Herr Mustermann", "Herr Beispiel"],
+          "themen": ["Teileverkaufsanalyse", "AKF+", "Wischer", "AFSB", "STP"],
+          "kernpunkte": [
+            "AKF+: Umstellung standardisiert, Erstausstattungspaket bei der EFA anfragen",
+            "Wischer: Fokus auf Videocheck-Wischerbewerbung; Wischer als Fokusprodukt in den nächsten 3 Monaten",
+            "Wischerdisplays vorhanden, Angebot im System gekennzeichnet",
+            "AFSB: Status gut (bis auf REACT im März), Fokus Videocheck",
+            "STP: AKF+ und Wischer als Q2-Ziele gesetzt",
+            "REACT-Kampagne: Kulanz angefragt, Rückmeldung offen",
+            "Nächster Termin 23.04.2026 13:00-14:00, Einladung geht separat"
+          ] }
+      ],
+      "offeneMassnahmen": [
+        { "titel": "Erstausstattungspaket AKF+ bei EFA anfragen", "beschreibung": "AKF+ Umstellung",
+          "verantwortlich": "David", "frist": "2026-05-08", "status": "offen" },
+        { "titel": "REACT-Kulanz-Rückmeldung", "beschreibung": "Kulanzanfrage verfolgt",
+          "verantwortlich": "David", "frist": "2026-05-15", "status": "offen" }
+      ],
+      "prioThemen": ["wischer", "akf"],
+      "folgeterminKadenzWochen": 6
+    },
+    {
+      "haendlerId": "DEU96M156",
+      "stammdaten": { "name": "AH Musterhaus Ford", "anrede": "Herr Musterhaus (GF1)" },
+      "persoenlicheNotizen": [
+        { "datum": "2026-04-28", "text": "Zweiter Ansprechpartner: Herr Exempel; Seminar-Teilnahme mit Herrn Platzhalter" }
+      ],
+      "besuchHistorie": [
+        { "terminId": "t-156-1", "datum": "2026-04-28", "teilnehmer": ["Herr Musterhaus", "Herr Exempel"],
+          "themen": ["Teileverkaufsanalyse", "Windschutzscheiben", "AFSB", "GASA", "GASB"],
+          "kernpunkte": [
+            "TVA: Fokus weiterhin Windschutzscheiben",
+            "Scheibensiegel mit MA-Unterschrift nach Prüfung bereits eingeführt",
+            "WSS-Seminar mit Herrn Platzhalter am 05.05.2026 geplant",
+            "AFSB: TVK 80 %",
+            "GASA/GASB E-Learnings verpflichtend",
+            "Offen: Zielwerte für TVK-Qualifier (Fachabteilung)"
+          ] }
+      ],
+      "offeneMassnahmen": [
+        { "titel": "TVK-Qualifier-Zielwerte klären", "beschreibung": "Bei Fachabteilung platziert",
+          "verantwortlich": "David", "frist": "2026-05-20", "status": "offen" }
+      ],
+      "prioThemen": ["wss"],
+      "folgeterminKadenzWochen": 6
+    },
+    {
+      "haendlerId": "DEU97M157",
+      "stammdaten": { "name": "Autovertrieb Beispiel GmbH", "anrede": "Herr Beispielford (GF1)" },
+      "persoenlicheNotizen": [],
+      "besuchHistorie": [
+        { "terminId": "t-157-1", "datum": "2026-03-25", "teilnehmer": ["Herr Beispielford"],
+          "themen": ["AKF+", "Wischer", "Ford Frunk", "Quick-Check"],
+          "kernpunkte": [
+            "AKF+: Inspektionspakete soweit möglich auf AKF+-Filter (FORD MICRONAIR PROTECT) umstellen; Anteil 22 % (Bund ca. 75 %)",
+            "Wischer: Kundenansprache 'Wie zufrieden sind Sie mit Ihren Scheibenwischern'",
+            "Bonusprogramme: nur externe Werkstattaufträge gewertet, interne/Theken/Barverkäufe nicht",
+            "Wischerdisplay-Bestellung ausgelöst",
+            "Ford Frunk für Explorer und Capri: Fahrzeugverkauf informieren (Service News 04)",
+            "Quick-Check-Liste bei allen Aufträgen ohne Wartungscheckliste und bei Räderwechseln anwenden"
+          ] }
+      ],
+      "offeneMassnahmen": [
+        { "titel": "AKF+-Anteil überwachen", "beschreibung": "Anteil 22 %, Ziel steigern",
+          "verantwortlich": "Herr Beispielford", "frist": "2026-06-30", "status": "offen" }
+      ],
+      "prioThemen": ["akf", "wischer"],
+      "folgeterminKadenzWochen": 6
     }
   ],
   "gesendetInfos": []

@@ -23,6 +23,7 @@ let hotels = [];
 let wissensbasis = { akten: [], gesendetInfos: [] };
 let bausteine = { kampagnen: [] };
 let scorecard = { haendler: [] };
+let themenAnhaenge = { anhaengeKatalog: [] };
 let gewaehlt = null;
 let settings = speicher.lade('einstellungen', {
   heimat: { name: 'Heimatbüro', pos: { x: -8, y: 10 } },
@@ -140,8 +141,12 @@ function berichtFreigeben(formwerte) {
   wissensbasis = speichereAkte(wissensbasis, akte);
   speicher.speichere('wissensbasis', wissensbasis);
   const e = formwerte.kampagne
-    ? erstelleEntwurf(r.bericht, bausteine, formwerte.kampagne) : null;
+    ? erstelleEntwurf(r.bericht, bausteine, formwerte.kampagne,
+        { themenAnhaengeKatalog: themenAnhaenge.anhaengeKatalog }) : null;
+  const themenListen = [r.bericht.folgetermin ? `Folgetermin: ${r.bericht.folgetermin} (Einladung separat)` : null]
+    .filter(Boolean);
   ergebnis.innerHTML = '<p>Bericht übernommen.</p>' + (e?.ok ? `
+    ${themenListen.map((x) => `<p>${x}</p>`).join('')}
     <h3>E-Mail-Entwurf (${e.entwurf.anhaenge.map((a) => a.name).join(', ')})</h3>
     <p><b>${e.entwurf.betreff}</b></p>
     <pre>${e.entwurf.text}</pre>
@@ -165,13 +170,14 @@ function zeigeInfoVerteilung() {
 let postfach = { mails: [] };
 
 async function starten() {
-  [haendler, hotels, wissensbasis, bausteine, scorecard, postfach] = await Promise.all([
+  [haendler, hotels, wissensbasis, bausteine, scorecard, postfach, themenAnhaenge] = await Promise.all([
     fetch('daten/haendler-demo.json').then((r) => r.json()),
     fetch('daten/hotels-demo.json').then((r) => r.json()),
     fetch('daten/wissensbasis.json').then((r) => r.json()),
     fetch('daten/kampagnen-bausteine.json').then((r) => r.json()),
     fetch('daten/scorecard-demo.json').then((r) => r.json()),
     fetch('daten/postfach-demo.json').then((r) => r.json()),
+    fetch('daten/themen-anhaenge.json').then((r) => r.json()),
   ]);
   wissensbasis = speicher.lade('wissensbasis', wissensbasis);
   rendereEinstellungen(document.getElementById('einstellungen'), settings, {

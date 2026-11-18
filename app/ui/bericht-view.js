@@ -11,6 +11,7 @@ export function rendereBerichtFormular(container, onFreigeben) {
         <textarea name="vereinbarungen" placeholder="Vereinbarungen (Komma-getrennt)"></textarea><br>
         <textarea name="aufgaben" placeholder="Aufgaben, pro Zeile: Titel | Verantwortlicher | Frist (JJJJ-MM-TT)"></textarea><br>
         <textarea name="offenePunkte" placeholder="Offene Punkte (Komma-getrennt)"></textarea><br>
+        <input name="folgetermin" placeholder="Folgetermin (optional, z. B. 23.04.2026 13:00–14:00)"><br>
         <select name="kampagne">
           <option value="">— keine Kampagnen-Mail —</option>
           <option value="wkr">WKR-Programm</option>

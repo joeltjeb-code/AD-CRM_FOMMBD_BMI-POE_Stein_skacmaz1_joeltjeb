@@ -1,0 +1,29 @@
+{
+  "anhaengeKatalog": [
+    { "id": "akf", "titel": "AKF+", "schluessel": ["akf", "inspektionspaket", "micronair"],
+      "anhaenge": [
+        { "name": "AKF-MICRONAIR-PROTECT-Paket.pdf", "typ": "pdf" }
+      ] },
+    { "id": "wischer", "titel": "Wischer", "schluessel": ["wischer"],
+      "anhaenge": [
+        { "name": "Massnahmenplan-Wischer.pdf", "typ": "pdf" },
+        { "name": "Best-Practice-Wischer.pdf", "typ": "pdf" }
+      ] },
+    { "id": "qs-werkstatt", "titel": "Werkstatt-Qualität", "schluessel": ["qualitaet", "qs", "werkstatt"],
+      "anhaenge": [
+        { "name": "QS-Werkstatt-Excel.xlsx", "typ": "xlsx" }
+      ] },
+    { "id": "wss", "titel": "Windschutzscheiben", "schluessel": ["windschutzscheibe", "wss", "scheibensiegel"],
+      "anhaenge": [
+        { "name": "Scheibensiegel-Checkliste.pdf", "typ": "pdf" }
+      ] },
+    { "id": "quickcheck", "titel": "Quick-Check", "schluessel": ["quick-check", "quickcheck", "raederwechsel"],
+      "anhaenge": [
+        { "name": "Quick-Check-Liste.pdf", "typ": "pdf" }
+      ] },
+    { "id": "service-news", "titel": "Service News", "schluessel": ["service news", "frunk", "news 04"],
+      "anhaenge": [
+        { "name": "Service-News-04.pdf", "typ": "pdf" }
+      ] }
+  ]
+}
