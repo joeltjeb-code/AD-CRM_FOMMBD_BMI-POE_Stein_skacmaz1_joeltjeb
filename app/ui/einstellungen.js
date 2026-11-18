@@ -54,8 +54,7 @@ export function rendereEinstellungen(container, settings, { onSpeichern, obgList
   });
 }
 
-export function leseEinstellungen(alt, form) {
-  const maxFahrt = Number(form.maxFahrt);
+export function leseEinstellungen(alt, form) {  const maxFahrt = Number(form.maxFahrt);
   return {
     ...alt,
     obg: (form.obg ?? '').trim() || alt.obg,
@@ -70,3 +69,56 @@ export function leseEinstellungen(alt, form) {
     },
   };
 }
+
+// Abwesenheits-Toggles: ganze Woche und/oder einzeln Tage (Di–Fr) abwählen,
+// optional mit Freitext-Grund (Urlaub / Lehrgang / Event). Verändert nur
+// die Planung — keine Termine gehen verloren, sie wandern in aktive Tage.
+export function rendereAbwesenheiten(container, plan, abw = {}, { onAendern } = {}) {
+  const roh = { wochen: {}, tage: {}, gruende: {}, ...abw };
+  const wochen = plan?.wochen ?? [];
+  const rows = wochen.map((woche, wi) => {
+    const wk = `w${wi}`;
+    const kombi = woche.abgewaehlt || roh.wochen[wk];
+    const tageZeilen = [0, 1, 2, 3].map((ti) => {
+      const tk = `${wk}-d${ti}`;
+      const aus = kombi || Boolean(roh.tage[tk]);
+      return `
+        <label class="abw-tag"><input type="checkbox" data-key="${tk}" ${aus ? 'checked' : ''}>
+          ${woche.tage?.[ti]?.tag ?? TAGE_KUERZEL[ti]} ${woche.tage?.[ti]?.datum ?? ''}</label>
+        <input class="abw-grund" data-grund="${tk}" placeholder="Grund (optional)" value="${roh.gruende[tk] ?? ''}">`;
+    }).join('');
+    return `
+      <div class="abw-woche" data-w="${wi}">
+        <label><strong>Woche ab ${woche.montag}</strong> <input type="checkbox" data-key="${wk}" ${kombi ? 'checked' : ''}> komplett abgewählt</label>
+        <div class="abw-tage">${tageZeilen}</div>
+      </div>`;
+  }).join('');
+  container.innerHTML = `
+    <fieldset>
+      <legend>Abwesenheiten</legend>
+      <p class="hinweis">Abgew&auml;hlte Tage und Wochen werden nicht beplant; die Termine wandern in die aktiven Tage der Folge.</p>
+      ${rows || '<p class="leer">Noch kein Plan vorhanden.</p>'}
+      <button type="button" name="abwSpeichern">Abwesenheiten anwenden</button>
+    </fieldset>`;
+
+  container.querySelector('[name=abwSpeichern]').addEventListener('click', () => {
+    onAendern?.(liesAbwesenheiten(container));
+  });
+}
+
+export function liesAbwesenheiten(container) {
+  const neu = { wochen: {}, tage: {}, gruende: {} };
+  for (const cb of container.querySelectorAll('input[type=checkbox][data-key]')) {
+    if (cb.checked) {
+      if (cb.dataset.key.includes('-d')) neu.tage[cb.dataset.key] = true;
+      else neu.wochen[cb.dataset.key] = true;
+    }
+  }
+  for (const inp of container.querySelectorAll('input.abw-grund')) {
+    const wert = inp.value.trim();
+    if (wert) neu.gruende[inp.dataset.grund] = wert;
+  }
+  return neu;
+}
+
+const TAGE_KUERZEL = ['Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];

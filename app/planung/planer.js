@@ -1,5 +1,5 @@
 import { bildeCluster } from './cluster.js';
-import { faelligeKandidaten, verteileAufWochen, PRO_WOCHE } from './auswahl.js';
+import { faelligeKandidaten, verteileAufWochen, verteileMitKapazitaeten, PRO_WOCHE } from './auswahl.js';
 import { SKELETT, planeTag, validiereReihenfolge } from './reihenfolge.js';
 import { entscheideUbernachtung } from './uebernachtung.js';
 
@@ -7,16 +7,26 @@ export { SKELETT };
 
 export const TAGE_NAMEN = ['Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
 
+// Abwesenheits-Schlüssel: Wochen 'w0'..'w3', Tage 'w<wi>-d<ti>' (ti = Di..Fr).
+// true = abwesend. Aktiv je Woche: 0 (Wochen-Absage) bis 4 abzüglich Tage.
+export function aktiveTageJeWoche(abwesenheiten = {}, anzahlWochen = 4) {
+  const abw = { wochen: {}, tage: {}, ...abwesenheiten };
+  return Array.from({ length: anzahlWochen }, (_, wi) => {
+    if (abw.wochen[`w${wi}`]) return 0;
+    return 4 - [0, 1, 2, 3].filter((ti) => abw.tage[`w${wi}-d${ti}`]).length;
+  });
+}
+
 export function parseDatum(iso) { return new Date(iso + 'T00:00:00Z'); }
 export function datumZuString(d) { return d.toISOString().slice(0, 10); }
 export function addTage(d, n) { return new Date(d.getTime() + n * 24 * 60 * 60 * 1000); }
 
-function planeWocheEnsemble(liste, wocheStart, settings, routing, dealersById, hotels) {
+function planeWocheEnsemble(liste, wocheStart, settings, routing, dealersById, hotels, aktiveTage = [0, 1, 2, 3]) {
   const tage = [];
   // Startort des Tages: Tag 1 im Heimatbüro; nach Hotelnacht am Hotel.
   let startOrt = { name: settings.heimat.name, pos: settings.heimat.pos };
+  let zeiger = 0; // Positionen in der Wochenzuweisung (nur aktive Tage füllen sich)
   for (let ti = 0; ti < 4; ti++) {
-    const drei = liste.slice(ti * 3, ti * 3 + 3).map((h) => dealersById[h.id]);
     const basis = {
       tag: TAGE_NAMEN[ti],
       datum: datumZuString(addTage(wocheStart, ti + 1)),
@@ -24,6 +34,13 @@ function planeWocheEnsemble(liste, wocheStart, settings, routing, dealersById, h
       startortPos: startOrt.pos,
       letzterStartMin: undefined,
     };
+    if (!aktiveTage.includes(ti)) {
+      // Abgewählter Tag (Urlaub/Lehrgang/Event): bleibt leer, keine Termine
+      tage.push({ ...basis, ok: true, termine: [], fahrzeiten: [], leer: true, abgewaehlt: true, uebernachtung: { art: 'heim' } });
+      continue;
+    }
+    const drei = liste.slice(zeiger, zeiger + 3).map((h) => dealersById[h.id]);
+    zeiger += 3;
     if (drei.length < 3) {
       tage.push({ ...basis, ok: true, termine: [], fahrzeiten: [], leer: true, uebernachtung: { art: 'heim' } });
       startOrt = { name: settings.heimat.name, pos: settings.heimat.pos };
@@ -33,8 +50,7 @@ function planeWocheEnsemble(liste, wocheStart, settings, routing, dealersById, h
     const tag = { ...basis, ...res, termine: res.termine ?? [], fahrzeiten: res.fahrzeiten ?? [], uebernachtung: { art: 'heim' } };
     if (res.ok) {
       // ÜN-Entscheidung direkt am Tagesende: sie bestimmt den Folgetags-Start
-      const folgeDrei = liste.slice((ti + 1) * 3, (ti + 1) * 3 + 3);
-      const ersterMorgen = folgeDrei.length > 0 ? dealersById[folgeDrei[0].id] : null;
+      const ersterMorgen = zeiger < liste.length ? dealersById[liste[zeiger].id] : null;
       const letzter = dealersById[tag.termine[tag.termine.length - 1].haendlerId];
       tag.uebernachtung = entscheideUbernachtung({ letzterH: letzter, ersterMorgen, hotels, settings, routing });
       if (!ersterMorgen) {
@@ -55,13 +71,19 @@ export function planeWochen({ haendler, hotels, settings, routing, startMontag, 
   const mitCluster = haendler.map((h, i) => ({ ...h, cluster: h.cluster ?? labels[i] }));
   const dealersById = Object.fromEntries(mitCluster.map((h) => [h.id, h]));
   const kandidaten = faelligeKandidaten(mitCluster, startMontag);
-  const wochen = verteileAufWochen(kandidaten, anzahlWochen, PRO_WOCHE);
+  const aktiv = aktiveTageJeWoche(settings.abwesenheiten, anzahlWochen);
+  const wochen = verteileMitKapazitaeten(kandidaten, aktiv.map((a) => a * 3));
   const plan = {
     erstelltAm: new Date().toISOString(),
-    wochen: wochen.map((liste, wi) => ({
-      montag: datumZuString(addTage(parseDatum(startMontag), wi * 7)),
-      tage: planeWocheEnsemble(liste, addTage(parseDatum(startMontag), wi * 7), settings, routing, dealersById, hotels),
-    })),
+    wochen: wochen.map((liste, wi) => {
+      if (aktiv[wi] === 0) {
+        return { montag: datumZuString(addTage(parseDatum(startMontag), wi * 7)), abgewaehlt: true, tage: [] };
+      }
+      return {
+        montag: datumZuString(addTage(parseDatum(startMontag), wi * 7)),
+        tage: planeWocheEnsemble(liste, addTage(parseDatum(startMontag), wi * 7), settings, routing, dealersById, hotels, aktiv[wi] === 4 ? [0, 1, 2, 3] : [0, 1, 2, 3].filter((ti) => !settings.abwesenheiten?.tage?.[`w${wi}-d${ti}`])),
+      };
+    }),
   };
   return frischauf(plan, { dealersById, settings, routing, hotels });
 }

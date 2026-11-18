@@ -35,16 +35,23 @@ export function faelligeKandidaten(haendler, heuteIso) {
 }
 
 export function verteileAufWochen(kandidaten, anzahlWochen = 4, proWoche = PRO_WOCHE) {
+  return verteileMitKapazitaeten(kandidaten, Array.from({ length: anzahlWochen }, () => proWoche));
+}
+
+// Verteilt Kandidaten auf Wochen mit unterschiedlicher Kapazität
+// (aktive Tage × 3) — Abwesenheiten schrumpfen die Wochen-Kapazität,
+// der Rest wandert in die Folge-Wochen.
+export function verteileMitKapazitaeten(kandidaten, kapazitaeten) {
   const rest = [...kandidaten];
   const wochen = [];
-  for (let w = 0; w < anzahlWochen && rest.length > 0; w++) {
+  for (const kapazitaet of kapazitaeten) {
     const woche = [];
-    while (rest.length > 0 && woche.length < proWoche) {
+    while (rest.length > 0 && woche.length < kapazitaet) {
       // Kandidaten des ältesten Clusters zuerst; nur wenn das Cluster kleiner
-      // als das Wochensoll ist, wird aus dem nächsten Cluster nachgefüllt
+      // als die Rest-Kapazität ist, wird aus dem nächsten Cluster nachgefüllt
       const cluster = rest[0].cluster;
       const inCluster = rest.filter((h) => h.cluster === cluster);
-      const nimm = inCluster.slice(0, proWoche - woche.length);
+      const nimm = inCluster.slice(0, kapazitaet - woche.length);
       woche.push(...nimm);
       const ids = new Set(nimm.map((h) => h.id));
       for (let i = rest.length - 1; i >= 0; i--) {

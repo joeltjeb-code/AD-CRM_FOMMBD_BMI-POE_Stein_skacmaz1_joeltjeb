@@ -4,7 +4,7 @@ import { planeWochen, frischauf } from './planung/planer.js';
 import { filtereNachObg } from './planung/auswahl.js';
 import { parseBefehl, wendeAn } from './planung/befehle.js';
 import { renderePlanraster } from './ui/woche.js';
-import { rendereEinstellungen } from './ui/einstellungen.js';
+import { rendereEinstellungen, rendereAbwesenheiten } from './ui/einstellungen.js';
 import { baueBriefing } from './briefing/checkliste.js';
 import { baueSchnellblatt } from './briefing/schnellblatt.js';
 import { erstelleBericht, aufgabenAlsMassnahmen } from './bericht/vorlage.js';
@@ -52,6 +52,7 @@ settings = {
   ...(settings ?? {}),
   heimat: { ...STANDARD_SETTINGS.heimat, ...(settings?.heimat ?? {}) },
   praferenzen: { ...STANDARD_SETTINGS.praferenzen, ...(settings?.praferenzen ?? {}) },
+  abwesenheiten: { wochen: {}, tage: {}, gruende: {}, ...(settings?.abwesenheiten ?? {}) },
 };
 
 function nextMondayIso() {
@@ -80,6 +81,7 @@ function neuPlanen() {
   });
   speicher.speichere('plan', plan);
   zeichnen();
+  zeigeAbwesenheiten();
 }
 
 function zeichnen(meldungEl, meldung) {
@@ -92,6 +94,7 @@ function zeichnen(meldungEl, meldung) {
     haendlerVerlauf: verlauf,
     haendlerNamen: Object.fromEntries(haendler.map((h) => [h.id, h.name])),
     heute,
+    abwesenheiten: settings.abwesenheiten,
     onMove: (haendlerId, w, t) => {
       const quelleWoche = plan.wochen.findIndex((x) =>
         x.tage.some((y) => (y.termine ?? []).some((z) => z.haendlerId === haendlerId)));
@@ -196,6 +199,16 @@ function zeigeInfoVerteilung() {
 
 let postfach = { mails: [] };
 
+function zeigeAbwesenheiten() {
+  rendereAbwesenheiten(document.getElementById('abwesenheiten'), plan, settings.abwesenheiten, {
+    onAendern: (abw) => {
+      settings = { ...settings, abwesenheiten: abw };
+      speicher.speichere('einstellungen', settings);
+      neuPlanen();
+    },
+  });
+}
+
 async function starten() {
   [haendler, hotels, wissensbasis, bausteine, scorecard, postfach, themenAnhaenge] = await Promise.all([
     fetch('daten/haendler-demo.json').then((r) => r.json()),
@@ -210,6 +223,7 @@ async function starten() {
   rendereEinstellungen(document.getElementById('einstellungen'), settings, {
     onSpeichern: (neu) => { settings = neu; speicher.speichere('einstellungen', settings); neuPlanen(); },
   });
+  zeigeAbwesenheiten();
   plan = speicher.lade('plan', null);
   if (plan) zeichnen(); else neuPlanen();
   rendereBerichtFormular(document.getElementById('bericht'), berichtFreigeben);
