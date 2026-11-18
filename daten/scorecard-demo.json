@@ -2,57 +2,137 @@
   "haendler": [
     {
       "id": "DEU1M151",
-      "wkr": { "tier": 1, "quoteProzent": 42 },
-      "wischerdisplay": { "bestellt": false, "datum": null },
-      "afsb": { "status": "Silber", "punkteBisGold": 35 },
+      "wkr": {
+        "tier": 1,
+        "quoteProzent": 42
+      },
+      "wischerdisplay": {
+        "bestellt": false,
+        "datum": null
+      },
+      "afsb": {
+        "status": "Silber",
+        "punkteBisGold": 35
+      },
       "parkplatz": {
-        "stp": { "punkte": 120, "praemie": "Ford-Rucksack" },
-        "tva": { "letzterStand": "2026-09-30" },
-        "zaBefreiung": { "befreit": false }
+        "stp": {
+          "punkte": 120,
+          "praemie": "Ford-Rucksack"
+        },
+        "tva": {
+          "letzterStand": "2026-09-30"
+        },
+        "zaBefreiung": {
+          "befreit": false
+        }
       }
     },
     {
-      "id": "DEU3M187",
-      "wkr": { "tier": 2, "quoteProzent": 61 },
-      "wischerdisplay": { "bestellt": true, "datum": "2026-09-15" },
-      "afsb": { "status": "Gold", "punkteBisGold": 0 },
+      "id": "DEU3M271",
+      "wkr": {
+        "tier": 2,
+        "quoteProzent": 61
+      },
+      "wischerdisplay": {
+        "bestellt": true,
+        "datum": "2026-09-15"
+      },
+      "afsb": {
+        "status": "Gold",
+        "punkteBisGold": 0
+      },
       "parkplatz": {
-        "stp": { "punkte": 340, "praemie": "Werkstatt-Set" },
-        "tva": { "letzterStand": "2026-10-31" },
-        "zaBefreiung": { "befreit": true }
+        "stp": {
+          "punkte": 340,
+          "praemie": "Werkstatt-Set"
+        },
+        "tva": {
+          "letzterStand": "2026-10-31"
+        },
+        "zaBefreiung": {
+          "befreit": true
+        }
       }
     },
     {
-      "id": "DEU2M169",
-      "wkr": { "tier": 3, "quoteProzent": 78 },
-      "wischerdisplay": { "bestellt": true, "datum": "2026-08-02" },
-      "afsb": { "status": "Gold", "punkteBisGold": 0 },
+      "id": "DEU2M211",
+      "wkr": {
+        "tier": 3,
+        "quoteProzent": 78
+      },
+      "wischerdisplay": {
+        "bestellt": true,
+        "datum": "2026-08-02"
+      },
+      "afsb": {
+        "status": "Gold",
+        "punkteBisGold": 0
+      },
       "parkplatz": {
-        "stp": { "punkte": 500, "praemie": "Gutschein" },
-        "tva": { "letzterStand": "2026-11-05" },
-        "zaBefreiung": { "befreit": false }
+        "stp": {
+          "punkte": 500,
+          "praemie": "Gutschein"
+        },
+        "tva": {
+          "letzterStand": "2026-11-05"
+        },
+        "zaBefreiung": {
+          "befreit": false
+        }
       }
     },
     {
-      "id": "DEU4M205",
-      "wkr": { "tier": 2, "quoteProzent": 53 },
-      "wischerdisplay": { "bestellt": false, "datum": null },
-      "afsb": { "status": "Bronze", "punkteBisGold": 80 },
+      "id": "DEU4M331",
+      "wkr": {
+        "tier": 2,
+        "quoteProzent": 53
+      },
+      "wischerdisplay": {
+        "bestellt": false,
+        "datum": null
+      },
+      "afsb": {
+        "status": "Bronze",
+        "punkteBisGold": 80
+      },
       "parkplatz": {
-        "stp": { "punkte": 60, "praemie": "keine" },
-        "tva": { "letzterStand": "2026-07-14" },
-        "zaBefreiung": { "befreit": false }
+        "stp": {
+          "punkte": 60,
+          "praemie": "keine"
+        },
+        "tva": {
+          "letzterStand": "2026-07-14"
+        },
+        "zaBefreiung": {
+          "befreit": false
+        }
       }
     },
     {
-      "id": "DEU5M223",
-      "wkr": { "tier": 4, "quoteProzent": 85 },
-      "wischerdisplay": { "bestellt": false, "datum": null },
-      "afsb": { "status": "Silber", "punkteBisGold": 20 },
+      "id": "DEU5M391",
+      "wkr": {
+        "tier": 4,
+        "quoteProzent": 85
+      },
+      "wischerdisplay": {
+        "bestellt": false,
+        "datum": null
+      },
+      "afsb": {
+        "status": "Silber",
+        "punkteBisGold": 20
+      },
       "parkplatz": {
-        "stp": { "punkte": 210, "praemie": "Zubehör-Paket" },
-        "tva": { "letzterStand": "2026-10-12" },
-        "zaBefreiung": { "befreit": true }
+        "stp": {
+          "punkte": 210,
+          "praemie": "Zubehör-Paket"
+        },
+        "tva": {
+          "letzterStand": "2026-10-12"
+        },
+        "zaBefreiung": {
+          "befreit": true
+        }
       }
     }
   ]

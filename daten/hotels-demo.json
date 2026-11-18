@@ -1,112 +1,1442 @@
 [
-  {
-    "id": "H00",
-    "name": "Hotel Stadtkreis A",
-    "ort": "Musterstadt-Stadtkreis",
-    "pos": {
-      "x": 2,
-      "y": -1
-    },
-    "region": 0,
-    "preisNacht": 85
+ {
+  "id": "HD01-0A",
+  "name": "Hotel D01-0 A",
+  "ort": "Musterstadt-D01",
+  "pos": {
+   "x": 72.2,
+   "y": 11.6
   },
-  {
-    "id": "H01",
-    "name": "Hotel Stadtkreis B",
-    "ort": "Musterstadt-Stadtkreis",
-    "pos": {
-      "x": 3,
-      "y": 2
-    },
-    "region": 0,
-    "preisNacht": 96
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD01-0B",
+  "name": "Hotel D01-0 B",
+  "ort": "Musterstadt-D01",
+  "pos": {
+   "x": 73.4,
+   "y": 12.8
   },
-  {
-    "id": "H10",
-    "name": "Hotel Ostkreis A",
-    "ort": "Musterstadt-Ostkreis",
-    "pos": {
-      "x": 42,
-      "y": -1
-    },
-    "region": 1,
-    "preisNacht": 92
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD01-1A",
+  "name": "Hotel D01-1 A",
+  "ort": "Musterstadt-D01",
+  "pos": {
+   "x": 84.2,
+   "y": 11.6
   },
-  {
-    "id": "H11",
-    "name": "Hotel Ostkreis B",
-    "ort": "Musterstadt-Ostkreis",
-    "pos": {
-      "x": 43,
-      "y": 2
-    },
-    "region": 1,
-    "preisNacht": 103
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD01-1B",
+  "name": "Hotel D01-1 B",
+  "ort": "Musterstadt-D01",
+  "pos": {
+   "x": 85.4,
+   "y": 12.8
   },
-  {
-    "id": "H20",
-    "name": "Hotel Südkreis A",
-    "ort": "Musterstadt-Südkreis",
-    "pos": {
-      "x": 2,
-      "y": 39
-    },
-    "region": 2,
-    "preisNacht": 99
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD01-2A",
+  "name": "Hotel D01-2 A",
+  "ort": "Musterstadt-D01",
+  "pos": {
+   "x": 96.2,
+   "y": 11.6
   },
-  {
-    "id": "H21",
-    "name": "Hotel Südkreis B",
-    "ort": "Musterstadt-Südkreis",
-    "pos": {
-      "x": 3,
-      "y": 42
-    },
-    "region": 2,
-    "preisNacht": 110
+  "region": 2,
+  "obg": "D01",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD01-2B",
+  "name": "Hotel D01-2 B",
+  "ort": "Musterstadt-D01",
+  "pos": {
+   "x": 97.4,
+   "y": 12.8
   },
-  {
-    "id": "H30",
-    "name": "Hotel Westkreis A",
-    "ort": "Musterstadt-Westkreis",
-    "pos": {
-      "x": 42,
-      "y": 39
-    },
-    "region": 3,
-    "preisNacht": 106
+  "region": 2,
+  "obg": "D01",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD01-3A",
+  "name": "Hotel D01-3 A",
+  "ort": "Musterstadt-D01",
+  "pos": {
+   "x": 72.2,
+   "y": 23.6
   },
-  {
-    "id": "H31",
-    "name": "Hotel Westkreis B",
-    "ort": "Musterstadt-Westkreis",
-    "pos": {
-      "x": 43,
-      "y": 42
-    },
-    "region": 3,
-    "preisNacht": 117
+  "region": 3,
+  "obg": "D01",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD01-3B",
+  "name": "Hotel D01-3 B",
+  "ort": "Musterstadt-D01",
+  "pos": {
+   "x": 73.4,
+   "y": 24.8
   },
-  {
-    "id": "H40",
-    "name": "Hotel Zentrum A",
-    "ort": "Musterstadt-Zentrum",
-    "pos": {
-      "x": 22,
-      "y": 19
-    },
-    "region": 4,
-    "preisNacht": 113
+  "region": 3,
+  "obg": "D01",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD01-4A",
+  "name": "Hotel D01-4 A",
+  "ort": "Musterstadt-D01",
+  "pos": {
+   "x": 84.2,
+   "y": 23.6
   },
-  {
-    "id": "H41",
-    "name": "Hotel Zentrum B",
-    "ort": "Musterstadt-Zentrum",
-    "pos": {
-      "x": 23,
-      "y": 22
-    },
-    "region": 4,
-    "preisNacht": 124
-  }
+  "region": 4,
+  "obg": "D01",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD01-4B",
+  "name": "Hotel D01-4 B",
+  "ort": "Musterstadt-D01",
+  "pos": {
+   "x": 85.4,
+   "y": 24.8
+  },
+  "region": 4,
+  "obg": "D01",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD02-0A",
+  "name": "Hotel D02-0 A",
+  "ort": "Musterstadt-D02",
+  "pos": {
+   "x": 132.2,
+   "y": 11.6
+  },
+  "region": 0,
+  "obg": "D02",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD02-0B",
+  "name": "Hotel D02-0 B",
+  "ort": "Musterstadt-D02",
+  "pos": {
+   "x": 133.4,
+   "y": 12.8
+  },
+  "region": 0,
+  "obg": "D02",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD02-1A",
+  "name": "Hotel D02-1 A",
+  "ort": "Musterstadt-D02",
+  "pos": {
+   "x": 144.2,
+   "y": 11.6
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD02-1B",
+  "name": "Hotel D02-1 B",
+  "ort": "Musterstadt-D02",
+  "pos": {
+   "x": 145.4,
+   "y": 12.8
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD02-2A",
+  "name": "Hotel D02-2 A",
+  "ort": "Musterstadt-D02",
+  "pos": {
+   "x": 156.2,
+   "y": 11.6
+  },
+  "region": 2,
+  "obg": "D02",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD02-2B",
+  "name": "Hotel D02-2 B",
+  "ort": "Musterstadt-D02",
+  "pos": {
+   "x": 157.4,
+   "y": 12.8
+  },
+  "region": 2,
+  "obg": "D02",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD02-3A",
+  "name": "Hotel D02-3 A",
+  "ort": "Musterstadt-D02",
+  "pos": {
+   "x": 132.2,
+   "y": 23.6
+  },
+  "region": 3,
+  "obg": "D02",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD02-3B",
+  "name": "Hotel D02-3 B",
+  "ort": "Musterstadt-D02",
+  "pos": {
+   "x": 133.4,
+   "y": 24.8
+  },
+  "region": 3,
+  "obg": "D02",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD02-4A",
+  "name": "Hotel D02-4 A",
+  "ort": "Musterstadt-D02",
+  "pos": {
+   "x": 144.2,
+   "y": 23.6
+  },
+  "region": 4,
+  "obg": "D02",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD02-4B",
+  "name": "Hotel D02-4 B",
+  "ort": "Musterstadt-D02",
+  "pos": {
+   "x": 145.4,
+   "y": 24.8
+  },
+  "region": 4,
+  "obg": "D02",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD03-0A",
+  "name": "Hotel D03-0 A",
+  "ort": "Musterstadt-D03",
+  "pos": {
+   "x": 192.2,
+   "y": 11.6
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD03-0B",
+  "name": "Hotel D03-0 B",
+  "ort": "Musterstadt-D03",
+  "pos": {
+   "x": 193.4,
+   "y": 12.8
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD03-1A",
+  "name": "Hotel D03-1 A",
+  "ort": "Musterstadt-D03",
+  "pos": {
+   "x": 204.2,
+   "y": 11.6
+  },
+  "region": 1,
+  "obg": "D03",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD03-1B",
+  "name": "Hotel D03-1 B",
+  "ort": "Musterstadt-D03",
+  "pos": {
+   "x": 205.4,
+   "y": 12.8
+  },
+  "region": 1,
+  "obg": "D03",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD03-2A",
+  "name": "Hotel D03-2 A",
+  "ort": "Musterstadt-D03",
+  "pos": {
+   "x": 216.2,
+   "y": 11.6
+  },
+  "region": 2,
+  "obg": "D03",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD03-2B",
+  "name": "Hotel D03-2 B",
+  "ort": "Musterstadt-D03",
+  "pos": {
+   "x": 217.4,
+   "y": 12.8
+  },
+  "region": 2,
+  "obg": "D03",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD03-3A",
+  "name": "Hotel D03-3 A",
+  "ort": "Musterstadt-D03",
+  "pos": {
+   "x": 192.2,
+   "y": 23.6
+  },
+  "region": 3,
+  "obg": "D03",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD03-3B",
+  "name": "Hotel D03-3 B",
+  "ort": "Musterstadt-D03",
+  "pos": {
+   "x": 193.4,
+   "y": 24.8
+  },
+  "region": 3,
+  "obg": "D03",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD03-4A",
+  "name": "Hotel D03-4 A",
+  "ort": "Musterstadt-D03",
+  "pos": {
+   "x": 204.2,
+   "y": 23.6
+  },
+  "region": 4,
+  "obg": "D03",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD03-4B",
+  "name": "Hotel D03-4 B",
+  "ort": "Musterstadt-D03",
+  "pos": {
+   "x": 205.4,
+   "y": 24.8
+  },
+  "region": 4,
+  "obg": "D03",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD04-0A",
+  "name": "Hotel D04-0 A",
+  "ort": "Musterstadt-D04",
+  "pos": {
+   "x": 12.2,
+   "y": 11.6
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD04-0B",
+  "name": "Hotel D04-0 B",
+  "ort": "Musterstadt-D04",
+  "pos": {
+   "x": 13.4,
+   "y": 12.8
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD04-1A",
+  "name": "Hotel D04-1 A",
+  "ort": "Musterstadt-D04",
+  "pos": {
+   "x": 24.2,
+   "y": 11.6
+  },
+  "region": 1,
+  "obg": "D04",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD04-1B",
+  "name": "Hotel D04-1 B",
+  "ort": "Musterstadt-D04",
+  "pos": {
+   "x": 25.4,
+   "y": 12.8
+  },
+  "region": 1,
+  "obg": "D04",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD04-2A",
+  "name": "Hotel D04-2 A",
+  "ort": "Musterstadt-D04",
+  "pos": {
+   "x": 36.2,
+   "y": 11.6
+  },
+  "region": 2,
+  "obg": "D04",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD04-2B",
+  "name": "Hotel D04-2 B",
+  "ort": "Musterstadt-D04",
+  "pos": {
+   "x": 37.4,
+   "y": 12.8
+  },
+  "region": 2,
+  "obg": "D04",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD04-3A",
+  "name": "Hotel D04-3 A",
+  "ort": "Musterstadt-D04",
+  "pos": {
+   "x": 12.2,
+   "y": 23.6
+  },
+  "region": 3,
+  "obg": "D04",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD04-3B",
+  "name": "Hotel D04-3 B",
+  "ort": "Musterstadt-D04",
+  "pos": {
+   "x": 13.4,
+   "y": 24.8
+  },
+  "region": 3,
+  "obg": "D04",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD04-4A",
+  "name": "Hotel D04-4 A",
+  "ort": "Musterstadt-D04",
+  "pos": {
+   "x": 24.2,
+   "y": 23.6
+  },
+  "region": 4,
+  "obg": "D04",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD04-4B",
+  "name": "Hotel D04-4 B",
+  "ort": "Musterstadt-D04",
+  "pos": {
+   "x": 25.4,
+   "y": 24.8
+  },
+  "region": 4,
+  "obg": "D04",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD05-0A",
+  "name": "Hotel D05-0 A",
+  "ort": "Musterstadt-D05",
+  "pos": {
+   "x": 72.2,
+   "y": 71.6
+  },
+  "region": 0,
+  "obg": "D05",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD05-0B",
+  "name": "Hotel D05-0 B",
+  "ort": "Musterstadt-D05",
+  "pos": {
+   "x": 73.4,
+   "y": 72.8
+  },
+  "region": 0,
+  "obg": "D05",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD05-1A",
+  "name": "Hotel D05-1 A",
+  "ort": "Musterstadt-D05",
+  "pos": {
+   "x": 84.2,
+   "y": 71.6
+  },
+  "region": 1,
+  "obg": "D05",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD05-1B",
+  "name": "Hotel D05-1 B",
+  "ort": "Musterstadt-D05",
+  "pos": {
+   "x": 85.4,
+   "y": 72.8
+  },
+  "region": 1,
+  "obg": "D05",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD05-2A",
+  "name": "Hotel D05-2 A",
+  "ort": "Musterstadt-D05",
+  "pos": {
+   "x": 96.2,
+   "y": 71.6
+  },
+  "region": 2,
+  "obg": "D05",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD05-2B",
+  "name": "Hotel D05-2 B",
+  "ort": "Musterstadt-D05",
+  "pos": {
+   "x": 97.4,
+   "y": 72.8
+  },
+  "region": 2,
+  "obg": "D05",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD05-3A",
+  "name": "Hotel D05-3 A",
+  "ort": "Musterstadt-D05",
+  "pos": {
+   "x": 72.2,
+   "y": 83.6
+  },
+  "region": 3,
+  "obg": "D05",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD05-3B",
+  "name": "Hotel D05-3 B",
+  "ort": "Musterstadt-D05",
+  "pos": {
+   "x": 73.4,
+   "y": 84.8
+  },
+  "region": 3,
+  "obg": "D05",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD05-4A",
+  "name": "Hotel D05-4 A",
+  "ort": "Musterstadt-D05",
+  "pos": {
+   "x": 84.2,
+   "y": 83.6
+  },
+  "region": 4,
+  "obg": "D05",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD05-4B",
+  "name": "Hotel D05-4 B",
+  "ort": "Musterstadt-D05",
+  "pos": {
+   "x": 85.4,
+   "y": 84.8
+  },
+  "region": 4,
+  "obg": "D05",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD06-0A",
+  "name": "Hotel D06-0 A",
+  "ort": "Musterstadt-D06",
+  "pos": {
+   "x": 132.2,
+   "y": 71.6
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD06-0B",
+  "name": "Hotel D06-0 B",
+  "ort": "Musterstadt-D06",
+  "pos": {
+   "x": 133.4,
+   "y": 72.8
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD06-1A",
+  "name": "Hotel D06-1 A",
+  "ort": "Musterstadt-D06",
+  "pos": {
+   "x": 144.2,
+   "y": 71.6
+  },
+  "region": 1,
+  "obg": "D06",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD06-1B",
+  "name": "Hotel D06-1 B",
+  "ort": "Musterstadt-D06",
+  "pos": {
+   "x": 145.4,
+   "y": 72.8
+  },
+  "region": 1,
+  "obg": "D06",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD06-2A",
+  "name": "Hotel D06-2 A",
+  "ort": "Musterstadt-D06",
+  "pos": {
+   "x": 156.2,
+   "y": 71.6
+  },
+  "region": 2,
+  "obg": "D06",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD06-2B",
+  "name": "Hotel D06-2 B",
+  "ort": "Musterstadt-D06",
+  "pos": {
+   "x": 157.4,
+   "y": 72.8
+  },
+  "region": 2,
+  "obg": "D06",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD06-3A",
+  "name": "Hotel D06-3 A",
+  "ort": "Musterstadt-D06",
+  "pos": {
+   "x": 132.2,
+   "y": 83.6
+  },
+  "region": 3,
+  "obg": "D06",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD06-3B",
+  "name": "Hotel D06-3 B",
+  "ort": "Musterstadt-D06",
+  "pos": {
+   "x": 133.4,
+   "y": 84.8
+  },
+  "region": 3,
+  "obg": "D06",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD06-4A",
+  "name": "Hotel D06-4 A",
+  "ort": "Musterstadt-D06",
+  "pos": {
+   "x": 144.2,
+   "y": 83.6
+  },
+  "region": 4,
+  "obg": "D06",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD06-4B",
+  "name": "Hotel D06-4 B",
+  "ort": "Musterstadt-D06",
+  "pos": {
+   "x": 145.4,
+   "y": 84.8
+  },
+  "region": 4,
+  "obg": "D06",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD07-0A",
+  "name": "Hotel D07-0 A",
+  "ort": "Musterstadt-D07",
+  "pos": {
+   "x": 192.2,
+   "y": 71.6
+  },
+  "region": 0,
+  "obg": "D07",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD07-0B",
+  "name": "Hotel D07-0 B",
+  "ort": "Musterstadt-D07",
+  "pos": {
+   "x": 193.4,
+   "y": 72.8
+  },
+  "region": 0,
+  "obg": "D07",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD07-1A",
+  "name": "Hotel D07-1 A",
+  "ort": "Musterstadt-D07",
+  "pos": {
+   "x": 204.2,
+   "y": 71.6
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD07-1B",
+  "name": "Hotel D07-1 B",
+  "ort": "Musterstadt-D07",
+  "pos": {
+   "x": 205.4,
+   "y": 72.8
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD07-2A",
+  "name": "Hotel D07-2 A",
+  "ort": "Musterstadt-D07",
+  "pos": {
+   "x": 216.2,
+   "y": 71.6
+  },
+  "region": 2,
+  "obg": "D07",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD07-2B",
+  "name": "Hotel D07-2 B",
+  "ort": "Musterstadt-D07",
+  "pos": {
+   "x": 217.4,
+   "y": 72.8
+  },
+  "region": 2,
+  "obg": "D07",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD07-3A",
+  "name": "Hotel D07-3 A",
+  "ort": "Musterstadt-D07",
+  "pos": {
+   "x": 192.2,
+   "y": 83.6
+  },
+  "region": 3,
+  "obg": "D07",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD07-3B",
+  "name": "Hotel D07-3 B",
+  "ort": "Musterstadt-D07",
+  "pos": {
+   "x": 193.4,
+   "y": 84.8
+  },
+  "region": 3,
+  "obg": "D07",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD07-4A",
+  "name": "Hotel D07-4 A",
+  "ort": "Musterstadt-D07",
+  "pos": {
+   "x": 204.2,
+   "y": 83.6
+  },
+  "region": 4,
+  "obg": "D07",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD07-4B",
+  "name": "Hotel D07-4 B",
+  "ort": "Musterstadt-D07",
+  "pos": {
+   "x": 205.4,
+   "y": 84.8
+  },
+  "region": 4,
+  "obg": "D07",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD08-0A",
+  "name": "Hotel D08-0 A",
+  "ort": "Musterstadt-D08",
+  "pos": {
+   "x": 12.2,
+   "y": 71.6
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD08-0B",
+  "name": "Hotel D08-0 B",
+  "ort": "Musterstadt-D08",
+  "pos": {
+   "x": 13.4,
+   "y": 72.8
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD08-1A",
+  "name": "Hotel D08-1 A",
+  "ort": "Musterstadt-D08",
+  "pos": {
+   "x": 24.2,
+   "y": 71.6
+  },
+  "region": 1,
+  "obg": "D08",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD08-1B",
+  "name": "Hotel D08-1 B",
+  "ort": "Musterstadt-D08",
+  "pos": {
+   "x": 25.4,
+   "y": 72.8
+  },
+  "region": 1,
+  "obg": "D08",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD08-2A",
+  "name": "Hotel D08-2 A",
+  "ort": "Musterstadt-D08",
+  "pos": {
+   "x": 36.2,
+   "y": 71.6
+  },
+  "region": 2,
+  "obg": "D08",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD08-2B",
+  "name": "Hotel D08-2 B",
+  "ort": "Musterstadt-D08",
+  "pos": {
+   "x": 37.4,
+   "y": 72.8
+  },
+  "region": 2,
+  "obg": "D08",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD08-3A",
+  "name": "Hotel D08-3 A",
+  "ort": "Musterstadt-D08",
+  "pos": {
+   "x": 12.2,
+   "y": 83.6
+  },
+  "region": 3,
+  "obg": "D08",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD08-3B",
+  "name": "Hotel D08-3 B",
+  "ort": "Musterstadt-D08",
+  "pos": {
+   "x": 13.4,
+   "y": 84.8
+  },
+  "region": 3,
+  "obg": "D08",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD08-4A",
+  "name": "Hotel D08-4 A",
+  "ort": "Musterstadt-D08",
+  "pos": {
+   "x": 24.2,
+   "y": 83.6
+  },
+  "region": 4,
+  "obg": "D08",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD08-4B",
+  "name": "Hotel D08-4 B",
+  "ort": "Musterstadt-D08",
+  "pos": {
+   "x": 25.4,
+   "y": 84.8
+  },
+  "region": 4,
+  "obg": "D08",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD09-0A",
+  "name": "Hotel D09-0 A",
+  "ort": "Musterstadt-D09",
+  "pos": {
+   "x": 72.2,
+   "y": 131.6
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD09-0B",
+  "name": "Hotel D09-0 B",
+  "ort": "Musterstadt-D09",
+  "pos": {
+   "x": 73.4,
+   "y": 132.8
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD09-1A",
+  "name": "Hotel D09-1 A",
+  "ort": "Musterstadt-D09",
+  "pos": {
+   "x": 84.2,
+   "y": 131.6
+  },
+  "region": 1,
+  "obg": "D09",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD09-1B",
+  "name": "Hotel D09-1 B",
+  "ort": "Musterstadt-D09",
+  "pos": {
+   "x": 85.4,
+   "y": 132.8
+  },
+  "region": 1,
+  "obg": "D09",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD09-2A",
+  "name": "Hotel D09-2 A",
+  "ort": "Musterstadt-D09",
+  "pos": {
+   "x": 96.2,
+   "y": 131.6
+  },
+  "region": 2,
+  "obg": "D09",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD09-2B",
+  "name": "Hotel D09-2 B",
+  "ort": "Musterstadt-D09",
+  "pos": {
+   "x": 97.4,
+   "y": 132.8
+  },
+  "region": 2,
+  "obg": "D09",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD09-3A",
+  "name": "Hotel D09-3 A",
+  "ort": "Musterstadt-D09",
+  "pos": {
+   "x": 72.2,
+   "y": 143.6
+  },
+  "region": 3,
+  "obg": "D09",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD09-3B",
+  "name": "Hotel D09-3 B",
+  "ort": "Musterstadt-D09",
+  "pos": {
+   "x": 73.4,
+   "y": 144.8
+  },
+  "region": 3,
+  "obg": "D09",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD09-4A",
+  "name": "Hotel D09-4 A",
+  "ort": "Musterstadt-D09",
+  "pos": {
+   "x": 84.2,
+   "y": 143.6
+  },
+  "region": 4,
+  "obg": "D09",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD09-4B",
+  "name": "Hotel D09-4 B",
+  "ort": "Musterstadt-D09",
+  "pos": {
+   "x": 85.4,
+   "y": 144.8
+  },
+  "region": 4,
+  "obg": "D09",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD10-0A",
+  "name": "Hotel D10-0 A",
+  "ort": "Musterstadt-D10",
+  "pos": {
+   "x": 132.2,
+   "y": 131.6
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD10-0B",
+  "name": "Hotel D10-0 B",
+  "ort": "Musterstadt-D10",
+  "pos": {
+   "x": 133.4,
+   "y": 132.8
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD10-1A",
+  "name": "Hotel D10-1 A",
+  "ort": "Musterstadt-D10",
+  "pos": {
+   "x": 144.2,
+   "y": 131.6
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD10-1B",
+  "name": "Hotel D10-1 B",
+  "ort": "Musterstadt-D10",
+  "pos": {
+   "x": 145.4,
+   "y": 132.8
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD10-2A",
+  "name": "Hotel D10-2 A",
+  "ort": "Musterstadt-D10",
+  "pos": {
+   "x": 156.2,
+   "y": 131.6
+  },
+  "region": 2,
+  "obg": "D10",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD10-2B",
+  "name": "Hotel D10-2 B",
+  "ort": "Musterstadt-D10",
+  "pos": {
+   "x": 157.4,
+   "y": 132.8
+  },
+  "region": 2,
+  "obg": "D10",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD10-3A",
+  "name": "Hotel D10-3 A",
+  "ort": "Musterstadt-D10",
+  "pos": {
+   "x": 132.2,
+   "y": 143.6
+  },
+  "region": 3,
+  "obg": "D10",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD10-3B",
+  "name": "Hotel D10-3 B",
+  "ort": "Musterstadt-D10",
+  "pos": {
+   "x": 133.4,
+   "y": 144.8
+  },
+  "region": 3,
+  "obg": "D10",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD10-4A",
+  "name": "Hotel D10-4 A",
+  "ort": "Musterstadt-D10",
+  "pos": {
+   "x": 144.2,
+   "y": 143.6
+  },
+  "region": 4,
+  "obg": "D10",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD10-4B",
+  "name": "Hotel D10-4 B",
+  "ort": "Musterstadt-D10",
+  "pos": {
+   "x": 145.4,
+   "y": 144.8
+  },
+  "region": 4,
+  "obg": "D10",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD11-0A",
+  "name": "Hotel D11-0 A",
+  "ort": "Musterstadt-D11",
+  "pos": {
+   "x": 192.2,
+   "y": 131.6
+  },
+  "region": 0,
+  "obg": "D11",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD11-0B",
+  "name": "Hotel D11-0 B",
+  "ort": "Musterstadt-D11",
+  "pos": {
+   "x": 193.4,
+   "y": 132.8
+  },
+  "region": 0,
+  "obg": "D11",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD11-1A",
+  "name": "Hotel D11-1 A",
+  "ort": "Musterstadt-D11",
+  "pos": {
+   "x": 204.2,
+   "y": 131.6
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD11-1B",
+  "name": "Hotel D11-1 B",
+  "ort": "Musterstadt-D11",
+  "pos": {
+   "x": 205.4,
+   "y": 132.8
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD11-2A",
+  "name": "Hotel D11-2 A",
+  "ort": "Musterstadt-D11",
+  "pos": {
+   "x": 216.2,
+   "y": 131.6
+  },
+  "region": 2,
+  "obg": "D11",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD11-2B",
+  "name": "Hotel D11-2 B",
+  "ort": "Musterstadt-D11",
+  "pos": {
+   "x": 217.4,
+   "y": 132.8
+  },
+  "region": 2,
+  "obg": "D11",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD11-3A",
+  "name": "Hotel D11-3 A",
+  "ort": "Musterstadt-D11",
+  "pos": {
+   "x": 192.2,
+   "y": 143.6
+  },
+  "region": 3,
+  "obg": "D11",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD11-3B",
+  "name": "Hotel D11-3 B",
+  "ort": "Musterstadt-D11",
+  "pos": {
+   "x": 193.4,
+   "y": 144.8
+  },
+  "region": 3,
+  "obg": "D11",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD11-4A",
+  "name": "Hotel D11-4 A",
+  "ort": "Musterstadt-D11",
+  "pos": {
+   "x": 204.2,
+   "y": 143.6
+  },
+  "region": 4,
+  "obg": "D11",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD11-4B",
+  "name": "Hotel D11-4 B",
+  "ort": "Musterstadt-D11",
+  "pos": {
+   "x": 205.4,
+   "y": 144.8
+  },
+  "region": 4,
+  "obg": "D11",
+  "preisNacht": 102
+ },
+ {
+  "id": "HD12-0A",
+  "name": "Hotel D12-0 A",
+  "ort": "Musterstadt-D12",
+  "pos": {
+   "x": 12.2,
+   "y": 131.6
+  },
+  "region": 0,
+  "obg": "D12",
+  "preisNacht": 80
+ },
+ {
+  "id": "HD12-0B",
+  "name": "Hotel D12-0 B",
+  "ort": "Musterstadt-D12",
+  "pos": {
+   "x": 13.4,
+   "y": 132.8
+  },
+  "region": 0,
+  "obg": "D12",
+  "preisNacht": 90
+ },
+ {
+  "id": "HD12-1A",
+  "name": "Hotel D12-1 A",
+  "ort": "Musterstadt-D12",
+  "pos": {
+   "x": 24.2,
+   "y": 131.6
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 83
+ },
+ {
+  "id": "HD12-1B",
+  "name": "Hotel D12-1 B",
+  "ort": "Musterstadt-D12",
+  "pos": {
+   "x": 25.4,
+   "y": 132.8
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 93
+ },
+ {
+  "id": "HD12-2A",
+  "name": "Hotel D12-2 A",
+  "ort": "Musterstadt-D12",
+  "pos": {
+   "x": 36.2,
+   "y": 131.6
+  },
+  "region": 2,
+  "obg": "D12",
+  "preisNacht": 86
+ },
+ {
+  "id": "HD12-2B",
+  "name": "Hotel D12-2 B",
+  "ort": "Musterstadt-D12",
+  "pos": {
+   "x": 37.4,
+   "y": 132.8
+  },
+  "region": 2,
+  "obg": "D12",
+  "preisNacht": 96
+ },
+ {
+  "id": "HD12-3A",
+  "name": "Hotel D12-3 A",
+  "ort": "Musterstadt-D12",
+  "pos": {
+   "x": 12.2,
+   "y": 143.6
+  },
+  "region": 3,
+  "obg": "D12",
+  "preisNacht": 89
+ },
+ {
+  "id": "HD12-3B",
+  "name": "Hotel D12-3 B",
+  "ort": "Musterstadt-D12",
+  "pos": {
+   "x": 13.4,
+   "y": 144.8
+  },
+  "region": 3,
+  "obg": "D12",
+  "preisNacht": 99
+ },
+ {
+  "id": "HD12-4A",
+  "name": "Hotel D12-4 A",
+  "ort": "Musterstadt-D12",
+  "pos": {
+   "x": 24.2,
+   "y": 143.6
+  },
+  "region": 4,
+  "obg": "D12",
+  "preisNacht": 92
+ },
+ {
+  "id": "HD12-4B",
+  "name": "Hotel D12-4 B",
+  "ort": "Musterstadt-D12",
+  "pos": {
+   "x": 25.4,
+   "y": 144.8
+  },
+  "region": 4,
+  "obg": "D12",
+  "preisNacht": 102
+ }
 ]

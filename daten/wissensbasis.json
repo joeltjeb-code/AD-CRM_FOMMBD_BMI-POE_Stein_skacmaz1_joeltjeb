@@ -2,47 +2,113 @@
   "akten": [
     {
       "haendlerId": "DEU1M151",
-      "stammdaten": { "name": "Autohaus Beispiel Süd", "anrede": "Frau Musterfrau (GF1)" },
+      "stammdaten": {
+        "name": "Autohaus Beispiel Süd",
+        "anrede": "Frau Musterfrau (GF1)"
+      },
       "persoenlicheNotizen": [
-        { "datum": "2026-10-05", "text": "Geburtstag: 14. April", "kind": "geburtstag", "tag": "04-14" },
-        { "datum": "2026-10-05", "text": "Interesse an Triathlons, Frau Musterfrau fährt E-Bike" }
+        {
+          "datum": "2026-10-05",
+          "text": "Geburtstag: 14. April",
+          "kind": "geburtstag",
+          "tag": "04-14"
+        },
+        {
+          "datum": "2026-10-05",
+          "text": "Interesse an Triathlons, Frau Musterfrau fährt E-Bike"
+        }
       ],
       "besuchHistorie": [
-        { "terminId": "t-001", "datum": "2026-10-05", "teilnehmer": ["Frau Musterfrau"],
-          "themen": ["WKR-Kampagne"],
-          "kernpunkte": ["Interesse an Wischerdisplay geäußert", "WKR-Quote unter Ziel"] }
+        {
+          "terminId": "t-001",
+          "datum": "2026-10-05",
+          "teilnehmer": [
+            "Frau Musterfrau"
+          ],
+          "themen": [
+            "WKR-Kampagne"
+          ],
+          "kernpunkte": [
+            "Interesse an Wischerdisplay geäußert",
+            "WKR-Quote unter Ziel"
+          ]
+        }
       ],
       "offeneMassnahmen": [
-        { "titel": "TVA-Rückmeldung", "beschreibung": "TVA nach Gespräch erläutern",
-          "verantwortlich": "Frau Musterfrau", "frist": "2026-12-01", "status": "offen" }
+        {
+          "titel": "TVA-Rückmeldung",
+          "beschreibung": "TVA nach Gespräch erläutern",
+          "verantwortlich": "Frau Musterfrau",
+          "frist": "2026-12-01",
+          "status": "offen"
+        }
       ],
-      "prioThemen": ["wkr", "wischerdisplay"],
+      "prioThemen": [
+        "wkr",
+        "wischerdisplay"
+      ],
       "folgeterminKadenzWochen": 6
     },
     {
-      "haendlerId": "DEU3M187",
-      "stammdaten": { "name": "Autohaus Musterbach", "anrede": "Herr Mustermann (GF1)" },
+      "haendlerId": "DEU3M271",
+      "stammdaten": {
+        "name": "Autohaus Musterbach",
+        "anrede": "Herr Mustermann (GF1)"
+      },
       "persoenlicheNotizen": [
-        { "datum": "2026-09-12", "text": "Hund Berti, gerne ansprechen" }
+        {
+          "datum": "2026-09-12",
+          "text": "Hund Berti, gerne ansprechen"
+        }
       ],
       "besuchHistorie": [
-        { "terminId": "t-002", "datum": "2026-09-12", "teilnehmer": ["Herr Mustermann"],
-          "themen": ["Bremsen"],
-          "kernpunkte": ["Bremsen-Umsatz rückläufig"] }
+        {
+          "terminId": "t-002",
+          "datum": "2026-09-12",
+          "teilnehmer": [
+            "Herr Mustermann"
+          ],
+          "themen": [
+            "Bremsen"
+          ],
+          "kernpunkte": [
+            "Bremsen-Umsatz rückläufig"
+          ]
+        }
       ],
       "offeneMassnahmen": [],
-      "prioThemen": ["bremsen"],
+      "prioThemen": [
+        "bremsen"
+      ],
       "folgeterminKadenzWochen": 6
     },
     {
-      "haendlerId": "DEU2M170",
-      "stammdaten": { "name": "AH Mustermann-Ford", "anrede": "Herr Mustermann (GF1)" },
+      "haendlerId": "DEU2M212",
+      "stammdaten": {
+        "name": "Autohaus OstermannZentrum 62",
+        "anrede": "Herr OstermannZentrum (GF1)"
+      },
       "persoenlicheNotizen": [
-        { "datum": "2026-04-23", "text": "Zweiter Ansprechpartner: Herr Beispiel" }
+        {
+          "datum": "2026-04-23",
+          "text": "Zweiter Ansprechpartner: Herr Beispiel"
+        }
       ],
       "besuchHistorie": [
-        { "terminId": "t-155-1", "datum": "2026-04-23", "teilnehmer": ["Herr Mustermann", "Herr Beispiel"],
-          "themen": ["Teileverkaufsanalyse", "AKF+", "Wischer", "AFSB", "STP"],
+        {
+          "terminId": "t-155-1",
+          "datum": "2026-04-23",
+          "teilnehmer": [
+            "Herr Mustermann",
+            "Herr Beispiel"
+          ],
+          "themen": [
+            "Teileverkaufsanalyse",
+            "AKF+",
+            "Wischer",
+            "AFSB",
+            "STP"
+          ],
           "kernpunkte": [
             "AKF+: Umstellung standardisiert, Erstausstattungspaket bei der EFA anfragen",
             "Wischer: Fokus auf Videocheck-Wischerbewerbung; Wischer als Fokusprodukt in den nächsten 3 Monaten",
@@ -51,26 +117,59 @@
             "STP: AKF+ und Wischer als Q2-Ziele gesetzt",
             "REACT-Kampagne: Kulanz angefragt, Rückmeldung offen",
             "Nächster Termin 23.04.2026 13:00-14:00, Einladung geht separat"
-          ] }
+          ]
+        }
       ],
       "offeneMassnahmen": [
-        { "titel": "Erstausstattungspaket AKF+ bei EFA anfragen", "beschreibung": "AKF+ Umstellung",
-          "verantwortlich": "David", "frist": "2026-05-08", "status": "offen" },
-        { "titel": "REACT-Kulanz-Rückmeldung", "beschreibung": "Kulanzanfrage verfolgt",
-          "verantwortlich": "David", "frist": "2026-05-15", "status": "offen" }
+        {
+          "titel": "Erstausstattungspaket AKF+ bei EFA anfragen",
+          "beschreibung": "AKF+ Umstellung",
+          "verantwortlich": "David",
+          "frist": "2026-05-08",
+          "status": "offen"
+        },
+        {
+          "titel": "REACT-Kulanz-Rückmeldung",
+          "beschreibung": "Kulanzanfrage verfolgt",
+          "verantwortlich": "David",
+          "frist": "2026-05-15",
+          "status": "offen"
+        }
       ],
-      "prioThemen": ["wischer", "akf"],
-      "folgeterminKadenzWochen": 6
+      "prioThemen": [
+        "wischer",
+        "akf"
+      ],
+      "folgeterminKadenzWochen": 6,
+      "obg": "D02"
     },
     {
-      "haendlerId": "DEU5M224",
-      "stammdaten": { "name": "AH Musterhaus Ford", "anrede": "Herr Musterhaus (GF1)" },
+      "haendlerId": "DEU5M392",
+      "stammdaten": {
+        "name": "Autohaus HansenZentrum 242",
+        "anrede": "Herr HansenZentrum (GF1)"
+      },
       "persoenlicheNotizen": [
-        { "datum": "2026-04-28", "text": "Zweiter Ansprechpartner: Herr Exempel; Seminar-Teilnahme mit Herrn Platzhalter" }
+        {
+          "datum": "2026-04-28",
+          "text": "Zweiter Ansprechpartner: Herr Exempel; Seminar-Teilnahme mit Herrn Platzhalter"
+        }
       ],
       "besuchHistorie": [
-        { "terminId": "t-156-1", "datum": "2026-04-28", "teilnehmer": ["Herr Musterhaus", "Herr Exempel"],
-          "themen": ["Teileverkaufsanalyse", "Windschutzscheiben", "AFSB", "GASA", "GASB"],
+        {
+          "terminId": "t-156-1",
+          "datum": "2026-04-28",
+          "teilnehmer": [
+            "Herr Musterhaus",
+            "Herr Exempel"
+          ],
+          "themen": [
+            "Teileverkaufsanalyse",
+            "Windschutzscheiben",
+            "AFSB",
+            "GASA",
+            "GASB"
+          ],
           "kernpunkte": [
             "TVA: Fokus weiterhin Windschutzscheiben",
             "Scheibensiegel mit MA-Unterschrift nach Prüfung bereits eingeführt",
@@ -78,22 +177,44 @@
             "AFSB: TVK 80 %",
             "GASA/GASB E-Learnings verpflichtend",
             "Offen: Zielwerte für TVK-Qualifier (Fachabteilung)"
-          ] }
+          ]
+        }
       ],
       "offeneMassnahmen": [
-        { "titel": "TVK-Qualifier-Zielwerte klären", "beschreibung": "Bei Fachabteilung platziert",
-          "verantwortlich": "David", "frist": "2026-05-20", "status": "offen" }
+        {
+          "titel": "TVK-Qualifier-Zielwerte klären",
+          "beschreibung": "Bei Fachabteilung platziert",
+          "verantwortlich": "David",
+          "frist": "2026-05-20",
+          "status": "offen"
+        }
       ],
-      "prioThemen": ["wss"],
-      "folgeterminKadenzWochen": 6
+      "prioThemen": [
+        "wss"
+      ],
+      "folgeterminKadenzWochen": 6,
+      "obg": "D05"
     },
     {
-      "haendlerId": "DEU3M188",
-      "stammdaten": { "name": "Autovertrieb Beispiel GmbH", "anrede": "Herr Beispielford (GF1)" },
+      "haendlerId": "DEU3M272",
+      "stammdaten": {
+        "name": "Autohaus MercedesZentrum 122",
+        "anrede": "Herr MercedesZentrum (GF1)"
+      },
       "persoenlicheNotizen": [],
       "besuchHistorie": [
-        { "terminId": "t-157-1", "datum": "2026-03-25", "teilnehmer": ["Herr Beispielford"],
-          "themen": ["AKF+", "Wischer", "Ford Frunk", "Quick-Check"],
+        {
+          "terminId": "t-157-1",
+          "datum": "2026-03-25",
+          "teilnehmer": [
+            "Herr Beispielford"
+          ],
+          "themen": [
+            "AKF+",
+            "Wischer",
+            "Ford Frunk",
+            "Quick-Check"
+          ],
           "kernpunkte": [
             "AKF+: Inspektionspakete soweit möglich auf AKF+-Filter (FORD MICRONAIR PROTECT) umstellen; Anteil 22 % (Bund ca. 75 %)",
             "Wischer: Kundenansprache 'Wie zufrieden sind Sie mit Ihren Scheibenwischern'",
@@ -101,14 +222,24 @@
             "Wischerdisplay-Bestellung ausgelöst",
             "Ford Frunk für Explorer und Capri: Fahrzeugverkauf informieren (Service News 04)",
             "Quick-Check-Liste bei allen Aufträgen ohne Wartungscheckliste und bei Räderwechseln anwenden"
-          ] }
+          ]
+        }
       ],
       "offeneMassnahmen": [
-        { "titel": "AKF+-Anteil überwachen", "beschreibung": "Anteil 22 %, Ziel steigern",
-          "verantwortlich": "Herr Beispielford", "frist": "2026-06-30", "status": "offen" }
+        {
+          "titel": "AKF+-Anteil überwachen",
+          "beschreibung": "Anteil 22 %, Ziel steigern",
+          "verantwortlich": "Herr Beispielford",
+          "frist": "2026-06-30",
+          "status": "offen"
+        }
       ],
-      "prioThemen": ["akf", "wischer"],
-      "folgeterminKadenzWochen": 6
+      "prioThemen": [
+        "akf",
+        "wischer"
+      ],
+      "folgeterminKadenzWochen": 6,
+      "obg": "D03"
     }
   ],
   "gesendetInfos": []
