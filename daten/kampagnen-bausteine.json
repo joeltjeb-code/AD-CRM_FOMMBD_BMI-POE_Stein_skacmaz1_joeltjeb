@@ -1,0 +1,70 @@
+{
+  "kampagnen": [
+    {
+      "id": "wkr",
+      "titel": "WKR-Programm",
+      "betreff": "Ihre WKR-Performance",
+      "textbausteine": [
+        "Vielen Dank für das Gespräch zum Winterkomplettrrad-Programm (WKR).",
+        "Anbei die aktuellen Unterlagen inklusive Broschüre.",
+        "<persönliche Ergänzung>"
+      ],
+      "anhaenge": [
+        { "name": "WKR-Broschuere.pdf", "typ": "pdf" }
+      ],
+      "links": ["https://training.example/wkr"]
+    },
+    {
+      "id": "wischerdisplay",
+      "titel": "Wischerdisplay",
+      "betreff": "Wischerdisplay für Ihr Autohaus",
+      "textbausteine": [
+        "Wie besprochen das Informationspaket zum Wischerdisplay.",
+        "<persönliche Ergänzung>"
+      ],
+      "anhaenge": [
+        { "name": "Wischerdisplay-Flyer.pdf", "typ": "pdf" }
+      ],
+      "links": ["https://training.example/wischerdisplay"]
+    },
+    {
+      "id": "schnittschutz",
+      "titel": "Windschutzscheiben",
+      "betreff": "Training Windschutzscheiben",
+      "textbausteine": [
+        "Gerne verweise ich auf das Training zu Windschutzscheiben.",
+        "<persönliche Ergänzung>"
+      ],
+      "anhaenge": [
+        { "name": "Windschutzscheiben-Flyer.pdf", "typ": "pdf" }
+      ],
+      "links": ["https://training.example/schnittschutz"]
+    },
+    {
+      "id": "bremsen",
+      "titel": "Bremsen",
+      "betreff": "Bremsen-Performance und Fokusprodukte",
+      "textbausteine": [
+        "Wie besprochen die Unterlagen zu Bremsen-Fokusprodukten.",
+        "<persönliche Ergänzung>"
+      ],
+      "anhaenge": [
+        { "name": "Bremsen-Fokusprodukte.pdf", "typ": "pdf" }
+      ],
+      "links": ["https://training.example/bremsen"]
+    },
+    {
+      "id": "ford-mobile",
+      "titel": "Ford Mobile",
+      "betreff": "Ford Mobile Programm",
+      "textbausteine": [
+        "Anbei die Unterlagen zum Ford Mobile Programm.",
+        "<persönliche Ergänzung>"
+      ],
+      "anhaenge": [
+        { "name": "Ford-Mobile-Flyer.pdf", "typ": "pdf" }
+      ],
+      "links": ["https://training.example/ford-mobile"]
+    }
+  ]
+}
