@@ -61,6 +61,23 @@ function berechne(liste, start, routing, skelett) {
   return { ok: true, termine, fahrzeiten };
 }
 
+// zeitreihe: wie validiereReihenfolge, aber NIE invalid. Bewahrt die gegebene
+// Reihenfolge und rechnet alle Folge-Termine nach dem Einschieben hinten raus
+// (Trickle-Down). Überschreitet der letzte Terminstart das Tagesskelett, wird
+// das nur als Flag gemeldet — nicht als Ablehnung.
+export function zeitreihe(liste, start, routing, skelett = SKELETT) {
+  if (liste.length === 0) return { ok: true, termine: [], fahrzeiten: [] };
+  const locker = { ...skelett, letzterStartMin: 24 * 60 };
+  const res = berechne(liste, start, routing, locker);
+  if (!res.ok) {
+    // Nicht mal die Skelettvorgaben (Startfahrt) passen — Termine unverändert
+    // durchreichen, damit UI/Planer nie einen leeren Ring bekommt.
+    return { ok: true, termine: liste.map(h => ({ haendlerId: h.id, startMin: 0, endeMin: h.dauer, start: minZuUhr(0), ende: minZuUhr(h.dauer) })), fahrzeiten: [], unverändert: false };
+  }
+  const letzteStartMin = res.termine[res.termine.length - 1].startMin;
+  return { ...res, ueberlaeuft: letzteStartMin > (skelett.letzterStartMin ?? SKELETT.letzterStartMin) };
+}
+
 export function validiereReihenfolge(dealerListe, start, routing, skelett = SKELETT) {
   if (dealerListe.length === 0) return { ok: true, termine: [], fahrzeiten: [] };
   return berechne(dealerListe, start, routing, skelett);
@@ -88,4 +105,28 @@ export function planeTag(dealerListe, start, routing, skelett = SKELETT) {
   if (!best) return { ok: false, grund: 'Tagesskelett nicht einhaltbar für diese Kombination' };
   const { _fahrSumme, ...rest } = best;
   return rest;
+}
+
+// besteEinsattposition: Wo gehört ein neu eingeschobener Händler in einen
+// bestehenden Tag? Für jede mögliche Einsatzposition wird die Gesamt-Fahrzeit
+// der Kandidaten-Tagesreihung bewertet; kürzeste Fahrsumme gewinnt. Tie-Break:
+// weniger Überlauf (kein Überlauf schlägt Überlauf), dann die spätere Position
+// (Anhängen), damit bestehende Termine möglichst wenig verrücken.
+export function besteEinsattposition(liste, h, start, routing, skelett = SKELETT) {
+  const ohneH = liste.filter(x => x.id !== h.id);
+  let bestIdx = ohneH.length;
+  let bestFahr = Infinity;
+  let bestUeberlauf = Infinity;
+  for (let i = 0; i <= ohneH.length; i++) {
+    const kandidat = [...ohneH.slice(0, i), h, ...ohneH.slice(i)];
+    const r = zeitreihe(kandidat, start, routing, skelett);
+    const fahrSumme = r.fahrzeiten.reduce((s, f) => s + f.min, 0);
+    const ueberlauf = r.ueberlaeuft ? r.termine[r.termine.length - 1].startMin - (skelett.letzterStartMin ?? SKELETT.letzterStartMin) : 0;
+    if (fahrSumme < bestFahr
+      || (fahrSumme === bestFahr && (ueberlauf < bestUeberlauf
+        || (ueberlauf === bestUeberlauf && i > bestIdx)))) {
+      bestIdx = i; bestFahr = fahrSumme; bestUeberlauf = ueberlauf;
+    }
+  }
+  return bestIdx;
 }

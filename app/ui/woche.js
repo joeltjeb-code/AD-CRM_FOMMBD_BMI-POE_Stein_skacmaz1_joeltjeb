@@ -20,7 +20,7 @@ export function renderePlanraster(container, plan, {
         const tk = `w${wi}-d${ti}`;
         const kopf = tag.abgewaehlt
           ? `${tag.tag} (${tag.datum}) &ndash; abgew&auml;hlt${gruende[tk] ? `: ${gruende[tk]}` : ''}`
-          : `${tag.tag} (${tag.datum})${tag.ok ? '' : ` &ndash; ${tag.grund ?? 'ung&uuml;ltig'}`}`;
+          : `${tag.tag} (${tag.datum})${tag.ueberlaeuft ? ' &ndash; endet sp&auml;ter' : ''}${tag.ok ? '' : ` &ndash; ${tag.grund ?? 'ung&uuml;ltig'}`}`;
         teile.push(`<section class="tag ${tag.ok ? '' : 'fehler'}${tag.abgewaehlt ? ' abgewaehlt' : ''}" data-woche="${wi}" data-tag="${ti}" ${tag.abgewaehlt ? 'data-abgewaehlt="1"' : ''}>
         <h3>${kopf}</h3>
         <ul>${(tag.termine ?? []).map((x, si) =>

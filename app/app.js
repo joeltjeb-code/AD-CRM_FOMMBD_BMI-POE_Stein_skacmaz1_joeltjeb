@@ -1,6 +1,7 @@
 import { erstelleDemoRouting } from './adapter/routing-adapter.js';
 import { erstelleSpeicher } from './adapter/speicher-adapter.js';
 import { planeWochen, frischauf } from './planung/planer.js';
+import { besteEinsattposition } from './planung/reihenfolge.js';
 import { filtereNachObg } from './planung/auswahl.js';
 import { parseBefehl, wendeAn } from './planung/befehle.js';
 import { renderePlanraster } from './ui/woche.js';
@@ -105,8 +106,15 @@ function zeichnen(meldungEl, meldung) {
         (y.termine ?? []).some((z) => z.haendlerId === haendlerId));
       const i = quelle.termine.findIndex((z) => z.haendlerId === haendlerId);
       const [termin] = quelle.termine.splice(i, 1);
-      plan.wochen[w].tage[t].termine.push(termin);
-      plan = frischauf(plan, kontext());
+      // Bester Einsattpunkt im Ziel-Tag: kürzeste Gesamt-Fahrzeit, sonstige
+      // Termine rücken per Trickle-Down nach hinten (keine Überlappungen).
+      const zielTag = plan.wochen[w].tage[t];
+      const ktx = kontext();
+      const liste = zielTag.termine.map((x) => ktx.dealersById[x.haendlerId]).filter(Boolean);
+      const einsatz = besteEinsattposition(liste, ktx.dealersById[haendlerId],
+        { name: zielTag.startortName, pos: zielTag.startortPos }, ktx.routing);
+      zielTag.termine.splice(einsatz, 0, termin);
+      plan = frischauf(plan, ktx);
       speicher.speichere('plan', plan);
       zeichnen();
     },

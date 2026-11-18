@@ -1,6 +1,6 @@
 import { bildeCluster } from './cluster.js';
 import { faelligeKandidaten, verteileAufWochen, verteileMitKapazitaeten, PRO_WOCHE } from './auswahl.js';
-import { SKELETT, planeTag, validiereReihenfolge } from './reihenfolge.js';
+import { SKELETT, planeTag, zeitreihe } from './reihenfolge.js';
 import { entscheideUbernachtung } from './uebernachtung.js';
 
 export { SKELETT };
@@ -155,7 +155,7 @@ export function frischauf(plan, kontext) {
       if (liste.length === 0) continue;
       const start = { name: t.startortName ?? startOrt.name, pos: t.startortPos ?? startOrt.pos };
       const skelett = { ...SKELETT, letzterStartMin: t.letzterStartMin ?? SKELETT.letzterStartMin };
-      const res = validiereReihenfolge(liste, start, routing, skelett);
+      const res = zeitreihe(liste, start, routing, skelett);
       Object.assign(t, res, { leer: undefined });
       const folge = woche.tage[ti + 1];
       const ersterMorgen = folge && !folge.leer && folge.ok && (folge.termine?.length ?? 0) > 0
