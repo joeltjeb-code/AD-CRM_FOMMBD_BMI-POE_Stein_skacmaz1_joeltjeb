@@ -1048,3 +1048,91 @@ git commit -m "feat: plan-view farbcodierung nach besuchs-historie"
 - **Spec-Abdeckung:** Händlerakte (T1), Kadenz (T2), Scorecard/KPI (T3), Briefing (T4), Schnellblatt (T5), Bericht (T6), E-Mail-Bausteine + TVA (T7), Mail-Adapter Phase 1/2 + Info-Verteilung (T8), UI (T9), Farbcodierung (T10) — alle Spec-Abschnitte 3.1–3.4 und 5–7 abgedeckt.
 - **Phasenmodell:** Phase 2 (Outlook/KI) ist bewusst kein Task, nur Adapter-Vertrag (T7/T8-Kommentare) — gemäß Nutzerentscheidung.
 - **Typ-Konsistenz:** `ladeAkte`/`speichereAkte`-Signatur konsistent zwischen T1, T8, T9; KPI-Shape konsistent zwischen T3, T4, T5; Report-Shape konsistent zwischen T6, T7, T9.
+
+---
+
+# Addendum-Plan (18.11.2026, nach Review realer Gesprächszusammenfassungen)
+
+Gleicht die Spec-Addenda (Abschnitt 9) ab: allgemeine Themen-Anhänge,
+folgetermin-Feld, Demo-Akten im Mail-Stil.
+
+### Task 11: Themen-Anhänge-Katalog + Anhang-Zusammenführung
+
+**Files:**
+- Create: `daten/themen-anhaenge.json`
+- Modify: `app/bericht/entwurf.js`
+- Test: `tests/bericht/entwurf-anhaenge.test.js`
+
+**Interfaces:**
+- Consumes: `erstelleEntwurf(bericht, bausteineDaten, kampagnenId)` (Task 7)
+- Produces: `allgemeineAnhaengeFuer(themen, katalog) -> [{name, typ}]` (Teilstring-Match, Kleinbuchstaben); `erstelleEntwurf(..., { themenAnhaengeKatalog })` — 4. Parameter optional, bestehende Signaturen bleiben gültig. Entwurf-Anhänge: Kampagnen-Anhänge ∪ Themen-Anhänge ∪ TVA-Pflicht, dedupliziert per `name`.
+
+- [ ] **Step 1: Failing test**
+
+```js
+// tests/bericht/entwurf-anhaenge.test.js
+import { test } from 'node:test';
+import { strict as assert } from 'node:assert';
+import { allgemeineAnhaengeFuer, erstelleEntwurf } from '../../app/bericht/entwurf.js';
+
+const KATALOG = [
+  { id: 'wischer', titel: 'Wischer', schluessel: ['wischer'],
+    anhaenge: [{ name: 'Massnahmenplan-Wischer.pdf', typ: 'pdf' },
+               { name: 'Best-Practice-Wischer.pdf', typ: 'pdf' }] },
+  { id: 'quickcheck', titel: 'Quick-Check', schluessel: ['quick-check', 'quickcheck', 'raederwechsel'],
+    anhaenge: [{ name: 'Quick-Check-Liste.pdf', typ: 'pdf' }] },
+];
+const BAUSTEINE = { kampagnen: [
+  { id: 'wkr', titel: 'WKR', betreff: 'B', textbausteine: ['T'],
+    anhaenge: [{ name: 'WKR-Broschuere.pdf', typ: 'pdf' }], links: [] },
+] };
+const R = { haendlerId: 'X', datum: '2026-11-18', teilnehmer: ['A'], themen: ['Wischer', 'AKF+'],
+  vereinbarungen: [], aufgaben: [], offenePunkte: [] };
+
+test('allgemeineAnhaengeFuer: Themen-Match per Teilstring', () => {
+  const a = allgemeineAnhaengeFuer(R.themen, KATALOG);
+  assert.deepEqual(a.map((x) => x.name),
+    ['Massnahmenplan-Wischer.pdf', 'Best-Practice-Wischer.pdf']);
+});
+
+test('erstelleEntwurf: Kampagnen- + Themen-Anhänge vereint, TVA ergänzt, dedupliziert', () => {
+  const r = erstelleEntwurf(R, BAUSTEINE, 'wkr', { themenAnhaengeKatalog: KATALOG });
+  const namen = r.entwurf.anhaenge.map((x) => x.name);
+  assert.ok(namen.includes('Massnahmenplan-Wischer.pdf'));
+  assert.ok(namen.includes('WKR-Broschuere.pdf'));
+  assert.ok(namen.includes('TVA.pdf'));
+  assert.equal(new Set(namen).size, namen.length);
+});
+
+test('erstelleEntwurf ohne Katalog: Verhalten unverändert', () => {
+  const r = erstelleEntwurf(R, BAUSTEINE, 'wkr');
+  assert.deepEqual(r.entwurf.anhaenge.map((x) => x.name),
+    ['WKR-Broschuere.pdf', 'TVA.pdf']);
+});
+```
+
+- [ ] **Step 2: Bis rot laufen** (`node --test tests/bericht/entwurf-anhaenge.test.js`)
+- [ ] **Step 3: Implementierung** `allgemeineAnhaengeFuer` + Zusammenführung in `erstelleEntwurf`
+- [ ] **Step 4: Bis grün laufen** (inkl. alter entwurf-Tests)
+- [ ] **Step 5: Commit** `feat: themen-anhaenge und anhang-zusammenfuehrung`
+
+### Task 12: Folgetermin-Feld im Bericht
+
+**Files:**
+- Modify: `app/bericht/vorlage.js`
+- Modify: `app/ui/bericht-view.js` (Feld im Formular)
+- Test: `tests/bericht/vorlage.test.js` (neuer Test)
+
+**Interfaces:**
+- Produces: `bericht.folgetermin` (string|null, optional; kein Pflichtfeld)
+
+- [ ] **Steps:** Test (folgetermin gesetzt → im Bericht; fehlt → null), rot, Implementierung, grün, Commit `feat: folgetermin-feld im bericht`
+
+### Task 13: Demo-Daten im Mail-Stil + UI-Anbindung
+
+**Files:**
+- Modify: `daten/wissensbasis.json` (3 Akten ergänzt: AKF+/Wischer/WSS/Quick-Check-Stil)
+- Modify: `app/app.js` (themenAnhaengeKatalog laden und an erstelleEntwurf reichen)
+- Test: JSON-Validierung; Suite bleibt grün
+
+- [ ] **Steps:** Daten ergänzen, app.js verdrahten, `node --test tests/` grün, Commit `feat: demo-akten im mail-stil und ui-anbindung der themen-anhaenge`

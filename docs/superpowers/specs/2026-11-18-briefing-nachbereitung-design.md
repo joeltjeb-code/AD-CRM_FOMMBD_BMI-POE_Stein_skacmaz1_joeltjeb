@@ -219,3 +219,35 @@ UI-Bedienung bleibt manuell (Browser-Test).
   grün, < 12 Wochen gelb, älter/niemals rot; konfigurierbar).
 - Adapter-Vertrag für `mail-adapter.js` so dokumentieren, dass Phase 2
   (Outlook/Microsoft Graph) ohne Logikänderung anschließbar ist.
+
+## 9. Addendum (18.11.2026, nach Review realer Gesprächszusammenfassungen)
+
+Nach Sichtung dreier realer Nachbereitungs-Mails (als anonymisierte Muster mit Demo-IDs) ergänzt:
+
+### 9.1 Zwei Anhangs-Klassen
+
+| Klasse | Beispiel | Quelle |
+|---|---|---|
+| **Kampagnen-Anhänge** (spezifisch, vorbereitet) | WKR-Broschüre + Trainings-Link | `daten/kampagnen-bausteine.json` (bisher) |
+| **Allgemeine Themen-Anhänge** (situativ, allgemein) | Maßnahmenplan Wischer, Excel zur Werkstatt-Qualitätssicherung, Best-Practice Wischer, Service News 04, Quick-Check-Liste | NEU: `daten/themen-anhaenge.json` |
+
+- `daten/themen-anhaenge.json`: Katalog `[{id, titel, schluessel[], anhaenge[{name, typ}]}]`
+- `allgemeineAnhaengeFuer(themen, katalog)` in `app/bericht/entwurf.js`: leitet aus
+  den Bericht-Themen (Teilstring-Match, Kleinbuchstaben) die Anhangs-Liste ab.
+- E-Mail-Entwurf = **Kampagnen-Anhänge + themen-abhängige allgemeine Anhänge +
+  TVA-Pflichtanhang**, dedupliziert per Anhangsname.
+- TVA bleibt Pflicht und wird genau einmal geführt.
+
+### 9.2 Folgetermin im Bericht (optional)
+
+- David sagt Folgetermine vor Ort zu und sendet die Einladung separat
+  ("schicke ich Ihnen separat zu").
+- Neues **optionales** Feld `folgetermin` im Bericht (Freitext: Datum/Zeit oder
+  "sende ich separat"); wird mit dem Bericht in der Händlerakte geführt.
+
+### 9.3 Demo-Akten im Mail-Stil
+
+- Drei zusätzliche Demo-Akten in `daten/wissensbasis.json`, strukturell an die
+  Muster angelehnt (themen-gegliederte `kernpunkte`, Themen AKF+/Wischer/WSS/
+  Quick-Check, AFSB-/STP-Notizen) — vollständig ausgedachte Werte im
+  Marktnummern-Schema.
