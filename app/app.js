@@ -34,13 +34,24 @@ let bausteine = { kampagnen: [] };
 let scorecard = { haendler: [] };
 let themenAnhaenge = { anhaengeKatalog: [] };
 let gewaehlt = null;
-let settings = speicher.lade('einstellungen', {
-  heimat: { name: 'Heimatbüro', pos: { x: -8, y: 10 } },
-  altStartorte: [{ name: 'Büro Ost', pos: { x: 46, y: 2 } }, { name: 'Büro Süd', pos: { x: 2, y: 46 } }],
+const STANDARD_SETTINGS = {
+  obg: 'D01',
+  heimat: { name: 'Heimatbüro', plz: '', pos: { x: -8, y: 10 } },
+  altStartorte: [], // obsolet seit OBG/Heimat-Eingabe; bleibt als Feld für Kompatibilität
   bev: false,
   praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 60 },
-});
+};
+let settings = speicher.lade('einstellungen', null);
 let plan = null;
+
+// Migration: alter Stand ohne obg/vollständiges heimat → Standard auffüllen,
+// damit gespeicherte Einstellungen beim Neustart nicht die App sprengen.
+settings = {
+  ...STANDARD_SETTINGS,
+  ...(settings ?? {}),
+  heimat: { ...STANDARD_SETTINGS.heimat, ...(settings?.heimat ?? {}) },
+  praferenzen: { ...STANDARD_SETTINGS.praferenzen, ...(settings?.praferenzen ?? {}) },
+};
 
 function nextMondayIso() {
   const d = new Date();
