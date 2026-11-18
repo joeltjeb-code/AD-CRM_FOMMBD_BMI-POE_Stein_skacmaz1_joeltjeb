@@ -13,7 +13,7 @@ test('baueSchnellblatt: STP, TVA, ZA-Befreiung aus KPI', () => {
   assert.equal(s.zaBefreiung.befreit, false);
 });
 
-test('baueSchnellblatt: null ohne KPI/Parkplatz-Daten', () => {
+test('baueSchnellblatt: null ohne KPI-Daten', () => {
   assert.equal(baueSchnellblatt(null), null);
   assert.equal(baueSchnellblatt({ id: 'X' }), null);
 });

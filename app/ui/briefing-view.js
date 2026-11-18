@@ -26,7 +26,7 @@ export function rendereBriefing(container, briefing, schnellblatt) {
       </div>` : ''}
       ${schnellblatt ? `
       <div class="karte">
-        <h3>Auf dem Parkplatz</h3>
+        <h3>Performance Auswertung</h3>
         <ul>
           <li>STP: ${schnellblatt.stp.punkte} Punkte (${schnellblatt.stp.praemie})</li>
           <li>TVA: Stand ${schnellblatt.tva.letzterStand}</li>
