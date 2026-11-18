@@ -78,3 +78,15 @@
 - [16:04] "Feierabend"
   → Ergebnis: Tageszusammenfassung + Prozess-Doku (2026-11-17-16-04-actions.md), Abschluss-Commit
 
+## 2026-11-18
+- [18:12] "Steht in der Agents.md schon drin, dass du automatisch über den Skill dokumentiertst? Und hast du schon für heute die Tagesdatei angelegt?"
+  → Ergebnis: Tagesdatei 2026-11-18.md angelegt, Prompt-Log geprüft (vorhanden)
+
+- [18:15] "Interview mit Außendienstler (David) zu Vorbereitung/Nachbereitung — damit an den Skills und Elementen des Agenten arbeiten" (Highlevel-Workflow + KI-Meetingzusammenfassung übergeben)
+  → Ergebnis: Brainstorming-Skill; Element-Mapping (Briefing, Bericht, Wissensbasis, Info-Verteilung, Routing-Anpassungen) präsentiert
+
+- [18:25] "Auswertung + Spec + Plan"
+  → Ergebnis: 3 Ansätze vorgeschlagen, Nutzer wählt Ansatz C (Bausteine + LLM hinter Adapter)
+
+- [18:30] "Ansatz C. Info-Verteilung: Outlook-Postfach-Scan als phased requirement definieren"
+  → Ergebnis: Spec `docs/superpowers/specs/2026-11-18-briefing-nachbereitung-design.md` geschrieben, Selbst-Review, Commit (0efe919); Plan `docs/superpowers/plans/2026-11-18-briefing-nachbereitung.md` (10 Tasks, TDD), Commit (b5f82df)
