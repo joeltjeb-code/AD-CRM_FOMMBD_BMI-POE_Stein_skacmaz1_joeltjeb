@@ -1,5 +1,6 @@
 import { farbeFuer } from '../wissensbasis/farbcodierung.js';
 import { kachelLabel } from './kachel-label.js';
+import { hndNummer, kalenderwoche } from './format.js';
 
 export function renderePlanraster(container, plan, {
   onMove, onBefehl, onWaehl,
@@ -8,7 +9,7 @@ export function renderePlanraster(container, plan, {
   const gruende = abwesenheiten.gruende ?? {};
   const teile = [];
   plan.wochen.forEach((woche, wi) => {
-    teile.push(`<h2>Woche ab ${woche.montag}</h2><div class="woche" data-woche="${wi}">`);
+    teile.push(`<h2>Woche ab ${woche.montag} <span class="kw">KW${String(kalenderwoche(woche.montag)).padStart(2, '0')}</span></h2><div class="woche" data-woche="${wi}">`);
     if (woche.abgewaehlt) {
       teile.push(`<section class="tag abgewaehlt" data-woche="${wi}" data-tag="-1" data-abgewaehlt="1">
         <h3>Ganze Woche abgew&auml;hlt${gruende[`w${wi}`] ? `: ${gruende[`w${wi}`]}` : ''} &ndash; keine Termine geplant</h3>
@@ -24,7 +25,7 @@ export function renderePlanraster(container, plan, {
         <h3>${kopf}</h3>
         <ul>${(tag.termine ?? []).map((x, si) =>
           `<li draggable="${tag.abgewaehlt ? 'false' : 'true'}" class="farbe-${farbeFuer(haendlerVerlauf[x.haendlerId] ?? null, heute)}" data-id="${x.haendlerId}" data-woche="${wi}" data-tag="${ti}" data-slot="${si}">
-             ${x.start}–${x.ende} ${kachelLabel(haendlerNamen[x.haendlerId], x.haendlerId)}</li>`).join('')}
+             ${x.start}–${x.ende} ${kachelLabel(haendlerNamen[x.haendlerId], hndNummer(x.haendlerId))}</li>`).join('')}
         ${tag.leer ? `<li class="leer">${tag.abgewaehlt ? 'abgew&auml;hlt &ndash; kein Auftrag' : 'kein Auftrag'}</li>` : ''}
         </ul>
         ${tag.abgewaehlt ? '' : `<p>&Uuml;bernachtung: ${tag.uebernachtung?.art === 'hotel'
