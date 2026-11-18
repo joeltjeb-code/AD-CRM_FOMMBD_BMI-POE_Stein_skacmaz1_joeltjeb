@@ -20,10 +20,11 @@ const speicher = erstelleSpeicher();
 
 function wechsleTab(tabId) {
   for (const tab of document.querySelectorAll('[role=tab]')) {
-    const aktiv = tab.id === `tab-${tabId}`;
-    tab.setAttribute('aria-selected', String(aktiv));
-    document.getElementById(`${tabId}Tab`).classList.toggle('versteckt', !aktiv);
+    tab.setAttribute('aria-selected', String(tab.id === `tab-${tabId}`));
   }
+  document.querySelectorAll('[role=tabpanel]').forEach((panel) => {
+    panel.classList.toggle('versteckt', panel.id !== `${tabId}Tab`);
+  });
 }
 
 let haendler = [];
