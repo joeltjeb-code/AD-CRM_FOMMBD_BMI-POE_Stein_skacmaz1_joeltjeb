@@ -1,7 +1,7 @@
 {
   "akten": [
     {
-      "haendlerId": "DEU90ARN",
+      "haendlerId": "DEU1M151",
       "stammdaten": { "name": "Autohaus Beispiel Süd", "anrede": "Frau Musterfrau (GF1)" },
       "persoenlicheNotizen": [
         { "datum": "2026-10-05", "text": "Geburtstag: 14. April", "kind": "geburtstag", "tag": "04-14" },
@@ -20,7 +20,7 @@
       "folgeterminKadenzWochen": 6
     },
     {
-      "haendlerId": "DEU91M151",
+      "haendlerId": "DEU3M187",
       "stammdaten": { "name": "Autohaus Musterbach", "anrede": "Herr Mustermann (GF1)" },
       "persoenlicheNotizen": [
         { "datum": "2026-09-12", "text": "Hund Berti, gerne ansprechen" }
@@ -35,7 +35,7 @@
       "folgeterminKadenzWochen": 6
     },
     {
-      "haendlerId": "DEU95M155",
+      "haendlerId": "DEU2M170",
       "stammdaten": { "name": "AH Mustermann-Ford", "anrede": "Herr Mustermann (GF1)" },
       "persoenlicheNotizen": [
         { "datum": "2026-04-23", "text": "Zweiter Ansprechpartner: Herr Beispiel" }
@@ -63,7 +63,7 @@
       "folgeterminKadenzWochen": 6
     },
     {
-      "haendlerId": "DEU96M156",
+      "haendlerId": "DEU5M224",
       "stammdaten": { "name": "AH Musterhaus Ford", "anrede": "Herr Musterhaus (GF1)" },
       "persoenlicheNotizen": [
         { "datum": "2026-04-28", "text": "Zweiter Ansprechpartner: Herr Exempel; Seminar-Teilnahme mit Herrn Platzhalter" }
@@ -88,7 +88,7 @@
       "folgeterminKadenzWochen": 6
     },
     {
-      "haendlerId": "DEU97M157",
+      "haendlerId": "DEU3M188",
       "stammdaten": { "name": "Autovertrieb Beispiel GmbH", "anrede": "Herr Beispielford (GF1)" },
       "persoenlicheNotizen": [],
       "besuchHistorie": [

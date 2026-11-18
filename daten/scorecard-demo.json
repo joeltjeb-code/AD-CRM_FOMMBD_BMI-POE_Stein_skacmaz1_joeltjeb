@@ -1,7 +1,7 @@
 {
   "haendler": [
     {
-      "id": "DEU90ARN",
+      "id": "DEU1M151",
       "wkr": { "tier": 1, "quoteProzent": 42 },
       "wischerdisplay": { "bestellt": false, "datum": null },
       "afsb": { "status": "Silber", "punkteBisGold": 35 },
@@ -12,7 +12,7 @@
       }
     },
     {
-      "id": "DEU91M151",
+      "id": "DEU3M187",
       "wkr": { "tier": 2, "quoteProzent": 61 },
       "wischerdisplay": { "bestellt": true, "datum": "2026-09-15" },
       "afsb": { "status": "Gold", "punkteBisGold": 0 },
@@ -23,7 +23,7 @@
       }
     },
     {
-      "id": "DEU92M152",
+      "id": "DEU2M169",
       "wkr": { "tier": 3, "quoteProzent": 78 },
       "wischerdisplay": { "bestellt": true, "datum": "2026-08-02" },
       "afsb": { "status": "Gold", "punkteBisGold": 0 },
@@ -34,7 +34,7 @@
       }
     },
     {
-      "id": "DEU93M153",
+      "id": "DEU4M205",
       "wkr": { "tier": 2, "quoteProzent": 53 },
       "wischerdisplay": { "bestellt": false, "datum": null },
       "afsb": { "status": "Bronze", "punkteBisGold": 80 },
@@ -45,7 +45,7 @@
       }
     },
     {
-      "id": "DEU94M154",
+      "id": "DEU5M223",
       "wkr": { "tier": 4, "quoteProzent": 85 },
       "wischerdisplay": { "bestellt": false, "datum": null },
       "afsb": { "status": "Silber", "punkteBisGold": 20 },
