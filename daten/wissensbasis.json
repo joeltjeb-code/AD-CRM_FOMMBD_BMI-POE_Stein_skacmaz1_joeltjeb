@@ -1,0 +1,39 @@
+{
+  "akten": [
+    {
+      "haendlerId": "DEU90ARN",
+      "stammdaten": { "name": "Autohaus Beispiel Süd", "anrede": "Frau Musterfrau (GF1)" },
+      "persoenlicheNotizen": [
+        { "datum": "2026-10-05", "text": "Geburtstag: 14. April", "kind": "geburtstag", "tag": "04-14" },
+        { "datum": "2026-10-05", "text": "Interesse an Triathlons, Frau Musterfrau fährt E-Bike" }
+      ],
+      "besuchHistorie": [
+        { "terminId": "t-001", "datum": "2026-10-05", "teilnehmer": ["Frau Musterfrau"],
+          "themen": ["WKR-Kampagne"],
+          "kernpunkte": ["Interesse an Wischerdisplay geäußert", "WKR-Quote unter Ziel"] }
+      ],
+      "offeneMassnahmen": [
+        { "titel": "TVA-Rückmeldung", "beschreibung": "TVA nach Gespräch erläutern",
+          "verantwortlich": "Frau Musterfrau", "frist": "2026-12-01", "status": "offen" }
+      ],
+      "prioThemen": ["wkr", "wischerdisplay"],
+      "folgeterminKadenzWochen": 6
+    },
+    {
+      "haendlerId": "DEU91M151",
+      "stammdaten": { "name": "Autohaus Musterbach", "anrede": "Herr Mustermann (GF1)" },
+      "persoenlicheNotizen": [
+        { "datum": "2026-09-12", "text": "Hund Berti, gerne ansprechen" }
+      ],
+      "besuchHistorie": [
+        { "terminId": "t-002", "datum": "2026-09-12", "teilnehmer": ["Herr Mustermann"],
+          "themen": ["Bremsen"],
+          "kernpunkte": ["Bremsen-Umsatz rückläufig"] }
+      ],
+      "offeneMassnahmen": [],
+      "prioThemen": ["bremsen"],
+      "folgeterminKadenzWochen": 6
+    }
+  ],
+  "gesendetInfos": []
+}
