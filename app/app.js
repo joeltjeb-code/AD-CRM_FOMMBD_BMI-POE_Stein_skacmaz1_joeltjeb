@@ -1,6 +1,7 @@
 import { erstelleDemoRouting } from './adapter/routing-adapter.js';
 import { erstelleSpeicher } from './adapter/speicher-adapter.js';
 import { planeWochen, frischauf } from './planung/planer.js';
+import { istPlanGueltig } from './planung/validierung.js';
 import { besteEinsattposition } from './planung/reihenfolge.js';
 import { filtereNachObg } from './planung/auswahl.js';
 import { parseBefehl, wendeAn } from './planung/befehle.js';
@@ -234,23 +235,91 @@ function zeigeAbwesenheiten() {
   });
 }
 
+// Lädt eine JSON-Datei mit Retry — ein kurzer Hänger des internen Servers
+// (oder eine Datei, die genau während eines Regenerierens gelesen wird)
+// wirft sonst einen stummen Abbruch beim Start.
+async function ladeDatenMitRetry(url, versuche = 3) {
+  let letzterFehler = null;
+  for (let i = 0; i < versuche; i++) {
+    try {
+      const r = await fetch(url);
+      if (!r.ok) throw new Error(`HTTP ${r.status} für ${url}`);
+      return await r.json();
+    } catch (e) {
+      letzterFehler = e;
+      await new Promise((res) => setTimeout(res, 250 * (i + 1)));
+    }
+  }
+  throw letzterFehler;
+}
+
+function zeigeStartfehler(fehler) {
+  const ziel = document.getElementById('plan');
+  if (!ziel) return;
+  ziel.innerHTML = `
+    <section class="fehlerhinweis" style="border:2px solid #c0272d; padding:16px; margin-top:16px; border-radius:4px;">
+      <h2 style="margin-top:0">Die Daten konnten nicht geladen werden</h2>
+      <p>Ursache: <code>${(fehler?.message ?? fehler).toString().replace(/[<>&]/g, '')}</code></p>
+      <p>Bitte die Seite neu laden (F5). Läuft der interne Server nicht mehr, im Terminal
+      <code>python3 -m http.server 8000</code> starten und dann neu laden.</p>
+      <p><button id="startfehlerNeuLaden" type="button">Seite neu laden</button></p>
+    </section>`;
+  document.getElementById('startfehlerNeuLaden')?.addEventListener('click', () => window.location.reload());
+}
+
+function bindeStatischeListener() {
+  for (const tab of document.querySelectorAll('[role=tab]')) {
+    tab.addEventListener('click', () => {
+      const tabId = tab.id.replace('tab-', '');
+      wechsleTab(tabId);
+      // Infos laden den aktuellen Vorschlag-Stand beim Betreten (nach Auswahl)
+      if (tabId === 'infos') zeigeInfoVerteilung();
+    });
+  }
+  document.getElementById('neuPlanen').addEventListener('click', () => {
+    if (!haendler.length) return; // Daten noch nicht (bzw. fehlerhaft) geladen
+    neuPlanen();
+  });
+  document.getElementById('exportJson').addEventListener('click', () => {
+    if (!plan) return;
+    const blob = new Blob([speicher.exportJson(plan)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `routenplan-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+  });
+}
+
 async function starten() {
-  [haendler, hotels, wissensbasis, bausteine, scorecard, postfach, themenAnhaenge] = await Promise.all([
-    fetch('daten/haendler-demo.json').then((r) => r.json()),
-    fetch('daten/hotels-demo.json').then((r) => r.json()),
-    fetch('daten/wissensbasis.json').then((r) => r.json()),
-    fetch('daten/kampagnen-bausteine.json').then((r) => r.json()),
-    fetch('daten/scorecard-demo.json').then((r) => r.json()),
-    fetch('daten/postfach-demo.json').then((r) => r.json()),
-    fetch('daten/themen-anhaenge.json').then((r) => r.json()),
-  ]);
+  // Listener VOR dem Datenladen binden — soll das Laden scheitern, bleiben
+  // die Buttons trotzdem bedienbar und die Fehlermeldung sichtbar.
+  bindeStatischeListener();
+  try {
+    [haendler, hotels, wissensbasis, bausteine, scorecard, postfach, themenAnhaenge] = await Promise.all([
+      ladeDatenMitRetry('daten/haendler-demo.json'),
+      ladeDatenMitRetry('daten/hotels-demo.json'),
+      ladeDatenMitRetry('daten/wissensbasis.json'),
+      ladeDatenMitRetry('daten/kampagnen-bausteine.json'),
+      ladeDatenMitRetry('daten/scorecard-demo.json'),
+      ladeDatenMitRetry('daten/postfach-demo.json'),
+      ladeDatenMitRetry('daten/themen-anhaenge.json'),
+    ]);
+  } catch (e) {
+    zeigeStartfehler(e);
+    return;
+  }
   wissensbasis = speicher.lade('wissensbasis', wissensbasis);
   rendereEinstellungen(document.getElementById('einstellungen'), settings, {
     onSpeichern: (neu) => { settings = neu; speicher.speichere('einstellungen', settings); neuPlanen(); },
   });
   zeigeAbwesenheiten();
   plan = speicher.lade('plan', null);
-  if (plan) zeichnen(); else neuPlanen();
+  // Gealterten Plan verwerfen: referenziert er Händler, die es im aktuellen
+  // Datensatz nicht mehr gibt (Demo-Re-Generierung), lieber neu planen als
+  // Geister-Termine zu rendern.
+  const dealers = Object.fromEntries(haendler.map((h) => [h.id, h]));
+  if (plan && !istPlanGueltig(plan, dealers)) plan = null;
+  if (plan) { plan = frischauf(plan, kontext()); zeichnen(); } else neuPlanen();
   rendereBerichtFormular(document.getElementById('bericht'), berichtFreigeben, {
     wissensbasis: wissensbasis,
     // Händlernummer im Bericht wählt den global selektierten Händler —
@@ -265,22 +334,6 @@ async function starten() {
       const kurzFeld = document.querySelector('#feld-haendler');
       if (kurzFeld) kurzFeld.value = hndNummer(stamm.id);
     },
-  });
-  for (const tab of document.querySelectorAll('[role=tab]')) {
-    tab.addEventListener('click', () => {
-      const tabId = tab.id.replace('tab-', '');
-      wechsleTab(tabId);
-      // Infos laden den aktuellen Vorschlag-Stand beim Betreten (nach Auswahl)
-      if (tabId === 'infos') zeigeInfoVerteilung();
-    });
-  }
-  document.getElementById('neuPlanen').addEventListener('click', neuPlanen);
-  document.getElementById('exportJson').addEventListener('click', () => {
-    const blob = new Blob([speicher.exportJson(plan)], { type: 'application/json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `routenplan-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
   });
 }
 
