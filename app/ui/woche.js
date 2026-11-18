@@ -1,4 +1,6 @@
-export function renderePlanraster(container, plan, { onMove, onBefehl }) {
+import { farbeFuer } from '../wissensbasis/farbcodierung.js';
+
+export function renderePlanraster(container, plan, { onMove, onBefehl, onWaehl, haendlerVerlauf = {}, heute }) {
   const teile = [];
   plan.wochen.forEach((woche, wi) => {
     teile.push(`<h2>Woche ab ${woche.montag}</h2><div class="woche" data-woche="${wi}">`);
@@ -6,7 +8,7 @@ export function renderePlanraster(container, plan, { onMove, onBefehl }) {
       teile.push(`<section class="tag ${tag.ok ? '' : 'fehler'}" data-woche="${wi}" data-tag="${ti}">
         <h3>${tag.tag} (${tag.datum})${tag.ok ? '' : ` – ${tag.grund ?? 'ungültig'}`}</h3>
         <ul>${(tag.termine ?? []).map((x, si) =>
-          `<li draggable="true" data-id="${x.haendlerId}" data-woche="${wi}" data-tag="${ti}" data-slot="${si}">
+          `<li draggable="true" class="farbe-${farbeFuer(haendlerVerlauf[x.haendlerId] ?? null, heute)}" data-id="${x.haendlerId}" data-woche="${wi}" data-tag="${ti}" data-slot="${si}">
              ${x.start}–${x.ende} ${x.haendlerId}</li>`).join('')}
         ${tag.leer ? '<li class="leer">kein Auftrag</li>' : ''}
         </ul>
@@ -28,6 +30,7 @@ export function renderePlanraster(container, plan, { onMove, onBefehl }) {
   let gezogen = null;
   container.querySelectorAll('li[draggable]').forEach((li) => {
     li.addEventListener('dragstart', () => { gezogen = li; });
+    li.addEventListener('click', () => onWaehl?.(li.dataset.id));
   });
   container.querySelectorAll('section.tag').forEach((section) => {
     section.addEventListener('dragover', (e) => e.preventDefault());
