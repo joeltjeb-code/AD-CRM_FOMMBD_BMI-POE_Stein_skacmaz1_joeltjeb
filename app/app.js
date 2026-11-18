@@ -131,6 +131,9 @@ function zeigeBriefing(haendlerId) {
     speicher.speichere('wissensbasis', wissensbasis);
   }
   const kpi = ladeKpiWerte(scorecard, haendlerId);
+  const chip = document.getElementById('navHaendler');
+  chip.textContent = `${stamm.name} (${stamm.id})`;
+  chip.hidden = false;
   document.getElementById('briefingEingang').classList.add('versteckt');
   wechsleTab('briefing');
   rendereBriefing(document.getElementById('briefing'),
@@ -228,7 +231,12 @@ async function starten() {
   if (plan) zeichnen(); else neuPlanen();
   rendereBerichtFormular(document.getElementById('bericht'), berichtFreigeben);
   for (const tab of document.querySelectorAll('[role=tab]')) {
-    tab.addEventListener('click', () => wechsleTab(tab.id.replace('tab-', '')));
+    tab.addEventListener('click', () => {
+      const tabId = tab.id.replace('tab-', '');
+      wechsleTab(tabId);
+      // Infos laden den aktuellen Vorschlag-Stand beim Betreten (nach Auswahl)
+      if (tabId === 'infos') zeigeInfoVerteilung();
+    });
   }
   document.getElementById('neuPlanen').addEventListener('click', neuPlanen);
   document.getElementById('exportJson').addEventListener('click', () => {

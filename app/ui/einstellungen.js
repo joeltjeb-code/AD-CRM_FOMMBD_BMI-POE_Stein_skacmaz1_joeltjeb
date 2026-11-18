@@ -4,7 +4,7 @@
 export function obgOptionen() {
   return Array.from({ length: 12 }, (_, i) => {
     const wert = `D${String(i + 1).padStart(2, '0')}`;
-    return { wert, label: `OBG ${wert}` };
+    return { wert, label: wert };
   });
 }
 
@@ -31,16 +31,31 @@ export function rendereEinstellungen(container, settings, { onSpeichern, obgList
   container.innerHTML = `
     <fieldset>
       <legend>Einstellungen</legend>
-      <label>Oberbetriebsgebiet (OBG)
-        <select name="obg">${optionen}</select></label>
-      <label>Heimatadresse
-        <input name="heimatName" value="${settings.heimat?.name ?? ''}" placeholder="z. B. Heimatbüro Regensburg"></label>
-      <label>PLZ des Heimatbüros (bestimmt die Position im Routenraster)
-        <input name="heimatPlz" value="${settings.heimat?.plz ?? ''}" placeholder="z. B. 93047"></label>
-      <label>BEV-Fahrzeug <input type="checkbox" name="bev" ${settings.bev ? 'checked' : ''}></label>
-      <label>Max. Fahrzeit zum ersten Termin (min)
-        <input type="number" name="maxFahrt" value="${settings.praferenzen?.maxFahrtErsterTerminMin ?? 60}" min="10" max="120"></label>
-      <button type="button" name="speichern">Speichern &amp; neu planen</button>
+      <div class="form-grid">
+        <div class="form-feld">
+          <label for="einst-obg">Gebiet</label>
+          <select id="einst-obg" name="obg">${optionen}</select>
+        </div>
+        <div class="form-feld">
+          <label for="einst-heimat">Heimatadresse</label>
+          <input id="einst-heimat" name="heimatName" value="${settings.heimat?.name ?? ''}" placeholder="z. B. Heimatbüro Regensburg">
+        </div>
+        <div class="form-feld">
+          <label for="einst-plz">PLZ (bestimmt die Position im Routenraster)</label>
+          <input id="einst-plz" name="heimatPlz" value="${settings.heimat?.plz ?? ''}" placeholder="z. B. 93047" inputmode="numeric">
+        </div>
+        <div class="form-feld form-check">
+          <label for="einst-bev">BEV-Fahrzeug</label>
+          <input id="einst-bev" type="checkbox" name="bev" ${settings.bev ? 'checked' : ''}>
+        </div>
+        <div class="form-feld">
+          <label for="einst-maxfahrt">Max. Fahrzeit zum ersten Termin (min)</label>
+          <input id="einst-maxfahrt" type="number" name="maxFahrt" value="${settings.praferenzen?.maxFahrtErsterTerminMin ?? 60}" min="10" max="120">
+        </div>
+        <div class="form-feld form-aktion">
+          <button type="button" name="speichern">Speichern &amp; neu planen</button>
+        </div>
+      </div>
     </fieldset>`;
   container.querySelector('[name=speichern]').addEventListener('click', () => {
     const form = {
@@ -76,28 +91,34 @@ export function leseEinstellungen(alt, form) {  const maxFahrt = Number(form.max
 export function rendereAbwesenheiten(container, plan, abw = {}, { onAendern } = {}) {
   const roh = { wochen: {}, tage: {}, gruende: {}, ...abw };
   const wochen = plan?.wochen ?? [];
-  const rows = wochen.map((woche, wi) => {
+  const wochenBlocks = wochen.map((woche, wi) => {
     const wk = `w${wi}`;
-    const kombi = woche.abgewaehlt || roh.wochen[wk];
+    const kombi = woche.abgewaehlt || Boolean(roh.wochen[wk]);
     const tageZeilen = [0, 1, 2, 3].map((ti) => {
       const tk = `${wk}-d${ti}`;
       const aus = kombi || Boolean(roh.tage[tk]);
       return `
-        <label class="abw-tag"><input type="checkbox" data-key="${tk}" ${aus ? 'checked' : ''}>
-          ${woche.tage?.[ti]?.tag ?? TAGE_KUERZEL[ti]} ${woche.tage?.[ti]?.datum ?? ''}</label>
-        <input class="abw-grund" data-grund="${tk}" placeholder="Grund (optional)" value="${roh.gruende[tk] ?? ''}">`;
+        <div class="abw-tag">
+          <label><input type="checkbox" data-key="${tk}" ${aus ? 'checked' : ''}>
+            ${woche.tage?.[ti]?.tag ?? TAGE_KUERZEL[ti]}</label>
+          <input class="abw-grund" data-grund="${tk}" placeholder="Grund (optional)" value="${roh.gruende[tk] ?? ''}"
+            aria-label="Grund für ${woche.tage?.[ti]?.datum ?? ''}">
+        </div>`;
     }).join('');
     return `
       <div class="abw-woche" data-w="${wi}">
-        <label><strong>Woche ab ${woche.montag}</strong> <input type="checkbox" data-key="${wk}" ${kombi ? 'checked' : ''}> komplett abgewählt</label>
+        <div class="abw-kopf">
+          <span class="abw-montag">Woche ab ${woche.montag}</span>
+          <label class="abw-ganz"><input type="checkbox" data-key="${wk}" ${kombi ? 'checked' : ''}> komplett abgewählt</label>
+        </div>
         <div class="abw-tage">${tageZeilen}</div>
       </div>`;
   }).join('');
   container.innerHTML = `
     <fieldset>
       <legend>Abwesenheiten</legend>
-      <p class="hinweis">Abgew&auml;hlte Tage und Wochen werden nicht beplant; die Termine wandern in die aktiven Tage der Folge.</p>
-      ${rows || '<p class="leer">Noch kein Plan vorhanden.</p>'}
+      <p class="eingang">Abgew&auml;hlte Tage und Wochen werden nicht beplant; die Termine wandern in die aktiven Tage der Folge.</p>
+      ${wochenBlocks || '<p class="leer">Noch kein Plan vorhanden.</p>'}
       <button type="button" name="abwSpeichern">Abwesenheiten anwenden</button>
     </fieldset>`;
 

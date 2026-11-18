@@ -5,6 +5,13 @@ export const SKELETT = {
   letzterStartMin: 930,   // letzter Termin startet spätestens 15:30
 };
 
+// Realistische Tagesabläufe: nach dem Termin erst zum Auto, einsteigen,
+// fahren. 15 min Wechselpuffer; mitten am Tag 30 min Mittagspause.
+export const WECHSELPUFFER_MIN = 15;
+export const MITTAGSPAUSE_MIN = 30;
+const MITTAGS_FENSTER_AB = 690;  // 11:30 — ab hier darf die Pause einschieben
+const MITTAGS_PAUSE_BIS = 750;   // 12:30 — Terminbeginn frühestens nach Pause
+
 export function minZuUhr(min) {
   return `${String(Math.floor(min / 60)).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`;
 }
@@ -16,6 +23,7 @@ export function uhrZuMin(uhr) {
 function berechne(liste, start, routing, skelett) {
   const fahrzeiten = [];
   const termine = [];
+  const wechselpuffer = skelett.wechselpufferMin ?? WECHSELPUFFER_MIN;
   const ersteFahrt = routing.fahrzeitMin(start.pos, liste[0].pos);
   const maxStart = skelett.maxStartFahrtMin ?? 120;
   if (ersteFahrt > maxStart) {
@@ -23,8 +31,21 @@ function berechne(liste, start, routing, skelett) {
   }
   let t = skelett.fruehstartMin;
   fahrzeiten.push({ von: start.name, nach: liste[0].id, min: ersteFahrt });
+  let mittagspause = false;
   for (let i = 0; i < liste.length; i++) {
     const h = liste[i];
+    if (i > 0) {
+      const vorherEnde = termine[i - 1].endeMin;
+      const fahrt = routing.fahrzeitMin(liste[i - 1].pos, h.pos);
+      fahrzeiten.push({ von: liste[i - 1].id, nach: h.id, min: fahrt });
+      t = vorherEnde + fahrt + wechselpuffer;
+      // Mittagspause: läge der nächste Termin zwischen 11:30 und 12:30,
+      // wird vorab 30 min Pause eingelegt (Essen) — statt Back-to-Back
+      if (!mittagspause && t >= MITTAGS_FENSTER_AB && t < MITTAGS_PAUSE_BIS) {
+        t = MITTAGS_PAUSE_BIS;
+        mittagspause = true;
+      }
+    }
     const startMin = t;
     termine.push({
       haendlerId: h.id,
@@ -33,11 +54,6 @@ function berechne(liste, start, routing, skelett) {
       start: minZuUhr(startMin),
       ende: minZuUhr(startMin + h.dauer),
     });
-    if (i < liste.length - 1) {
-      const fahrt = routing.fahrzeitMin(h.pos, liste[i + 1].pos);
-      fahrzeiten.push({ von: h.id, nach: liste[i + 1].id, min: fahrt });
-      t = startMin + h.dauer + fahrt;
-    }
   }
   if (termine[termine.length - 1].startMin > skelett.letzterStartMin) {
     return { ok: false, grund: 'Letzter Termin beginnt nach ' + minZuUhr(skelett.letzterStartMin) };

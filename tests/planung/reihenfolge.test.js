@@ -39,3 +39,32 @@ test('validiereReihenfolge behält die gegebene Reihenfolge bei', () => {
   assert.equal(res.ok, true);
   assert.deepEqual(res.termine.map((t) => t.haendlerId), drei.map((d) => d.id));
 });
+
+test('Zwischen Terminen liegt ein realistischer Wechselpuffer (15 min)', () => {
+  const drei = [
+    { id: 'A', dauer: 90, pos: { x: 0, y: 0 } },
+    { id: 'B', dauer: 90, pos: { x: 0.5, y: 0 } }, // 1-2 min Fahrt
+  ];
+  const res = validiereReihenfolge(drei, { name: 'X', pos: { x: 0.2, y: 0 } }, r);
+  assert.equal(res.ok, true);
+  const endeA = uhrZuMin(res.termine[0].ende);
+  const startB = uhrZuMin(res.termine[1].start);
+  const luecke = startB - endeA;
+  // Fahrzeit + Puffer: mind. 15 min Lücke, aber keine roboterhafte 5-Min-Folge
+  assert.ok(luecke >= 15, `Lücke zwischen Terminen nur ${luecke} min`);
+  assert.ok(luecke <= 30, `Lücke zwischen Terminen ${luecke} min — zu groß für die kurze Strecke`);
+});
+
+test('Mittagspause: Termin in der Mittagszeit startet frühestens 12:30', () => {
+  const drei = [
+    { id: 'A', dauer: 120, pos: { x: 0, y: 0 } },   // 08:30–10:30
+    { id: 'B', dauer: 60, pos: { x: 1.5, y: 0 } },  // ca. 10:45–11:45
+    { id: 'C', dauer: 90, pos: { x: 3, y: 0 } },    // ohne Pause ~12:08 → Pause → 12:30
+  ];
+  const res = validiereReihenfolge(drei, { name: 'X', pos: { x: 0.5, y: 0 } }, r);
+  assert.equal(res.ok, true);
+  const startC = uhrZuMin(res.termine[2].start);
+  const endeB = uhrZuMin(res.termine[1].ende);
+  assert.equal(startC, 750, `Termin C startet ${minZuUhr(startC)} statt 12:30 (Mittagspause)`);
+  assert.ok(startC - endeB >= 30, 'Zwischen B-Ende und C-Start liegen mindestens 30 min (Pause/Fahrt)');
+});
