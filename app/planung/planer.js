@@ -21,11 +21,29 @@ export function parseDatum(iso) { return new Date(iso + 'T00:00:00Z'); }
 export function datumZuString(d) { return d.toISOString().slice(0, 10); }
 export function addTage(d, n) { return new Date(d.getTime() + n * 24 * 60 * 60 * 1000); }
 
-function planeWocheEnsemble(liste, wocheStart, settings, routing, dealersById, hotels, aktiveTage = [0, 1, 2, 3]) {
+// Plant eine Woche: aktive Tage bekommen je eine Dreier-Tour. Die Wochenzuweisung
+// wird cluster-weise in 3er-Gruppen zerlegt, damit Tages-Touren geografisch
+// zusammenbleiben; ein Cluster-Rest (weniger als 3) mischt mit dem nächsten
+// Cluster. Scheitert eine Gruppe am Tagesskelett, wird zuerst ein Händler
+// gegen eine Reserve getauscht, dann auf 2 verkleinert. Reserven (über die
+// Wochen-Kapazität hinaus Fällige) füllen Lücken auf.
+export function planeWocheEnsemble(liste, wocheStart, settings, routing, dealersById, hotels, aktiveTage = [0, 1, 2, 3], reserven = []) {
+  // Cluster-weise in 3er-Gruppen zerlegen (Reihenfolge der Zuweisung bleibt).
+  const gruppenQueue = [];
+  const nachCluster = new Map();
+  for (const h of liste) {
+    if (!nachCluster.has(h.cluster)) nachCluster.set(h.cluster, []);
+    nachCluster.get(h.cluster).push(dealersById[h.id]);
+  }
+  for (const gruppe of nachCluster.values()) {
+    for (let i = 0; i < gruppe.length; i += 3) gruppenQueue.push(gruppe.slice(i, i + 3));
+  }
   const tage = [];
   // Startort des Tages: Tag 1 im Heimatbüro; nach Hotelnacht am Hotel.
   let startOrt = { name: settings.heimat.name, pos: settings.heimat.pos };
-  let zeiger = 0; // Positionen in der Wochenzuweisung (nur aktive Tage füllen sich)
+  let reservenIx = 0;
+  const leereTag = (basis, zusaetzlich = {}) =>
+    ({ ...basis, ok: true, termine: [], fahrzeiten: [], leer: true, uebernachtung: { art: 'heim' }, ...zusaetzlich });
   for (let ti = 0; ti < 4; ti++) {
     const basis = {
       tag: TAGE_NAMEN[ti],
@@ -36,31 +54,57 @@ function planeWocheEnsemble(liste, wocheStart, settings, routing, dealersById, h
     };
     if (!aktiveTage.includes(ti)) {
       // Abgewählter Tag (Urlaub/Lehrgang/Event): bleibt leer, keine Termine
-      tage.push({ ...basis, ok: true, termine: [], fahrzeiten: [], leer: true, abgewaehlt: true, uebernachtung: { art: 'heim' } });
+      tage.push(leereTag(basis, { abgewaehlt: true }));
       continue;
     }
-    const drei = liste.slice(zeiger, zeiger + 3).map((h) => dealersById[h.id]);
-    zeiger += 3;
-    if (drei.length < 3) {
-      tage.push({ ...basis, ok: true, termine: [], fahrzeiten: [], leer: true, uebernachtung: { art: 'heim' } });
+    let gruppe = gruppenQueue.shift() ?? [];
+    while (gruppe.length < 3 && reservenIx < reserven.length) {
+      gruppe.push(dealersById[reserven[reservenIx++].id]);
+    }
+    let res = gruppe.length > 0 ? planeTag(gruppe, startOrt, routing) : { ok: true, termine: [], fahrzeiten: [] };
+    if (!res.ok && gruppe.length === 3) {
+      // 1. Einzelhändler gegen Reserven tauschen (Reserve ist je Versuch
+      // verbraucht, auch bei Misserfolg — verhindert Endloswiederholung).
+      for (let i = 0; i < 3 && !res.ok; i++) {
+        while (reservenIx < reserven.length && !res.ok) {
+          const versuch = gruppe.map((h, j) => (j === i ? dealersById[reserven[reservenIx].id] : h));
+          const r2 = planeTag(versuch, startOrt, routing);
+          reservenIx++;
+          if (r2.ok) { gruppe = versuch; res = r2; }
+        }
+      }
+    }
+    if (!res.ok && gruppe.length === 3) {
+      // 2. Auf zwei Händler verkleinern; wer übrig bleibt, ist nicht geplant.
+      for (let i = 0; i < 3 && !res.ok; i++) {
+        const kompakt = gruppe.filter((_, j) => j !== i);
+        const r3 = planeTag(kompakt, startOrt, routing);
+        if (r3.ok) { gruppe = kompakt; res = r3; }
+      }
+    }
+    const vollstaendig = res.ok && gruppe.length > 0;
+        if (!vollstaendig) {
+      // Nichts Planbares: Tag bleibt leer, Wochenendnacht-Reset zum Büro
+      tage.push(leereTag(basis));
       startOrt = { name: settings.heimat.name, pos: settings.heimat.pos };
       continue;
     }
-    const res = planeTag(drei, startOrt, routing);
     const tag = { ...basis, ...res, termine: res.termine ?? [], fahrzeiten: res.fahrzeiten ?? [], uebernachtung: { art: 'heim' } };
-    if (res.ok) {
-      // ÜN-Entscheidung direkt am Tagesende: sie bestimmt den Folgetags-Start
-      const ersterMorgen = zeiger < liste.length ? dealersById[liste[zeiger].id] : null;
-      const letzter = dealersById[tag.termine[tag.termine.length - 1].haendlerId];
-      tag.uebernachtung = entscheideUbernachtung({ letzterH: letzter, ersterMorgen, hotels, settings, routing });
-      if (!ersterMorgen) {
-        // Freitag ohne Folgetag: Wochenend-Heimfahrt bleibt Standard
-        tag.uebernachtung = { art: 'heim', fahrzeitHeim: routing.fahrzeitMin(letzter.pos, settings.heimat.pos) };
-      }
-      startOrt = tag.uebernachtung.art === 'hotel'
-        ? { name: tag.uebernachtung.hotelName, pos: tag.uebernachtung.pos ?? settings.heimat.pos }
-        : { name: settings.heimat.name, pos: settings.heimat.pos };
+    // ÜN-Entscheidung direkt am Tagesende: sie bestimmt den Folgetags-Start.
+    const naechsteGruppe = gruppenQueue[0] ?? [];
+    const ersterMorgenPool = naechsteGruppe.length > 0
+      ? naechsteGruppe[0]
+      : (reserven[reservenIx] ? dealersById[reserven[reservenIx].id] : null);
+    const morgen = ersterMorgenPool;
+    const letzter = dealersById[tag.termine[tag.termine.length - 1].haendlerId];
+    tag.uebernachtung = entscheideUbernachtung({ letzterH: letzter, ersterMorgen: morgen, hotels, settings, routing });
+    if (!ersterMorgenPool) {
+      // Freitag ohne Folgetag: Wochenend-Heimfahrt bleibt Standard
+      tag.uebernachtung = { art: 'heim', fahrzeitHeim: routing.fahrzeitMin(letzter.pos, settings.heimat.pos) };
     }
+        startOrt = tag.uebernachtung.art === 'hotel'
+      ? { name: tag.uebernachtung.hotelName, pos: tag.uebernachtung.pos ?? settings.heimat.pos }
+      : { name: settings.heimat.name, pos: settings.heimat.pos };
     tage.push(tag);
   }
   return tage;
@@ -70,9 +114,15 @@ export function planeWochen({ haendler, hotels, settings, routing, startMontag, 
   const labels = bildeCluster(haendler, 5);
   const mitCluster = haendler.map((h, i) => ({ ...h, cluster: h.cluster ?? labels[i] }));
   const dealersById = Object.fromEntries(mitCluster.map((h) => [h.id, h]));
+  // Hotels vorfiltern: Demo-Datensatz hält Hotels je OBG bereit ('obg'-Feld);
+  // Hotellisten ohne 'obg' (z. B. Fixtures) bleiben ungefiltert.
+  const hotelsObg = hotels.filter((ho) => !ho.obg || ho.obg === settings.obg);
   const kandidaten = faelligeKandidaten(mitCluster, startMontag);
   const aktiv = aktiveTageJeWoche(settings.abwesenheiten, anzahlWochen);
   const wochen = verteileMitKapazitaeten(kandidaten, aktiv.map((a) => a * 3));
+  // Reserven: Fällige über der Wochen-Kapazität hinaus — füllen leere Tage auf.
+  const geplant = new Set(wochen.flat().map((h) => h.id));
+  const reserven = kandidaten.filter((h) => !geplant.has(h.id));
   const plan = {
     erstelltAm: new Date().toISOString(),
     wochen: wochen.map((liste, wi) => {
@@ -81,11 +131,13 @@ export function planeWochen({ haendler, hotels, settings, routing, startMontag, 
       }
       return {
         montag: datumZuString(addTage(parseDatum(startMontag), wi * 7)),
-        tage: planeWocheEnsemble(liste, addTage(parseDatum(startMontag), wi * 7), settings, routing, dealersById, hotels, aktiv[wi] === 4 ? [0, 1, 2, 3] : [0, 1, 2, 3].filter((ti) => !settings.abwesenheiten?.tage?.[`w${wi}-d${ti}`])),
+        tage: planeWocheEnsemble(liste, addTage(parseDatum(startMontag), wi * 7), settings, routing, dealersById, hotelsObg,
+          aktiv[wi] === 4 ? [0, 1, 2, 3] : [0, 1, 2, 3].filter((ti) => !settings.abwesenheiten?.tage?.[`w${wi}-d${ti}`]),
+          reserven),
       };
     }),
   };
-  return frischauf(plan, { dealersById, settings, routing, hotels });
+  return frischauf(plan, { dealersById, settings, routing, hotels: hotelsObg });
 }
 
 // Revalidiert Reihenfolge und Übernachtungen eines bestehenden Plans.

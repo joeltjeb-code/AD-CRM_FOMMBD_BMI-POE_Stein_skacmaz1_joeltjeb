@@ -44,3 +44,43 @@ test('frischauf erhält Reihenfolge und ValidationResult', () => {
   assert.deepEqual(plan.wochen[0].tage[0].termine.map((t) => t.haendlerId), davor);
   assert.equal(plan.wochen[0].tage[0].ok, true);
 });
+
+test('Reserven füllen Lücken: keine leeren Tage, 4 × 12 Termine', () => {
+  // 5 Cluster × 12 fällige Händler (60 gesamt) über 48 Kapazitätsslots —
+  // wie im Demo-Datensatz: Reserve deckt höchstens eine fehlgeschlagene Gruppe.
+  const demo = [];
+  const zentren = [
+    { x: 0, y: 0 }, { x: 40, y: 0 }, { x: 0, y: 40 }, { x: 40, y: 40 }, { x: 20, y: 20 },
+  ];
+  let n = 0;
+  zentren.forEach((z, ci) => {
+    for (let k = 0; k < 12; k++) {
+      n++;
+      demo.push({
+        id: `DX${ci}M${k}`,
+        name: `Autohaus Demo ${ci}-${k}`,
+        pos: { x: z.x + (k % 4) * 1.1, y: z.y + Math.floor(k / 4) * 1.1 },
+        cluster: ci,
+        prio: k === 0,
+        dauer: 90,
+        besuchVerlauf: ['2026-06-01'], // tief zurück → fällig
+      });
+    }
+  });
+  const S = {
+    ...SETTINGS,
+    heimat: { name: 'Heimatbüro', plz: '', pos: { x: -10, y: 0 } },
+    praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 999 },
+    abwesenheiten: { wochen: {}, tage: {}, gruende: {} },
+  };
+  const plan = planeWochen({ haendler: demo, hotels: HOTELS, settings: S, routing: r, startMontag: '2026-11-23' });
+  let summe = 0;
+  for (const w of plan.wochen) {
+    for (const t of w.tage) {
+      assert.ok(t.ok, `${w.montag} ${t.tag} nicht planbar`);
+      assert.equal(t.termine.length, 3, `${w.montag} ${t.tag} hat keine 3 Termine`);
+      summe += t.termine.length;
+    }
+  }
+  assert.equal(summe, 48);
+});
