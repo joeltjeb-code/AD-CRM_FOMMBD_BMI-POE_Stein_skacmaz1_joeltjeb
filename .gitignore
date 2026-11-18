@@ -16,5 +16,8 @@ __pycache__/
 # Temporär: Ford Design Guidelines (nur lokal, nicht committen)
 Ford Design/
 
+# FOM-Unterlagen (kundeneigenes Material, nur lokal)
+FOM_Data/
+
 # Vibe Session-Scratchpad
 unified_harness_scratchpad/

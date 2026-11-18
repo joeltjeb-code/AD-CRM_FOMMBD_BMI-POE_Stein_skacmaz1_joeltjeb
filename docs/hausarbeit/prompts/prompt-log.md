@@ -117,3 +117,5 @@
   → Ergebnis: Tab-Hervorhebung (#066FEF), KW bei Abwesenheiten, Fahrzeit-Streuung (median 32, p95 69 min), Hotel-Varianz (18 Marken × Stadtteile), Trickle-Down + beste Einsattposition; 88/88 Tests, jsdom-Drag-Verifikation, 3 Feature-Commits
 - [21:55] "Ich komme jetzt nicht mehr aus dieser Ansicht weiter" (Screenshot: Plan-Tab ohne Einstellungen/Wochen, nur Statik)
   → Ergebnis: Ursache = stummer Abbruch von starten() bei Fetch-Fehler; Fix mit Lade-Retry, sichtbarer Fehlermeldung + Neuladen-Button, Listener-Frühbindung und Verwerfen gealterter Pläne; 92/92 Tests, jsdom 3-Szenarien-Verifikation, Commit
+- [22:05] "Ich will die restlichen Aufgaben in den kommenden Tagen machen. Bitte starte führe das aufräumen durch. Also dokumentier alles notwenige sobald noch nicht passiert und dann mergen wir auf Main. Was fehlt dann noch?"
+  → Ergebnis: .gitignore + FOM_Data/, AGENTS.md aktueller Stand 18.11., README-Projektabschnitt, Merge auf main; Restliste T18 (KI text-adapter), T19 (OCR-Import), echte PLZ-Koordinaten, echte Händlerliste, Maillinbox Phase 2

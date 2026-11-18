@@ -29,3 +29,15 @@ Vibe meldet dich beim ersten Start über dein Mistral-Konto an (Launch browser).
 Die Anmeldung bleibt in deinem Codespace gespeichert, nie im Repository, und
 gilt weiter, wenn der Codespace pausiert. Löschst du den Codespace, meldest du
 dich beim nächsten Mal einfach erneut an.
+
+## Projekt: Außendienst-Assistent
+
+Die in diesem Repo gebaute App plant Händlertermine und unterstützt das
+Briefing und die Nachbereitung:
+
+```bash
+python3 -m http.server 8000   # starten, dann im Browser Port 8000 öffnen
+node --test tests/            # Testsuite
+```
+
+Details zum Vorgehen, Specs und Tagesjournal: `AGENTS.md` und `docs/hausarbeit/`.

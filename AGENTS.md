@@ -57,6 +57,9 @@ never in this repository.
 
 ## Aktueller Stand
 
-*Letzter Stand (16.11.2026):*
-- Routenplanung implementiert auf Branch `feature/routenplanung`: Planungslogik (Cluster → Fälligkeit → Prio, Tagesskelett, Übernachtung) mit 26 Unit-Tests grün, Demo-Daten (90 Händler, 10 Hotels), UI mit Drag & Drop + Textbefehlen (manuell im Browser zu prüfen: `python3 -m http.server 8000`).
-- Nächste Schritte: Browserdurchlauf bestätigen, echte Händlerliste hochladen (Feldformat → Datenmodell), Briefing/Bericht/Wissensbasis aus der bestehenden Spezifikation.
+*Letzter Stand (18.11.2026, Branch `feature/briefing-nachbereitung`, Suite 92/92 grün):*
+- **Routenplanung:** Planungslogik getestet (Cluster → Fälligkeit → Prio, Tagesskelett mit Wechselpuffer + Mittagspause, Übernachtung Heimat/Hotel mit Präferenzen), 4-Wochen-Plan, Drag & Drop mit Trickle-Down und bester Einsattposition, Textbefehle, Abwesenheiten je Tag/Woche (KW-Anzeige).
+- **Briefing / Bericht / Infos:** Briefing mit KPIs + Pflichthemen + Schnellblatt, Bericht mit Feldblöcken, Händlernummer-Maske, Folgetermin-Maske, Teilnehmer-Vorschlägen, Freigabe → Wissensbasis, Info-Verteilung per Postfach-Anhängen.
+- **Demo-Daten:** 720 Händler (12 OBG × 60) mit Fahrzeit-Streuung, 120 Hotels (18 Marken × Stadtteile), Scorecard/Postfach/Wissensbasis demo.
+- **Start:** `python3 -m http.server 8000`, App im Browser; Tests: `node --test tests/`.
+- **Nächste Schritte:** KI text-adapter (T18: Mistral-API für Stichpunkte→Bericht + Themen-Klassifikation, Heuristik-Fallback), Händlerimport per Mistral OCR (T19) als Weg zu echten PLZ-Koordinaten, dann echte Händlerliste hochladen.
