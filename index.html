@@ -9,13 +9,22 @@
     .tag { border: 1px solid #999; padding: .5rem; min-width: 15rem; }
     .tag.fehler { border-color: #c00; color: #c00; }
     li[draggable] { cursor: grab; }
+    .farbe-frisch { border-left: 4px solid green; }
+    .farbe-ok { border-left: 4px solid orange; }
+    .farbe-ueberfaellig { border-left: 4px solid red; }
+    .hinweis { color: #a00; font-weight: bold; }
   </style>
 </head>
 <body>
-  <h1>Routenplanung</h1>
+  <h1>Außendienst-Assistent — Routenplanung</h1>
   <div id="einstellungen"></div>
   <button id="neuPlanen">Plan neu berechnen</button>
   <button id="exportJson">Plan exportieren</button>
+  <button id="berichtBtn">Bericht erfassen</button>
+  <button id="infoBtn">Info-Verteilung</button>
+  <div id="briefing"></div>
+  <div id="bericht"></div>
+  <div id="infodist"></div>
   <div id="plan"></div>
   <script type="module" src="app/app.js"></script>
 </body>
