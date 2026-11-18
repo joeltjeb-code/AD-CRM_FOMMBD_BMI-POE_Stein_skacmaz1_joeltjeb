@@ -119,3 +119,5 @@
   → Ergebnis: Ursache = stummer Abbruch von starten() bei Fetch-Fehler; Fix mit Lade-Retry, sichtbarer Fehlermeldung + Neuladen-Button, Listener-Frühbindung und Verwerfen gealterter Pläne; 92/92 Tests, jsdom 3-Szenarien-Verifikation, Commit
 - [22:05] "Ich will die restlichen Aufgaben in den kommenden Tagen machen. Bitte starte führe das aufräumen durch. Also dokumentier alles notwenige sobald noch nicht passiert und dann mergen wir auf Main. Was fehlt dann noch?"
   → Ergebnis: .gitignore + FOM_Data/, AGENTS.md aktueller Stand 18.11., README-Projektabschnitt, Merge auf main; Restliste T18 (KI text-adapter), T19 (OCR-Import), echte PLZ-Koordinaten, echte Händlerliste, Maillinbox Phase 2
+- [22:08] "Feierabend"
+  → Ergebnis: Finale Tageszusammenfassung im Tagebuch, alle Änderungen committed (main auf Merge-Stand 972c664, Suite 92/92), offene Punkte T18/T19 dokumentiert
