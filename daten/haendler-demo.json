@@ -4,8 +4,8 @@
   "name": "Autohaus BergmannNord 1",
   "adresse": "Musterweg 1, Musterstadt-D01",
   "pos": {
-   "x": -20,
-   "y": -27
+   "x": -26.1,
+   "y": -27.0
   },
   "cluster": 0,
   "prio": true,
@@ -20,8 +20,8 @@
   "name": "Autohaus VoglerZentrum 2",
   "adresse": "Musterweg 2, Musterstadt-D01",
   "pos": {
-   "x": 0,
-   "y": -27
+   "x": 0.2,
+   "y": -21.2
   },
   "cluster": 0,
   "prio": false,
@@ -36,8 +36,8 @@
   "name": "Autohaus KuhnSandberg 3",
   "adresse": "Musterweg 3, Musterstadt-D01",
   "pos": {
-   "x": 20,
-   "y": -27
+   "x": 13.6,
+   "y": -31.4
   },
   "cluster": 0,
   "prio": false,
@@ -52,8 +52,8 @@
   "name": "Autohaus WeberNord 4",
   "adresse": "Musterweg 4, Musterstadt-D01",
   "pos": {
-   "x": -20,
-   "y": -9
+   "x": -18.4,
+   "y": -8.1
   },
   "cluster": 0,
   "prio": false,
@@ -68,8 +68,8 @@
   "name": "Autohaus IversenZentrum 5",
   "adresse": "Musterweg 5, Musterstadt-D01",
   "pos": {
-   "x": 0,
-   "y": -9
+   "x": 4.5,
+   "y": -8.2
   },
   "cluster": 0,
   "prio": false,
@@ -84,8 +84,8 @@
   "name": "Autohaus WagenfeldSandberg 6",
   "adresse": "Musterweg 6, Musterstadt-D01",
   "pos": {
-   "x": 20,
-   "y": -9
+   "x": 23.7,
+   "y": -4.7
   },
   "cluster": 0,
   "prio": false,
@@ -100,8 +100,8 @@
   "name": "Autohaus BrandtNord 7",
   "adresse": "Musterweg 7, Musterstadt-D01",
   "pos": {
-   "x": -20,
-   "y": 9
+   "x": -16.0,
+   "y": 10.4
   },
   "cluster": 0,
   "prio": false,
@@ -116,8 +116,8 @@
   "name": "Autohaus RothZentrum 8",
   "adresse": "Musterweg 8, Musterstadt-D01",
   "pos": {
-   "x": 0,
-   "y": 9
+   "x": -4.2,
+   "y": 10.8
   },
   "cluster": 0,
   "prio": false,
@@ -132,8 +132,8 @@
   "name": "Autohaus ErtlSandberg 9",
   "adresse": "Musterweg 9, Musterstadt-D01",
   "pos": {
-   "x": 20,
-   "y": 9
+   "x": 13.8,
+   "y": 14.1
   },
   "cluster": 0,
   "prio": false,
@@ -148,8 +148,8 @@
   "name": "Autohaus LehmannNord 10",
   "adresse": "Musterweg 10, Musterstadt-D01",
   "pos": {
-   "x": -20,
-   "y": 27
+   "x": -20.8,
+   "y": 32.0
   },
   "cluster": 0,
   "prio": true,
@@ -164,8 +164,8 @@
   "name": "Autohaus ReinhardtZentrum 11",
   "adresse": "Musterweg 11, Musterstadt-D01",
   "pos": {
-   "x": 0,
-   "y": 27
+   "x": 3.0,
+   "y": 29.9
   },
   "cluster": 0,
   "prio": false,
@@ -180,8 +180,8 @@
   "name": "Autohaus AdlerSandberg 12",
   "adresse": "Musterweg 12, Musterstadt-D01",
   "pos": {
-   "x": 20,
-   "y": 27
+   "x": 15.4,
+   "y": 23.0
   },
   "cluster": 0,
   "prio": false,
@@ -196,8 +196,8 @@
   "name": "Autohaus WeberNord 13",
   "adresse": "Musterweg 1, Musterstadt-D01",
   "pos": {
-   "x": 32,
-   "y": -9
+   "x": 39.7,
+   "y": -2.1
   },
   "cluster": 1,
   "prio": false,
@@ -212,8 +212,8 @@
   "name": "Autohaus IversenZentrum 14",
   "adresse": "Musterweg 2, Musterstadt-D01",
   "pos": {
-   "x": 52,
-   "y": -9
+   "x": 56.9,
+   "y": -1.0
   },
   "cluster": 1,
   "prio": false,
@@ -228,8 +228,8 @@
   "name": "Autohaus WagenfeldSandberg 15",
   "adresse": "Musterweg 3, Musterstadt-D01",
   "pos": {
-   "x": 72,
-   "y": -9
+   "x": 72.2,
+   "y": -15.8
   },
   "cluster": 1,
   "prio": false,
@@ -244,8 +244,8 @@
   "name": "Autohaus BrandtNord 16",
   "adresse": "Musterweg 4, Musterstadt-D01",
   "pos": {
-   "x": 32,
-   "y": 9
+   "x": 29.4,
+   "y": 9.9
   },
   "cluster": 1,
   "prio": false,
@@ -260,8 +260,8 @@
   "name": "Autohaus RothZentrum 17",
   "adresse": "Musterweg 5, Musterstadt-D01",
   "pos": {
-   "x": 52,
-   "y": 9
+   "x": 48.7,
+   "y": 8.3
   },
   "cluster": 1,
   "prio": false,
@@ -276,8 +276,8 @@
   "name": "Autohaus ErtlSandberg 18",
   "adresse": "Musterweg 6, Musterstadt-D01",
   "pos": {
-   "x": 72,
-   "y": 9
+   "x": 78.0,
+   "y": 12.3
   },
   "cluster": 1,
   "prio": false,
@@ -292,8 +292,8 @@
   "name": "Autohaus LehmannNord 19",
   "adresse": "Musterweg 7, Musterstadt-D01",
   "pos": {
-   "x": 32,
-   "y": 27
+   "x": 33.2,
+   "y": 19.4
   },
   "cluster": 1,
   "prio": true,
@@ -308,8 +308,8 @@
   "name": "Autohaus ReinhardtZentrum 20",
   "adresse": "Musterweg 8, Musterstadt-D01",
   "pos": {
-   "x": 52,
-   "y": 27
+   "x": 55.4,
+   "y": 24.8
   },
   "cluster": 1,
   "prio": false,
@@ -324,8 +324,8 @@
   "name": "Autohaus AdlerSandberg 21",
   "adresse": "Musterweg 9, Musterstadt-D01",
   "pos": {
-   "x": 72,
-   "y": 27
+   "x": 70.8,
+   "y": 25.4
   },
   "cluster": 1,
   "prio": false,
@@ -340,8 +340,8 @@
   "name": "Autohaus UlrichNord 22",
   "adresse": "Musterweg 10, Musterstadt-D01",
   "pos": {
-   "x": 32,
-   "y": 45
+   "x": 33.4,
+   "y": 45.0
   },
   "cluster": 1,
   "prio": false,
@@ -356,8 +356,8 @@
   "name": "Autohaus HartmannZentrum 23",
   "adresse": "Musterweg 11, Musterstadt-D01",
   "pos": {
-   "x": 52,
-   "y": 45
+   "x": 45.9,
+   "y": 45.1
   },
   "cluster": 1,
   "prio": false,
@@ -372,8 +372,8 @@
   "name": "Autohaus KrausSandberg 24",
   "adresse": "Musterweg 12, Musterstadt-D01",
   "pos": {
-   "x": 72,
-   "y": 45
+   "x": 76.0,
+   "y": 46.6
   },
   "cluster": 1,
   "prio": false,
@@ -388,8 +388,8 @@
   "name": "Autohaus BrandtNord 25",
   "adresse": "Musterweg 1, Musterstadt-D01",
   "pos": {
-   "x": 84,
-   "y": -19
+   "x": 83.9,
+   "y": -12.3
   },
   "cluster": 2,
   "prio": false,
@@ -404,8 +404,8 @@
   "name": "Autohaus RothZentrum 26",
   "adresse": "Musterweg 2, Musterstadt-D01",
   "pos": {
-   "x": 104,
-   "y": -19
+   "x": 100.1,
+   "y": -20.3
   },
   "cluster": 2,
   "prio": false,
@@ -420,8 +420,8 @@
   "name": "Autohaus ErtlSandberg 27",
   "adresse": "Musterweg 3, Musterstadt-D01",
   "pos": {
-   "x": 124,
-   "y": -19
+   "x": 130.8,
+   "y": -19.3
   },
   "cluster": 2,
   "prio": false,
@@ -436,8 +436,8 @@
   "name": "Autohaus LehmannNord 28",
   "adresse": "Musterweg 4, Musterstadt-D01",
   "pos": {
-   "x": 84,
-   "y": -1
+   "x": 84.3,
+   "y": -8.6
   },
   "cluster": 2,
   "prio": true,
@@ -452,8 +452,8 @@
   "name": "Autohaus ReinhardtZentrum 29",
   "adresse": "Musterweg 5, Musterstadt-D01",
   "pos": {
-   "x": 104,
-   "y": -1
+   "x": 99.6,
+   "y": -6.9
   },
   "cluster": 2,
   "prio": false,
@@ -468,8 +468,8 @@
   "name": "Autohaus AdlerSandberg 30",
   "adresse": "Musterweg 6, Musterstadt-D01",
   "pos": {
-   "x": 124,
-   "y": -1
+   "x": 116.8,
+   "y": 2.3
   },
   "cluster": 2,
   "prio": false,
@@ -484,8 +484,8 @@
   "name": "Autohaus UlrichNord 31",
   "adresse": "Musterweg 7, Musterstadt-D01",
   "pos": {
-   "x": 84,
-   "y": 17
+   "x": 90.2,
+   "y": 10.6
   },
   "cluster": 2,
   "prio": false,
@@ -500,8 +500,8 @@
   "name": "Autohaus HartmannZentrum 32",
   "adresse": "Musterweg 8, Musterstadt-D01",
   "pos": {
-   "x": 104,
-   "y": 17
+   "x": 106.0,
+   "y": 16.5
   },
   "cluster": 2,
   "prio": false,
@@ -516,8 +516,8 @@
   "name": "Autohaus KrausSandberg 33",
   "adresse": "Musterweg 9, Musterstadt-D01",
   "pos": {
-   "x": 124,
-   "y": 17
+   "x": 123.7,
+   "y": 12.7
   },
   "cluster": 2,
   "prio": false,
@@ -532,8 +532,8 @@
   "name": "Autohaus KesslerNord 34",
   "adresse": "Musterweg 10, Musterstadt-D01",
   "pos": {
-   "x": 84,
-   "y": 35
+   "x": 90.2,
+   "y": 37.0
   },
   "cluster": 2,
   "prio": false,
@@ -548,8 +548,8 @@
   "name": "Autohaus PflugerZentrum 35",
   "adresse": "Musterweg 11, Musterstadt-D01",
   "pos": {
-   "x": 104,
-   "y": 35
+   "x": 103.3,
+   "y": 34.5
   },
   "cluster": 2,
   "prio": false,
@@ -564,8 +564,8 @@
   "name": "Autohaus HansenSandberg 36",
   "adresse": "Musterweg 12, Musterstadt-D01",
   "pos": {
-   "x": 124,
-   "y": 35
+   "x": 130.9,
+   "y": 42.8
   },
   "cluster": 2,
   "prio": false,
@@ -580,8 +580,8 @@
   "name": "Autohaus LehmannNord 37",
   "adresse": "Musterweg 1, Musterstadt-D01",
   "pos": {
-   "x": 0,
-   "y": 37
+   "x": 0.7,
+   "y": 38.0
   },
   "cluster": 3,
   "prio": true,
@@ -596,8 +596,8 @@
   "name": "Autohaus ReinhardtZentrum 38",
   "adresse": "Musterweg 2, Musterstadt-D01",
   "pos": {
-   "x": 20,
-   "y": 37
+   "x": 22.7,
+   "y": 33.9
   },
   "cluster": 3,
   "prio": false,
@@ -612,8 +612,8 @@
   "name": "Autohaus AdlerSandberg 39",
   "adresse": "Musterweg 3, Musterstadt-D01",
   "pos": {
-   "x": 40,
-   "y": 37
+   "x": 44.8,
+   "y": 37.0
   },
   "cluster": 3,
   "prio": false,
@@ -628,8 +628,8 @@
   "name": "Autohaus UlrichNord 40",
   "adresse": "Musterweg 4, Musterstadt-D01",
   "pos": {
-   "x": 0,
-   "y": 55
+   "x": -0.3,
+   "y": 61.2
   },
   "cluster": 3,
   "prio": false,
@@ -644,8 +644,8 @@
   "name": "Autohaus HartmannZentrum 41",
   "adresse": "Musterweg 5, Musterstadt-D01",
   "pos": {
-   "x": 20,
-   "y": 55
+   "x": 18.9,
+   "y": 51.7
   },
   "cluster": 3,
   "prio": false,
@@ -660,8 +660,8 @@
   "name": "Autohaus KrausSandberg 42",
   "adresse": "Musterweg 6, Musterstadt-D01",
   "pos": {
-   "x": 40,
-   "y": 55
+   "x": 36.3,
+   "y": 47.5
   },
   "cluster": 3,
   "prio": false,
@@ -676,8 +676,8 @@
   "name": "Autohaus KesslerNord 43",
   "adresse": "Musterweg 7, Musterstadt-D01",
   "pos": {
-   "x": 0,
-   "y": 73
+   "x": 2.5,
+   "y": 74.6
   },
   "cluster": 3,
   "prio": false,
@@ -692,8 +692,8 @@
   "name": "Autohaus PflugerZentrum 44",
   "adresse": "Musterweg 8, Musterstadt-D01",
   "pos": {
-   "x": 20,
-   "y": 73
+   "x": 19.3,
+   "y": 73.4
   },
   "cluster": 3,
   "prio": false,
@@ -708,8 +708,8 @@
   "name": "Autohaus HansenSandberg 45",
   "adresse": "Musterweg 9, Musterstadt-D01",
   "pos": {
-   "x": 40,
-   "y": 73
+   "x": 39.8,
+   "y": 79.7
   },
   "cluster": 3,
   "prio": false,
@@ -724,8 +724,8 @@
   "name": "Autohaus KraemerNord 46",
   "adresse": "Musterweg 10, Musterstadt-D01",
   "pos": {
-   "x": 0,
-   "y": 91
+   "x": -3.8,
+   "y": 90.8
   },
   "cluster": 3,
   "prio": true,
@@ -740,8 +740,8 @@
   "name": "Autohaus HoeppeZentrum 47",
   "adresse": "Musterweg 11, Musterstadt-D01",
   "pos": {
-   "x": 20,
-   "y": 91
+   "x": 20.2,
+   "y": 96.2
   },
   "cluster": 3,
   "prio": false,
@@ -756,8 +756,8 @@
   "name": "Autohaus FischerSandberg 48",
   "adresse": "Musterweg 12, Musterstadt-D01",
   "pos": {
-   "x": 40,
-   "y": 91
+   "x": 44.9,
+   "y": 91.9
   },
   "cluster": 3,
   "prio": false,
@@ -772,8 +772,8 @@
   "name": "Autohaus UlrichNord 49",
   "adresse": "Musterweg 1, Musterstadt-D01",
   "pos": {
-   "x": 56,
-   "y": 43
+   "x": 62.5,
+   "y": 48.3
   },
   "cluster": 4,
   "prio": false,
@@ -788,8 +788,8 @@
   "name": "Autohaus HartmannZentrum 50",
   "adresse": "Musterweg 2, Musterstadt-D01",
   "pos": {
-   "x": 76,
-   "y": 43
+   "x": 73.1,
+   "y": 49.7
   },
   "cluster": 4,
   "prio": false,
@@ -804,8 +804,8 @@
   "name": "Autohaus KrausSandberg 51",
   "adresse": "Musterweg 3, Musterstadt-D01",
   "pos": {
-   "x": 96,
-   "y": 43
+   "x": 89.6,
+   "y": 46.0
   },
   "cluster": 4,
   "prio": false,
@@ -820,8 +820,8 @@
   "name": "Autohaus KesslerNord 52",
   "adresse": "Musterweg 4, Musterstadt-D01",
   "pos": {
-   "x": 56,
-   "y": 61
+   "x": 60.6,
+   "y": 61.2
   },
   "cluster": 4,
   "prio": false,
@@ -836,8 +836,8 @@
   "name": "Autohaus PflugerZentrum 53",
   "adresse": "Musterweg 5, Musterstadt-D01",
   "pos": {
-   "x": 76,
-   "y": 61
+   "x": 75.2,
+   "y": 68.4
   },
   "cluster": 4,
   "prio": false,
@@ -852,8 +852,8 @@
   "name": "Autohaus HansenSandberg 54",
   "adresse": "Musterweg 6, Musterstadt-D01",
   "pos": {
-   "x": 96,
-   "y": 61
+   "x": 103.5,
+   "y": 66.5
   },
   "cluster": 4,
   "prio": false,
@@ -868,8 +868,8 @@
   "name": "Autohaus KraemerNord 55",
   "adresse": "Musterweg 7, Musterstadt-D01",
   "pos": {
-   "x": 56,
-   "y": 79
+   "x": 55.7,
+   "y": 72.0
   },
   "cluster": 4,
   "prio": true,
@@ -884,8 +884,8 @@
   "name": "Autohaus HoeppeZentrum 56",
   "adresse": "Musterweg 8, Musterstadt-D01",
   "pos": {
-   "x": 76,
-   "y": 79
+   "x": 72.3,
+   "y": 79.0
   },
   "cluster": 4,
   "prio": false,
@@ -900,8 +900,8 @@
   "name": "Autohaus FischerSandberg 57",
   "adresse": "Musterweg 9, Musterstadt-D01",
   "pos": {
-   "x": 96,
-   "y": 79
+   "x": 89.5,
+   "y": 83.0
   },
   "cluster": 4,
   "prio": false,
@@ -916,8 +916,8 @@
   "name": "Autohaus TetzlaffNord 58",
   "adresse": "Musterweg 10, Musterstadt-D01",
   "pos": {
-   "x": 56,
-   "y": 97
+   "x": 54.6,
+   "y": 96.2
   },
   "cluster": 4,
   "prio": false,
@@ -932,8 +932,8 @@
   "name": "Autohaus GerberZentrum 59",
   "adresse": "Musterweg 11, Musterstadt-D01",
   "pos": {
-   "x": 76,
-   "y": 97
+   "x": 68.2,
+   "y": 89.0
   },
   "cluster": 4,
   "prio": false,
@@ -948,8 +948,8 @@
   "name": "Autohaus SperlSandberg 60",
   "adresse": "Musterweg 12, Musterstadt-D01",
   "pos": {
-   "x": 96,
-   "y": 97
+   "x": 97.3,
+   "y": 103.9
   },
   "cluster": 4,
   "prio": false,
@@ -964,8 +964,8 @@
   "name": "Autohaus LindtNord 61",
   "adresse": "Musterweg 1, Musterstadt-D02",
   "pos": {
-   "x": 160,
-   "y": -27
+   "x": 153.3,
+   "y": -22.3
   },
   "cluster": 0,
   "prio": false,
@@ -980,8 +980,8 @@
   "name": "Autohaus OstermannZentrum 62",
   "adresse": "Musterweg 2, Musterstadt-D02",
   "pos": {
-   "x": 180,
-   "y": -27
+   "x": 176.0,
+   "y": -25.1
   },
   "cluster": 0,
   "prio": false,
@@ -996,8 +996,8 @@
   "name": "Autohaus SanderSandberg 63",
   "adresse": "Musterweg 3, Musterstadt-D02",
   "pos": {
-   "x": 200,
-   "y": -27
+   "x": 204.0,
+   "y": -19.7
   },
   "cluster": 0,
   "prio": false,
@@ -1012,8 +1012,8 @@
   "name": "Autohaus FeldmannNord 64",
   "adresse": "Musterweg 4, Musterstadt-D02",
   "pos": {
-   "x": 160,
-   "y": -9
+   "x": 162.7,
+   "y": -6.8
   },
   "cluster": 0,
   "prio": true,
@@ -1028,8 +1028,8 @@
   "name": "Autohaus BergmannZentrum 65",
   "adresse": "Musterweg 5, Musterstadt-D02",
   "pos": {
-   "x": 180,
-   "y": -9
+   "x": 174.5,
+   "y": -12.0
   },
   "cluster": 0,
   "prio": false,
@@ -1044,8 +1044,8 @@
   "name": "Autohaus VoglerSandberg 66",
   "adresse": "Musterweg 6, Musterstadt-D02",
   "pos": {
-   "x": 200,
-   "y": -9
+   "x": 201.3,
+   "y": -4.7
   },
   "cluster": 0,
   "prio": false,
@@ -1060,8 +1060,8 @@
   "name": "Autohaus KuhnNord 67",
   "adresse": "Musterweg 7, Musterstadt-D02",
   "pos": {
-   "x": 160,
-   "y": 9
+   "x": 167.2,
+   "y": 8.9
   },
   "cluster": 0,
   "prio": false,
@@ -1076,8 +1076,8 @@
   "name": "Autohaus WeberZentrum 68",
   "adresse": "Musterweg 8, Musterstadt-D02",
   "pos": {
-   "x": 180,
-   "y": 9
+   "x": 183.5,
+   "y": 3.2
   },
   "cluster": 0,
   "prio": false,
@@ -1092,8 +1092,8 @@
   "name": "Autohaus IversenSandberg 69",
   "adresse": "Musterweg 9, Musterstadt-D02",
   "pos": {
-   "x": 200,
-   "y": 9
+   "x": 195.6,
+   "y": 10.4
   },
   "cluster": 0,
   "prio": false,
@@ -1108,8 +1108,8 @@
   "name": "Autohaus WagenfeldNord 70",
   "adresse": "Musterweg 10, Musterstadt-D02",
   "pos": {
-   "x": 160,
-   "y": 27
+   "x": 167.3,
+   "y": 33.0
   },
   "cluster": 0,
   "prio": false,
@@ -1124,8 +1124,8 @@
   "name": "Autohaus BrandtZentrum 71",
   "adresse": "Musterweg 11, Musterstadt-D02",
   "pos": {
-   "x": 180,
-   "y": 27
+   "x": 180.1,
+   "y": 20.4
   },
   "cluster": 0,
   "prio": false,
@@ -1140,8 +1140,8 @@
   "name": "Autohaus RothSandberg 72",
   "adresse": "Musterweg 12, Musterstadt-D02",
   "pos": {
-   "x": 200,
-   "y": 27
+   "x": 202.7,
+   "y": 34.0
   },
   "cluster": 0,
   "prio": false,
@@ -1156,8 +1156,8 @@
   "name": "Autohaus FeldmannNord 73",
   "adresse": "Musterweg 1, Musterstadt-D02",
   "pos": {
-   "x": 212,
-   "y": -9
+   "x": 216.5,
+   "y": -2.4
   },
   "cluster": 1,
   "prio": true,
@@ -1172,8 +1172,8 @@
   "name": "Autohaus BergmannZentrum 74",
   "adresse": "Musterweg 2, Musterstadt-D02",
   "pos": {
-   "x": 232,
-   "y": -9
+   "x": 228.9,
+   "y": -10.4
   },
   "cluster": 1,
   "prio": false,
@@ -1188,8 +1188,8 @@
   "name": "Autohaus VoglerSandberg 75",
   "adresse": "Musterweg 3, Musterstadt-D02",
   "pos": {
-   "x": 252,
-   "y": -9
+   "x": 256.9,
+   "y": -8.7
   },
   "cluster": 1,
   "prio": false,
@@ -1204,8 +1204,8 @@
   "name": "Autohaus KuhnNord 76",
   "adresse": "Musterweg 4, Musterstadt-D02",
   "pos": {
-   "x": 212,
-   "y": 9
+   "x": 207.1,
+   "y": 1.2
   },
   "cluster": 1,
   "prio": false,
@@ -1220,8 +1220,8 @@
   "name": "Autohaus WeberZentrum 77",
   "adresse": "Musterweg 5, Musterstadt-D02",
   "pos": {
-   "x": 232,
-   "y": 9
+   "x": 225.7,
+   "y": 15.2
   },
   "cluster": 1,
   "prio": false,
@@ -1236,8 +1236,8 @@
   "name": "Autohaus IversenSandberg 78",
   "adresse": "Musterweg 6, Musterstadt-D02",
   "pos": {
-   "x": 252,
-   "y": 9
+   "x": 244.8,
+   "y": 6.6
   },
   "cluster": 1,
   "prio": false,
@@ -1252,8 +1252,8 @@
   "name": "Autohaus WagenfeldNord 79",
   "adresse": "Musterweg 7, Musterstadt-D02",
   "pos": {
-   "x": 212,
-   "y": 27
+   "x": 209.7,
+   "y": 31.3
   },
   "cluster": 1,
   "prio": false,
@@ -1268,8 +1268,8 @@
   "name": "Autohaus BrandtZentrum 80",
   "adresse": "Musterweg 8, Musterstadt-D02",
   "pos": {
-   "x": 232,
-   "y": 27
+   "x": 224.4,
+   "y": 27.2
   },
   "cluster": 1,
   "prio": false,
@@ -1284,8 +1284,8 @@
   "name": "Autohaus RothSandberg 81",
   "adresse": "Musterweg 9, Musterstadt-D02",
   "pos": {
-   "x": 252,
-   "y": 27
+   "x": 249.2,
+   "y": 23.9
   },
   "cluster": 1,
   "prio": false,
@@ -1300,8 +1300,8 @@
   "name": "Autohaus ErtlNord 82",
   "adresse": "Musterweg 10, Musterstadt-D02",
   "pos": {
-   "x": 212,
-   "y": 45
+   "x": 209.2,
+   "y": 38.9
   },
   "cluster": 1,
   "prio": true,
@@ -1316,8 +1316,8 @@
   "name": "Autohaus LehmannZentrum 83",
   "adresse": "Musterweg 11, Musterstadt-D02",
   "pos": {
-   "x": 232,
-   "y": 45
+   "x": 239.2,
+   "y": 46.1
   },
   "cluster": 1,
   "prio": false,
@@ -1332,8 +1332,8 @@
   "name": "Autohaus ReinhardtSandberg 84",
   "adresse": "Musterweg 12, Musterstadt-D02",
   "pos": {
-   "x": 252,
-   "y": 45
+   "x": 256.9,
+   "y": 39.5
   },
   "cluster": 1,
   "prio": false,
@@ -1348,8 +1348,8 @@
   "name": "Autohaus KuhnNord 85",
   "adresse": "Musterweg 1, Musterstadt-D02",
   "pos": {
-   "x": 264,
-   "y": -19
+   "x": 264.3,
+   "y": -20.1
   },
   "cluster": 2,
   "prio": false,
@@ -1364,8 +1364,8 @@
   "name": "Autohaus WeberZentrum 86",
   "adresse": "Musterweg 2, Musterstadt-D02",
   "pos": {
-   "x": 284,
-   "y": -19
+   "x": 281.4,
+   "y": -17.4
   },
   "cluster": 2,
   "prio": false,
@@ -1380,8 +1380,8 @@
   "name": "Autohaus IversenSandberg 87",
   "adresse": "Musterweg 3, Musterstadt-D02",
   "pos": {
-   "x": 304,
-   "y": -19
+   "x": 306.9,
+   "y": -25.9
   },
   "cluster": 2,
   "prio": false,
@@ -1396,8 +1396,8 @@
   "name": "Autohaus WagenfeldNord 88",
   "adresse": "Musterweg 4, Musterstadt-D02",
   "pos": {
-   "x": 264,
-   "y": -1
+   "x": 262.4,
+   "y": -5.9
   },
   "cluster": 2,
   "prio": false,
@@ -1412,8 +1412,8 @@
   "name": "Autohaus BrandtZentrum 89",
   "adresse": "Musterweg 5, Musterstadt-D02",
   "pos": {
-   "x": 284,
-   "y": -1
+   "x": 290.7,
+   "y": -8.3
   },
   "cluster": 2,
   "prio": false,
@@ -1428,8 +1428,8 @@
   "name": "Autohaus RothSandberg 90",
   "adresse": "Musterweg 6, Musterstadt-D02",
   "pos": {
-   "x": 304,
-   "y": -1
+   "x": 304.7,
+   "y": 4.4
   },
   "cluster": 2,
   "prio": false,
@@ -1444,8 +1444,8 @@
   "name": "Autohaus ErtlNord 91",
   "adresse": "Musterweg 7, Musterstadt-D02",
   "pos": {
-   "x": 264,
-   "y": 17
+   "x": 263.2,
+   "y": 21.1
   },
   "cluster": 2,
   "prio": true,
@@ -1460,8 +1460,8 @@
   "name": "Autohaus LehmannZentrum 92",
   "adresse": "Musterweg 8, Musterstadt-D02",
   "pos": {
-   "x": 284,
-   "y": 17
+   "x": 279.0,
+   "y": 20.4
   },
   "cluster": 2,
   "prio": false,
@@ -1476,8 +1476,8 @@
   "name": "Autohaus ReinhardtSandberg 93",
   "adresse": "Musterweg 9, Musterstadt-D02",
   "pos": {
-   "x": 304,
-   "y": 17
+   "x": 310.0,
+   "y": 11.1
   },
   "cluster": 2,
   "prio": false,
@@ -1492,8 +1492,8 @@
   "name": "Autohaus AdlerNord 94",
   "adresse": "Musterweg 10, Musterstadt-D02",
   "pos": {
-   "x": 264,
-   "y": 35
+   "x": 264.5,
+   "y": 39.6
   },
   "cluster": 2,
   "prio": false,
@@ -1508,8 +1508,8 @@
   "name": "Autohaus UlrichZentrum 95",
   "adresse": "Musterweg 11, Musterstadt-D02",
   "pos": {
-   "x": 284,
-   "y": 35
+   "x": 284.3,
+   "y": 42.3
   },
   "cluster": 2,
   "prio": false,
@@ -1524,8 +1524,8 @@
   "name": "Autohaus HartmannSandberg 96",
   "adresse": "Musterweg 12, Musterstadt-D02",
   "pos": {
-   "x": 304,
-   "y": 35
+   "x": 298.6,
+   "y": 40.5
   },
   "cluster": 2,
   "prio": false,
@@ -1540,8 +1540,8 @@
   "name": "Autohaus WagenfeldNord 97",
   "adresse": "Musterweg 1, Musterstadt-D02",
   "pos": {
-   "x": 180,
-   "y": 37
+   "x": 178.2,
+   "y": 35.8
   },
   "cluster": 3,
   "prio": false,
@@ -1556,8 +1556,8 @@
   "name": "Autohaus BrandtZentrum 98",
   "adresse": "Musterweg 2, Musterstadt-D02",
   "pos": {
-   "x": 200,
-   "y": 37
+   "x": 198.6,
+   "y": 30.3
   },
   "cluster": 3,
   "prio": false,
@@ -1572,8 +1572,8 @@
   "name": "Autohaus RothSandberg 99",
   "adresse": "Musterweg 3, Musterstadt-D02",
   "pos": {
-   "x": 220,
-   "y": 37
+   "x": 216.9,
+   "y": 34.5
   },
   "cluster": 3,
   "prio": false,
@@ -1588,8 +1588,8 @@
   "name": "Autohaus ErtlNord 100",
   "adresse": "Musterweg 4, Musterstadt-D02",
   "pos": {
-   "x": 180,
-   "y": 55
+   "x": 176.2,
+   "y": 55.0
   },
   "cluster": 3,
   "prio": true,
@@ -1604,8 +1604,8 @@
   "name": "Autohaus LehmannZentrum 101",
   "adresse": "Musterweg 5, Musterstadt-D02",
   "pos": {
-   "x": 200,
-   "y": 55
+   "x": 204.5,
+   "y": 53.7
   },
   "cluster": 3,
   "prio": false,
@@ -1620,8 +1620,8 @@
   "name": "Autohaus ReinhardtSandberg 102",
   "adresse": "Musterweg 6, Musterstadt-D02",
   "pos": {
-   "x": 220,
-   "y": 55
+   "x": 219.5,
+   "y": 52.2
   },
   "cluster": 3,
   "prio": false,
@@ -1636,8 +1636,8 @@
   "name": "Autohaus AdlerNord 103",
   "adresse": "Musterweg 7, Musterstadt-D02",
   "pos": {
-   "x": 180,
-   "y": 73
+   "x": 179.7,
+   "y": 66.9
   },
   "cluster": 3,
   "prio": false,
@@ -1652,8 +1652,8 @@
   "name": "Autohaus UlrichZentrum 104",
   "adresse": "Musterweg 8, Musterstadt-D02",
   "pos": {
-   "x": 200,
-   "y": 73
+   "x": 204.7,
+   "y": 77.7
   },
   "cluster": 3,
   "prio": false,
@@ -1668,8 +1668,8 @@
   "name": "Autohaus HartmannSandberg 105",
   "adresse": "Musterweg 9, Musterstadt-D02",
   "pos": {
-   "x": 220,
-   "y": 73
+   "x": 225.1,
+   "y": 78.6
   },
   "cluster": 3,
   "prio": false,
@@ -1684,8 +1684,8 @@
   "name": "Autohaus KrausNord 106",
   "adresse": "Musterweg 10, Musterstadt-D02",
   "pos": {
-   "x": 180,
-   "y": 91
+   "x": 175.7,
+   "y": 98.3
   },
   "cluster": 3,
   "prio": false,
@@ -1700,8 +1700,8 @@
   "name": "Autohaus KesslerZentrum 107",
   "adresse": "Musterweg 11, Musterstadt-D02",
   "pos": {
-   "x": 200,
-   "y": 91
+   "x": 206.1,
+   "y": 93.3
   },
   "cluster": 3,
   "prio": false,
@@ -1716,8 +1716,8 @@
   "name": "Autohaus PflugerSandberg 108",
   "adresse": "Musterweg 12, Musterstadt-D02",
   "pos": {
-   "x": 220,
-   "y": 91
+   "x": 218.5,
+   "y": 95.5
   },
   "cluster": 3,
   "prio": false,
@@ -1732,8 +1732,8 @@
   "name": "Autohaus ErtlNord 109",
   "adresse": "Musterweg 1, Musterstadt-D02",
   "pos": {
-   "x": 236,
-   "y": 43
+   "x": 241.6,
+   "y": 45.7
   },
   "cluster": 4,
   "prio": true,
@@ -1748,8 +1748,8 @@
   "name": "Autohaus LehmannZentrum 110",
   "adresse": "Musterweg 2, Musterstadt-D02",
   "pos": {
-   "x": 256,
-   "y": 43
+   "x": 263.4,
+   "y": 40.6
   },
   "cluster": 4,
   "prio": false,
@@ -1764,8 +1764,8 @@
   "name": "Autohaus ReinhardtSandberg 111",
   "adresse": "Musterweg 3, Musterstadt-D02",
   "pos": {
-   "x": 276,
-   "y": 43
+   "x": 270.5,
+   "y": 44.0
   },
   "cluster": 4,
   "prio": false,
@@ -1780,8 +1780,8 @@
   "name": "Autohaus AdlerNord 112",
   "adresse": "Musterweg 4, Musterstadt-D02",
   "pos": {
-   "x": 236,
-   "y": 61
+   "x": 237.2,
+   "y": 61.6
   },
   "cluster": 4,
   "prio": false,
@@ -1796,8 +1796,8 @@
   "name": "Autohaus UlrichZentrum 113",
   "adresse": "Musterweg 5, Musterstadt-D02",
   "pos": {
-   "x": 256,
-   "y": 61
+   "x": 249.8,
+   "y": 64.5
   },
   "cluster": 4,
   "prio": false,
@@ -1812,8 +1812,8 @@
   "name": "Autohaus HartmannSandberg 114",
   "adresse": "Musterweg 6, Musterstadt-D02",
   "pos": {
-   "x": 276,
-   "y": 61
+   "x": 276.9,
+   "y": 62.1
   },
   "cluster": 4,
   "prio": false,
@@ -1828,8 +1828,8 @@
   "name": "Autohaus KrausNord 115",
   "adresse": "Musterweg 7, Musterstadt-D02",
   "pos": {
-   "x": 236,
-   "y": 79
+   "x": 231.4,
+   "y": 75.7
   },
   "cluster": 4,
   "prio": false,
@@ -1844,8 +1844,8 @@
   "name": "Autohaus KesslerZentrum 116",
   "adresse": "Musterweg 8, Musterstadt-D02",
   "pos": {
-   "x": 256,
-   "y": 79
+   "x": 252.3,
+   "y": 79.9
   },
   "cluster": 4,
   "prio": false,
@@ -1860,8 +1860,8 @@
   "name": "Autohaus PflugerSandberg 117",
   "adresse": "Musterweg 9, Musterstadt-D02",
   "pos": {
-   "x": 276,
-   "y": 79
+   "x": 269.6,
+   "y": 75.2
   },
   "cluster": 4,
   "prio": false,
@@ -1876,8 +1876,8 @@
   "name": "Autohaus HansenNord 118",
   "adresse": "Musterweg 10, Musterstadt-D02",
   "pos": {
-   "x": 236,
-   "y": 97
+   "x": 243.3,
+   "y": 91.7
   },
   "cluster": 4,
   "prio": true,
@@ -1892,8 +1892,8 @@
   "name": "Autohaus KraemerZentrum 119",
   "adresse": "Musterweg 11, Musterstadt-D02",
   "pos": {
-   "x": 256,
-   "y": 97
+   "x": 259.0,
+   "y": 101.1
   },
   "cluster": 4,
   "prio": false,
@@ -1908,8 +1908,8 @@
   "name": "Autohaus HoeppeSandberg 120",
   "adresse": "Musterweg 12, Musterstadt-D02",
   "pos": {
-   "x": 276,
-   "y": 97
+   "x": 279.6,
+   "y": 92.0
   },
   "cluster": 4,
   "prio": false,
@@ -1924,8 +1924,8 @@
   "name": "Autohaus SteinbachNord 121",
   "adresse": "Musterweg 1, Musterstadt-D03",
   "pos": {
-   "x": 340,
-   "y": -27
+   "x": 342.1,
+   "y": -26.9
   },
   "cluster": 0,
   "prio": false,
@@ -1940,8 +1940,8 @@
   "name": "Autohaus MercedesZentrum 122",
   "adresse": "Musterweg 2, Musterstadt-D03",
   "pos": {
-   "x": 360,
-   "y": -27
+   "x": 356.4,
+   "y": -21.6
   },
   "cluster": 0,
   "prio": false,
@@ -1956,8 +1956,8 @@
   "name": "Autohaus ZabelSandberg 123",
   "adresse": "Musterweg 3, Musterstadt-D03",
   "pos": {
-   "x": 380,
-   "y": -27
+   "x": 376.7,
+   "y": -30.0
   },
   "cluster": 0,
   "prio": false,
@@ -1972,8 +1972,8 @@
   "name": "Autohaus JostNord 124",
   "adresse": "Musterweg 4, Musterstadt-D03",
   "pos": {
-   "x": 340,
-   "y": -9
+   "x": 336.2,
+   "y": -16.0
   },
   "cluster": 0,
   "prio": false,
@@ -1988,8 +1988,8 @@
   "name": "Autohaus LindtZentrum 125",
   "adresse": "Musterweg 5, Musterstadt-D03",
   "pos": {
-   "x": 360,
-   "y": -9
+   "x": 358.6,
+   "y": -2.6
   },
   "cluster": 0,
   "prio": false,
@@ -2004,8 +2004,8 @@
   "name": "Autohaus OstermannSandberg 126",
   "adresse": "Musterweg 6, Musterstadt-D03",
   "pos": {
-   "x": 380,
-   "y": -9
+   "x": 384.4,
+   "y": -10.4
   },
   "cluster": 0,
   "prio": false,
@@ -2020,8 +2020,8 @@
   "name": "Autohaus SanderNord 127",
   "adresse": "Musterweg 7, Musterstadt-D03",
   "pos": {
-   "x": 340,
-   "y": 9
+   "x": 332.2,
+   "y": 2.5
   },
   "cluster": 0,
   "prio": true,
@@ -2036,8 +2036,8 @@
   "name": "Autohaus FeldmannZentrum 128",
   "adresse": "Musterweg 8, Musterstadt-D03",
   "pos": {
-   "x": 360,
-   "y": 9
+   "x": 352.4,
+   "y": 3.0
   },
   "cluster": 0,
   "prio": false,
@@ -2052,8 +2052,8 @@
   "name": "Autohaus BergmannSandberg 129",
   "adresse": "Musterweg 9, Musterstadt-D03",
   "pos": {
-   "x": 380,
-   "y": 9
+   "x": 383.0,
+   "y": 10.2
   },
   "cluster": 0,
   "prio": false,
@@ -2068,8 +2068,8 @@
   "name": "Autohaus VoglerNord 130",
   "adresse": "Musterweg 10, Musterstadt-D03",
   "pos": {
-   "x": 340,
-   "y": 27
+   "x": 347.0,
+   "y": 24.6
   },
   "cluster": 0,
   "prio": false,
@@ -2084,8 +2084,8 @@
   "name": "Autohaus KuhnZentrum 131",
   "adresse": "Musterweg 11, Musterstadt-D03",
   "pos": {
-   "x": 360,
-   "y": 27
+   "x": 364.5,
+   "y": 28.7
   },
   "cluster": 0,
   "prio": false,
@@ -2100,8 +2100,8 @@
   "name": "Autohaus WeberSandberg 132",
   "adresse": "Musterweg 12, Musterstadt-D03",
   "pos": {
-   "x": 380,
-   "y": 27
+   "x": 382.5,
+   "y": 28.8
   },
   "cluster": 0,
   "prio": false,
@@ -2116,8 +2116,8 @@
   "name": "Autohaus JostNord 133",
   "adresse": "Musterweg 1, Musterstadt-D03",
   "pos": {
-   "x": 392,
-   "y": -9
+   "x": 398.8,
+   "y": -11.9
   },
   "cluster": 1,
   "prio": false,
@@ -2132,8 +2132,8 @@
   "name": "Autohaus LindtZentrum 134",
   "adresse": "Musterweg 2, Musterstadt-D03",
   "pos": {
-   "x": 412,
-   "y": -9
+   "x": 407.5,
+   "y": -9.6
   },
   "cluster": 1,
   "prio": false,
@@ -2148,8 +2148,8 @@
   "name": "Autohaus OstermannSandberg 135",
   "adresse": "Musterweg 3, Musterstadt-D03",
   "pos": {
-   "x": 432,
-   "y": -9
+   "x": 439.7,
+   "y": -2.9
   },
   "cluster": 1,
   "prio": false,
@@ -2164,8 +2164,8 @@
   "name": "Autohaus SanderNord 136",
   "adresse": "Musterweg 4, Musterstadt-D03",
   "pos": {
-   "x": 392,
-   "y": 9
+   "x": 395.0,
+   "y": 14.8
   },
   "cluster": 1,
   "prio": true,
@@ -2180,8 +2180,8 @@
   "name": "Autohaus FeldmannZentrum 137",
   "adresse": "Musterweg 5, Musterstadt-D03",
   "pos": {
-   "x": 412,
-   "y": 9
+   "x": 414.9,
+   "y": 15.8
   },
   "cluster": 1,
   "prio": false,
@@ -2196,8 +2196,8 @@
   "name": "Autohaus BergmannSandberg 138",
   "adresse": "Musterweg 6, Musterstadt-D03",
   "pos": {
-   "x": 432,
-   "y": 9
+   "x": 430.2,
+   "y": 16.2
   },
   "cluster": 1,
   "prio": false,
@@ -2212,8 +2212,8 @@
   "name": "Autohaus VoglerNord 139",
   "adresse": "Musterweg 7, Musterstadt-D03",
   "pos": {
-   "x": 392,
-   "y": 27
+   "x": 389.7,
+   "y": 30.8
   },
   "cluster": 1,
   "prio": false,
@@ -2228,8 +2228,8 @@
   "name": "Autohaus KuhnZentrum 140",
   "adresse": "Musterweg 8, Musterstadt-D03",
   "pos": {
-   "x": 412,
-   "y": 27
+   "x": 411.0,
+   "y": 19.4
   },
   "cluster": 1,
   "prio": false,
@@ -2244,8 +2244,8 @@
   "name": "Autohaus WeberSandberg 141",
   "adresse": "Musterweg 9, Musterstadt-D03",
   "pos": {
-   "x": 432,
-   "y": 27
+   "x": 435.1,
+   "y": 23.6
   },
   "cluster": 1,
   "prio": false,
@@ -2260,8 +2260,8 @@
   "name": "Autohaus IversenNord 142",
   "adresse": "Musterweg 10, Musterstadt-D03",
   "pos": {
-   "x": 392,
-   "y": 45
+   "x": 399.3,
+   "y": 49.8
   },
   "cluster": 1,
   "prio": false,
@@ -2276,8 +2276,8 @@
   "name": "Autohaus WagenfeldZentrum 143",
   "adresse": "Musterweg 11, Musterstadt-D03",
   "pos": {
-   "x": 412,
-   "y": 45
+   "x": 406.0,
+   "y": 49.3
   },
   "cluster": 1,
   "prio": false,
@@ -2292,8 +2292,8 @@
   "name": "Autohaus BrandtSandberg 144",
   "adresse": "Musterweg 12, Musterstadt-D03",
   "pos": {
-   "x": 432,
-   "y": 45
+   "x": 429.1,
+   "y": 51.4
   },
   "cluster": 1,
   "prio": false,
@@ -2308,8 +2308,8 @@
   "name": "Autohaus SanderNord 145",
   "adresse": "Musterweg 1, Musterstadt-D03",
   "pos": {
-   "x": 444,
-   "y": -19
+   "x": 444.7,
+   "y": -21.5
   },
   "cluster": 2,
   "prio": true,
@@ -2324,8 +2324,8 @@
   "name": "Autohaus FeldmannZentrum 146",
   "adresse": "Musterweg 2, Musterstadt-D03",
   "pos": {
-   "x": 464,
-   "y": -19
+   "x": 465.0,
+   "y": -15.5
   },
   "cluster": 2,
   "prio": false,
@@ -2340,8 +2340,8 @@
   "name": "Autohaus BergmannSandberg 147",
   "adresse": "Musterweg 3, Musterstadt-D03",
   "pos": {
-   "x": 484,
-   "y": -19
+   "x": 477.8,
+   "y": -17.1
   },
   "cluster": 2,
   "prio": false,
@@ -2356,8 +2356,8 @@
   "name": "Autohaus VoglerNord 148",
   "adresse": "Musterweg 4, Musterstadt-D03",
   "pos": {
-   "x": 444,
-   "y": -1
+   "x": 437.9,
+   "y": -7.0
   },
   "cluster": 2,
   "prio": false,
@@ -2372,8 +2372,8 @@
   "name": "Autohaus KuhnZentrum 149",
   "adresse": "Musterweg 5, Musterstadt-D03",
   "pos": {
-   "x": 464,
-   "y": -1
+   "x": 461.7,
+   "y": 1.4
   },
   "cluster": 2,
   "prio": false,
@@ -2388,8 +2388,8 @@
   "name": "Autohaus WeberSandberg 150",
   "adresse": "Musterweg 6, Musterstadt-D03",
   "pos": {
-   "x": 484,
-   "y": -1
+   "x": 486.5,
+   "y": -8.5
   },
   "cluster": 2,
   "prio": false,
@@ -2404,8 +2404,8 @@
   "name": "Autohaus IversenNord 151",
   "adresse": "Musterweg 7, Musterstadt-D03",
   "pos": {
-   "x": 444,
-   "y": 17
+   "x": 445.3,
+   "y": 14.7
   },
   "cluster": 2,
   "prio": false,
@@ -2420,8 +2420,8 @@
   "name": "Autohaus WagenfeldZentrum 152",
   "adresse": "Musterweg 8, Musterstadt-D03",
   "pos": {
-   "x": 464,
-   "y": 17
+   "x": 462.1,
+   "y": 12.8
   },
   "cluster": 2,
   "prio": false,
@@ -2436,8 +2436,8 @@
   "name": "Autohaus BrandtSandberg 153",
   "adresse": "Musterweg 9, Musterstadt-D03",
   "pos": {
-   "x": 484,
-   "y": 17
+   "x": 482.7,
+   "y": 12.5
   },
   "cluster": 2,
   "prio": false,
@@ -2452,8 +2452,8 @@
   "name": "Autohaus RothNord 154",
   "adresse": "Musterweg 10, Musterstadt-D03",
   "pos": {
-   "x": 444,
-   "y": 35
+   "x": 438.0,
+   "y": 35.7
   },
   "cluster": 2,
   "prio": true,
@@ -2468,8 +2468,8 @@
   "name": "Autohaus ErtlZentrum 155",
   "adresse": "Musterweg 11, Musterstadt-D03",
   "pos": {
-   "x": 464,
-   "y": 35
+   "x": 466.6,
+   "y": 42.0
   },
   "cluster": 2,
   "prio": false,
@@ -2484,8 +2484,8 @@
   "name": "Autohaus LehmannSandberg 156",
   "adresse": "Musterweg 12, Musterstadt-D03",
   "pos": {
-   "x": 484,
-   "y": 35
+   "x": 486.9,
+   "y": 33.3
   },
   "cluster": 2,
   "prio": false,
@@ -2500,8 +2500,8 @@
   "name": "Autohaus VoglerNord 157",
   "adresse": "Musterweg 1, Musterstadt-D03",
   "pos": {
-   "x": 360,
-   "y": 37
+   "x": 356.1,
+   "y": 31.4
   },
   "cluster": 3,
   "prio": false,
@@ -2516,8 +2516,8 @@
   "name": "Autohaus KuhnZentrum 158",
   "adresse": "Musterweg 2, Musterstadt-D03",
   "pos": {
-   "x": 380,
-   "y": 37
+   "x": 372.4,
+   "y": 33.4
   },
   "cluster": 3,
   "prio": false,
@@ -2532,8 +2532,8 @@
   "name": "Autohaus WeberSandberg 159",
   "adresse": "Musterweg 3, Musterstadt-D03",
   "pos": {
-   "x": 400,
-   "y": 37
+   "x": 399.7,
+   "y": 33.2
   },
   "cluster": 3,
   "prio": false,
@@ -2548,8 +2548,8 @@
   "name": "Autohaus IversenNord 160",
   "adresse": "Musterweg 4, Musterstadt-D03",
   "pos": {
-   "x": 360,
-   "y": 55
+   "x": 357.0,
+   "y": 62.1
   },
   "cluster": 3,
   "prio": false,
@@ -2564,8 +2564,8 @@
   "name": "Autohaus WagenfeldZentrum 161",
   "adresse": "Musterweg 5, Musterstadt-D03",
   "pos": {
-   "x": 380,
-   "y": 55
+   "x": 381.5,
+   "y": 60.4
   },
   "cluster": 3,
   "prio": false,
@@ -2580,8 +2580,8 @@
   "name": "Autohaus BrandtSandberg 162",
   "adresse": "Musterweg 6, Musterstadt-D03",
   "pos": {
-   "x": 400,
-   "y": 55
+   "x": 400.8,
+   "y": 57.4
   },
   "cluster": 3,
   "prio": false,
@@ -2596,8 +2596,8 @@
   "name": "Autohaus RothNord 163",
   "adresse": "Musterweg 7, Musterstadt-D03",
   "pos": {
-   "x": 360,
-   "y": 73
+   "x": 367.4,
+   "y": 73.2
   },
   "cluster": 3,
   "prio": true,
@@ -2612,8 +2612,8 @@
   "name": "Autohaus ErtlZentrum 164",
   "adresse": "Musterweg 8, Musterstadt-D03",
   "pos": {
-   "x": 380,
-   "y": 73
+   "x": 376.2,
+   "y": 75.1
   },
   "cluster": 3,
   "prio": false,
@@ -2628,8 +2628,8 @@
   "name": "Autohaus LehmannSandberg 165",
   "adresse": "Musterweg 9, Musterstadt-D03",
   "pos": {
-   "x": 400,
-   "y": 73
+   "x": 404.1,
+   "y": 70.1
   },
   "cluster": 3,
   "prio": false,
@@ -2644,8 +2644,8 @@
   "name": "Autohaus ReinhardtNord 166",
   "adresse": "Musterweg 10, Musterstadt-D03",
   "pos": {
-   "x": 360,
-   "y": 91
+   "x": 362.5,
+   "y": 83.2
   },
   "cluster": 3,
   "prio": false,
@@ -2660,8 +2660,8 @@
   "name": "Autohaus AdlerZentrum 167",
   "adresse": "Musterweg 11, Musterstadt-D03",
   "pos": {
-   "x": 380,
-   "y": 91
+   "x": 387.7,
+   "y": 90.5
   },
   "cluster": 3,
   "prio": false,
@@ -2676,8 +2676,8 @@
   "name": "Autohaus UlrichSandberg 168",
   "adresse": "Musterweg 12, Musterstadt-D03",
   "pos": {
-   "x": 400,
-   "y": 91
+   "x": 407.5,
+   "y": 93.9
   },
   "cluster": 3,
   "prio": false,
@@ -2692,8 +2692,8 @@
   "name": "Autohaus IversenNord 169",
   "adresse": "Musterweg 1, Musterstadt-D03",
   "pos": {
-   "x": 416,
-   "y": 43
+   "x": 421.8,
+   "y": 49.8
   },
   "cluster": 4,
   "prio": false,
@@ -2708,8 +2708,8 @@
   "name": "Autohaus WagenfeldZentrum 170",
   "adresse": "Musterweg 2, Musterstadt-D03",
   "pos": {
-   "x": 436,
-   "y": 43
+   "x": 442.5,
+   "y": 41.4
   },
   "cluster": 4,
   "prio": false,
@@ -2724,8 +2724,8 @@
   "name": "Autohaus BrandtSandberg 171",
   "adresse": "Musterweg 3, Musterstadt-D03",
   "pos": {
-   "x": 456,
-   "y": 43
+   "x": 463.6,
+   "y": 50.2
   },
   "cluster": 4,
   "prio": false,
@@ -2740,8 +2740,8 @@
   "name": "Autohaus RothNord 172",
   "adresse": "Musterweg 4, Musterstadt-D03",
   "pos": {
-   "x": 416,
-   "y": 61
+   "x": 411.7,
+   "y": 66.3
   },
   "cluster": 4,
   "prio": true,
@@ -2756,8 +2756,8 @@
   "name": "Autohaus ErtlZentrum 173",
   "adresse": "Musterweg 5, Musterstadt-D03",
   "pos": {
-   "x": 436,
-   "y": 61
+   "x": 433.5,
+   "y": 56.2
   },
   "cluster": 4,
   "prio": false,
@@ -2772,8 +2772,8 @@
   "name": "Autohaus LehmannSandberg 174",
   "adresse": "Musterweg 6, Musterstadt-D03",
   "pos": {
-   "x": 456,
-   "y": 61
+   "x": 453.7,
+   "y": 63.2
   },
   "cluster": 4,
   "prio": false,
@@ -2788,8 +2788,8 @@
   "name": "Autohaus ReinhardtNord 175",
   "adresse": "Musterweg 7, Musterstadt-D03",
   "pos": {
-   "x": 416,
-   "y": 79
+   "x": 416.8,
+   "y": 78.6
   },
   "cluster": 4,
   "prio": false,
@@ -2804,8 +2804,8 @@
   "name": "Autohaus AdlerZentrum 176",
   "adresse": "Musterweg 8, Musterstadt-D03",
   "pos": {
-   "x": 436,
-   "y": 79
+   "x": 440.6,
+   "y": 80.3
   },
   "cluster": 4,
   "prio": false,
@@ -2820,8 +2820,8 @@
   "name": "Autohaus UlrichSandberg 177",
   "adresse": "Musterweg 9, Musterstadt-D03",
   "pos": {
-   "x": 456,
-   "y": 79
+   "x": 451.0,
+   "y": 81.0
   },
   "cluster": 4,
   "prio": false,
@@ -2836,8 +2836,8 @@
   "name": "Autohaus HartmannNord 178",
   "adresse": "Musterweg 10, Musterstadt-D03",
   "pos": {
-   "x": 416,
-   "y": 97
+   "x": 410.5,
+   "y": 103.3
   },
   "cluster": 4,
   "prio": false,
@@ -2852,8 +2852,8 @@
   "name": "Autohaus KrausZentrum 179",
   "adresse": "Musterweg 11, Musterstadt-D03",
   "pos": {
-   "x": 436,
-   "y": 97
+   "x": 443.2,
+   "y": 102.0
   },
   "cluster": 4,
   "prio": false,
@@ -2868,8 +2868,8 @@
   "name": "Autohaus KesslerSandberg 180",
   "adresse": "Musterweg 12, Musterstadt-D03",
   "pos": {
-   "x": 456,
-   "y": 97
+   "x": 461.4,
+   "y": 100.2
   },
   "cluster": 4,
   "prio": false,
@@ -2884,8 +2884,8 @@
   "name": "Autohaus FischerNord 181",
   "adresse": "Musterweg 1, Musterstadt-D04",
   "pos": {
-   "x": 520,
-   "y": -27
+   "x": 524.7,
+   "y": -24.8
   },
   "cluster": 0,
   "prio": true,
@@ -2900,8 +2900,8 @@
   "name": "Autohaus TetzlaffZentrum 182",
   "adresse": "Musterweg 2, Musterstadt-D04",
   "pos": {
-   "x": 540,
-   "y": -27
+   "x": 533.3,
+   "y": -29.0
   },
   "cluster": 0,
   "prio": false,
@@ -2916,8 +2916,8 @@
   "name": "Autohaus GerberSandberg 183",
   "adresse": "Musterweg 3, Musterstadt-D04",
   "pos": {
-   "x": 560,
-   "y": -27
+   "x": 563.7,
+   "y": -32.8
   },
   "cluster": 0,
   "prio": false,
@@ -2932,8 +2932,8 @@
   "name": "Autohaus SperlNord 184",
   "adresse": "Musterweg 4, Musterstadt-D04",
   "pos": {
-   "x": 520,
-   "y": -9
+   "x": 523.8,
+   "y": -1.0
   },
   "cluster": 0,
   "prio": false,
@@ -2948,8 +2948,8 @@
   "name": "Autohaus SteinbachZentrum 185",
   "adresse": "Musterweg 5, Musterstadt-D04",
   "pos": {
-   "x": 540,
-   "y": -9
+   "x": 532.3,
+   "y": -13.5
   },
   "cluster": 0,
   "prio": false,
@@ -2964,8 +2964,8 @@
   "name": "Autohaus MercedesSandberg 186",
   "adresse": "Musterweg 6, Musterstadt-D04",
   "pos": {
-   "x": 560,
-   "y": -9
+   "x": 565.6,
+   "y": -7.7
   },
   "cluster": 0,
   "prio": false,
@@ -2980,8 +2980,8 @@
   "name": "Autohaus ZabelNord 187",
   "adresse": "Musterweg 7, Musterstadt-D04",
   "pos": {
-   "x": 520,
-   "y": 9
+   "x": 521.2,
+   "y": 16.3
   },
   "cluster": 0,
   "prio": false,
@@ -2996,8 +2996,8 @@
   "name": "Autohaus JostZentrum 188",
   "adresse": "Musterweg 8, Musterstadt-D04",
   "pos": {
-   "x": 540,
-   "y": 9
+   "x": 538.1,
+   "y": 16.4
   },
   "cluster": 0,
   "prio": false,
@@ -3012,8 +3012,8 @@
   "name": "Autohaus LindtSandberg 189",
   "adresse": "Musterweg 9, Musterstadt-D04",
   "pos": {
-   "x": 560,
-   "y": 9
+   "x": 560.3,
+   "y": 11.3
   },
   "cluster": 0,
   "prio": false,
@@ -3028,8 +3028,8 @@
   "name": "Autohaus OstermannNord 190",
   "adresse": "Musterweg 10, Musterstadt-D04",
   "pos": {
-   "x": 520,
-   "y": 27
+   "x": 514.5,
+   "y": 27.1
   },
   "cluster": 0,
   "prio": true,
@@ -3044,8 +3044,8 @@
   "name": "Autohaus SanderZentrum 191",
   "adresse": "Musterweg 11, Musterstadt-D04",
   "pos": {
-   "x": 540,
-   "y": 27
+   "x": 533.4,
+   "y": 30.7
   },
   "cluster": 0,
   "prio": false,
@@ -3060,8 +3060,8 @@
   "name": "Autohaus FeldmannSandberg 192",
   "adresse": "Musterweg 12, Musterstadt-D04",
   "pos": {
-   "x": 560,
-   "y": 27
+   "x": 557.3,
+   "y": 23.2
   },
   "cluster": 0,
   "prio": false,
@@ -3076,8 +3076,8 @@
   "name": "Autohaus SperlNord 193",
   "adresse": "Musterweg 1, Musterstadt-D04",
   "pos": {
-   "x": 572,
-   "y": -9
+   "x": 564.7,
+   "y": -7.5
   },
   "cluster": 1,
   "prio": false,
@@ -3092,8 +3092,8 @@
   "name": "Autohaus SteinbachZentrum 194",
   "adresse": "Musterweg 2, Musterstadt-D04",
   "pos": {
-   "x": 592,
-   "y": -9
+   "x": 596.6,
+   "y": -14.4
   },
   "cluster": 1,
   "prio": false,
@@ -3108,8 +3108,8 @@
   "name": "Autohaus MercedesSandberg 195",
   "adresse": "Musterweg 3, Musterstadt-D04",
   "pos": {
-   "x": 612,
-   "y": -9
+   "x": 608.7,
+   "y": -8.3
   },
   "cluster": 1,
   "prio": false,
@@ -3124,8 +3124,8 @@
   "name": "Autohaus ZabelNord 196",
   "adresse": "Musterweg 4, Musterstadt-D04",
   "pos": {
-   "x": 572,
-   "y": 9
+   "x": 569.7,
+   "y": 16.6
   },
   "cluster": 1,
   "prio": false,
@@ -3140,8 +3140,8 @@
   "name": "Autohaus JostZentrum 197",
   "adresse": "Musterweg 5, Musterstadt-D04",
   "pos": {
-   "x": 592,
-   "y": 9
+   "x": 587.0,
+   "y": 13.0
   },
   "cluster": 1,
   "prio": false,
@@ -3156,8 +3156,8 @@
   "name": "Autohaus LindtSandberg 198",
   "adresse": "Musterweg 6, Musterstadt-D04",
   "pos": {
-   "x": 612,
-   "y": 9
+   "x": 604.2,
+   "y": 10.7
   },
   "cluster": 1,
   "prio": false,
@@ -3172,8 +3172,8 @@
   "name": "Autohaus OstermannNord 199",
   "adresse": "Musterweg 7, Musterstadt-D04",
   "pos": {
-   "x": 572,
-   "y": 27
+   "x": 571.7,
+   "y": 25.8
   },
   "cluster": 1,
   "prio": true,
@@ -3188,8 +3188,8 @@
   "name": "Autohaus SanderZentrum 200",
   "adresse": "Musterweg 8, Musterstadt-D04",
   "pos": {
-   "x": 592,
-   "y": 27
+   "x": 597.0,
+   "y": 33.4
   },
   "cluster": 1,
   "prio": false,
@@ -3204,8 +3204,8 @@
   "name": "Autohaus FeldmannSandberg 201",
   "adresse": "Musterweg 9, Musterstadt-D04",
   "pos": {
-   "x": 612,
-   "y": 27
+   "x": 619.7,
+   "y": 34.9
   },
   "cluster": 1,
   "prio": false,
@@ -3220,8 +3220,8 @@
   "name": "Autohaus BergmannNord 202",
   "adresse": "Musterweg 10, Musterstadt-D04",
   "pos": {
-   "x": 572,
-   "y": 45
+   "x": 566.7,
+   "y": 45.3
   },
   "cluster": 1,
   "prio": false,
@@ -3236,8 +3236,8 @@
   "name": "Autohaus VoglerZentrum 203",
   "adresse": "Musterweg 11, Musterstadt-D04",
   "pos": {
-   "x": 592,
-   "y": 45
+   "x": 586.9,
+   "y": 45.6
   },
   "cluster": 1,
   "prio": false,
@@ -3252,8 +3252,8 @@
   "name": "Autohaus KuhnSandberg 204",
   "adresse": "Musterweg 12, Musterstadt-D04",
   "pos": {
-   "x": 612,
-   "y": 45
+   "x": 606.6,
+   "y": 51.2
   },
   "cluster": 1,
   "prio": false,
@@ -3268,8 +3268,8 @@
   "name": "Autohaus ZabelNord 205",
   "adresse": "Musterweg 1, Musterstadt-D04",
   "pos": {
-   "x": 624,
-   "y": -19
+   "x": 624.2,
+   "y": -12.9
   },
   "cluster": 2,
   "prio": false,
@@ -3284,8 +3284,8 @@
   "name": "Autohaus JostZentrum 206",
   "adresse": "Musterweg 2, Musterstadt-D04",
   "pos": {
-   "x": 644,
-   "y": -19
+   "x": 646.3,
+   "y": -27.0
   },
   "cluster": 2,
   "prio": false,
@@ -3300,8 +3300,8 @@
   "name": "Autohaus LindtSandberg 207",
   "adresse": "Musterweg 3, Musterstadt-D04",
   "pos": {
-   "x": 664,
-   "y": -19
+   "x": 662.0,
+   "y": -21.1
   },
   "cluster": 2,
   "prio": false,
@@ -3316,8 +3316,8 @@
   "name": "Autohaus OstermannNord 208",
   "adresse": "Musterweg 4, Musterstadt-D04",
   "pos": {
-   "x": 624,
-   "y": -1
+   "x": 619.5,
+   "y": -6.5
   },
   "cluster": 2,
   "prio": true,
@@ -3332,8 +3332,8 @@
   "name": "Autohaus SanderZentrum 209",
   "adresse": "Musterweg 5, Musterstadt-D04",
   "pos": {
-   "x": 644,
-   "y": -1
+   "x": 645.8,
+   "y": -7.0
   },
   "cluster": 2,
   "prio": false,
@@ -3348,8 +3348,8 @@
   "name": "Autohaus FeldmannSandberg 210",
   "adresse": "Musterweg 6, Musterstadt-D04",
   "pos": {
-   "x": 664,
-   "y": -1
+   "x": 671.8,
+   "y": -1.2
   },
   "cluster": 2,
   "prio": false,
@@ -3364,8 +3364,8 @@
   "name": "Autohaus BergmannNord 211",
   "adresse": "Musterweg 7, Musterstadt-D04",
   "pos": {
-   "x": 624,
-   "y": 17
+   "x": 630.0,
+   "y": 20.6
   },
   "cluster": 2,
   "prio": false,
@@ -3380,8 +3380,8 @@
   "name": "Autohaus VoglerZentrum 212",
   "adresse": "Musterweg 8, Musterstadt-D04",
   "pos": {
-   "x": 644,
-   "y": 17
+   "x": 642.1,
+   "y": 18.9
   },
   "cluster": 2,
   "prio": false,
@@ -3396,8 +3396,8 @@
   "name": "Autohaus KuhnSandberg 213",
   "adresse": "Musterweg 9, Musterstadt-D04",
   "pos": {
-   "x": 664,
-   "y": 17
+   "x": 666.4,
+   "y": 14.6
   },
   "cluster": 2,
   "prio": false,
@@ -3412,8 +3412,8 @@
   "name": "Autohaus WeberNord 214",
   "adresse": "Musterweg 10, Musterstadt-D04",
   "pos": {
-   "x": 624,
-   "y": 35
+   "x": 630.6,
+   "y": 28.9
   },
   "cluster": 2,
   "prio": false,
@@ -3428,8 +3428,8 @@
   "name": "Autohaus IversenZentrum 215",
   "adresse": "Musterweg 11, Musterstadt-D04",
   "pos": {
-   "x": 644,
-   "y": 35
+   "x": 644.3,
+   "y": 40.3
   },
   "cluster": 2,
   "prio": false,
@@ -3444,8 +3444,8 @@
   "name": "Autohaus WagenfeldSandberg 216",
   "adresse": "Musterweg 12, Musterstadt-D04",
   "pos": {
-   "x": 664,
-   "y": 35
+   "x": 666.9,
+   "y": 34.3
   },
   "cluster": 2,
   "prio": false,
@@ -3460,8 +3460,8 @@
   "name": "Autohaus OstermannNord 217",
   "adresse": "Musterweg 1, Musterstadt-D04",
   "pos": {
-   "x": 540,
-   "y": 37
+   "x": 541.4,
+   "y": 30.3
   },
   "cluster": 3,
   "prio": true,
@@ -3476,8 +3476,8 @@
   "name": "Autohaus SanderZentrum 218",
   "adresse": "Musterweg 2, Musterstadt-D04",
   "pos": {
-   "x": 560,
-   "y": 37
+   "x": 564.5,
+   "y": 30.4
   },
   "cluster": 3,
   "prio": false,
@@ -3492,8 +3492,8 @@
   "name": "Autohaus FeldmannSandberg 219",
   "adresse": "Musterweg 3, Musterstadt-D04",
   "pos": {
-   "x": 580,
-   "y": 37
+   "x": 579.9,
+   "y": 34.0
   },
   "cluster": 3,
   "prio": false,
@@ -3508,8 +3508,8 @@
   "name": "Autohaus BergmannNord 220",
   "adresse": "Musterweg 4, Musterstadt-D04",
   "pos": {
-   "x": 540,
-   "y": 55
+   "x": 544.1,
+   "y": 50.6
   },
   "cluster": 3,
   "prio": false,
@@ -3524,8 +3524,8 @@
   "name": "Autohaus VoglerZentrum 221",
   "adresse": "Musterweg 5, Musterstadt-D04",
   "pos": {
-   "x": 560,
-   "y": 55
+   "x": 557.2,
+   "y": 55.1
   },
   "cluster": 3,
   "prio": false,
@@ -3540,8 +3540,8 @@
   "name": "Autohaus KuhnSandberg 222",
   "adresse": "Musterweg 6, Musterstadt-D04",
   "pos": {
-   "x": 580,
-   "y": 55
+   "x": 577.3,
+   "y": 61.5
   },
   "cluster": 3,
   "prio": false,
@@ -3556,8 +3556,8 @@
   "name": "Autohaus WeberNord 223",
   "adresse": "Musterweg 7, Musterstadt-D04",
   "pos": {
-   "x": 540,
-   "y": 73
+   "x": 543.6,
+   "y": 78.7
   },
   "cluster": 3,
   "prio": false,
@@ -3572,8 +3572,8 @@
   "name": "Autohaus IversenZentrum 224",
   "adresse": "Musterweg 8, Musterstadt-D04",
   "pos": {
-   "x": 560,
-   "y": 73
+   "x": 558.4,
+   "y": 67.8
   },
   "cluster": 3,
   "prio": false,
@@ -3588,8 +3588,8 @@
   "name": "Autohaus WagenfeldSandberg 225",
   "adresse": "Musterweg 9, Musterstadt-D04",
   "pos": {
-   "x": 580,
-   "y": 73
+   "x": 584.9,
+   "y": 68.5
   },
   "cluster": 3,
   "prio": false,
@@ -3604,8 +3604,8 @@
   "name": "Autohaus BrandtNord 226",
   "adresse": "Musterweg 10, Musterstadt-D04",
   "pos": {
-   "x": 540,
-   "y": 91
+   "x": 543.0,
+   "y": 88.6
   },
   "cluster": 3,
   "prio": true,
@@ -3620,8 +3620,8 @@
   "name": "Autohaus RothZentrum 227",
   "adresse": "Musterweg 11, Musterstadt-D04",
   "pos": {
-   "x": 560,
-   "y": 91
+   "x": 564.6,
+   "y": 89.6
   },
   "cluster": 3,
   "prio": false,
@@ -3636,8 +3636,8 @@
   "name": "Autohaus ErtlSandberg 228",
   "adresse": "Musterweg 12, Musterstadt-D04",
   "pos": {
-   "x": 580,
-   "y": 91
+   "x": 584.9,
+   "y": 89.1
   },
   "cluster": 3,
   "prio": false,
@@ -3652,8 +3652,8 @@
   "name": "Autohaus BergmannNord 229",
   "adresse": "Musterweg 1, Musterstadt-D04",
   "pos": {
-   "x": 596,
-   "y": 43
+   "x": 590.5,
+   "y": 46.9
   },
   "cluster": 4,
   "prio": false,
@@ -3668,8 +3668,8 @@
   "name": "Autohaus VoglerZentrum 230",
   "adresse": "Musterweg 2, Musterstadt-D04",
   "pos": {
-   "x": 616,
-   "y": 43
+   "x": 618.5,
+   "y": 37.0
   },
   "cluster": 4,
   "prio": false,
@@ -3684,8 +3684,8 @@
   "name": "Autohaus KuhnSandberg 231",
   "adresse": "Musterweg 3, Musterstadt-D04",
   "pos": {
-   "x": 636,
-   "y": 43
+   "x": 632.3,
+   "y": 48.4
   },
   "cluster": 4,
   "prio": false,
@@ -3700,8 +3700,8 @@
   "name": "Autohaus WeberNord 232",
   "adresse": "Musterweg 4, Musterstadt-D04",
   "pos": {
-   "x": 596,
-   "y": 61
+   "x": 593.1,
+   "y": 66.5
   },
   "cluster": 4,
   "prio": false,
@@ -3716,8 +3716,8 @@
   "name": "Autohaus IversenZentrum 233",
   "adresse": "Musterweg 5, Musterstadt-D04",
   "pos": {
-   "x": 616,
-   "y": 61
+   "x": 615.1,
+   "y": 55.3
   },
   "cluster": 4,
   "prio": false,
@@ -3732,8 +3732,8 @@
   "name": "Autohaus WagenfeldSandberg 234",
   "adresse": "Musterweg 6, Musterstadt-D04",
   "pos": {
-   "x": 636,
-   "y": 61
+   "x": 638.0,
+   "y": 56.7
   },
   "cluster": 4,
   "prio": false,
@@ -3748,8 +3748,8 @@
   "name": "Autohaus BrandtNord 235",
   "adresse": "Musterweg 7, Musterstadt-D04",
   "pos": {
-   "x": 596,
-   "y": 79
+   "x": 603.6,
+   "y": 80.0
   },
   "cluster": 4,
   "prio": true,
@@ -3764,8 +3764,8 @@
   "name": "Autohaus RothZentrum 236",
   "adresse": "Musterweg 8, Musterstadt-D04",
   "pos": {
-   "x": 616,
-   "y": 79
+   "x": 610.0,
+   "y": 75.7
   },
   "cluster": 4,
   "prio": false,
@@ -3780,8 +3780,8 @@
   "name": "Autohaus ErtlSandberg 237",
   "adresse": "Musterweg 9, Musterstadt-D04",
   "pos": {
-   "x": 636,
-   "y": 79
+   "x": 635.3,
+   "y": 77.4
   },
   "cluster": 4,
   "prio": false,
@@ -3796,8 +3796,8 @@
   "name": "Autohaus LehmannNord 238",
   "adresse": "Musterweg 10, Musterstadt-D04",
   "pos": {
-   "x": 596,
-   "y": 97
+   "x": 588.3,
+   "y": 100.5
   },
   "cluster": 4,
   "prio": false,
@@ -3812,8 +3812,8 @@
   "name": "Autohaus ReinhardtZentrum 239",
   "adresse": "Musterweg 11, Musterstadt-D04",
   "pos": {
-   "x": 616,
-   "y": 97
+   "x": 618.8,
+   "y": 94.4
   },
   "cluster": 4,
   "prio": false,
@@ -3828,8 +3828,8 @@
   "name": "Autohaus AdlerSandberg 240",
   "adresse": "Musterweg 12, Musterstadt-D04",
   "pos": {
-   "x": 636,
-   "y": 97
+   "x": 638.9,
+   "y": 103.8
   },
   "cluster": 4,
   "prio": false,
@@ -3844,8 +3844,8 @@
   "name": "Autohaus PflugerNord 241",
   "adresse": "Musterweg 1, Musterstadt-D05",
   "pos": {
-   "x": -20,
-   "y": 123
+   "x": -13.5,
+   "y": 128.6
   },
   "cluster": 0,
   "prio": false,
@@ -3860,8 +3860,8 @@
   "name": "Autohaus HansenZentrum 242",
   "adresse": "Musterweg 2, Musterstadt-D05",
   "pos": {
-   "x": 0,
-   "y": 123
+   "x": 7.2,
+   "y": 125.7
   },
   "cluster": 0,
   "prio": false,
@@ -3876,8 +3876,8 @@
   "name": "Autohaus KraemerSandberg 243",
   "adresse": "Musterweg 3, Musterstadt-D05",
   "pos": {
-   "x": 20,
-   "y": 123
+   "x": 20.7,
+   "y": 118.4
   },
   "cluster": 0,
   "prio": false,
@@ -3892,8 +3892,8 @@
   "name": "Autohaus HoeppeNord 244",
   "adresse": "Musterweg 4, Musterstadt-D05",
   "pos": {
-   "x": -20,
-   "y": 141
+   "x": -22.4,
+   "y": 138.3
   },
   "cluster": 0,
   "prio": true,
@@ -3908,8 +3908,8 @@
   "name": "Autohaus FischerZentrum 245",
   "adresse": "Musterweg 5, Musterstadt-D05",
   "pos": {
-   "x": 0,
-   "y": 141
+   "x": 6.8,
+   "y": 144.6
   },
   "cluster": 0,
   "prio": false,
@@ -3924,8 +3924,8 @@
   "name": "Autohaus TetzlaffSandberg 246",
   "adresse": "Musterweg 6, Musterstadt-D05",
   "pos": {
-   "x": 20,
-   "y": 141
+   "x": 12.2,
+   "y": 141.9
   },
   "cluster": 0,
   "prio": false,
@@ -3940,8 +3940,8 @@
   "name": "Autohaus GerberNord 247",
   "adresse": "Musterweg 7, Musterstadt-D05",
   "pos": {
-   "x": -20,
-   "y": 159
+   "x": -24.0,
+   "y": 156.3
   },
   "cluster": 0,
   "prio": false,
@@ -3956,8 +3956,8 @@
   "name": "Autohaus SperlZentrum 248",
   "adresse": "Musterweg 8, Musterstadt-D05",
   "pos": {
-   "x": 0,
-   "y": 159
+   "x": 2.3,
+   "y": 157.6
   },
   "cluster": 0,
   "prio": false,
@@ -3972,8 +3972,8 @@
   "name": "Autohaus SteinbachSandberg 249",
   "adresse": "Musterweg 9, Musterstadt-D05",
   "pos": {
-   "x": 20,
-   "y": 159
+   "x": 24.5,
+   "y": 158.6
   },
   "cluster": 0,
   "prio": false,
@@ -3988,8 +3988,8 @@
   "name": "Autohaus MercedesNord 250",
   "adresse": "Musterweg 10, Musterstadt-D05",
   "pos": {
-   "x": -20,
-   "y": 177
+   "x": -13.8,
+   "y": 174.4
   },
   "cluster": 0,
   "prio": false,
@@ -4004,8 +4004,8 @@
   "name": "Autohaus ZabelZentrum 251",
   "adresse": "Musterweg 11, Musterstadt-D05",
   "pos": {
-   "x": 0,
-   "y": 177
+   "x": -7.4,
+   "y": 172.5
   },
   "cluster": 0,
   "prio": false,
@@ -4020,8 +4020,8 @@
   "name": "Autohaus JostSandberg 252",
   "adresse": "Musterweg 12, Musterstadt-D05",
   "pos": {
-   "x": 20,
-   "y": 177
+   "x": 13.9,
+   "y": 182.6
   },
   "cluster": 0,
   "prio": false,
@@ -4036,8 +4036,8 @@
   "name": "Autohaus HoeppeNord 253",
   "adresse": "Musterweg 1, Musterstadt-D05",
   "pos": {
-   "x": 32,
-   "y": 141
+   "x": 28.3,
+   "y": 133.3
   },
   "cluster": 1,
   "prio": true,
@@ -4052,8 +4052,8 @@
   "name": "Autohaus FischerZentrum 254",
   "adresse": "Musterweg 2, Musterstadt-D05",
   "pos": {
-   "x": 52,
-   "y": 141
+   "x": 47.3,
+   "y": 140.3
   },
   "cluster": 1,
   "prio": false,
@@ -4068,8 +4068,8 @@
   "name": "Autohaus TetzlaffSandberg 255",
   "adresse": "Musterweg 3, Musterstadt-D05",
   "pos": {
-   "x": 72,
-   "y": 141
+   "x": 68.4,
+   "y": 143.1
   },
   "cluster": 1,
   "prio": false,
@@ -4084,8 +4084,8 @@
   "name": "Autohaus GerberNord 256",
   "adresse": "Musterweg 4, Musterstadt-D05",
   "pos": {
-   "x": 32,
-   "y": 159
+   "x": 25.3,
+   "y": 162.1
   },
   "cluster": 1,
   "prio": false,
@@ -4100,8 +4100,8 @@
   "name": "Autohaus SperlZentrum 257",
   "adresse": "Musterweg 5, Musterstadt-D05",
   "pos": {
-   "x": 52,
-   "y": 159
+   "x": 52.6,
+   "y": 151.2
   },
   "cluster": 1,
   "prio": false,
@@ -4116,8 +4116,8 @@
   "name": "Autohaus SteinbachSandberg 258",
   "adresse": "Musterweg 6, Musterstadt-D05",
   "pos": {
-   "x": 72,
-   "y": 159
+   "x": 65.5,
+   "y": 156.3
   },
   "cluster": 1,
   "prio": false,
@@ -4132,8 +4132,8 @@
   "name": "Autohaus MercedesNord 259",
   "adresse": "Musterweg 7, Musterstadt-D05",
   "pos": {
-   "x": 32,
-   "y": 177
+   "x": 27.5,
+   "y": 176.4
   },
   "cluster": 1,
   "prio": false,
@@ -4148,8 +4148,8 @@
   "name": "Autohaus ZabelZentrum 260",
   "adresse": "Musterweg 8, Musterstadt-D05",
   "pos": {
-   "x": 52,
-   "y": 177
+   "x": 53.7,
+   "y": 171.7
   },
   "cluster": 1,
   "prio": false,
@@ -4164,8 +4164,8 @@
   "name": "Autohaus JostSandberg 261",
   "adresse": "Musterweg 9, Musterstadt-D05",
   "pos": {
-   "x": 72,
-   "y": 177
+   "x": 69.0,
+   "y": 178.1
   },
   "cluster": 1,
   "prio": false,
@@ -4180,8 +4180,8 @@
   "name": "Autohaus LindtNord 262",
   "adresse": "Musterweg 10, Musterstadt-D05",
   "pos": {
-   "x": 32,
-   "y": 195
+   "x": 35.4,
+   "y": 197.9
   },
   "cluster": 1,
   "prio": true,
@@ -4196,8 +4196,8 @@
   "name": "Autohaus OstermannZentrum 263",
   "adresse": "Musterweg 11, Musterstadt-D05",
   "pos": {
-   "x": 52,
-   "y": 195
+   "x": 52.9,
+   "y": 188.7
   },
   "cluster": 1,
   "prio": false,
@@ -4212,8 +4212,8 @@
   "name": "Autohaus SanderSandberg 264",
   "adresse": "Musterweg 12, Musterstadt-D05",
   "pos": {
-   "x": 72,
-   "y": 195
+   "x": 68.3,
+   "y": 193.7
   },
   "cluster": 1,
   "prio": false,
@@ -4228,8 +4228,8 @@
   "name": "Autohaus GerberNord 265",
   "adresse": "Musterweg 1, Musterstadt-D05",
   "pos": {
-   "x": 84,
-   "y": 131
+   "x": 79.0,
+   "y": 134.7
   },
   "cluster": 2,
   "prio": false,
@@ -4244,8 +4244,8 @@
   "name": "Autohaus SperlZentrum 266",
   "adresse": "Musterweg 2, Musterstadt-D05",
   "pos": {
-   "x": 104,
-   "y": 131
+   "x": 111.8,
+   "y": 138.8
   },
   "cluster": 2,
   "prio": false,
@@ -4260,8 +4260,8 @@
   "name": "Autohaus SteinbachSandberg 267",
   "adresse": "Musterweg 3, Musterstadt-D05",
   "pos": {
-   "x": 124,
-   "y": 131
+   "x": 130.6,
+   "y": 133.5
   },
   "cluster": 2,
   "prio": false,
@@ -4276,8 +4276,8 @@
   "name": "Autohaus MercedesNord 268",
   "adresse": "Musterweg 4, Musterstadt-D05",
   "pos": {
-   "x": 84,
-   "y": 149
+   "x": 81.5,
+   "y": 146.6
   },
   "cluster": 2,
   "prio": false,
@@ -4292,8 +4292,8 @@
   "name": "Autohaus ZabelZentrum 269",
   "adresse": "Musterweg 5, Musterstadt-D05",
   "pos": {
-   "x": 104,
-   "y": 149
+   "x": 105.7,
+   "y": 145.1
   },
   "cluster": 2,
   "prio": false,
@@ -4308,8 +4308,8 @@
   "name": "Autohaus JostSandberg 270",
   "adresse": "Musterweg 6, Musterstadt-D05",
   "pos": {
-   "x": 124,
-   "y": 149
+   "x": 130.1,
+   "y": 154.4
   },
   "cluster": 2,
   "prio": false,
@@ -4324,8 +4324,8 @@
   "name": "Autohaus LindtNord 271",
   "adresse": "Musterweg 7, Musterstadt-D05",
   "pos": {
-   "x": 84,
-   "y": 167
+   "x": 76.6,
+   "y": 166.8
   },
   "cluster": 2,
   "prio": true,
@@ -4340,8 +4340,8 @@
   "name": "Autohaus OstermannZentrum 272",
   "adresse": "Musterweg 8, Musterstadt-D05",
   "pos": {
-   "x": 104,
-   "y": 167
+   "x": 96.3,
+   "y": 171.9
   },
   "cluster": 2,
   "prio": false,
@@ -4356,8 +4356,8 @@
   "name": "Autohaus SanderSandberg 273",
   "adresse": "Musterweg 9, Musterstadt-D05",
   "pos": {
-   "x": 124,
-   "y": 167
+   "x": 120.1,
+   "y": 171.1
   },
   "cluster": 2,
   "prio": false,
@@ -4372,8 +4372,8 @@
   "name": "Autohaus FeldmannNord 274",
   "adresse": "Musterweg 10, Musterstadt-D05",
   "pos": {
-   "x": 84,
-   "y": 185
+   "x": 79.2,
+   "y": 181.4
   },
   "cluster": 2,
   "prio": false,
@@ -4388,8 +4388,8 @@
   "name": "Autohaus BergmannZentrum 275",
   "adresse": "Musterweg 11, Musterstadt-D05",
   "pos": {
-   "x": 104,
-   "y": 185
+   "x": 109.5,
+   "y": 183.4
   },
   "cluster": 2,
   "prio": false,
@@ -4404,8 +4404,8 @@
   "name": "Autohaus VoglerSandberg 276",
   "adresse": "Musterweg 12, Musterstadt-D05",
   "pos": {
-   "x": 124,
-   "y": 185
+   "x": 119.5,
+   "y": 177.9
   },
   "cluster": 2,
   "prio": false,
@@ -4420,8 +4420,8 @@
   "name": "Autohaus MercedesNord 277",
   "adresse": "Musterweg 1, Musterstadt-D05",
   "pos": {
-   "x": 0,
-   "y": 187
+   "x": -1.4,
+   "y": 180.0
   },
   "cluster": 3,
   "prio": false,
@@ -4436,8 +4436,8 @@
   "name": "Autohaus ZabelZentrum 278",
   "adresse": "Musterweg 2, Musterstadt-D05",
   "pos": {
-   "x": 20,
-   "y": 187
+   "x": 23.6,
+   "y": 189.6
   },
   "cluster": 3,
   "prio": false,
@@ -4452,8 +4452,8 @@
   "name": "Autohaus JostSandberg 279",
   "adresse": "Musterweg 3, Musterstadt-D05",
   "pos": {
-   "x": 40,
-   "y": 187
+   "x": 42.9,
+   "y": 191.3
   },
   "cluster": 3,
   "prio": false,
@@ -4468,8 +4468,8 @@
   "name": "Autohaus LindtNord 280",
   "adresse": "Musterweg 4, Musterstadt-D05",
   "pos": {
-   "x": 0,
-   "y": 205
+   "x": -3.2,
+   "y": 204.7
   },
   "cluster": 3,
   "prio": true,
@@ -4484,8 +4484,8 @@
   "name": "Autohaus OstermannZentrum 281",
   "adresse": "Musterweg 5, Musterstadt-D05",
   "pos": {
-   "x": 20,
-   "y": 205
+   "x": 13.5,
+   "y": 205.2
   },
   "cluster": 3,
   "prio": false,
@@ -4500,8 +4500,8 @@
   "name": "Autohaus SanderSandberg 282",
   "adresse": "Musterweg 6, Musterstadt-D05",
   "pos": {
-   "x": 40,
-   "y": 205
+   "x": 40.4,
+   "y": 202.2
   },
   "cluster": 3,
   "prio": false,
@@ -4516,8 +4516,8 @@
   "name": "Autohaus FeldmannNord 283",
   "adresse": "Musterweg 7, Musterstadt-D05",
   "pos": {
-   "x": 0,
-   "y": 223
+   "x": -2.9,
+   "y": 220.4
   },
   "cluster": 3,
   "prio": false,
@@ -4532,8 +4532,8 @@
   "name": "Autohaus BergmannZentrum 284",
   "adresse": "Musterweg 8, Musterstadt-D05",
   "pos": {
-   "x": 20,
-   "y": 223
+   "x": 14.9,
+   "y": 230.8
   },
   "cluster": 3,
   "prio": false,
@@ -4548,8 +4548,8 @@
   "name": "Autohaus VoglerSandberg 285",
   "adresse": "Musterweg 9, Musterstadt-D05",
   "pos": {
-   "x": 40,
-   "y": 223
+   "x": 45.8,
+   "y": 217.8
   },
   "cluster": 3,
   "prio": false,
@@ -4564,8 +4564,8 @@
   "name": "Autohaus KuhnNord 286",
   "adresse": "Musterweg 10, Musterstadt-D05",
   "pos": {
-   "x": 0,
-   "y": 241
+   "x": -3.9,
+   "y": 248.2
   },
   "cluster": 3,
   "prio": false,
@@ -4580,8 +4580,8 @@
   "name": "Autohaus WeberZentrum 287",
   "adresse": "Musterweg 11, Musterstadt-D05",
   "pos": {
-   "x": 20,
-   "y": 241
+   "x": 25.9,
+   "y": 241.3
   },
   "cluster": 3,
   "prio": false,
@@ -4596,8 +4596,8 @@
   "name": "Autohaus IversenSandberg 288",
   "adresse": "Musterweg 12, Musterstadt-D05",
   "pos": {
-   "x": 40,
-   "y": 241
+   "x": 38.1,
+   "y": 234.7
   },
   "cluster": 3,
   "prio": false,
@@ -4612,8 +4612,8 @@
   "name": "Autohaus LindtNord 289",
   "adresse": "Musterweg 1, Musterstadt-D05",
   "pos": {
-   "x": 56,
-   "y": 193
+   "x": 57.7,
+   "y": 188.4
   },
   "cluster": 4,
   "prio": true,
@@ -4628,8 +4628,8 @@
   "name": "Autohaus OstermannZentrum 290",
   "adresse": "Musterweg 2, Musterstadt-D05",
   "pos": {
-   "x": 76,
-   "y": 193
+   "x": 75.4,
+   "y": 188.4
   },
   "cluster": 4,
   "prio": false,
@@ -4644,8 +4644,8 @@
   "name": "Autohaus SanderSandberg 291",
   "adresse": "Musterweg 3, Musterstadt-D05",
   "pos": {
-   "x": 96,
-   "y": 193
+   "x": 96.1,
+   "y": 193.4
   },
   "cluster": 4,
   "prio": false,
@@ -4660,8 +4660,8 @@
   "name": "Autohaus FeldmannNord 292",
   "adresse": "Musterweg 4, Musterstadt-D05",
   "pos": {
-   "x": 56,
-   "y": 211
+   "x": 56.2,
+   "y": 215.7
   },
   "cluster": 4,
   "prio": false,
@@ -4676,8 +4676,8 @@
   "name": "Autohaus BergmannZentrum 293",
   "adresse": "Musterweg 5, Musterstadt-D05",
   "pos": {
-   "x": 76,
-   "y": 211
+   "x": 72.3,
+   "y": 217.0
   },
   "cluster": 4,
   "prio": false,
@@ -4692,8 +4692,8 @@
   "name": "Autohaus VoglerSandberg 294",
   "adresse": "Musterweg 6, Musterstadt-D05",
   "pos": {
-   "x": 96,
-   "y": 211
+   "x": 95.8,
+   "y": 211.9
   },
   "cluster": 4,
   "prio": false,
@@ -4708,8 +4708,8 @@
   "name": "Autohaus KuhnNord 295",
   "adresse": "Musterweg 7, Musterstadt-D05",
   "pos": {
-   "x": 56,
-   "y": 229
+   "x": 61.4,
+   "y": 226.2
   },
   "cluster": 4,
   "prio": false,
@@ -4724,8 +4724,8 @@
   "name": "Autohaus WeberZentrum 296",
   "adresse": "Musterweg 8, Musterstadt-D05",
   "pos": {
-   "x": 76,
-   "y": 229
+   "x": 84.0,
+   "y": 227.3
   },
   "cluster": 4,
   "prio": false,
@@ -4740,8 +4740,8 @@
   "name": "Autohaus IversenSandberg 297",
   "adresse": "Musterweg 9, Musterstadt-D05",
   "pos": {
-   "x": 96,
-   "y": 229
+   "x": 97.8,
+   "y": 229.6
   },
   "cluster": 4,
   "prio": false,
@@ -4756,8 +4756,8 @@
   "name": "Autohaus WagenfeldNord 298",
   "adresse": "Musterweg 10, Musterstadt-D05",
   "pos": {
-   "x": 56,
-   "y": 247
+   "x": 50.4,
+   "y": 247.8
   },
   "cluster": 4,
   "prio": true,
@@ -4772,8 +4772,8 @@
   "name": "Autohaus BrandtZentrum 299",
   "adresse": "Musterweg 11, Musterstadt-D05",
   "pos": {
-   "x": 76,
-   "y": 247
+   "x": 83.7,
+   "y": 250.7
   },
   "cluster": 4,
   "prio": false,
@@ -4788,8 +4788,8 @@
   "name": "Autohaus RothSandberg 300",
   "adresse": "Musterweg 12, Musterstadt-D05",
   "pos": {
-   "x": 96,
-   "y": 247
+   "x": 90.1,
+   "y": 252.1
   },
   "cluster": 4,
   "prio": false,
@@ -4804,8 +4804,8 @@
   "name": "Autohaus UlrichNord 301",
   "adresse": "Musterweg 1, Musterstadt-D06",
   "pos": {
-   "x": 160,
-   "y": 123
+   "x": 162.5,
+   "y": 116.0
   },
   "cluster": 0,
   "prio": false,
@@ -4820,8 +4820,8 @@
   "name": "Autohaus HartmannZentrum 302",
   "adresse": "Musterweg 2, Musterstadt-D06",
   "pos": {
-   "x": 180,
-   "y": 123
+   "x": 182.7,
+   "y": 115.6
   },
   "cluster": 0,
   "prio": false,
@@ -4836,8 +4836,8 @@
   "name": "Autohaus KrausSandberg 303",
   "adresse": "Musterweg 3, Musterstadt-D06",
   "pos": {
-   "x": 200,
-   "y": 123
+   "x": 204.6,
+   "y": 130.1
   },
   "cluster": 0,
   "prio": false,
@@ -4852,8 +4852,8 @@
   "name": "Autohaus KesslerNord 304",
   "adresse": "Musterweg 4, Musterstadt-D06",
   "pos": {
-   "x": 160,
-   "y": 141
+   "x": 154.9,
+   "y": 137.3
   },
   "cluster": 0,
   "prio": false,
@@ -4868,8 +4868,8 @@
   "name": "Autohaus PflugerZentrum 305",
   "adresse": "Musterweg 5, Musterstadt-D06",
   "pos": {
-   "x": 180,
-   "y": 141
+   "x": 180.6,
+   "y": 138.7
   },
   "cluster": 0,
   "prio": false,
@@ -4884,8 +4884,8 @@
   "name": "Autohaus HansenSandberg 306",
   "adresse": "Musterweg 6, Musterstadt-D06",
   "pos": {
-   "x": 200,
-   "y": 141
+   "x": 199.3,
+   "y": 136.0
   },
   "cluster": 0,
   "prio": false,
@@ -4900,8 +4900,8 @@
   "name": "Autohaus KraemerNord 307",
   "adresse": "Musterweg 7, Musterstadt-D06",
   "pos": {
-   "x": 160,
-   "y": 159
+   "x": 152.9,
+   "y": 154.0
   },
   "cluster": 0,
   "prio": true,
@@ -4916,8 +4916,8 @@
   "name": "Autohaus HoeppeZentrum 308",
   "adresse": "Musterweg 8, Musterstadt-D06",
   "pos": {
-   "x": 180,
-   "y": 159
+   "x": 174.5,
+   "y": 161.3
   },
   "cluster": 0,
   "prio": false,
@@ -4932,8 +4932,8 @@
   "name": "Autohaus FischerSandberg 309",
   "adresse": "Musterweg 9, Musterstadt-D06",
   "pos": {
-   "x": 200,
-   "y": 159
+   "x": 199.8,
+   "y": 159.7
   },
   "cluster": 0,
   "prio": false,
@@ -4948,8 +4948,8 @@
   "name": "Autohaus TetzlaffNord 310",
   "adresse": "Musterweg 10, Musterstadt-D06",
   "pos": {
-   "x": 160,
-   "y": 177
+   "x": 152.5,
+   "y": 172.5
   },
   "cluster": 0,
   "prio": false,
@@ -4964,8 +4964,8 @@
   "name": "Autohaus GerberZentrum 311",
   "adresse": "Musterweg 11, Musterstadt-D06",
   "pos": {
-   "x": 180,
-   "y": 177
+   "x": 177.8,
+   "y": 177.7
   },
   "cluster": 0,
   "prio": false,
@@ -4980,8 +4980,8 @@
   "name": "Autohaus SperlSandberg 312",
   "adresse": "Musterweg 12, Musterstadt-D06",
   "pos": {
-   "x": 200,
-   "y": 177
+   "x": 199.5,
+   "y": 181.0
   },
   "cluster": 0,
   "prio": false,
@@ -4996,8 +4996,8 @@
   "name": "Autohaus KesslerNord 313",
   "adresse": "Musterweg 1, Musterstadt-D06",
   "pos": {
-   "x": 212,
-   "y": 141
+   "x": 206.5,
+   "y": 138.2
   },
   "cluster": 1,
   "prio": false,
@@ -5012,8 +5012,8 @@
   "name": "Autohaus PflugerZentrum 314",
   "adresse": "Musterweg 2, Musterstadt-D06",
   "pos": {
-   "x": 232,
-   "y": 141
+   "x": 235.4,
+   "y": 133.6
   },
   "cluster": 1,
   "prio": false,
@@ -5028,8 +5028,8 @@
   "name": "Autohaus HansenSandberg 315",
   "adresse": "Musterweg 3, Musterstadt-D06",
   "pos": {
-   "x": 252,
-   "y": 141
+   "x": 244.1,
+   "y": 134.5
   },
   "cluster": 1,
   "prio": false,
@@ -5044,8 +5044,8 @@
   "name": "Autohaus KraemerNord 316",
   "adresse": "Musterweg 4, Musterstadt-D06",
   "pos": {
-   "x": 212,
-   "y": 159
+   "x": 213.4,
+   "y": 162.3
   },
   "cluster": 1,
   "prio": true,
@@ -5060,8 +5060,8 @@
   "name": "Autohaus HoeppeZentrum 317",
   "adresse": "Musterweg 5, Musterstadt-D06",
   "pos": {
-   "x": 232,
-   "y": 159
+   "x": 237.0,
+   "y": 155.1
   },
   "cluster": 1,
   "prio": false,
@@ -5076,8 +5076,8 @@
   "name": "Autohaus FischerSandberg 318",
   "adresse": "Musterweg 6, Musterstadt-D06",
   "pos": {
-   "x": 252,
-   "y": 159
+   "x": 256.1,
+   "y": 153.6
   },
   "cluster": 1,
   "prio": false,
@@ -5092,8 +5092,8 @@
   "name": "Autohaus TetzlaffNord 319",
   "adresse": "Musterweg 7, Musterstadt-D06",
   "pos": {
-   "x": 212,
-   "y": 177
+   "x": 207.1,
+   "y": 182.1
   },
   "cluster": 1,
   "prio": false,
@@ -5108,8 +5108,8 @@
   "name": "Autohaus GerberZentrum 320",
   "adresse": "Musterweg 8, Musterstadt-D06",
   "pos": {
-   "x": 232,
-   "y": 177
+   "x": 230.8,
+   "y": 175.9
   },
   "cluster": 1,
   "prio": false,
@@ -5124,8 +5124,8 @@
   "name": "Autohaus SperlSandberg 321",
   "adresse": "Musterweg 9, Musterstadt-D06",
   "pos": {
-   "x": 252,
-   "y": 177
+   "x": 257.3,
+   "y": 171.7
   },
   "cluster": 1,
   "prio": false,
@@ -5140,8 +5140,8 @@
   "name": "Autohaus SteinbachNord 322",
   "adresse": "Musterweg 10, Musterstadt-D06",
   "pos": {
-   "x": 212,
-   "y": 195
+   "x": 207.6,
+   "y": 202.5
   },
   "cluster": 1,
   "prio": false,
@@ -5156,8 +5156,8 @@
   "name": "Autohaus MercedesZentrum 323",
   "adresse": "Musterweg 11, Musterstadt-D06",
   "pos": {
-   "x": 232,
-   "y": 195
+   "x": 227.4,
+   "y": 189.5
   },
   "cluster": 1,
   "prio": false,
@@ -5172,8 +5172,8 @@
   "name": "Autohaus ZabelSandberg 324",
   "adresse": "Musterweg 12, Musterstadt-D06",
   "pos": {
-   "x": 252,
-   "y": 195
+   "x": 259.9,
+   "y": 193.8
   },
   "cluster": 1,
   "prio": false,
@@ -5188,8 +5188,8 @@
   "name": "Autohaus KraemerNord 325",
   "adresse": "Musterweg 1, Musterstadt-D06",
   "pos": {
-   "x": 264,
-   "y": 131
+   "x": 262.8,
+   "y": 136.7
   },
   "cluster": 2,
   "prio": true,
@@ -5204,8 +5204,8 @@
   "name": "Autohaus HoeppeZentrum 326",
   "adresse": "Musterweg 2, Musterstadt-D06",
   "pos": {
-   "x": 284,
-   "y": 131
+   "x": 287.3,
+   "y": 138.5
   },
   "cluster": 2,
   "prio": false,
@@ -5220,8 +5220,8 @@
   "name": "Autohaus FischerSandberg 327",
   "adresse": "Musterweg 3, Musterstadt-D06",
   "pos": {
-   "x": 304,
-   "y": 131
+   "x": 306.1,
+   "y": 130.0
   },
   "cluster": 2,
   "prio": false,
@@ -5236,8 +5236,8 @@
   "name": "Autohaus TetzlaffNord 328",
   "adresse": "Musterweg 4, Musterstadt-D06",
   "pos": {
-   "x": 264,
-   "y": 149
+   "x": 271.2,
+   "y": 150.7
   },
   "cluster": 2,
   "prio": false,
@@ -5252,8 +5252,8 @@
   "name": "Autohaus GerberZentrum 329",
   "adresse": "Musterweg 5, Musterstadt-D06",
   "pos": {
-   "x": 284,
-   "y": 149
+   "x": 277.5,
+   "y": 155.4
   },
   "cluster": 2,
   "prio": false,
@@ -5268,8 +5268,8 @@
   "name": "Autohaus SperlSandberg 330",
   "adresse": "Musterweg 6, Musterstadt-D06",
   "pos": {
-   "x": 304,
-   "y": 149
+   "x": 307.8,
+   "y": 142.9
   },
   "cluster": 2,
   "prio": false,
@@ -5284,8 +5284,8 @@
   "name": "Autohaus SteinbachNord 331",
   "adresse": "Musterweg 7, Musterstadt-D06",
   "pos": {
-   "x": 264,
-   "y": 167
+   "x": 257.3,
+   "y": 170.4
   },
   "cluster": 2,
   "prio": false,
@@ -5300,8 +5300,8 @@
   "name": "Autohaus MercedesZentrum 332",
   "adresse": "Musterweg 8, Musterstadt-D06",
   "pos": {
-   "x": 284,
-   "y": 167
+   "x": 286.0,
+   "y": 161.5
   },
   "cluster": 2,
   "prio": false,
@@ -5316,8 +5316,8 @@
   "name": "Autohaus ZabelSandberg 333",
   "adresse": "Musterweg 9, Musterstadt-D06",
   "pos": {
-   "x": 304,
-   "y": 167
+   "x": 298.8,
+   "y": 169.3
   },
   "cluster": 2,
   "prio": false,
@@ -5332,8 +5332,8 @@
   "name": "Autohaus JostNord 334",
   "adresse": "Musterweg 10, Musterstadt-D06",
   "pos": {
-   "x": 264,
-   "y": 185
+   "x": 259.0,
+   "y": 192.2
   },
   "cluster": 2,
   "prio": true,
@@ -5348,8 +5348,8 @@
   "name": "Autohaus LindtZentrum 335",
   "adresse": "Musterweg 11, Musterstadt-D06",
   "pos": {
-   "x": 284,
-   "y": 185
+   "x": 291.7,
+   "y": 177.5
   },
   "cluster": 2,
   "prio": false,
@@ -5364,8 +5364,8 @@
   "name": "Autohaus OstermannSandberg 336",
   "adresse": "Musterweg 12, Musterstadt-D06",
   "pos": {
-   "x": 304,
-   "y": 185
+   "x": 311.5,
+   "y": 187.4
   },
   "cluster": 2,
   "prio": false,
@@ -5380,8 +5380,8 @@
   "name": "Autohaus TetzlaffNord 337",
   "adresse": "Musterweg 1, Musterstadt-D06",
   "pos": {
-   "x": 180,
-   "y": 187
+   "x": 186.6,
+   "y": 191.6
   },
   "cluster": 3,
   "prio": false,
@@ -5396,8 +5396,8 @@
   "name": "Autohaus GerberZentrum 338",
   "adresse": "Musterweg 2, Musterstadt-D06",
   "pos": {
-   "x": 200,
-   "y": 187
+   "x": 196.6,
+   "y": 184.8
   },
   "cluster": 3,
   "prio": false,
@@ -5412,8 +5412,8 @@
   "name": "Autohaus SperlSandberg 339",
   "adresse": "Musterweg 3, Musterstadt-D06",
   "pos": {
-   "x": 220,
-   "y": 187
+   "x": 212.2,
+   "y": 187.3
   },
   "cluster": 3,
   "prio": false,
@@ -5428,8 +5428,8 @@
   "name": "Autohaus SteinbachNord 340",
   "adresse": "Musterweg 4, Musterstadt-D06",
   "pos": {
-   "x": 180,
-   "y": 205
+   "x": 186.2,
+   "y": 210.4
   },
   "cluster": 3,
   "prio": false,
@@ -5444,8 +5444,8 @@
   "name": "Autohaus MercedesZentrum 341",
   "adresse": "Musterweg 5, Musterstadt-D06",
   "pos": {
-   "x": 200,
-   "y": 205
+   "x": 199.8,
+   "y": 199.2
   },
   "cluster": 3,
   "prio": false,
@@ -5460,8 +5460,8 @@
   "name": "Autohaus ZabelSandberg 342",
   "adresse": "Musterweg 6, Musterstadt-D06",
   "pos": {
-   "x": 220,
-   "y": 205
+   "x": 224.7,
+   "y": 206.0
   },
   "cluster": 3,
   "prio": false,
@@ -5476,8 +5476,8 @@
   "name": "Autohaus JostNord 343",
   "adresse": "Musterweg 7, Musterstadt-D06",
   "pos": {
-   "x": 180,
-   "y": 223
+   "x": 187.5,
+   "y": 222.3
   },
   "cluster": 3,
   "prio": true,
@@ -5492,8 +5492,8 @@
   "name": "Autohaus LindtZentrum 344",
   "adresse": "Musterweg 8, Musterstadt-D06",
   "pos": {
-   "x": 200,
-   "y": 223
+   "x": 201.7,
+   "y": 224.5
   },
   "cluster": 3,
   "prio": false,
@@ -5508,8 +5508,8 @@
   "name": "Autohaus OstermannSandberg 345",
   "adresse": "Musterweg 9, Musterstadt-D06",
   "pos": {
-   "x": 220,
-   "y": 223
+   "x": 226.9,
+   "y": 225.7
   },
   "cluster": 3,
   "prio": false,
@@ -5524,8 +5524,8 @@
   "name": "Autohaus SanderNord 346",
   "adresse": "Musterweg 10, Musterstadt-D06",
   "pos": {
-   "x": 180,
-   "y": 241
+   "x": 177.2,
+   "y": 237.1
   },
   "cluster": 3,
   "prio": false,
@@ -5540,8 +5540,8 @@
   "name": "Autohaus FeldmannZentrum 347",
   "adresse": "Musterweg 11, Musterstadt-D06",
   "pos": {
-   "x": 200,
-   "y": 241
+   "x": 202.9,
+   "y": 240.4
   },
   "cluster": 3,
   "prio": false,
@@ -5556,8 +5556,8 @@
   "name": "Autohaus BergmannSandberg 348",
   "adresse": "Musterweg 12, Musterstadt-D06",
   "pos": {
-   "x": 220,
-   "y": 241
+   "x": 217.5,
+   "y": 246.2
   },
   "cluster": 3,
   "prio": false,
@@ -5572,8 +5572,8 @@
   "name": "Autohaus SteinbachNord 349",
   "adresse": "Musterweg 1, Musterstadt-D06",
   "pos": {
-   "x": 236,
-   "y": 193
+   "x": 236.4,
+   "y": 193.5
   },
   "cluster": 4,
   "prio": false,
@@ -5588,8 +5588,8 @@
   "name": "Autohaus MercedesZentrum 350",
   "adresse": "Musterweg 2, Musterstadt-D06",
   "pos": {
-   "x": 256,
-   "y": 193
+   "x": 249.6,
+   "y": 189.4
   },
   "cluster": 4,
   "prio": false,
@@ -5604,8 +5604,8 @@
   "name": "Autohaus ZabelSandberg 351",
   "adresse": "Musterweg 3, Musterstadt-D06",
   "pos": {
-   "x": 276,
-   "y": 193
+   "x": 268.6,
+   "y": 194.4
   },
   "cluster": 4,
   "prio": false,
@@ -5620,8 +5620,8 @@
   "name": "Autohaus JostNord 352",
   "adresse": "Musterweg 4, Musterstadt-D06",
   "pos": {
-   "x": 236,
-   "y": 211
+   "x": 229.1,
+   "y": 217.8
   },
   "cluster": 4,
   "prio": true,
@@ -5636,8 +5636,8 @@
   "name": "Autohaus LindtZentrum 353",
   "adresse": "Musterweg 5, Musterstadt-D06",
   "pos": {
-   "x": 256,
-   "y": 211
+   "x": 257.0,
+   "y": 209.2
   },
   "cluster": 4,
   "prio": false,
@@ -5652,8 +5652,8 @@
   "name": "Autohaus OstermannSandberg 354",
   "adresse": "Musterweg 6, Musterstadt-D06",
   "pos": {
-   "x": 276,
-   "y": 211
+   "x": 278.3,
+   "y": 212.2
   },
   "cluster": 4,
   "prio": false,
@@ -5668,8 +5668,8 @@
   "name": "Autohaus SanderNord 355",
   "adresse": "Musterweg 7, Musterstadt-D06",
   "pos": {
-   "x": 236,
-   "y": 229
+   "x": 235.3,
+   "y": 228.7
   },
   "cluster": 4,
   "prio": false,
@@ -5684,8 +5684,8 @@
   "name": "Autohaus FeldmannZentrum 356",
   "adresse": "Musterweg 8, Musterstadt-D06",
   "pos": {
-   "x": 256,
-   "y": 229
+   "x": 248.4,
+   "y": 235.4
   },
   "cluster": 4,
   "prio": false,
@@ -5700,8 +5700,8 @@
   "name": "Autohaus BergmannSandberg 357",
   "adresse": "Musterweg 9, Musterstadt-D06",
   "pos": {
-   "x": 276,
-   "y": 229
+   "x": 270.1,
+   "y": 222.7
   },
   "cluster": 4,
   "prio": false,
@@ -5716,8 +5716,8 @@
   "name": "Autohaus VoglerNord 358",
   "adresse": "Musterweg 10, Musterstadt-D06",
   "pos": {
-   "x": 236,
-   "y": 247
+   "x": 229.5,
+   "y": 247.6
   },
   "cluster": 4,
   "prio": false,
@@ -5732,8 +5732,8 @@
   "name": "Autohaus KuhnZentrum 359",
   "adresse": "Musterweg 11, Musterstadt-D06",
   "pos": {
-   "x": 256,
-   "y": 247
+   "x": 252.1,
+   "y": 254.5
   },
   "cluster": 4,
   "prio": false,
@@ -5748,8 +5748,8 @@
   "name": "Autohaus WeberSandberg 360",
   "adresse": "Musterweg 12, Musterstadt-D06",
   "pos": {
-   "x": 276,
-   "y": 247
+   "x": 280.0,
+   "y": 240.1
   },
   "cluster": 4,
   "prio": false,
@@ -5764,8 +5764,8 @@
   "name": "Autohaus ErtlNord 361",
   "adresse": "Musterweg 1, Musterstadt-D07",
   "pos": {
-   "x": 340,
-   "y": 123
+   "x": 341.6,
+   "y": 116.9
   },
   "cluster": 0,
   "prio": true,
@@ -5780,8 +5780,8 @@
   "name": "Autohaus LehmannZentrum 362",
   "adresse": "Musterweg 2, Musterstadt-D07",
   "pos": {
-   "x": 360,
-   "y": 123
+   "x": 367.4,
+   "y": 129.5
   },
   "cluster": 0,
   "prio": false,
@@ -5796,8 +5796,8 @@
   "name": "Autohaus ReinhardtSandberg 363",
   "adresse": "Musterweg 3, Musterstadt-D07",
   "pos": {
-   "x": 380,
-   "y": 123
+   "x": 383.5,
+   "y": 119.9
   },
   "cluster": 0,
   "prio": false,
@@ -5812,8 +5812,8 @@
   "name": "Autohaus AdlerNord 364",
   "adresse": "Musterweg 4, Musterstadt-D07",
   "pos": {
-   "x": 340,
-   "y": 141
+   "x": 339.5,
+   "y": 138.2
   },
   "cluster": 0,
   "prio": false,
@@ -5828,8 +5828,8 @@
   "name": "Autohaus UlrichZentrum 365",
   "adresse": "Musterweg 5, Musterstadt-D07",
   "pos": {
-   "x": 360,
-   "y": 141
+   "x": 366.3,
+   "y": 144.0
   },
   "cluster": 0,
   "prio": false,
@@ -5844,8 +5844,8 @@
   "name": "Autohaus HartmannSandberg 366",
   "adresse": "Musterweg 6, Musterstadt-D07",
   "pos": {
-   "x": 380,
-   "y": 141
+   "x": 378.4,
+   "y": 141.2
   },
   "cluster": 0,
   "prio": false,
@@ -5860,8 +5860,8 @@
   "name": "Autohaus KrausNord 367",
   "adresse": "Musterweg 7, Musterstadt-D07",
   "pos": {
-   "x": 340,
-   "y": 159
+   "x": 345.6,
+   "y": 157.7
   },
   "cluster": 0,
   "prio": false,
@@ -5876,8 +5876,8 @@
   "name": "Autohaus KesslerZentrum 368",
   "adresse": "Musterweg 8, Musterstadt-D07",
   "pos": {
-   "x": 360,
-   "y": 159
+   "x": 359.8,
+   "y": 160.5
   },
   "cluster": 0,
   "prio": false,
@@ -5892,8 +5892,8 @@
   "name": "Autohaus PflugerSandberg 369",
   "adresse": "Musterweg 9, Musterstadt-D07",
   "pos": {
-   "x": 380,
-   "y": 159
+   "x": 379.0,
+   "y": 163.3
   },
   "cluster": 0,
   "prio": false,
@@ -5908,8 +5908,8 @@
   "name": "Autohaus HansenNord 370",
   "adresse": "Musterweg 10, Musterstadt-D07",
   "pos": {
-   "x": 340,
-   "y": 177
+   "x": 341.4,
+   "y": 178.4
   },
   "cluster": 0,
   "prio": true,
@@ -5924,8 +5924,8 @@
   "name": "Autohaus KraemerZentrum 371",
   "adresse": "Musterweg 11, Musterstadt-D07",
   "pos": {
-   "x": 360,
-   "y": 177
+   "x": 359.7,
+   "y": 169.3
   },
   "cluster": 0,
   "prio": false,
@@ -5940,8 +5940,8 @@
   "name": "Autohaus HoeppeSandberg 372",
   "adresse": "Musterweg 12, Musterstadt-D07",
   "pos": {
-   "x": 380,
-   "y": 177
+   "x": 387.1,
+   "y": 175.2
   },
   "cluster": 0,
   "prio": false,
@@ -5956,8 +5956,8 @@
   "name": "Autohaus AdlerNord 373",
   "adresse": "Musterweg 1, Musterstadt-D07",
   "pos": {
-   "x": 392,
-   "y": 141
+   "x": 384.5,
+   "y": 140.4
   },
   "cluster": 1,
   "prio": false,
@@ -5972,8 +5972,8 @@
   "name": "Autohaus UlrichZentrum 374",
   "adresse": "Musterweg 2, Musterstadt-D07",
   "pos": {
-   "x": 412,
-   "y": 141
+   "x": 406.2,
+   "y": 136.9
   },
   "cluster": 1,
   "prio": false,
@@ -5988,8 +5988,8 @@
   "name": "Autohaus HartmannSandberg 375",
   "adresse": "Musterweg 3, Musterstadt-D07",
   "pos": {
-   "x": 432,
-   "y": 141
+   "x": 432.3,
+   "y": 137.3
   },
   "cluster": 1,
   "prio": false,
@@ -6004,8 +6004,8 @@
   "name": "Autohaus KrausNord 376",
   "adresse": "Musterweg 4, Musterstadt-D07",
   "pos": {
-   "x": 392,
-   "y": 159
+   "x": 390.9,
+   "y": 162.8
   },
   "cluster": 1,
   "prio": false,
@@ -6020,8 +6020,8 @@
   "name": "Autohaus KesslerZentrum 377",
   "adresse": "Musterweg 5, Musterstadt-D07",
   "pos": {
-   "x": 412,
-   "y": 159
+   "x": 404.4,
+   "y": 160.6
   },
   "cluster": 1,
   "prio": false,
@@ -6036,8 +6036,8 @@
   "name": "Autohaus PflugerSandberg 378",
   "adresse": "Musterweg 6, Musterstadt-D07",
   "pos": {
-   "x": 432,
-   "y": 159
+   "x": 432.3,
+   "y": 166.3
   },
   "cluster": 1,
   "prio": false,
@@ -6052,8 +6052,8 @@
   "name": "Autohaus HansenNord 379",
   "adresse": "Musterweg 7, Musterstadt-D07",
   "pos": {
-   "x": 392,
-   "y": 177
+   "x": 386.0,
+   "y": 174.9
   },
   "cluster": 1,
   "prio": true,
@@ -6068,8 +6068,8 @@
   "name": "Autohaus KraemerZentrum 380",
   "adresse": "Musterweg 8, Musterstadt-D07",
   "pos": {
-   "x": 412,
-   "y": 177
+   "x": 407.5,
+   "y": 170.2
   },
   "cluster": 1,
   "prio": false,
@@ -6084,8 +6084,8 @@
   "name": "Autohaus HoeppeSandberg 381",
   "adresse": "Musterweg 9, Musterstadt-D07",
   "pos": {
-   "x": 432,
-   "y": 177
+   "x": 426.7,
+   "y": 175.5
   },
   "cluster": 1,
   "prio": false,
@@ -6100,8 +6100,8 @@
   "name": "Autohaus FischerNord 382",
   "adresse": "Musterweg 10, Musterstadt-D07",
   "pos": {
-   "x": 392,
-   "y": 195
+   "x": 385.8,
+   "y": 188.7
   },
   "cluster": 1,
   "prio": false,
@@ -6116,8 +6116,8 @@
   "name": "Autohaus TetzlaffZentrum 383",
   "adresse": "Musterweg 11, Musterstadt-D07",
   "pos": {
-   "x": 412,
-   "y": 195
+   "x": 419.8,
+   "y": 193.4
   },
   "cluster": 1,
   "prio": false,
@@ -6132,8 +6132,8 @@
   "name": "Autohaus GerberSandberg 384",
   "adresse": "Musterweg 12, Musterstadt-D07",
   "pos": {
-   "x": 432,
-   "y": 195
+   "x": 424.1,
+   "y": 190.1
   },
   "cluster": 1,
   "prio": false,
@@ -6148,8 +6148,8 @@
   "name": "Autohaus KrausNord 385",
   "adresse": "Musterweg 1, Musterstadt-D07",
   "pos": {
-   "x": 444,
-   "y": 131
+   "x": 440.2,
+   "y": 135.8
   },
   "cluster": 2,
   "prio": false,
@@ -6164,8 +6164,8 @@
   "name": "Autohaus KesslerZentrum 386",
   "adresse": "Musterweg 2, Musterstadt-D07",
   "pos": {
-   "x": 464,
-   "y": 131
+   "x": 464.4,
+   "y": 137.6
   },
   "cluster": 2,
   "prio": false,
@@ -6180,8 +6180,8 @@
   "name": "Autohaus PflugerSandberg 387",
   "adresse": "Musterweg 3, Musterstadt-D07",
   "pos": {
-   "x": 484,
-   "y": 131
+   "x": 477.4,
+   "y": 125.7
   },
   "cluster": 2,
   "prio": false,
@@ -6196,8 +6196,8 @@
   "name": "Autohaus HansenNord 388",
   "adresse": "Musterweg 4, Musterstadt-D07",
   "pos": {
-   "x": 444,
-   "y": 149
+   "x": 450.6,
+   "y": 144.5
   },
   "cluster": 2,
   "prio": true,
@@ -6212,8 +6212,8 @@
   "name": "Autohaus KraemerZentrum 389",
   "adresse": "Musterweg 5, Musterstadt-D07",
   "pos": {
-   "x": 464,
-   "y": 149
+   "x": 469.5,
+   "y": 153.8
   },
   "cluster": 2,
   "prio": false,
@@ -6228,8 +6228,8 @@
   "name": "Autohaus HoeppeSandberg 390",
   "adresse": "Musterweg 6, Musterstadt-D07",
   "pos": {
-   "x": 484,
-   "y": 149
+   "x": 485.0,
+   "y": 155.4
   },
   "cluster": 2,
   "prio": false,
@@ -6244,8 +6244,8 @@
   "name": "Autohaus FischerNord 391",
   "adresse": "Musterweg 7, Musterstadt-D07",
   "pos": {
-   "x": 444,
-   "y": 167
+   "x": 444.8,
+   "y": 159.6
   },
   "cluster": 2,
   "prio": false,
@@ -6260,8 +6260,8 @@
   "name": "Autohaus TetzlaffZentrum 392",
   "adresse": "Musterweg 8, Musterstadt-D07",
   "pos": {
-   "x": 464,
-   "y": 167
+   "x": 471.4,
+   "y": 174.7
   },
   "cluster": 2,
   "prio": false,
@@ -6276,8 +6276,8 @@
   "name": "Autohaus GerberSandberg 393",
   "adresse": "Musterweg 9, Musterstadt-D07",
   "pos": {
-   "x": 484,
-   "y": 167
+   "x": 487.1,
+   "y": 172.5
   },
   "cluster": 2,
   "prio": false,
@@ -6292,8 +6292,8 @@
   "name": "Autohaus SperlNord 394",
   "adresse": "Musterweg 10, Musterstadt-D07",
   "pos": {
-   "x": 444,
-   "y": 185
+   "x": 444.2,
+   "y": 191.9
   },
   "cluster": 2,
   "prio": false,
@@ -6308,8 +6308,8 @@
   "name": "Autohaus SteinbachZentrum 395",
   "adresse": "Musterweg 11, Musterstadt-D07",
   "pos": {
-   "x": 464,
-   "y": 185
+   "x": 471.3,
+   "y": 191.4
   },
   "cluster": 2,
   "prio": false,
@@ -6324,8 +6324,8 @@
   "name": "Autohaus MercedesSandberg 396",
   "adresse": "Musterweg 12, Musterstadt-D07",
   "pos": {
-   "x": 484,
-   "y": 185
+   "x": 491.5,
+   "y": 187.4
   },
   "cluster": 2,
   "prio": false,
@@ -6340,8 +6340,8 @@
   "name": "Autohaus HansenNord 397",
   "adresse": "Musterweg 1, Musterstadt-D07",
   "pos": {
-   "x": 360,
-   "y": 187
+   "x": 367.5,
+   "y": 179.8
   },
   "cluster": 3,
   "prio": true,
@@ -6356,8 +6356,8 @@
   "name": "Autohaus KraemerZentrum 398",
   "adresse": "Musterweg 2, Musterstadt-D07",
   "pos": {
-   "x": 380,
-   "y": 187
+   "x": 373.5,
+   "y": 189.4
   },
   "cluster": 3,
   "prio": false,
@@ -6372,8 +6372,8 @@
   "name": "Autohaus HoeppeSandberg 399",
   "adresse": "Musterweg 3, Musterstadt-D07",
   "pos": {
-   "x": 400,
-   "y": 187
+   "x": 396.5,
+   "y": 179.1
   },
   "cluster": 3,
   "prio": false,
@@ -6388,8 +6388,8 @@
   "name": "Autohaus FischerNord 400",
   "adresse": "Musterweg 4, Musterstadt-D07",
   "pos": {
-   "x": 360,
-   "y": 205
+   "x": 361.9,
+   "y": 197.7
   },
   "cluster": 3,
   "prio": false,
@@ -6404,8 +6404,8 @@
   "name": "Autohaus TetzlaffZentrum 401",
   "adresse": "Musterweg 5, Musterstadt-D07",
   "pos": {
-   "x": 380,
-   "y": 205
+   "x": 386.8,
+   "y": 198.1
   },
   "cluster": 3,
   "prio": false,
@@ -6420,8 +6420,8 @@
   "name": "Autohaus GerberSandberg 402",
   "adresse": "Musterweg 6, Musterstadt-D07",
   "pos": {
-   "x": 400,
-   "y": 205
+   "x": 403.2,
+   "y": 205.7
   },
   "cluster": 3,
   "prio": false,
@@ -6436,8 +6436,8 @@
   "name": "Autohaus SperlNord 403",
   "adresse": "Musterweg 7, Musterstadt-D07",
   "pos": {
-   "x": 360,
-   "y": 223
+   "x": 360.8,
+   "y": 223.3
   },
   "cluster": 3,
   "prio": false,
@@ -6452,8 +6452,8 @@
   "name": "Autohaus SteinbachZentrum 404",
   "adresse": "Musterweg 8, Musterstadt-D07",
   "pos": {
-   "x": 380,
-   "y": 223
+   "x": 380.6,
+   "y": 222.9
   },
   "cluster": 3,
   "prio": false,
@@ -6468,8 +6468,8 @@
   "name": "Autohaus MercedesSandberg 405",
   "adresse": "Musterweg 9, Musterstadt-D07",
   "pos": {
-   "x": 400,
-   "y": 223
+   "x": 392.9,
+   "y": 220.6
   },
   "cluster": 3,
   "prio": false,
@@ -6484,8 +6484,8 @@
   "name": "Autohaus ZabelNord 406",
   "adresse": "Musterweg 10, Musterstadt-D07",
   "pos": {
-   "x": 360,
-   "y": 241
+   "x": 360.6,
+   "y": 240.4
   },
   "cluster": 3,
   "prio": true,
@@ -6500,8 +6500,8 @@
   "name": "Autohaus JostZentrum 407",
   "adresse": "Musterweg 11, Musterstadt-D07",
   "pos": {
-   "x": 380,
-   "y": 241
+   "x": 375.9,
+   "y": 233.2
   },
   "cluster": 3,
   "prio": false,
@@ -6516,8 +6516,8 @@
   "name": "Autohaus LindtSandberg 408",
   "adresse": "Musterweg 12, Musterstadt-D07",
   "pos": {
-   "x": 400,
-   "y": 241
+   "x": 398.2,
+   "y": 234.4
   },
   "cluster": 3,
   "prio": false,
@@ -6532,8 +6532,8 @@
   "name": "Autohaus FischerNord 409",
   "adresse": "Musterweg 1, Musterstadt-D07",
   "pos": {
-   "x": 416,
-   "y": 193
+   "x": 418.8,
+   "y": 187.9
   },
   "cluster": 4,
   "prio": false,
@@ -6548,8 +6548,8 @@
   "name": "Autohaus TetzlaffZentrum 410",
   "adresse": "Musterweg 2, Musterstadt-D07",
   "pos": {
-   "x": 436,
-   "y": 193
+   "x": 431.8,
+   "y": 193.9
   },
   "cluster": 4,
   "prio": false,
@@ -6564,8 +6564,8 @@
   "name": "Autohaus GerberSandberg 411",
   "adresse": "Musterweg 3, Musterstadt-D07",
   "pos": {
-   "x": 456,
-   "y": 193
+   "x": 456.1,
+   "y": 190.4
   },
   "cluster": 4,
   "prio": false,
@@ -6580,8 +6580,8 @@
   "name": "Autohaus SperlNord 412",
   "adresse": "Musterweg 4, Musterstadt-D07",
   "pos": {
-   "x": 416,
-   "y": 211
+   "x": 412.5,
+   "y": 213.3
   },
   "cluster": 4,
   "prio": false,
@@ -6596,8 +6596,8 @@
   "name": "Autohaus SteinbachZentrum 413",
   "adresse": "Musterweg 5, Musterstadt-D07",
   "pos": {
-   "x": 436,
-   "y": 211
+   "x": 430.7,
+   "y": 204.5
   },
   "cluster": 4,
   "prio": false,
@@ -6612,8 +6612,8 @@
   "name": "Autohaus MercedesSandberg 414",
   "adresse": "Musterweg 6, Musterstadt-D07",
   "pos": {
-   "x": 456,
-   "y": 211
+   "x": 453.5,
+   "y": 215.0
   },
   "cluster": 4,
   "prio": false,
@@ -6628,8 +6628,8 @@
   "name": "Autohaus ZabelNord 415",
   "adresse": "Musterweg 7, Musterstadt-D07",
   "pos": {
-   "x": 416,
-   "y": 229
+   "x": 410.1,
+   "y": 236.0
   },
   "cluster": 4,
   "prio": true,
@@ -6644,8 +6644,8 @@
   "name": "Autohaus JostZentrum 416",
   "adresse": "Musterweg 8, Musterstadt-D07",
   "pos": {
-   "x": 436,
-   "y": 229
+   "x": 441.8,
+   "y": 233.5
   },
   "cluster": 4,
   "prio": false,
@@ -6660,8 +6660,8 @@
   "name": "Autohaus LindtSandberg 417",
   "adresse": "Musterweg 9, Musterstadt-D07",
   "pos": {
-   "x": 456,
-   "y": 229
+   "x": 461.2,
+   "y": 228.6
   },
   "cluster": 4,
   "prio": false,
@@ -6676,8 +6676,8 @@
   "name": "Autohaus OstermannNord 418",
   "adresse": "Musterweg 10, Musterstadt-D07",
   "pos": {
-   "x": 416,
-   "y": 247
+   "x": 419.1,
+   "y": 250.0
   },
   "cluster": 4,
   "prio": false,
@@ -6692,8 +6692,8 @@
   "name": "Autohaus SanderZentrum 419",
   "adresse": "Musterweg 11, Musterstadt-D07",
   "pos": {
-   "x": 436,
-   "y": 247
+   "x": 433.2,
+   "y": 246.9
   },
   "cluster": 4,
   "prio": false,
@@ -6708,8 +6708,8 @@
   "name": "Autohaus FeldmannSandberg 420",
   "adresse": "Musterweg 12, Musterstadt-D07",
   "pos": {
-   "x": 456,
-   "y": 247
+   "x": 449.8,
+   "y": 239.0
   },
   "cluster": 4,
   "prio": false,
@@ -6724,8 +6724,8 @@
   "name": "Autohaus IversenNord 421",
   "adresse": "Musterweg 1, Musterstadt-D08",
   "pos": {
-   "x": 520,
-   "y": 123
+   "x": 518.1,
+   "y": 130.5
   },
   "cluster": 0,
   "prio": false,
@@ -6740,8 +6740,8 @@
   "name": "Autohaus WagenfeldZentrum 422",
   "adresse": "Musterweg 2, Musterstadt-D08",
   "pos": {
-   "x": 540,
-   "y": 123
+   "x": 540.0,
+   "y": 121.7
   },
   "cluster": 0,
   "prio": false,
@@ -6756,8 +6756,8 @@
   "name": "Autohaus BrandtSandberg 423",
   "adresse": "Musterweg 3, Musterstadt-D08",
   "pos": {
-   "x": 560,
-   "y": 123
+   "x": 561.1,
+   "y": 123.2
   },
   "cluster": 0,
   "prio": false,
@@ -6772,8 +6772,8 @@
   "name": "Autohaus RothNord 424",
   "adresse": "Musterweg 4, Musterstadt-D08",
   "pos": {
-   "x": 520,
-   "y": 141
+   "x": 517.7,
+   "y": 144.9
   },
   "cluster": 0,
   "prio": true,
@@ -6788,8 +6788,8 @@
   "name": "Autohaus ErtlZentrum 425",
   "adresse": "Musterweg 5, Musterstadt-D08",
   "pos": {
-   "x": 540,
-   "y": 141
+   "x": 541.5,
+   "y": 143.4
   },
   "cluster": 0,
   "prio": false,
@@ -6804,8 +6804,8 @@
   "name": "Autohaus LehmannSandberg 426",
   "adresse": "Musterweg 6, Musterstadt-D08",
   "pos": {
-   "x": 560,
-   "y": 141
+   "x": 555.8,
+   "y": 139.0
   },
   "cluster": 0,
   "prio": false,
@@ -6820,8 +6820,8 @@
   "name": "Autohaus ReinhardtNord 427",
   "adresse": "Musterweg 7, Musterstadt-D08",
   "pos": {
-   "x": 520,
-   "y": 159
+   "x": 515.9,
+   "y": 155.9
   },
   "cluster": 0,
   "prio": false,
@@ -6836,8 +6836,8 @@
   "name": "Autohaus AdlerZentrum 428",
   "adresse": "Musterweg 8, Musterstadt-D08",
   "pos": {
-   "x": 540,
-   "y": 159
+   "x": 542.8,
+   "y": 161.9
   },
   "cluster": 0,
   "prio": false,
@@ -6852,8 +6852,8 @@
   "name": "Autohaus UlrichSandberg 429",
   "adresse": "Musterweg 9, Musterstadt-D08",
   "pos": {
-   "x": 560,
-   "y": 159
+   "x": 561.1,
+   "y": 155.9
   },
   "cluster": 0,
   "prio": false,
@@ -6868,8 +6868,8 @@
   "name": "Autohaus HartmannNord 430",
   "adresse": "Musterweg 10, Musterstadt-D08",
   "pos": {
-   "x": 520,
-   "y": 177
+   "x": 520.5,
+   "y": 184.6
   },
   "cluster": 0,
   "prio": false,
@@ -6884,8 +6884,8 @@
   "name": "Autohaus KrausZentrum 431",
   "adresse": "Musterweg 11, Musterstadt-D08",
   "pos": {
-   "x": 540,
-   "y": 177
+   "x": 537.5,
+   "y": 180.8
   },
   "cluster": 0,
   "prio": false,
@@ -6900,8 +6900,8 @@
   "name": "Autohaus KesslerSandberg 432",
   "adresse": "Musterweg 12, Musterstadt-D08",
   "pos": {
-   "x": 560,
-   "y": 177
+   "x": 563.4,
+   "y": 178.4
   },
   "cluster": 0,
   "prio": false,
@@ -6916,8 +6916,8 @@
   "name": "Autohaus RothNord 433",
   "adresse": "Musterweg 1, Musterstadt-D08",
   "pos": {
-   "x": 572,
-   "y": 141
+   "x": 567.9,
+   "y": 140.5
   },
   "cluster": 1,
   "prio": true,
@@ -6932,8 +6932,8 @@
   "name": "Autohaus ErtlZentrum 434",
   "adresse": "Musterweg 2, Musterstadt-D08",
   "pos": {
-   "x": 592,
-   "y": 141
+   "x": 599.1,
+   "y": 142.7
   },
   "cluster": 1,
   "prio": false,
@@ -6948,8 +6948,8 @@
   "name": "Autohaus LehmannSandberg 435",
   "adresse": "Musterweg 3, Musterstadt-D08",
   "pos": {
-   "x": 612,
-   "y": 141
+   "x": 612.0,
+   "y": 143.6
   },
   "cluster": 1,
   "prio": false,
@@ -6964,8 +6964,8 @@
   "name": "Autohaus ReinhardtNord 436",
   "adresse": "Musterweg 4, Musterstadt-D08",
   "pos": {
-   "x": 572,
-   "y": 159
+   "x": 565.8,
+   "y": 153.0
   },
   "cluster": 1,
   "prio": false,
@@ -6980,8 +6980,8 @@
   "name": "Autohaus AdlerZentrum 437",
   "adresse": "Musterweg 5, Musterstadt-D08",
   "pos": {
-   "x": 592,
-   "y": 159
+   "x": 593.8,
+   "y": 156.0
   },
   "cluster": 1,
   "prio": false,
@@ -6996,8 +6996,8 @@
   "name": "Autohaus UlrichSandberg 438",
   "adresse": "Musterweg 6, Musterstadt-D08",
   "pos": {
-   "x": 612,
-   "y": 159
+   "x": 610.5,
+   "y": 155.0
   },
   "cluster": 1,
   "prio": false,
@@ -7012,8 +7012,8 @@
   "name": "Autohaus HartmannNord 439",
   "adresse": "Musterweg 7, Musterstadt-D08",
   "pos": {
-   "x": 572,
-   "y": 177
+   "x": 571.1,
+   "y": 173.7
   },
   "cluster": 1,
   "prio": false,
@@ -7028,8 +7028,8 @@
   "name": "Autohaus KrausZentrum 440",
   "adresse": "Musterweg 8, Musterstadt-D08",
   "pos": {
-   "x": 592,
-   "y": 177
+   "x": 586.4,
+   "y": 179.1
   },
   "cluster": 1,
   "prio": false,
@@ -7044,8 +7044,8 @@
   "name": "Autohaus KesslerSandberg 441",
   "adresse": "Musterweg 9, Musterstadt-D08",
   "pos": {
-   "x": 612,
-   "y": 177
+   "x": 604.1,
+   "y": 178.4
   },
   "cluster": 1,
   "prio": false,
@@ -7060,8 +7060,8 @@
   "name": "Autohaus PflugerNord 442",
   "adresse": "Musterweg 10, Musterstadt-D08",
   "pos": {
-   "x": 572,
-   "y": 195
+   "x": 565.5,
+   "y": 200.3
   },
   "cluster": 1,
   "prio": true,
@@ -7076,8 +7076,8 @@
   "name": "Autohaus HansenZentrum 443",
   "adresse": "Musterweg 11, Musterstadt-D08",
   "pos": {
-   "x": 592,
-   "y": 195
+   "x": 591.1,
+   "y": 188.1
   },
   "cluster": 1,
   "prio": false,
@@ -7092,8 +7092,8 @@
   "name": "Autohaus KraemerSandberg 444",
   "adresse": "Musterweg 12, Musterstadt-D08",
   "pos": {
-   "x": 612,
-   "y": 195
+   "x": 610.2,
+   "y": 191.4
   },
   "cluster": 1,
   "prio": false,
@@ -7108,8 +7108,8 @@
   "name": "Autohaus ReinhardtNord 445",
   "adresse": "Musterweg 1, Musterstadt-D08",
   "pos": {
-   "x": 624,
-   "y": 131
+   "x": 628.3,
+   "y": 134.6
   },
   "cluster": 2,
   "prio": false,
@@ -7124,8 +7124,8 @@
   "name": "Autohaus AdlerZentrum 446",
   "adresse": "Musterweg 2, Musterstadt-D08",
   "pos": {
-   "x": 644,
-   "y": 131
+   "x": 649.3,
+   "y": 127.0
   },
   "cluster": 2,
   "prio": false,
@@ -7140,8 +7140,8 @@
   "name": "Autohaus UlrichSandberg 447",
   "adresse": "Musterweg 3, Musterstadt-D08",
   "pos": {
-   "x": 664,
-   "y": 131
+   "x": 667.8,
+   "y": 129.6
   },
   "cluster": 2,
   "prio": false,
@@ -7156,8 +7156,8 @@
   "name": "Autohaus HartmannNord 448",
   "adresse": "Musterweg 4, Musterstadt-D08",
   "pos": {
-   "x": 624,
-   "y": 149
+   "x": 620.7,
+   "y": 146.0
   },
   "cluster": 2,
   "prio": false,
@@ -7172,8 +7172,8 @@
   "name": "Autohaus KrausZentrum 449",
   "adresse": "Musterweg 5, Musterstadt-D08",
   "pos": {
-   "x": 644,
-   "y": 149
+   "x": 638.7,
+   "y": 150.8
   },
   "cluster": 2,
   "prio": false,
@@ -7188,8 +7188,8 @@
   "name": "Autohaus KesslerSandberg 450",
   "adresse": "Musterweg 6, Musterstadt-D08",
   "pos": {
-   "x": 664,
-   "y": 149
+   "x": 656.5,
+   "y": 144.4
   },
   "cluster": 2,
   "prio": false,
@@ -7204,8 +7204,8 @@
   "name": "Autohaus PflugerNord 451",
   "adresse": "Musterweg 7, Musterstadt-D08",
   "pos": {
-   "x": 624,
-   "y": 167
+   "x": 627.2,
+   "y": 170.4
   },
   "cluster": 2,
   "prio": true,
@@ -7220,8 +7220,8 @@
   "name": "Autohaus HansenZentrum 452",
   "adresse": "Musterweg 8, Musterstadt-D08",
   "pos": {
-   "x": 644,
-   "y": 167
+   "x": 648.2,
+   "y": 165.5
   },
   "cluster": 2,
   "prio": false,
@@ -7236,8 +7236,8 @@
   "name": "Autohaus KraemerSandberg 453",
   "adresse": "Musterweg 9, Musterstadt-D08",
   "pos": {
-   "x": 664,
-   "y": 167
+   "x": 669.9,
+   "y": 169.6
   },
   "cluster": 2,
   "prio": false,
@@ -7252,8 +7252,8 @@
   "name": "Autohaus HoeppeNord 454",
   "adresse": "Musterweg 10, Musterstadt-D08",
   "pos": {
-   "x": 624,
-   "y": 185
+   "x": 618.7,
+   "y": 178.6
   },
   "cluster": 2,
   "prio": false,
@@ -7268,8 +7268,8 @@
   "name": "Autohaus FischerZentrum 455",
   "adresse": "Musterweg 11, Musterstadt-D08",
   "pos": {
-   "x": 644,
-   "y": 185
+   "x": 642.2,
+   "y": 186.6
   },
   "cluster": 2,
   "prio": false,
@@ -7284,8 +7284,8 @@
   "name": "Autohaus TetzlaffSandberg 456",
   "adresse": "Musterweg 12, Musterstadt-D08",
   "pos": {
-   "x": 664,
-   "y": 185
+   "x": 666.3,
+   "y": 183.3
   },
   "cluster": 2,
   "prio": false,
@@ -7300,8 +7300,8 @@
   "name": "Autohaus HartmannNord 457",
   "adresse": "Musterweg 1, Musterstadt-D08",
   "pos": {
-   "x": 540,
-   "y": 187
+   "x": 541.9,
+   "y": 183.8
   },
   "cluster": 3,
   "prio": false,
@@ -7316,8 +7316,8 @@
   "name": "Autohaus KrausZentrum 458",
   "adresse": "Musterweg 2, Musterstadt-D08",
   "pos": {
-   "x": 560,
-   "y": 187
+   "x": 560.7,
+   "y": 194.5
   },
   "cluster": 3,
   "prio": false,
@@ -7332,8 +7332,8 @@
   "name": "Autohaus KesslerSandberg 459",
   "adresse": "Musterweg 3, Musterstadt-D08",
   "pos": {
-   "x": 580,
-   "y": 187
+   "x": 583.1,
+   "y": 184.6
   },
   "cluster": 3,
   "prio": false,
@@ -7348,8 +7348,8 @@
   "name": "Autohaus PflugerNord 460",
   "adresse": "Musterweg 4, Musterstadt-D08",
   "pos": {
-   "x": 540,
-   "y": 205
+   "x": 546.8,
+   "y": 200.9
   },
   "cluster": 3,
   "prio": true,
@@ -7364,8 +7364,8 @@
   "name": "Autohaus HansenZentrum 461",
   "adresse": "Musterweg 5, Musterstadt-D08",
   "pos": {
-   "x": 560,
-   "y": 205
+   "x": 560.1,
+   "y": 197.6
   },
   "cluster": 3,
   "prio": false,
@@ -7380,8 +7380,8 @@
   "name": "Autohaus KraemerSandberg 462",
   "adresse": "Musterweg 6, Musterstadt-D08",
   "pos": {
-   "x": 580,
-   "y": 205
+   "x": 581.9,
+   "y": 200.1
   },
   "cluster": 3,
   "prio": false,
@@ -7396,8 +7396,8 @@
   "name": "Autohaus HoeppeNord 463",
   "adresse": "Musterweg 7, Musterstadt-D08",
   "pos": {
-   "x": 540,
-   "y": 223
+   "x": 534.7,
+   "y": 221.9
   },
   "cluster": 3,
   "prio": false,
@@ -7412,8 +7412,8 @@
   "name": "Autohaus FischerZentrum 464",
   "adresse": "Musterweg 8, Musterstadt-D08",
   "pos": {
-   "x": 560,
-   "y": 223
+   "x": 561.3,
+   "y": 222.1
   },
   "cluster": 3,
   "prio": false,
@@ -7428,8 +7428,8 @@
   "name": "Autohaus TetzlaffSandberg 465",
   "adresse": "Musterweg 9, Musterstadt-D08",
   "pos": {
-   "x": 580,
-   "y": 223
+   "x": 578.0,
+   "y": 223.0
   },
   "cluster": 3,
   "prio": false,
@@ -7444,8 +7444,8 @@
   "name": "Autohaus GerberNord 466",
   "adresse": "Musterweg 10, Musterstadt-D08",
   "pos": {
-   "x": 540,
-   "y": 241
+   "x": 532.9,
+   "y": 237.9
   },
   "cluster": 3,
   "prio": false,
@@ -7460,8 +7460,8 @@
   "name": "Autohaus SperlZentrum 467",
   "adresse": "Musterweg 11, Musterstadt-D08",
   "pos": {
-   "x": 560,
-   "y": 241
+   "x": 552.6,
+   "y": 242.5
   },
   "cluster": 3,
   "prio": false,
@@ -7476,8 +7476,8 @@
   "name": "Autohaus SteinbachSandberg 468",
   "adresse": "Musterweg 12, Musterstadt-D08",
   "pos": {
-   "x": 580,
-   "y": 241
+   "x": 577.4,
+   "y": 237.8
   },
   "cluster": 3,
   "prio": false,
@@ -7492,8 +7492,8 @@
   "name": "Autohaus PflugerNord 469",
   "adresse": "Musterweg 1, Musterstadt-D08",
   "pos": {
-   "x": 596,
-   "y": 193
+   "x": 594.6,
+   "y": 200.7
   },
   "cluster": 4,
   "prio": true,
@@ -7508,8 +7508,8 @@
   "name": "Autohaus HansenZentrum 470",
   "adresse": "Musterweg 2, Musterstadt-D08",
   "pos": {
-   "x": 616,
-   "y": 193
+   "x": 618.1,
+   "y": 193.6
   },
   "cluster": 4,
   "prio": false,
@@ -7524,8 +7524,8 @@
   "name": "Autohaus KraemerSandberg 471",
   "adresse": "Musterweg 3, Musterstadt-D08",
   "pos": {
-   "x": 636,
-   "y": 193
+   "x": 641.3,
+   "y": 200.1
   },
   "cluster": 4,
   "prio": false,
@@ -7540,8 +7540,8 @@
   "name": "Autohaus HoeppeNord 472",
   "adresse": "Musterweg 4, Musterstadt-D08",
   "pos": {
-   "x": 596,
-   "y": 211
+   "x": 592.6,
+   "y": 213.6
   },
   "cluster": 4,
   "prio": false,
@@ -7556,8 +7556,8 @@
   "name": "Autohaus FischerZentrum 473",
   "adresse": "Musterweg 5, Musterstadt-D08",
   "pos": {
-   "x": 616,
-   "y": 211
+   "x": 623.3,
+   "y": 211.1
   },
   "cluster": 4,
   "prio": false,
@@ -7572,8 +7572,8 @@
   "name": "Autohaus TetzlaffSandberg 474",
   "adresse": "Musterweg 6, Musterstadt-D08",
   "pos": {
-   "x": 636,
-   "y": 211
+   "x": 641.3,
+   "y": 208.6
   },
   "cluster": 4,
   "prio": false,
@@ -7588,8 +7588,8 @@
   "name": "Autohaus GerberNord 475",
   "adresse": "Musterweg 7, Musterstadt-D08",
   "pos": {
-   "x": 596,
-   "y": 229
+   "x": 594.2,
+   "y": 224.5
   },
   "cluster": 4,
   "prio": false,
@@ -7604,8 +7604,8 @@
   "name": "Autohaus SperlZentrum 476",
   "adresse": "Musterweg 8, Musterstadt-D08",
   "pos": {
-   "x": 616,
-   "y": 229
+   "x": 614.7,
+   "y": 227.9
   },
   "cluster": 4,
   "prio": false,
@@ -7620,8 +7620,8 @@
   "name": "Autohaus SteinbachSandberg 477",
   "adresse": "Musterweg 9, Musterstadt-D08",
   "pos": {
-   "x": 636,
-   "y": 229
+   "x": 638.0,
+   "y": 235.6
   },
   "cluster": 4,
   "prio": false,
@@ -7636,8 +7636,8 @@
   "name": "Autohaus MercedesNord 478",
   "adresse": "Musterweg 10, Musterstadt-D08",
   "pos": {
-   "x": 596,
-   "y": 247
+   "x": 601.7,
+   "y": 251.8
   },
   "cluster": 4,
   "prio": true,
@@ -7652,8 +7652,8 @@
   "name": "Autohaus ZabelZentrum 479",
   "adresse": "Musterweg 11, Musterstadt-D08",
   "pos": {
-   "x": 616,
-   "y": 247
+   "x": 616.9,
+   "y": 245.0
   },
   "cluster": 4,
   "prio": false,
@@ -7668,8 +7668,8 @@
   "name": "Autohaus JostSandberg 480",
   "adresse": "Musterweg 12, Musterstadt-D08",
   "pos": {
-   "x": 636,
-   "y": 247
+   "x": 641.8,
+   "y": 252.8
   },
   "cluster": 4,
   "prio": false,
@@ -7684,8 +7684,8 @@
   "name": "Autohaus BergmannNord 481",
   "adresse": "Musterweg 1, Musterstadt-D09",
   "pos": {
-   "x": -20,
-   "y": 273
+   "x": -27.5,
+   "y": 268.8
   },
   "cluster": 0,
   "prio": false,
@@ -7700,8 +7700,8 @@
   "name": "Autohaus VoglerZentrum 482",
   "adresse": "Musterweg 2, Musterstadt-D09",
   "pos": {
-   "x": 0,
-   "y": 273
+   "x": -5.2,
+   "y": 274.9
   },
   "cluster": 0,
   "prio": false,
@@ -7716,8 +7716,8 @@
   "name": "Autohaus KuhnSandberg 483",
   "adresse": "Musterweg 3, Musterstadt-D09",
   "pos": {
-   "x": 20,
-   "y": 273
+   "x": 19.6,
+   "y": 278.0
   },
   "cluster": 0,
   "prio": false,
@@ -7732,8 +7732,8 @@
   "name": "Autohaus WeberNord 484",
   "adresse": "Musterweg 4, Musterstadt-D09",
   "pos": {
-   "x": -20,
-   "y": 291
+   "x": -21.0,
+   "y": 286.0
   },
   "cluster": 0,
   "prio": false,
@@ -7748,8 +7748,8 @@
   "name": "Autohaus IversenZentrum 485",
   "adresse": "Musterweg 5, Musterstadt-D09",
   "pos": {
-   "x": 0,
-   "y": 291
+   "x": -7.5,
+   "y": 284.4
   },
   "cluster": 0,
   "prio": false,
@@ -7764,8 +7764,8 @@
   "name": "Autohaus WagenfeldSandberg 486",
   "adresse": "Musterweg 6, Musterstadt-D09",
   "pos": {
-   "x": 20,
-   "y": 291
+   "x": 13.6,
+   "y": 286.5
   },
   "cluster": 0,
   "prio": false,
@@ -7780,8 +7780,8 @@
   "name": "Autohaus BrandtNord 487",
   "adresse": "Musterweg 7, Musterstadt-D09",
   "pos": {
-   "x": -20,
-   "y": 309
+   "x": -26.0,
+   "y": 310.6
   },
   "cluster": 0,
   "prio": true,
@@ -7796,8 +7796,8 @@
   "name": "Autohaus RothZentrum 488",
   "adresse": "Musterweg 8, Musterstadt-D09",
   "pos": {
-   "x": 0,
-   "y": 309
+   "x": 2.2,
+   "y": 316.9
   },
   "cluster": 0,
   "prio": false,
@@ -7812,8 +7812,8 @@
   "name": "Autohaus ErtlSandberg 489",
   "adresse": "Musterweg 9, Musterstadt-D09",
   "pos": {
-   "x": 20,
-   "y": 309
+   "x": 22.0,
+   "y": 307.7
   },
   "cluster": 0,
   "prio": false,
@@ -7828,8 +7828,8 @@
   "name": "Autohaus LehmannNord 490",
   "adresse": "Musterweg 10, Musterstadt-D09",
   "pos": {
-   "x": -20,
-   "y": 327
+   "x": -22.9,
+   "y": 333.4
   },
   "cluster": 0,
   "prio": false,
@@ -7844,8 +7844,8 @@
   "name": "Autohaus ReinhardtZentrum 491",
   "adresse": "Musterweg 11, Musterstadt-D09",
   "pos": {
-   "x": 0,
-   "y": 327
+   "x": -6.5,
+   "y": 320.1
   },
   "cluster": 0,
   "prio": false,
@@ -7860,8 +7860,8 @@
   "name": "Autohaus AdlerSandberg 492",
   "adresse": "Musterweg 12, Musterstadt-D09",
   "pos": {
-   "x": 20,
-   "y": 327
+   "x": 17.5,
+   "y": 321.4
   },
   "cluster": 0,
   "prio": false,
@@ -7876,8 +7876,8 @@
   "name": "Autohaus WeberNord 493",
   "adresse": "Musterweg 1, Musterstadt-D09",
   "pos": {
-   "x": 32,
-   "y": 291
+   "x": 34.0,
+   "y": 284.6
   },
   "cluster": 1,
   "prio": false,
@@ -7892,8 +7892,8 @@
   "name": "Autohaus IversenZentrum 494",
   "adresse": "Musterweg 2, Musterstadt-D09",
   "pos": {
-   "x": 52,
-   "y": 291
+   "x": 45.7,
+   "y": 296.1
   },
   "cluster": 1,
   "prio": false,
@@ -7908,8 +7908,8 @@
   "name": "Autohaus WagenfeldSandberg 495",
   "adresse": "Musterweg 3, Musterstadt-D09",
   "pos": {
-   "x": 72,
-   "y": 291
+   "x": 78.0,
+   "y": 291.9
   },
   "cluster": 1,
   "prio": false,
@@ -7924,8 +7924,8 @@
   "name": "Autohaus BrandtNord 496",
   "adresse": "Musterweg 4, Musterstadt-D09",
   "pos": {
-   "x": 32,
-   "y": 309
+   "x": 31.8,
+   "y": 310.5
   },
   "cluster": 1,
   "prio": true,
@@ -7940,8 +7940,8 @@
   "name": "Autohaus RothZentrum 497",
   "adresse": "Musterweg 5, Musterstadt-D09",
   "pos": {
-   "x": 52,
-   "y": 309
+   "x": 46.0,
+   "y": 306.5
   },
   "cluster": 1,
   "prio": false,
@@ -7956,8 +7956,8 @@
   "name": "Autohaus ErtlSandberg 498",
   "adresse": "Musterweg 6, Musterstadt-D09",
   "pos": {
-   "x": 72,
-   "y": 309
+   "x": 66.4,
+   "y": 308.5
   },
   "cluster": 1,
   "prio": false,
@@ -7972,8 +7972,8 @@
   "name": "Autohaus LehmannNord 499",
   "adresse": "Musterweg 7, Musterstadt-D09",
   "pos": {
-   "x": 32,
-   "y": 327
+   "x": 37.7,
+   "y": 320.6
   },
   "cluster": 1,
   "prio": false,
@@ -7988,8 +7988,8 @@
   "name": "Autohaus ReinhardtZentrum 500",
   "adresse": "Musterweg 8, Musterstadt-D09",
   "pos": {
-   "x": 52,
-   "y": 327
+   "x": 60.0,
+   "y": 331.7
   },
   "cluster": 1,
   "prio": false,
@@ -8004,8 +8004,8 @@
   "name": "Autohaus AdlerSandberg 501",
   "adresse": "Musterweg 9, Musterstadt-D09",
   "pos": {
-   "x": 72,
-   "y": 327
+   "x": 70.8,
+   "y": 334.2
   },
   "cluster": 1,
   "prio": false,
@@ -8020,8 +8020,8 @@
   "name": "Autohaus UlrichNord 502",
   "adresse": "Musterweg 10, Musterstadt-D09",
   "pos": {
-   "x": 32,
-   "y": 345
+   "x": 25.5,
+   "y": 348.0
   },
   "cluster": 1,
   "prio": false,
@@ -8036,8 +8036,8 @@
   "name": "Autohaus HartmannZentrum 503",
   "adresse": "Musterweg 11, Musterstadt-D09",
   "pos": {
-   "x": 52,
-   "y": 345
+   "x": 50.8,
+   "y": 352.9
   },
   "cluster": 1,
   "prio": false,
@@ -8052,8 +8052,8 @@
   "name": "Autohaus KrausSandberg 504",
   "adresse": "Musterweg 12, Musterstadt-D09",
   "pos": {
-   "x": 72,
-   "y": 345
+   "x": 71.1,
+   "y": 338.0
   },
   "cluster": 1,
   "prio": false,
@@ -8068,8 +8068,8 @@
   "name": "Autohaus BrandtNord 505",
   "adresse": "Musterweg 1, Musterstadt-D09",
   "pos": {
-   "x": 84,
-   "y": 281
+   "x": 83.6,
+   "y": 285.0
   },
   "cluster": 2,
   "prio": true,
@@ -8084,8 +8084,8 @@
   "name": "Autohaus RothZentrum 506",
   "adresse": "Musterweg 2, Musterstadt-D09",
   "pos": {
-   "x": 104,
-   "y": 281
+   "x": 112.0,
+   "y": 279.5
   },
   "cluster": 2,
   "prio": false,
@@ -8100,8 +8100,8 @@
   "name": "Autohaus ErtlSandberg 507",
   "adresse": "Musterweg 3, Musterstadt-D09",
   "pos": {
-   "x": 124,
-   "y": 281
+   "x": 122.9,
+   "y": 274.1
   },
   "cluster": 2,
   "prio": false,
@@ -8116,8 +8116,8 @@
   "name": "Autohaus LehmannNord 508",
   "adresse": "Musterweg 4, Musterstadt-D09",
   "pos": {
-   "x": 84,
-   "y": 299
+   "x": 87.4,
+   "y": 299.4
   },
   "cluster": 2,
   "prio": false,
@@ -8132,8 +8132,8 @@
   "name": "Autohaus ReinhardtZentrum 509",
   "adresse": "Musterweg 5, Musterstadt-D09",
   "pos": {
-   "x": 104,
-   "y": 299
+   "x": 102.8,
+   "y": 296.6
   },
   "cluster": 2,
   "prio": false,
@@ -8148,8 +8148,8 @@
   "name": "Autohaus AdlerSandberg 510",
   "adresse": "Musterweg 6, Musterstadt-D09",
   "pos": {
-   "x": 124,
-   "y": 299
+   "x": 118.7,
+   "y": 304.7
   },
   "cluster": 2,
   "prio": false,
@@ -8164,8 +8164,8 @@
   "name": "Autohaus UlrichNord 511",
   "adresse": "Musterweg 7, Musterstadt-D09",
   "pos": {
-   "x": 84,
-   "y": 317
+   "x": 85.6,
+   "y": 321.7
   },
   "cluster": 2,
   "prio": false,
@@ -8180,8 +8180,8 @@
   "name": "Autohaus HartmannZentrum 512",
   "adresse": "Musterweg 8, Musterstadt-D09",
   "pos": {
-   "x": 104,
-   "y": 317
+   "x": 100.1,
+   "y": 321.8
   },
   "cluster": 2,
   "prio": false,
@@ -8196,8 +8196,8 @@
   "name": "Autohaus KrausSandberg 513",
   "adresse": "Musterweg 9, Musterstadt-D09",
   "pos": {
-   "x": 124,
-   "y": 317
+   "x": 128.6,
+   "y": 320.1
   },
   "cluster": 2,
   "prio": false,
@@ -8212,8 +8212,8 @@
   "name": "Autohaus KesslerNord 514",
   "adresse": "Musterweg 10, Musterstadt-D09",
   "pos": {
-   "x": 84,
-   "y": 335
+   "x": 81.8,
+   "y": 339.0
   },
   "cluster": 2,
   "prio": true,
@@ -8228,8 +8228,8 @@
   "name": "Autohaus PflugerZentrum 515",
   "adresse": "Musterweg 11, Musterstadt-D09",
   "pos": {
-   "x": 104,
-   "y": 335
+   "x": 102.6,
+   "y": 337.1
   },
   "cluster": 2,
   "prio": false,
@@ -8244,8 +8244,8 @@
   "name": "Autohaus HansenSandberg 516",
   "adresse": "Musterweg 12, Musterstadt-D09",
   "pos": {
-   "x": 124,
-   "y": 335
+   "x": 125.2,
+   "y": 336.9
   },
   "cluster": 2,
   "prio": false,
@@ -8260,8 +8260,8 @@
   "name": "Autohaus LehmannNord 517",
   "adresse": "Musterweg 1, Musterstadt-D09",
   "pos": {
-   "x": 0,
-   "y": 337
+   "x": -2.9,
+   "y": 342.7
   },
   "cluster": 3,
   "prio": false,
@@ -8276,8 +8276,8 @@
   "name": "Autohaus ReinhardtZentrum 518",
   "adresse": "Musterweg 2, Musterstadt-D09",
   "pos": {
-   "x": 20,
-   "y": 337
+   "x": 25.9,
+   "y": 334.0
   },
   "cluster": 3,
   "prio": false,
@@ -8292,8 +8292,8 @@
   "name": "Autohaus AdlerSandberg 519",
   "adresse": "Musterweg 3, Musterstadt-D09",
   "pos": {
-   "x": 40,
-   "y": 337
+   "x": 43.9,
+   "y": 338.7
   },
   "cluster": 3,
   "prio": false,
@@ -8308,8 +8308,8 @@
   "name": "Autohaus UlrichNord 520",
   "adresse": "Musterweg 4, Musterstadt-D09",
   "pos": {
-   "x": 0,
-   "y": 355
+   "x": -5.1,
+   "y": 353.7
   },
   "cluster": 3,
   "prio": false,
@@ -8324,8 +8324,8 @@
   "name": "Autohaus HartmannZentrum 521",
   "adresse": "Musterweg 5, Musterstadt-D09",
   "pos": {
-   "x": 20,
-   "y": 355
+   "x": 12.5,
+   "y": 356.8
   },
   "cluster": 3,
   "prio": false,
@@ -8340,8 +8340,8 @@
   "name": "Autohaus KrausSandberg 522",
   "adresse": "Musterweg 6, Musterstadt-D09",
   "pos": {
-   "x": 40,
-   "y": 355
+   "x": 40.4,
+   "y": 351.6
   },
   "cluster": 3,
   "prio": false,
@@ -8356,8 +8356,8 @@
   "name": "Autohaus KesslerNord 523",
   "adresse": "Musterweg 7, Musterstadt-D09",
   "pos": {
-   "x": 0,
-   "y": 373
+   "x": 3.8,
+   "y": 378.9
   },
   "cluster": 3,
   "prio": true,
@@ -8372,8 +8372,8 @@
   "name": "Autohaus PflugerZentrum 524",
   "adresse": "Musterweg 8, Musterstadt-D09",
   "pos": {
-   "x": 20,
-   "y": 373
+   "x": 15.3,
+   "y": 379.9
   },
   "cluster": 3,
   "prio": false,
@@ -8388,8 +8388,8 @@
   "name": "Autohaus HansenSandberg 525",
   "adresse": "Musterweg 9, Musterstadt-D09",
   "pos": {
-   "x": 40,
-   "y": 373
+   "x": 43.6,
+   "y": 372.1
   },
   "cluster": 3,
   "prio": false,
@@ -8404,8 +8404,8 @@
   "name": "Autohaus KraemerNord 526",
   "adresse": "Musterweg 10, Musterstadt-D09",
   "pos": {
-   "x": 0,
-   "y": 391
+   "x": -2.3,
+   "y": 391.3
   },
   "cluster": 3,
   "prio": false,
@@ -8420,8 +8420,8 @@
   "name": "Autohaus HoeppeZentrum 527",
   "adresse": "Musterweg 11, Musterstadt-D09",
   "pos": {
-   "x": 20,
-   "y": 391
+   "x": 27.2,
+   "y": 388.0
   },
   "cluster": 3,
   "prio": false,
@@ -8436,8 +8436,8 @@
   "name": "Autohaus FischerSandberg 528",
   "adresse": "Musterweg 12, Musterstadt-D09",
   "pos": {
-   "x": 40,
-   "y": 391
+   "x": 46.0,
+   "y": 386.9
   },
   "cluster": 3,
   "prio": false,
@@ -8452,8 +8452,8 @@
   "name": "Autohaus UlrichNord 529",
   "adresse": "Musterweg 1, Musterstadt-D09",
   "pos": {
-   "x": 56,
-   "y": 343
+   "x": 62.7,
+   "y": 344.6
   },
   "cluster": 4,
   "prio": false,
@@ -8468,8 +8468,8 @@
   "name": "Autohaus HartmannZentrum 530",
   "adresse": "Musterweg 2, Musterstadt-D09",
   "pos": {
-   "x": 76,
-   "y": 343
+   "x": 73.4,
+   "y": 340.1
   },
   "cluster": 4,
   "prio": false,
@@ -8484,8 +8484,8 @@
   "name": "Autohaus KrausSandberg 531",
   "adresse": "Musterweg 3, Musterstadt-D09",
   "pos": {
-   "x": 96,
-   "y": 343
+   "x": 102.7,
+   "y": 345.2
   },
   "cluster": 4,
   "prio": false,
@@ -8500,8 +8500,8 @@
   "name": "Autohaus KesslerNord 532",
   "adresse": "Musterweg 4, Musterstadt-D09",
   "pos": {
-   "x": 56,
-   "y": 361
+   "x": 58.6,
+   "y": 359.5
   },
   "cluster": 4,
   "prio": true,
@@ -8516,8 +8516,8 @@
   "name": "Autohaus PflugerZentrum 533",
   "adresse": "Musterweg 5, Musterstadt-D09",
   "pos": {
-   "x": 76,
-   "y": 361
+   "x": 74.8,
+   "y": 360.4
   },
   "cluster": 4,
   "prio": false,
@@ -8532,8 +8532,8 @@
   "name": "Autohaus HansenSandberg 534",
   "adresse": "Musterweg 6, Musterstadt-D09",
   "pos": {
-   "x": 96,
-   "y": 361
+   "x": 94.0,
+   "y": 354.7
   },
   "cluster": 4,
   "prio": false,
@@ -8548,8 +8548,8 @@
   "name": "Autohaus KraemerNord 535",
   "adresse": "Musterweg 7, Musterstadt-D09",
   "pos": {
-   "x": 56,
-   "y": 379
+   "x": 54.0,
+   "y": 384.2
   },
   "cluster": 4,
   "prio": false,
@@ -8564,8 +8564,8 @@
   "name": "Autohaus HoeppeZentrum 536",
   "adresse": "Musterweg 8, Musterstadt-D09",
   "pos": {
-   "x": 76,
-   "y": 379
+   "x": 74.9,
+   "y": 381.9
   },
   "cluster": 4,
   "prio": false,
@@ -8580,8 +8580,8 @@
   "name": "Autohaus FischerSandberg 537",
   "adresse": "Musterweg 9, Musterstadt-D09",
   "pos": {
-   "x": 96,
-   "y": 379
+   "x": 97.3,
+   "y": 380.1
   },
   "cluster": 4,
   "prio": false,
@@ -8596,8 +8596,8 @@
   "name": "Autohaus TetzlaffNord 538",
   "adresse": "Musterweg 10, Musterstadt-D09",
   "pos": {
-   "x": 56,
-   "y": 397
+   "x": 53.7,
+   "y": 401.2
   },
   "cluster": 4,
   "prio": false,
@@ -8612,8 +8612,8 @@
   "name": "Autohaus GerberZentrum 539",
   "adresse": "Musterweg 11, Musterstadt-D09",
   "pos": {
-   "x": 76,
-   "y": 397
+   "x": 74.2,
+   "y": 394.6
   },
   "cluster": 4,
   "prio": false,
@@ -8628,8 +8628,8 @@
   "name": "Autohaus SperlSandberg 540",
   "adresse": "Musterweg 12, Musterstadt-D09",
   "pos": {
-   "x": 96,
-   "y": 397
+   "x": 92.0,
+   "y": 396.7
   },
   "cluster": 4,
   "prio": false,
@@ -8644,8 +8644,8 @@
   "name": "Autohaus LindtNord 541",
   "adresse": "Musterweg 1, Musterstadt-D10",
   "pos": {
-   "x": 160,
-   "y": 273
+   "x": 157.8,
+   "y": 272.5
   },
   "cluster": 0,
   "prio": true,
@@ -8660,8 +8660,8 @@
   "name": "Autohaus OstermannZentrum 542",
   "adresse": "Musterweg 2, Musterstadt-D10",
   "pos": {
-   "x": 180,
-   "y": 273
+   "x": 181.7,
+   "y": 278.8
   },
   "cluster": 0,
   "prio": false,
@@ -8676,8 +8676,8 @@
   "name": "Autohaus SanderSandberg 543",
   "adresse": "Musterweg 3, Musterstadt-D10",
   "pos": {
-   "x": 200,
-   "y": 273
+   "x": 196.7,
+   "y": 280.6
   },
   "cluster": 0,
   "prio": false,
@@ -8692,8 +8692,8 @@
   "name": "Autohaus FeldmannNord 544",
   "adresse": "Musterweg 4, Musterstadt-D10",
   "pos": {
-   "x": 160,
-   "y": 291
+   "x": 164.7,
+   "y": 284.9
   },
   "cluster": 0,
   "prio": false,
@@ -8708,8 +8708,8 @@
   "name": "Autohaus BergmannZentrum 545",
   "adresse": "Musterweg 5, Musterstadt-D10",
   "pos": {
-   "x": 180,
-   "y": 291
+   "x": 177.3,
+   "y": 287.2
   },
   "cluster": 0,
   "prio": false,
@@ -8724,8 +8724,8 @@
   "name": "Autohaus VoglerSandberg 546",
   "adresse": "Musterweg 6, Musterstadt-D10",
   "pos": {
-   "x": 200,
-   "y": 291
+   "x": 196.8,
+   "y": 296.8
   },
   "cluster": 0,
   "prio": false,
@@ -8740,8 +8740,8 @@
   "name": "Autohaus KuhnNord 547",
   "adresse": "Musterweg 7, Musterstadt-D10",
   "pos": {
-   "x": 160,
-   "y": 309
+   "x": 163.4,
+   "y": 301.0
   },
   "cluster": 0,
   "prio": false,
@@ -8756,8 +8756,8 @@
   "name": "Autohaus WeberZentrum 548",
   "adresse": "Musterweg 8, Musterstadt-D10",
   "pos": {
-   "x": 180,
-   "y": 309
+   "x": 175.5,
+   "y": 302.2
   },
   "cluster": 0,
   "prio": false,
@@ -8772,8 +8772,8 @@
   "name": "Autohaus IversenSandberg 549",
   "adresse": "Musterweg 9, Musterstadt-D10",
   "pos": {
-   "x": 200,
-   "y": 309
+   "x": 194.8,
+   "y": 312.3
   },
   "cluster": 0,
   "prio": false,
@@ -8788,8 +8788,8 @@
   "name": "Autohaus WagenfeldNord 550",
   "adresse": "Musterweg 10, Musterstadt-D10",
   "pos": {
-   "x": 160,
-   "y": 327
+   "x": 167.0,
+   "y": 334.4
   },
   "cluster": 0,
   "prio": true,
@@ -8804,8 +8804,8 @@
   "name": "Autohaus BrandtZentrum 551",
   "adresse": "Musterweg 11, Musterstadt-D10",
   "pos": {
-   "x": 180,
-   "y": 327
+   "x": 180.6,
+   "y": 320.7
   },
   "cluster": 0,
   "prio": false,
@@ -8820,8 +8820,8 @@
   "name": "Autohaus RothSandberg 552",
   "adresse": "Musterweg 12, Musterstadt-D10",
   "pos": {
-   "x": 200,
-   "y": 327
+   "x": 201.8,
+   "y": 327.3
   },
   "cluster": 0,
   "prio": false,
@@ -8836,8 +8836,8 @@
   "name": "Autohaus FeldmannNord 553",
   "adresse": "Musterweg 1, Musterstadt-D10",
   "pos": {
-   "x": 212,
-   "y": 291
+   "x": 213.9,
+   "y": 287.6
   },
   "cluster": 1,
   "prio": false,
@@ -8852,8 +8852,8 @@
   "name": "Autohaus BergmannZentrum 554",
   "adresse": "Musterweg 2, Musterstadt-D10",
   "pos": {
-   "x": 232,
-   "y": 291
+   "x": 225.7,
+   "y": 289.7
   },
   "cluster": 1,
   "prio": false,
@@ -8868,8 +8868,8 @@
   "name": "Autohaus VoglerSandberg 555",
   "adresse": "Musterweg 3, Musterstadt-D10",
   "pos": {
-   "x": 252,
-   "y": 291
+   "x": 245.9,
+   "y": 299.0
   },
   "cluster": 1,
   "prio": false,
@@ -8884,8 +8884,8 @@
   "name": "Autohaus KuhnNord 556",
   "adresse": "Musterweg 4, Musterstadt-D10",
   "pos": {
-   "x": 212,
-   "y": 309
+   "x": 218.5,
+   "y": 313.7
   },
   "cluster": 1,
   "prio": false,
@@ -8900,8 +8900,8 @@
   "name": "Autohaus WeberZentrum 557",
   "adresse": "Musterweg 5, Musterstadt-D10",
   "pos": {
-   "x": 232,
-   "y": 309
+   "x": 225.1,
+   "y": 310.4
   },
   "cluster": 1,
   "prio": false,
@@ -8916,8 +8916,8 @@
   "name": "Autohaus IversenSandberg 558",
   "adresse": "Musterweg 6, Musterstadt-D10",
   "pos": {
-   "x": 252,
-   "y": 309
+   "x": 255.8,
+   "y": 307.2
   },
   "cluster": 1,
   "prio": false,
@@ -8932,8 +8932,8 @@
   "name": "Autohaus WagenfeldNord 559",
   "adresse": "Musterweg 7, Musterstadt-D10",
   "pos": {
-   "x": 212,
-   "y": 327
+   "x": 206.2,
+   "y": 334.5
   },
   "cluster": 1,
   "prio": true,
@@ -8948,8 +8948,8 @@
   "name": "Autohaus BrandtZentrum 560",
   "adresse": "Musterweg 8, Musterstadt-D10",
   "pos": {
-   "x": 232,
-   "y": 327
+   "x": 233.0,
+   "y": 319.4
   },
   "cluster": 1,
   "prio": false,
@@ -8964,8 +8964,8 @@
   "name": "Autohaus RothSandberg 561",
   "adresse": "Musterweg 9, Musterstadt-D10",
   "pos": {
-   "x": 252,
-   "y": 327
+   "x": 256.3,
+   "y": 323.6
   },
   "cluster": 1,
   "prio": false,
@@ -8980,8 +8980,8 @@
   "name": "Autohaus ErtlNord 562",
   "adresse": "Musterweg 10, Musterstadt-D10",
   "pos": {
-   "x": 212,
-   "y": 345
+   "x": 218.8,
+   "y": 345.9
   },
   "cluster": 1,
   "prio": false,
@@ -8996,8 +8996,8 @@
   "name": "Autohaus LehmannZentrum 563",
   "adresse": "Musterweg 11, Musterstadt-D10",
   "pos": {
-   "x": 232,
-   "y": 345
+   "x": 237.4,
+   "y": 344.1
   },
   "cluster": 1,
   "prio": false,
@@ -9012,8 +9012,8 @@
   "name": "Autohaus ReinhardtSandberg 564",
   "adresse": "Musterweg 12, Musterstadt-D10",
   "pos": {
-   "x": 252,
-   "y": 345
+   "x": 258.9,
+   "y": 343.6
   },
   "cluster": 1,
   "prio": false,
@@ -9028,8 +9028,8 @@
   "name": "Autohaus KuhnNord 565",
   "adresse": "Musterweg 1, Musterstadt-D10",
   "pos": {
-   "x": 264,
-   "y": 281
+   "x": 258.4,
+   "y": 283.2
   },
   "cluster": 2,
   "prio": false,
@@ -9044,8 +9044,8 @@
   "name": "Autohaus WeberZentrum 566",
   "adresse": "Musterweg 2, Musterstadt-D10",
   "pos": {
-   "x": 284,
-   "y": 281
+   "x": 291.8,
+   "y": 275.6
   },
   "cluster": 2,
   "prio": false,
@@ -9060,8 +9060,8 @@
   "name": "Autohaus IversenSandberg 567",
   "adresse": "Musterweg 3, Musterstadt-D10",
   "pos": {
-   "x": 304,
-   "y": 281
+   "x": 302.4,
+   "y": 273.8
   },
   "cluster": 2,
   "prio": false,
@@ -9076,8 +9076,8 @@
   "name": "Autohaus WagenfeldNord 568",
   "adresse": "Musterweg 4, Musterstadt-D10",
   "pos": {
-   "x": 264,
-   "y": 299
+   "x": 263.3,
+   "y": 300.2
   },
   "cluster": 2,
   "prio": true,
@@ -9092,8 +9092,8 @@
   "name": "Autohaus BrandtZentrum 569",
   "adresse": "Musterweg 5, Musterstadt-D10",
   "pos": {
-   "x": 284,
-   "y": 299
+   "x": 289.1,
+   "y": 298.1
   },
   "cluster": 2,
   "prio": false,
@@ -9108,8 +9108,8 @@
   "name": "Autohaus RothSandberg 570",
   "adresse": "Musterweg 6, Musterstadt-D10",
   "pos": {
-   "x": 304,
-   "y": 299
+   "x": 306.2,
+   "y": 303.6
   },
   "cluster": 2,
   "prio": false,
@@ -9124,8 +9124,8 @@
   "name": "Autohaus ErtlNord 571",
   "adresse": "Musterweg 7, Musterstadt-D10",
   "pos": {
-   "x": 264,
-   "y": 317
+   "x": 260.6,
+   "y": 321.5
   },
   "cluster": 2,
   "prio": false,
@@ -9140,8 +9140,8 @@
   "name": "Autohaus LehmannZentrum 572",
   "adresse": "Musterweg 8, Musterstadt-D10",
   "pos": {
-   "x": 284,
-   "y": 317
+   "x": 288.7,
+   "y": 315.9
   },
   "cluster": 2,
   "prio": false,
@@ -9156,8 +9156,8 @@
   "name": "Autohaus ReinhardtSandberg 573",
   "adresse": "Musterweg 9, Musterstadt-D10",
   "pos": {
-   "x": 304,
-   "y": 317
+   "x": 300.3,
+   "y": 320.8
   },
   "cluster": 2,
   "prio": false,
@@ -9172,8 +9172,8 @@
   "name": "Autohaus AdlerNord 574",
   "adresse": "Musterweg 10, Musterstadt-D10",
   "pos": {
-   "x": 264,
-   "y": 335
+   "x": 264.4,
+   "y": 329.4
   },
   "cluster": 2,
   "prio": false,
@@ -9188,8 +9188,8 @@
   "name": "Autohaus UlrichZentrum 575",
   "adresse": "Musterweg 11, Musterstadt-D10",
   "pos": {
-   "x": 284,
-   "y": 335
+   "x": 281.1,
+   "y": 339.2
   },
   "cluster": 2,
   "prio": false,
@@ -9204,8 +9204,8 @@
   "name": "Autohaus HartmannSandberg 576",
   "adresse": "Musterweg 12, Musterstadt-D10",
   "pos": {
-   "x": 304,
-   "y": 335
+   "x": 307.0,
+   "y": 327.5
   },
   "cluster": 2,
   "prio": false,
@@ -9220,8 +9220,8 @@
   "name": "Autohaus WagenfeldNord 577",
   "adresse": "Musterweg 1, Musterstadt-D10",
   "pos": {
-   "x": 180,
-   "y": 337
+   "x": 173.6,
+   "y": 336.5
   },
   "cluster": 3,
   "prio": true,
@@ -9236,8 +9236,8 @@
   "name": "Autohaus BrandtZentrum 578",
   "adresse": "Musterweg 2, Musterstadt-D10",
   "pos": {
-   "x": 200,
-   "y": 337
+   "x": 193.2,
+   "y": 335.3
   },
   "cluster": 3,
   "prio": false,
@@ -9252,8 +9252,8 @@
   "name": "Autohaus RothSandberg 579",
   "adresse": "Musterweg 3, Musterstadt-D10",
   "pos": {
-   "x": 220,
-   "y": 337
+   "x": 213.2,
+   "y": 344.9
   },
   "cluster": 3,
   "prio": false,
@@ -9268,8 +9268,8 @@
   "name": "Autohaus ErtlNord 580",
   "adresse": "Musterweg 4, Musterstadt-D10",
   "pos": {
-   "x": 180,
-   "y": 355
+   "x": 177.9,
+   "y": 357.7
   },
   "cluster": 3,
   "prio": false,
@@ -9284,8 +9284,8 @@
   "name": "Autohaus LehmannZentrum 581",
   "adresse": "Musterweg 5, Musterstadt-D10",
   "pos": {
-   "x": 200,
-   "y": 355
+   "x": 196.4,
+   "y": 350.5
   },
   "cluster": 3,
   "prio": false,
@@ -9300,8 +9300,8 @@
   "name": "Autohaus ReinhardtSandberg 582",
   "adresse": "Musterweg 6, Musterstadt-D10",
   "pos": {
-   "x": 220,
-   "y": 355
+   "x": 217.4,
+   "y": 348.5
   },
   "cluster": 3,
   "prio": false,
@@ -9316,8 +9316,8 @@
   "name": "Autohaus AdlerNord 583",
   "adresse": "Musterweg 7, Musterstadt-D10",
   "pos": {
-   "x": 180,
-   "y": 373
+   "x": 180.6,
+   "y": 366.8
   },
   "cluster": 3,
   "prio": false,
@@ -9332,8 +9332,8 @@
   "name": "Autohaus UlrichZentrum 584",
   "adresse": "Musterweg 8, Musterstadt-D10",
   "pos": {
-   "x": 200,
-   "y": 373
+   "x": 200.7,
+   "y": 376.0
   },
   "cluster": 3,
   "prio": false,
@@ -9348,8 +9348,8 @@
   "name": "Autohaus HartmannSandberg 585",
   "adresse": "Musterweg 9, Musterstadt-D10",
   "pos": {
-   "x": 220,
-   "y": 373
+   "x": 219.4,
+   "y": 370.6
   },
   "cluster": 3,
   "prio": false,
@@ -9364,8 +9364,8 @@
   "name": "Autohaus KrausNord 586",
   "adresse": "Musterweg 10, Musterstadt-D10",
   "pos": {
-   "x": 180,
-   "y": 391
+   "x": 184.5,
+   "y": 385.2
   },
   "cluster": 3,
   "prio": true,
@@ -9380,8 +9380,8 @@
   "name": "Autohaus KesslerZentrum 587",
   "adresse": "Musterweg 11, Musterstadt-D10",
   "pos": {
-   "x": 200,
-   "y": 391
+   "x": 194.4,
+   "y": 391.8
   },
   "cluster": 3,
   "prio": false,
@@ -9396,8 +9396,8 @@
   "name": "Autohaus PflugerSandberg 588",
   "adresse": "Musterweg 12, Musterstadt-D10",
   "pos": {
-   "x": 220,
-   "y": 391
+   "x": 222.9,
+   "y": 389.2
   },
   "cluster": 3,
   "prio": false,
@@ -9412,8 +9412,8 @@
   "name": "Autohaus ErtlNord 589",
   "adresse": "Musterweg 1, Musterstadt-D10",
   "pos": {
-   "x": 236,
-   "y": 343
+   "x": 237.4,
+   "y": 342.5
   },
   "cluster": 4,
   "prio": false,
@@ -9428,8 +9428,8 @@
   "name": "Autohaus LehmannZentrum 590",
   "adresse": "Musterweg 2, Musterstadt-D10",
   "pos": {
-   "x": 256,
-   "y": 343
+   "x": 251.1,
+   "y": 347.2
   },
   "cluster": 4,
   "prio": false,
@@ -9444,8 +9444,8 @@
   "name": "Autohaus ReinhardtSandberg 591",
   "adresse": "Musterweg 3, Musterstadt-D10",
   "pos": {
-   "x": 276,
-   "y": 343
+   "x": 283.0,
+   "y": 342.6
   },
   "cluster": 4,
   "prio": false,
@@ -9460,8 +9460,8 @@
   "name": "Autohaus AdlerNord 592",
   "adresse": "Musterweg 4, Musterstadt-D10",
   "pos": {
-   "x": 236,
-   "y": 361
+   "x": 242.6,
+   "y": 362.5
   },
   "cluster": 4,
   "prio": false,
@@ -9476,8 +9476,8 @@
   "name": "Autohaus UlrichZentrum 593",
   "adresse": "Musterweg 5, Musterstadt-D10",
   "pos": {
-   "x": 256,
-   "y": 361
+   "x": 258.0,
+   "y": 357.6
   },
   "cluster": 4,
   "prio": false,
@@ -9492,8 +9492,8 @@
   "name": "Autohaus HartmannSandberg 594",
   "adresse": "Musterweg 6, Musterstadt-D10",
   "pos": {
-   "x": 276,
-   "y": 361
+   "x": 283.7,
+   "y": 361.5
   },
   "cluster": 4,
   "prio": false,
@@ -9508,8 +9508,8 @@
   "name": "Autohaus KrausNord 595",
   "adresse": "Musterweg 7, Musterstadt-D10",
   "pos": {
-   "x": 236,
-   "y": 379
+   "x": 243.8,
+   "y": 376.5
   },
   "cluster": 4,
   "prio": true,
@@ -9524,8 +9524,8 @@
   "name": "Autohaus KesslerZentrum 596",
   "adresse": "Musterweg 8, Musterstadt-D10",
   "pos": {
-   "x": 256,
-   "y": 379
+   "x": 263.0,
+   "y": 382.5
   },
   "cluster": 4,
   "prio": false,
@@ -9540,8 +9540,8 @@
   "name": "Autohaus PflugerSandberg 597",
   "adresse": "Musterweg 9, Musterstadt-D10",
   "pos": {
-   "x": 276,
-   "y": 379
+   "x": 275.6,
+   "y": 385.7
   },
   "cluster": 4,
   "prio": false,
@@ -9556,8 +9556,8 @@
   "name": "Autohaus HansenNord 598",
   "adresse": "Musterweg 10, Musterstadt-D10",
   "pos": {
-   "x": 236,
-   "y": 397
+   "x": 242.7,
+   "y": 391.4
   },
   "cluster": 4,
   "prio": false,
@@ -9572,8 +9572,8 @@
   "name": "Autohaus KraemerZentrum 599",
   "adresse": "Musterweg 11, Musterstadt-D10",
   "pos": {
-   "x": 256,
-   "y": 397
+   "x": 255.3,
+   "y": 403.2
   },
   "cluster": 4,
   "prio": false,
@@ -9588,8 +9588,8 @@
   "name": "Autohaus HoeppeSandberg 600",
   "adresse": "Musterweg 12, Musterstadt-D10",
   "pos": {
-   "x": 276,
-   "y": 397
+   "x": 283.2,
+   "y": 400.4
   },
   "cluster": 4,
   "prio": false,
@@ -9604,8 +9604,8 @@
   "name": "Autohaus SteinbachNord 601",
   "adresse": "Musterweg 1, Musterstadt-D11",
   "pos": {
-   "x": 340,
-   "y": 273
+   "x": 335.3,
+   "y": 267.0
   },
   "cluster": 0,
   "prio": false,
@@ -9620,8 +9620,8 @@
   "name": "Autohaus MercedesZentrum 602",
   "adresse": "Musterweg 2, Musterstadt-D11",
   "pos": {
-   "x": 360,
-   "y": 273
+   "x": 367.5,
+   "y": 278.2
   },
   "cluster": 0,
   "prio": false,
@@ -9636,8 +9636,8 @@
   "name": "Autohaus ZabelSandberg 603",
   "adresse": "Musterweg 3, Musterstadt-D11",
   "pos": {
-   "x": 380,
-   "y": 273
+   "x": 373.1,
+   "y": 270.1
   },
   "cluster": 0,
   "prio": false,
@@ -9652,8 +9652,8 @@
   "name": "Autohaus JostNord 604",
   "adresse": "Musterweg 4, Musterstadt-D11",
   "pos": {
-   "x": 340,
-   "y": 291
+   "x": 336.8,
+   "y": 298.5
   },
   "cluster": 0,
   "prio": true,
@@ -9668,8 +9668,8 @@
   "name": "Autohaus LindtZentrum 605",
   "adresse": "Musterweg 5, Musterstadt-D11",
   "pos": {
-   "x": 360,
-   "y": 291
+   "x": 363.2,
+   "y": 296.3
   },
   "cluster": 0,
   "prio": false,
@@ -9684,8 +9684,8 @@
   "name": "Autohaus OstermannSandberg 606",
   "adresse": "Musterweg 6, Musterstadt-D11",
   "pos": {
-   "x": 380,
-   "y": 291
+   "x": 386.8,
+   "y": 287.7
   },
   "cluster": 0,
   "prio": false,
@@ -9700,8 +9700,8 @@
   "name": "Autohaus SanderNord 607",
   "adresse": "Musterweg 7, Musterstadt-D11",
   "pos": {
-   "x": 340,
-   "y": 309
+   "x": 339.0,
+   "y": 315.0
   },
   "cluster": 0,
   "prio": false,
@@ -9716,8 +9716,8 @@
   "name": "Autohaus FeldmannZentrum 608",
   "adresse": "Musterweg 8, Musterstadt-D11",
   "pos": {
-   "x": 360,
-   "y": 309
+   "x": 362.5,
+   "y": 316.0
   },
   "cluster": 0,
   "prio": false,
@@ -9732,8 +9732,8 @@
   "name": "Autohaus BergmannSandberg 609",
   "adresse": "Musterweg 9, Musterstadt-D11",
   "pos": {
-   "x": 380,
-   "y": 309
+   "x": 372.2,
+   "y": 316.8
   },
   "cluster": 0,
   "prio": false,
@@ -9748,8 +9748,8 @@
   "name": "Autohaus VoglerNord 610",
   "adresse": "Musterweg 10, Musterstadt-D11",
   "pos": {
-   "x": 340,
-   "y": 327
+   "x": 335.2,
+   "y": 329.0
   },
   "cluster": 0,
   "prio": false,
@@ -9764,8 +9764,8 @@
   "name": "Autohaus KuhnZentrum 611",
   "adresse": "Musterweg 11, Musterstadt-D11",
   "pos": {
-   "x": 360,
-   "y": 327
+   "x": 357.1,
+   "y": 323.0
   },
   "cluster": 0,
   "prio": false,
@@ -9780,8 +9780,8 @@
   "name": "Autohaus WeberSandberg 612",
   "adresse": "Musterweg 12, Musterstadt-D11",
   "pos": {
-   "x": 380,
-   "y": 327
+   "x": 387.7,
+   "y": 332.4
   },
   "cluster": 0,
   "prio": false,
@@ -9796,8 +9796,8 @@
   "name": "Autohaus JostNord 613",
   "adresse": "Musterweg 1, Musterstadt-D11",
   "pos": {
-   "x": 392,
-   "y": 291
+   "x": 394.9,
+   "y": 291.6
   },
   "cluster": 1,
   "prio": true,
@@ -9812,8 +9812,8 @@
   "name": "Autohaus LindtZentrum 614",
   "adresse": "Musterweg 2, Musterstadt-D11",
   "pos": {
-   "x": 412,
-   "y": 291
+   "x": 413.8,
+   "y": 283.7
   },
   "cluster": 1,
   "prio": false,
@@ -9828,8 +9828,8 @@
   "name": "Autohaus OstermannSandberg 615",
   "adresse": "Musterweg 3, Musterstadt-D11",
   "pos": {
-   "x": 432,
-   "y": 291
+   "x": 437.5,
+   "y": 292.2
   },
   "cluster": 1,
   "prio": false,
@@ -9844,8 +9844,8 @@
   "name": "Autohaus SanderNord 616",
   "adresse": "Musterweg 4, Musterstadt-D11",
   "pos": {
-   "x": 392,
-   "y": 309
+   "x": 391.9,
+   "y": 312.0
   },
   "cluster": 1,
   "prio": false,
@@ -9860,8 +9860,8 @@
   "name": "Autohaus FeldmannZentrum 617",
   "adresse": "Musterweg 5, Musterstadt-D11",
   "pos": {
-   "x": 412,
-   "y": 309
+   "x": 415.0,
+   "y": 302.0
   },
   "cluster": 1,
   "prio": false,
@@ -9876,8 +9876,8 @@
   "name": "Autohaus BergmannSandberg 618",
   "adresse": "Musterweg 6, Musterstadt-D11",
   "pos": {
-   "x": 432,
-   "y": 309
+   "x": 434.4,
+   "y": 315.0
   },
   "cluster": 1,
   "prio": false,
@@ -9892,8 +9892,8 @@
   "name": "Autohaus VoglerNord 619",
   "adresse": "Musterweg 7, Musterstadt-D11",
   "pos": {
-   "x": 392,
-   "y": 327
+   "x": 387.2,
+   "y": 334.0
   },
   "cluster": 1,
   "prio": false,
@@ -9908,8 +9908,8 @@
   "name": "Autohaus KuhnZentrum 620",
   "adresse": "Musterweg 8, Musterstadt-D11",
   "pos": {
-   "x": 412,
-   "y": 327
+   "x": 412.9,
+   "y": 327.4
   },
   "cluster": 1,
   "prio": false,
@@ -9924,8 +9924,8 @@
   "name": "Autohaus WeberSandberg 621",
   "adresse": "Musterweg 9, Musterstadt-D11",
   "pos": {
-   "x": 432,
-   "y": 327
+   "x": 436.8,
+   "y": 327.6
   },
   "cluster": 1,
   "prio": false,
@@ -9940,8 +9940,8 @@
   "name": "Autohaus IversenNord 622",
   "adresse": "Musterweg 10, Musterstadt-D11",
   "pos": {
-   "x": 392,
-   "y": 345
+   "x": 396.2,
+   "y": 347.2
   },
   "cluster": 1,
   "prio": true,
@@ -9956,8 +9956,8 @@
   "name": "Autohaus WagenfeldZentrum 623",
   "adresse": "Musterweg 11, Musterstadt-D11",
   "pos": {
-   "x": 412,
-   "y": 345
+   "x": 418.2,
+   "y": 349.6
   },
   "cluster": 1,
   "prio": false,
@@ -9972,8 +9972,8 @@
   "name": "Autohaus BrandtSandberg 624",
   "adresse": "Musterweg 12, Musterstadt-D11",
   "pos": {
-   "x": 432,
-   "y": 345
+   "x": 430.9,
+   "y": 351.9
   },
   "cluster": 1,
   "prio": false,
@@ -9988,8 +9988,8 @@
   "name": "Autohaus SanderNord 625",
   "adresse": "Musterweg 1, Musterstadt-D11",
   "pos": {
-   "x": 444,
-   "y": 281
+   "x": 436.8,
+   "y": 282.6
   },
   "cluster": 2,
   "prio": false,
@@ -10004,8 +10004,8 @@
   "name": "Autohaus FeldmannZentrum 626",
   "adresse": "Musterweg 2, Musterstadt-D11",
   "pos": {
-   "x": 464,
-   "y": 281
+   "x": 463.6,
+   "y": 286.9
   },
   "cluster": 2,
   "prio": false,
@@ -10020,8 +10020,8 @@
   "name": "Autohaus BergmannSandberg 627",
   "adresse": "Musterweg 3, Musterstadt-D11",
   "pos": {
-   "x": 484,
-   "y": 281
+   "x": 483.6,
+   "y": 274.9
   },
   "cluster": 2,
   "prio": false,
@@ -10036,8 +10036,8 @@
   "name": "Autohaus VoglerNord 628",
   "adresse": "Musterweg 4, Musterstadt-D11",
   "pos": {
-   "x": 444,
-   "y": 299
+   "x": 450.6,
+   "y": 304.8
   },
   "cluster": 2,
   "prio": false,
@@ -10052,8 +10052,8 @@
   "name": "Autohaus KuhnZentrum 629",
   "adresse": "Musterweg 5, Musterstadt-D11",
   "pos": {
-   "x": 464,
-   "y": 299
+   "x": 471.3,
+   "y": 295.2
   },
   "cluster": 2,
   "prio": false,
@@ -10068,8 +10068,8 @@
   "name": "Autohaus WeberSandberg 630",
   "adresse": "Musterweg 6, Musterstadt-D11",
   "pos": {
-   "x": 484,
-   "y": 299
+   "x": 479.9,
+   "y": 294.6
   },
   "cluster": 2,
   "prio": false,
@@ -10084,8 +10084,8 @@
   "name": "Autohaus IversenNord 631",
   "adresse": "Musterweg 7, Musterstadt-D11",
   "pos": {
-   "x": 444,
-   "y": 317
+   "x": 439.3,
+   "y": 324.8
   },
   "cluster": 2,
   "prio": true,
@@ -10100,8 +10100,8 @@
   "name": "Autohaus WagenfeldZentrum 632",
   "adresse": "Musterweg 8, Musterstadt-D11",
   "pos": {
-   "x": 464,
-   "y": 317
+   "x": 463.4,
+   "y": 320.0
   },
   "cluster": 2,
   "prio": false,
@@ -10116,8 +10116,8 @@
   "name": "Autohaus BrandtSandberg 633",
   "adresse": "Musterweg 9, Musterstadt-D11",
   "pos": {
-   "x": 484,
-   "y": 317
+   "x": 477.9,
+   "y": 320.8
   },
   "cluster": 2,
   "prio": false,
@@ -10132,8 +10132,8 @@
   "name": "Autohaus RothNord 634",
   "adresse": "Musterweg 10, Musterstadt-D11",
   "pos": {
-   "x": 444,
-   "y": 335
+   "x": 444.4,
+   "y": 332.6
   },
   "cluster": 2,
   "prio": false,
@@ -10148,8 +10148,8 @@
   "name": "Autohaus ErtlZentrum 635",
   "adresse": "Musterweg 11, Musterstadt-D11",
   "pos": {
-   "x": 464,
-   "y": 335
+   "x": 462.3,
+   "y": 339.8
   },
   "cluster": 2,
   "prio": false,
@@ -10164,8 +10164,8 @@
   "name": "Autohaus LehmannSandberg 636",
   "adresse": "Musterweg 12, Musterstadt-D11",
   "pos": {
-   "x": 484,
-   "y": 335
+   "x": 486.3,
+   "y": 340.0
   },
   "cluster": 2,
   "prio": false,
@@ -10180,8 +10180,8 @@
   "name": "Autohaus VoglerNord 637",
   "adresse": "Musterweg 1, Musterstadt-D11",
   "pos": {
-   "x": 360,
-   "y": 337
+   "x": 363.2,
+   "y": 333.8
   },
   "cluster": 3,
   "prio": false,
@@ -10196,8 +10196,8 @@
   "name": "Autohaus KuhnZentrum 638",
   "adresse": "Musterweg 2, Musterstadt-D11",
   "pos": {
-   "x": 380,
-   "y": 337
+   "x": 376.9,
+   "y": 335.9
   },
   "cluster": 3,
   "prio": false,
@@ -10212,8 +10212,8 @@
   "name": "Autohaus WeberSandberg 639",
   "adresse": "Musterweg 3, Musterstadt-D11",
   "pos": {
-   "x": 400,
-   "y": 337
+   "x": 398.8,
+   "y": 336.0
   },
   "cluster": 3,
   "prio": false,
@@ -10228,8 +10228,8 @@
   "name": "Autohaus IversenNord 640",
   "adresse": "Musterweg 4, Musterstadt-D11",
   "pos": {
-   "x": 360,
-   "y": 355
+   "x": 358.9,
+   "y": 348.4
   },
   "cluster": 3,
   "prio": true,
@@ -10244,8 +10244,8 @@
   "name": "Autohaus WagenfeldZentrum 641",
   "adresse": "Musterweg 5, Musterstadt-D11",
   "pos": {
-   "x": 380,
-   "y": 355
+   "x": 378.0,
+   "y": 352.9
   },
   "cluster": 3,
   "prio": false,
@@ -10260,8 +10260,8 @@
   "name": "Autohaus BrandtSandberg 642",
   "adresse": "Musterweg 6, Musterstadt-D11",
   "pos": {
-   "x": 400,
-   "y": 355
+   "x": 395.4,
+   "y": 355.7
   },
   "cluster": 3,
   "prio": false,
@@ -10276,8 +10276,8 @@
   "name": "Autohaus RothNord 643",
   "adresse": "Musterweg 7, Musterstadt-D11",
   "pos": {
-   "x": 360,
-   "y": 373
+   "x": 361.5,
+   "y": 377.3
   },
   "cluster": 3,
   "prio": false,
@@ -10292,8 +10292,8 @@
   "name": "Autohaus ErtlZentrum 644",
   "adresse": "Musterweg 8, Musterstadt-D11",
   "pos": {
-   "x": 380,
-   "y": 373
+   "x": 387.3,
+   "y": 369.2
   },
   "cluster": 3,
   "prio": false,
@@ -10308,8 +10308,8 @@
   "name": "Autohaus LehmannSandberg 645",
   "adresse": "Musterweg 9, Musterstadt-D11",
   "pos": {
-   "x": 400,
-   "y": 373
+   "x": 397.1,
+   "y": 376.4
   },
   "cluster": 3,
   "prio": false,
@@ -10324,8 +10324,8 @@
   "name": "Autohaus ReinhardtNord 646",
   "adresse": "Musterweg 10, Musterstadt-D11",
   "pos": {
-   "x": 360,
-   "y": 391
+   "x": 363.7,
+   "y": 395.9
   },
   "cluster": 3,
   "prio": false,
@@ -10340,8 +10340,8 @@
   "name": "Autohaus AdlerZentrum 647",
   "adresse": "Musterweg 11, Musterstadt-D11",
   "pos": {
-   "x": 380,
-   "y": 391
+   "x": 385.6,
+   "y": 388.3
   },
   "cluster": 3,
   "prio": false,
@@ -10356,8 +10356,8 @@
   "name": "Autohaus UlrichSandberg 648",
   "adresse": "Musterweg 12, Musterstadt-D11",
   "pos": {
-   "x": 400,
-   "y": 391
+   "x": 393.4,
+   "y": 386.1
   },
   "cluster": 3,
   "prio": false,
@@ -10372,8 +10372,8 @@
   "name": "Autohaus IversenNord 649",
   "adresse": "Musterweg 1, Musterstadt-D11",
   "pos": {
-   "x": 416,
-   "y": 343
+   "x": 412.3,
+   "y": 336.3
   },
   "cluster": 4,
   "prio": true,
@@ -10388,8 +10388,8 @@
   "name": "Autohaus WagenfeldZentrum 650",
   "adresse": "Musterweg 2, Musterstadt-D11",
   "pos": {
-   "x": 436,
-   "y": 343
+   "x": 430.8,
+   "y": 346.5
   },
   "cluster": 4,
   "prio": false,
@@ -10404,8 +10404,8 @@
   "name": "Autohaus BrandtSandberg 651",
   "adresse": "Musterweg 3, Musterstadt-D11",
   "pos": {
-   "x": 456,
-   "y": 343
+   "x": 451.6,
+   "y": 339.9
   },
   "cluster": 4,
   "prio": false,
@@ -10420,8 +10420,8 @@
   "name": "Autohaus RothNord 652",
   "adresse": "Musterweg 4, Musterstadt-D11",
   "pos": {
-   "x": 416,
-   "y": 361
+   "x": 414.5,
+   "y": 366.5
   },
   "cluster": 4,
   "prio": false,
@@ -10436,8 +10436,8 @@
   "name": "Autohaus ErtlZentrum 653",
   "adresse": "Musterweg 5, Musterstadt-D11",
   "pos": {
-   "x": 436,
-   "y": 361
+   "x": 428.7,
+   "y": 357.4
   },
   "cluster": 4,
   "prio": false,
@@ -10452,8 +10452,8 @@
   "name": "Autohaus LehmannSandberg 654",
   "adresse": "Musterweg 6, Musterstadt-D11",
   "pos": {
-   "x": 456,
-   "y": 361
+   "x": 463.4,
+   "y": 367.2
   },
   "cluster": 4,
   "prio": false,
@@ -10468,8 +10468,8 @@
   "name": "Autohaus ReinhardtNord 655",
   "adresse": "Musterweg 7, Musterstadt-D11",
   "pos": {
-   "x": 416,
-   "y": 379
+   "x": 412.6,
+   "y": 372.5
   },
   "cluster": 4,
   "prio": false,
@@ -10484,8 +10484,8 @@
   "name": "Autohaus AdlerZentrum 656",
   "adresse": "Musterweg 8, Musterstadt-D11",
   "pos": {
-   "x": 436,
-   "y": 379
+   "x": 428.7,
+   "y": 384.3
   },
   "cluster": 4,
   "prio": false,
@@ -10500,8 +10500,8 @@
   "name": "Autohaus UlrichSandberg 657",
   "adresse": "Musterweg 9, Musterstadt-D11",
   "pos": {
-   "x": 456,
-   "y": 379
+   "x": 460.4,
+   "y": 376.4
   },
   "cluster": 4,
   "prio": false,
@@ -10516,8 +10516,8 @@
   "name": "Autohaus HartmannNord 658",
   "adresse": "Musterweg 10, Musterstadt-D11",
   "pos": {
-   "x": 416,
-   "y": 397
+   "x": 421.0,
+   "y": 401.2
   },
   "cluster": 4,
   "prio": true,
@@ -10532,8 +10532,8 @@
   "name": "Autohaus KrausZentrum 659",
   "adresse": "Musterweg 11, Musterstadt-D11",
   "pos": {
-   "x": 436,
-   "y": 397
+   "x": 442.2,
+   "y": 397.2
   },
   "cluster": 4,
   "prio": false,
@@ -10548,8 +10548,8 @@
   "name": "Autohaus KesslerSandberg 660",
   "adresse": "Musterweg 12, Musterstadt-D11",
   "pos": {
-   "x": 456,
-   "y": 397
+   "x": 459.9,
+   "y": 395.7
   },
   "cluster": 4,
   "prio": false,
@@ -10564,8 +10564,8 @@
   "name": "Autohaus FischerNord 661",
   "adresse": "Musterweg 1, Musterstadt-D12",
   "pos": {
-   "x": 520,
-   "y": 273
+   "x": 513.9,
+   "y": 276.0
   },
   "cluster": 0,
   "prio": false,
@@ -10580,8 +10580,8 @@
   "name": "Autohaus TetzlaffZentrum 662",
   "adresse": "Musterweg 2, Musterstadt-D12",
   "pos": {
-   "x": 540,
-   "y": 273
+   "x": 533.9,
+   "y": 265.9
   },
   "cluster": 0,
   "prio": false,
@@ -10596,8 +10596,8 @@
   "name": "Autohaus GerberSandberg 663",
   "adresse": "Musterweg 3, Musterstadt-D12",
   "pos": {
-   "x": 560,
-   "y": 273
+   "x": 565.9,
+   "y": 269.0
   },
   "cluster": 0,
   "prio": false,
@@ -10612,8 +10612,8 @@
   "name": "Autohaus SperlNord 664",
   "adresse": "Musterweg 4, Musterstadt-D12",
   "pos": {
-   "x": 520,
-   "y": 291
+   "x": 517.2,
+   "y": 292.2
   },
   "cluster": 0,
   "prio": false,
@@ -10628,8 +10628,8 @@
   "name": "Autohaus SteinbachZentrum 665",
   "adresse": "Musterweg 5, Musterstadt-D12",
   "pos": {
-   "x": 540,
-   "y": 291
+   "x": 537.1,
+   "y": 286.6
   },
   "cluster": 0,
   "prio": false,
@@ -10644,8 +10644,8 @@
   "name": "Autohaus MercedesSandberg 666",
   "adresse": "Musterweg 6, Musterstadt-D12",
   "pos": {
-   "x": 560,
-   "y": 291
+   "x": 561.8,
+   "y": 287.3
   },
   "cluster": 0,
   "prio": false,
@@ -10660,8 +10660,8 @@
   "name": "Autohaus ZabelNord 667",
   "adresse": "Musterweg 7, Musterstadt-D12",
   "pos": {
-   "x": 520,
-   "y": 309
+   "x": 522.9,
+   "y": 315.6
   },
   "cluster": 0,
   "prio": true,
@@ -10676,8 +10676,8 @@
   "name": "Autohaus JostZentrum 668",
   "adresse": "Musterweg 8, Musterstadt-D12",
   "pos": {
-   "x": 540,
-   "y": 309
+   "x": 541.1,
+   "y": 305.4
   },
   "cluster": 0,
   "prio": false,
@@ -10692,8 +10692,8 @@
   "name": "Autohaus LindtSandberg 669",
   "adresse": "Musterweg 9, Musterstadt-D12",
   "pos": {
-   "x": 560,
-   "y": 309
+   "x": 559.7,
+   "y": 308.4
   },
   "cluster": 0,
   "prio": false,
@@ -10708,8 +10708,8 @@
   "name": "Autohaus OstermannNord 670",
   "adresse": "Musterweg 10, Musterstadt-D12",
   "pos": {
-   "x": 520,
-   "y": 327
+   "x": 520.3,
+   "y": 330.5
   },
   "cluster": 0,
   "prio": false,
@@ -10724,8 +10724,8 @@
   "name": "Autohaus SanderZentrum 671",
   "adresse": "Musterweg 11, Musterstadt-D12",
   "pos": {
-   "x": 540,
-   "y": 327
+   "x": 543.9,
+   "y": 331.3
   },
   "cluster": 0,
   "prio": false,
@@ -10740,8 +10740,8 @@
   "name": "Autohaus FeldmannSandberg 672",
   "adresse": "Musterweg 12, Musterstadt-D12",
   "pos": {
-   "x": 560,
-   "y": 327
+   "x": 554.1,
+   "y": 331.9
   },
   "cluster": 0,
   "prio": false,
@@ -10756,8 +10756,8 @@
   "name": "Autohaus SperlNord 673",
   "adresse": "Musterweg 1, Musterstadt-D12",
   "pos": {
-   "x": 572,
-   "y": 291
+   "x": 570.4,
+   "y": 285.9
   },
   "cluster": 1,
   "prio": false,
@@ -10772,8 +10772,8 @@
   "name": "Autohaus SteinbachZentrum 674",
   "adresse": "Musterweg 2, Musterstadt-D12",
   "pos": {
-   "x": 592,
-   "y": 291
+   "x": 599.4,
+   "y": 292.9
   },
   "cluster": 1,
   "prio": false,
@@ -10788,8 +10788,8 @@
   "name": "Autohaus MercedesSandberg 675",
   "adresse": "Musterweg 3, Musterstadt-D12",
   "pos": {
-   "x": 612,
-   "y": 291
+   "x": 610.5,
+   "y": 291.9
   },
   "cluster": 1,
   "prio": false,
@@ -10804,8 +10804,8 @@
   "name": "Autohaus ZabelNord 676",
   "adresse": "Musterweg 4, Musterstadt-D12",
   "pos": {
-   "x": 572,
-   "y": 309
+   "x": 564.1,
+   "y": 309.9
   },
   "cluster": 1,
   "prio": true,
@@ -10820,8 +10820,8 @@
   "name": "Autohaus JostZentrum 677",
   "adresse": "Musterweg 5, Musterstadt-D12",
   "pos": {
-   "x": 592,
-   "y": 309
+   "x": 585.1,
+   "y": 315.1
   },
   "cluster": 1,
   "prio": false,
@@ -10836,8 +10836,8 @@
   "name": "Autohaus LindtSandberg 678",
   "adresse": "Musterweg 6, Musterstadt-D12",
   "pos": {
-   "x": 612,
-   "y": 309
+   "x": 619.7,
+   "y": 301.7
   },
   "cluster": 1,
   "prio": false,
@@ -10852,8 +10852,8 @@
   "name": "Autohaus OstermannNord 679",
   "adresse": "Musterweg 7, Musterstadt-D12",
   "pos": {
-   "x": 572,
-   "y": 327
+   "x": 569.0,
+   "y": 321.1
   },
   "cluster": 1,
   "prio": false,
@@ -10868,8 +10868,8 @@
   "name": "Autohaus SanderZentrum 680",
   "adresse": "Musterweg 8, Musterstadt-D12",
   "pos": {
-   "x": 592,
-   "y": 327
+   "x": 584.3,
+   "y": 319.8
   },
   "cluster": 1,
   "prio": false,
@@ -10884,8 +10884,8 @@
   "name": "Autohaus FeldmannSandberg 681",
   "adresse": "Musterweg 9, Musterstadt-D12",
   "pos": {
-   "x": 612,
-   "y": 327
+   "x": 604.3,
+   "y": 334.1
   },
   "cluster": 1,
   "prio": false,
@@ -10900,8 +10900,8 @@
   "name": "Autohaus BergmannNord 682",
   "adresse": "Musterweg 10, Musterstadt-D12",
   "pos": {
-   "x": 572,
-   "y": 345
+   "x": 571.1,
+   "y": 337.8
   },
   "cluster": 1,
   "prio": false,
@@ -10916,8 +10916,8 @@
   "name": "Autohaus VoglerZentrum 683",
   "adresse": "Musterweg 11, Musterstadt-D12",
   "pos": {
-   "x": 592,
-   "y": 345
+   "x": 596.0,
+   "y": 346.5
   },
   "cluster": 1,
   "prio": false,
@@ -10932,8 +10932,8 @@
   "name": "Autohaus KuhnSandberg 684",
   "adresse": "Musterweg 12, Musterstadt-D12",
   "pos": {
-   "x": 612,
-   "y": 345
+   "x": 611.9,
+   "y": 352.5
   },
   "cluster": 1,
   "prio": false,
@@ -10948,8 +10948,8 @@
   "name": "Autohaus ZabelNord 685",
   "adresse": "Musterweg 1, Musterstadt-D12",
   "pos": {
-   "x": 624,
-   "y": 281
+   "x": 616.6,
+   "y": 280.2
   },
   "cluster": 2,
   "prio": true,
@@ -10964,8 +10964,8 @@
   "name": "Autohaus JostZentrum 686",
   "adresse": "Musterweg 2, Musterstadt-D12",
   "pos": {
-   "x": 644,
-   "y": 281
+   "x": 639.2,
+   "y": 278.0
   },
   "cluster": 2,
   "prio": false,
@@ -10980,8 +10980,8 @@
   "name": "Autohaus LindtSandberg 687",
   "adresse": "Musterweg 3, Musterstadt-D12",
   "pos": {
-   "x": 664,
-   "y": 281
+   "x": 671.8,
+   "y": 280.6
   },
   "cluster": 2,
   "prio": false,
@@ -10996,8 +10996,8 @@
   "name": "Autohaus OstermannNord 688",
   "adresse": "Musterweg 4, Musterstadt-D12",
   "pos": {
-   "x": 624,
-   "y": 299
+   "x": 627.1,
+   "y": 302.1
   },
   "cluster": 2,
   "prio": false,
@@ -11012,8 +11012,8 @@
   "name": "Autohaus SanderZentrum 689",
   "adresse": "Musterweg 5, Musterstadt-D12",
   "pos": {
-   "x": 644,
-   "y": 299
+   "x": 637.5,
+   "y": 297.7
   },
   "cluster": 2,
   "prio": false,
@@ -11028,8 +11028,8 @@
   "name": "Autohaus FeldmannSandberg 690",
   "adresse": "Musterweg 6, Musterstadt-D12",
   "pos": {
-   "x": 664,
-   "y": 299
+   "x": 667.4,
+   "y": 304.7
   },
   "cluster": 2,
   "prio": false,
@@ -11044,8 +11044,8 @@
   "name": "Autohaus BergmannNord 691",
   "adresse": "Musterweg 7, Musterstadt-D12",
   "pos": {
-   "x": 624,
-   "y": 317
+   "x": 630.4,
+   "y": 313.9
   },
   "cluster": 2,
   "prio": false,
@@ -11060,8 +11060,8 @@
   "name": "Autohaus VoglerZentrum 692",
   "adresse": "Musterweg 8, Musterstadt-D12",
   "pos": {
-   "x": 644,
-   "y": 317
+   "x": 639.8,
+   "y": 310.3
   },
   "cluster": 2,
   "prio": false,
@@ -11076,8 +11076,8 @@
   "name": "Autohaus KuhnSandberg 693",
   "adresse": "Musterweg 9, Musterstadt-D12",
   "pos": {
-   "x": 664,
-   "y": 317
+   "x": 656.1,
+   "y": 309.5
   },
   "cluster": 2,
   "prio": false,
@@ -11092,8 +11092,8 @@
   "name": "Autohaus WeberNord 694",
   "adresse": "Musterweg 10, Musterstadt-D12",
   "pos": {
-   "x": 624,
-   "y": 335
+   "x": 624.2,
+   "y": 342.2
   },
   "cluster": 2,
   "prio": true,
@@ -11108,8 +11108,8 @@
   "name": "Autohaus IversenZentrum 695",
   "adresse": "Musterweg 11, Musterstadt-D12",
   "pos": {
-   "x": 644,
-   "y": 335
+   "x": 636.8,
+   "y": 331.9
   },
   "cluster": 2,
   "prio": false,
@@ -11124,8 +11124,8 @@
   "name": "Autohaus WagenfeldSandberg 696",
   "adresse": "Musterweg 12, Musterstadt-D12",
   "pos": {
-   "x": 664,
-   "y": 335
+   "x": 666.1,
+   "y": 327.1
   },
   "cluster": 2,
   "prio": false,
@@ -11140,8 +11140,8 @@
   "name": "Autohaus OstermannNord 697",
   "adresse": "Musterweg 1, Musterstadt-D12",
   "pos": {
-   "x": 540,
-   "y": 337
+   "x": 532.1,
+   "y": 331.7
   },
   "cluster": 3,
   "prio": false,
@@ -11156,8 +11156,8 @@
   "name": "Autohaus SanderZentrum 698",
   "adresse": "Musterweg 2, Musterstadt-D12",
   "pos": {
-   "x": 560,
-   "y": 337
+   "x": 555.1,
+   "y": 336.1
   },
   "cluster": 3,
   "prio": false,
@@ -11172,8 +11172,8 @@
   "name": "Autohaus FeldmannSandberg 699",
   "adresse": "Musterweg 3, Musterstadt-D12",
   "pos": {
-   "x": 580,
-   "y": 337
+   "x": 573.4,
+   "y": 335.9
   },
   "cluster": 3,
   "prio": false,
@@ -11188,8 +11188,8 @@
   "name": "Autohaus BergmannNord 700",
   "adresse": "Musterweg 4, Musterstadt-D12",
   "pos": {
-   "x": 540,
-   "y": 355
+   "x": 533.6,
+   "y": 361.5
   },
   "cluster": 3,
   "prio": false,
@@ -11204,8 +11204,8 @@
   "name": "Autohaus VoglerZentrum 701",
   "adresse": "Musterweg 5, Musterstadt-D12",
   "pos": {
-   "x": 560,
-   "y": 355
+   "x": 554.9,
+   "y": 356.5
   },
   "cluster": 3,
   "prio": false,
@@ -11220,8 +11220,8 @@
   "name": "Autohaus KuhnSandberg 702",
   "adresse": "Musterweg 6, Musterstadt-D12",
   "pos": {
-   "x": 580,
-   "y": 355
+   "x": 586.6,
+   "y": 348.3
   },
   "cluster": 3,
   "prio": false,
@@ -11236,8 +11236,8 @@
   "name": "Autohaus WeberNord 703",
   "adresse": "Musterweg 7, Musterstadt-D12",
   "pos": {
-   "x": 540,
-   "y": 373
+   "x": 548.0,
+   "y": 371.7
   },
   "cluster": 3,
   "prio": true,
@@ -11252,8 +11252,8 @@
   "name": "Autohaus IversenZentrum 704",
   "adresse": "Musterweg 8, Musterstadt-D12",
   "pos": {
-   "x": 560,
-   "y": 373
+   "x": 552.7,
+   "y": 376.3
   },
   "cluster": 3,
   "prio": false,
@@ -11268,8 +11268,8 @@
   "name": "Autohaus WagenfeldSandberg 705",
   "adresse": "Musterweg 9, Musterstadt-D12",
   "pos": {
-   "x": 580,
-   "y": 373
+   "x": 584.5,
+   "y": 377.4
   },
   "cluster": 3,
   "prio": false,
@@ -11284,8 +11284,8 @@
   "name": "Autohaus BrandtNord 706",
   "adresse": "Musterweg 10, Musterstadt-D12",
   "pos": {
-   "x": 540,
-   "y": 391
+   "x": 545.8,
+   "y": 390.2
   },
   "cluster": 3,
   "prio": false,
@@ -11300,8 +11300,8 @@
   "name": "Autohaus RothZentrum 707",
   "adresse": "Musterweg 11, Musterstadt-D12",
   "pos": {
-   "x": 560,
-   "y": 391
+   "x": 552.3,
+   "y": 388.4
   },
   "cluster": 3,
   "prio": false,
@@ -11316,8 +11316,8 @@
   "name": "Autohaus ErtlSandberg 708",
   "adresse": "Musterweg 12, Musterstadt-D12",
   "pos": {
-   "x": 580,
-   "y": 391
+   "x": 580.0,
+   "y": 394.6
   },
   "cluster": 3,
   "prio": false,
@@ -11332,8 +11332,8 @@
   "name": "Autohaus BergmannNord 709",
   "adresse": "Musterweg 1, Musterstadt-D12",
   "pos": {
-   "x": 596,
-   "y": 343
+   "x": 597.4,
+   "y": 344.9
   },
   "cluster": 4,
   "prio": false,
@@ -11348,8 +11348,8 @@
   "name": "Autohaus VoglerZentrum 710",
   "adresse": "Musterweg 2, Musterstadt-D12",
   "pos": {
-   "x": 616,
-   "y": 343
+   "x": 611.3,
+   "y": 348.6
   },
   "cluster": 4,
   "prio": false,
@@ -11364,8 +11364,8 @@
   "name": "Autohaus KuhnSandberg 711",
   "adresse": "Musterweg 3, Musterstadt-D12",
   "pos": {
-   "x": 636,
-   "y": 343
+   "x": 629.1,
+   "y": 349.0
   },
   "cluster": 4,
   "prio": false,
@@ -11380,8 +11380,8 @@
   "name": "Autohaus WeberNord 712",
   "adresse": "Musterweg 4, Musterstadt-D12",
   "pos": {
-   "x": 596,
-   "y": 361
+   "x": 591.0,
+   "y": 360.9
   },
   "cluster": 4,
   "prio": true,
@@ -11396,8 +11396,8 @@
   "name": "Autohaus IversenZentrum 713",
   "adresse": "Musterweg 5, Musterstadt-D12",
   "pos": {
-   "x": 616,
-   "y": 361
+   "x": 621.4,
+   "y": 368.8
   },
   "cluster": 4,
   "prio": false,
@@ -11412,8 +11412,8 @@
   "name": "Autohaus WagenfeldSandberg 714",
   "adresse": "Musterweg 6, Musterstadt-D12",
   "pos": {
-   "x": 636,
-   "y": 361
+   "x": 638.9,
+   "y": 354.6
   },
   "cluster": 4,
   "prio": false,
@@ -11428,8 +11428,8 @@
   "name": "Autohaus BrandtNord 715",
   "adresse": "Musterweg 7, Musterstadt-D12",
   "pos": {
-   "x": 596,
-   "y": 379
+   "x": 594.7,
+   "y": 376.9
   },
   "cluster": 4,
   "prio": false,
@@ -11444,8 +11444,8 @@
   "name": "Autohaus RothZentrum 716",
   "adresse": "Musterweg 8, Musterstadt-D12",
   "pos": {
-   "x": 616,
-   "y": 379
+   "x": 622.0,
+   "y": 373.2
   },
   "cluster": 4,
   "prio": false,
@@ -11460,8 +11460,8 @@
   "name": "Autohaus ErtlSandberg 717",
   "adresse": "Musterweg 9, Musterstadt-D12",
   "pos": {
-   "x": 636,
-   "y": 379
+   "x": 637.3,
+   "y": 385.0
   },
   "cluster": 4,
   "prio": false,
@@ -11476,8 +11476,8 @@
   "name": "Autohaus LehmannNord 718",
   "adresse": "Musterweg 10, Musterstadt-D12",
   "pos": {
-   "x": 596,
-   "y": 397
+   "x": 597.6,
+   "y": 403.6
   },
   "cluster": 4,
   "prio": false,
@@ -11492,8 +11492,8 @@
   "name": "Autohaus ReinhardtZentrum 719",
   "adresse": "Musterweg 11, Musterstadt-D12",
   "pos": {
-   "x": 616,
-   "y": 397
+   "x": 623.8,
+   "y": 403.8
   },
   "cluster": 4,
   "prio": false,
@@ -11508,8 +11508,8 @@
   "name": "Autohaus AdlerSandberg 720",
   "adresse": "Musterweg 12, Musterstadt-D12",
   "pos": {
-   "x": 636,
-   "y": 397
+   "x": 638.6,
+   "y": 396.5
   },
   "cluster": 4,
   "prio": false,
