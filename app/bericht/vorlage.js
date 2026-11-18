@@ -11,6 +11,7 @@ export function erstelleBericht(eingabe) {
     vereinbarungen: eingabe.vereinbarungen ?? [],
     aufgaben: eingabe.aufgaben ?? [],
     offenePunkte: eingabe.offenePunkte ?? [],
+    folgetermin: eingabe.folgetermin ?? null,
   };
   return { ok: fehlend.length === 0, bericht, fehlend };
 }

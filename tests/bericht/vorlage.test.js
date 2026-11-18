@@ -32,3 +32,10 @@ test('aufgabenAlsMassnahmen: alle Aufgaben offen übernommen', () => {
   assert.equal(m[0].status, 'offen');
   assert.equal(m[0].verantwortlich, 'David');
 });
+
+test('folgetermin: optional übernommen, ohne Angabe null', () => {
+  const mit = erstelleBericht({ ...VOLL, folgetermin: '23.04.2026, 13:00-14:00' });
+  assert.equal(mit.bericht.folgetermin, '23.04.2026, 13:00-14:00');
+  const ohne = erstelleBericht(VOLL);
+  assert.equal(ohne.bericht.folgetermin, null);
+});
