@@ -1,5 +1,6 @@
 // Reine Helper für die Einstellungs-UI (renderbar ohne DOM, testbar in node).
 // OBG = Oberbetriebsgebiet; Werte D01–D12 im Marktnummern-Schema (ausgedacht).
+import { kalenderwoche } from './format.js';
 
 export function obgOptionen() {
   return Array.from({ length: 12 }, (_, i) => {
@@ -124,7 +125,7 @@ export function rendereAbwesenheiten(container, plan, abw = {}, { onAendern } = 
     return `
       <div class="abw-woche" data-w="${wi}">
         <div class="abw-kopf">
-          <span class="abw-montag">Woche ab ${woche.montag}</span>
+          <span class="abw-montag">Woche ab ${woche.montag} <span class="kw">KW${String(kalenderwoche(woche.montag)).padStart(2, '0')}</span></span>
           <label class="abw-ganz"><input type="checkbox" data-key="${wk}" ${kombi ? 'checked' : ''}> komplett abgewählt</label>
         </div>
         <div class="abw-tage">${tageZeilen}</div>

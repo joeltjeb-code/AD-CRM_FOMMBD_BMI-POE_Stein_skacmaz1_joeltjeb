@@ -53,8 +53,8 @@
       cursor: pointer;
     }
     nav[role=tablist] button[aria-selected=true] {
-      color: var(--ford-blue);
-      border-bottom-color: var(--ford-blue);
+      color: var(--ford-skyview);
+      border-bottom-color: var(--ford-skyview);
     }
     nav[role=tablist] button:hover { color: var(--ford-skyview); }
     .nav-chip {
@@ -68,14 +68,16 @@
       padding: .3rem 1rem;
       white-space: nowrap;
     }
-    /* Kalenderwoche neben dem Wochenkopf */
-    h2 .kw {
+    /* Kalenderwoche neben dem Wochenkopf und in den Abwesenheiten */
+    h2 .kw,
+    .abw-montag .kw {
       font-size: .875rem;
       font-weight: 500;
       color: var(--ford-skyview);
       vertical-align: middle;
       margin-left: .35rem;
     }
+    .abw-montag .kw { font-size: .75rem; }
     /* Abwesenheiten einklappbar */
     details.abw-details summary {
       cursor: pointer;
