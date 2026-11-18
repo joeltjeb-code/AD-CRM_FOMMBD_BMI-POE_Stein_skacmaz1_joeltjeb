@@ -33,3 +33,20 @@ test('Hotel außerhalb der Präferenz-Entfernung wird nicht gewählt', () => {
   const res = entscheideUbernachtung({ letzterH: LETZTER, ersterMorgen: ERSTER_MORGEN, hotels: HOTELS, settings: s, routing: r });
   assert.equal(res.art, 'heim');
 });
+
+test('Kurze Heimfahrt schlägt teures weit-liegendes Hotel (Kosten zählen real)', () => {
+  const s = { ...SETTINGS, praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 60 } };
+  const sNah = { ...s, heimat: { name: 'Nah', pos: { x: 5, y: 5 } } }; // Heimfahrt von (0,0) kurz
+  const teuerWeit = [{ id: 'T1', name: 'Grand Fern', ort: 'Weit', pos: { x: 40, y: 40 }, region: 0, preisNacht: 300 }];
+  const res = entscheideUbernachtung({ letzterH: LETZTER, ersterMorgen: ERSTER_MORGEN, hotels: teuerWeit, settings: sNah, routing: r });
+  assert.equal(res.art, 'heim');
+});
+
+test('Weite Heimfahrt schlägt nach: nahes, günstiges Hotel gewinnt', () => {
+  const s = { ...SETTINGS, praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 60 } };
+  const sFern = { ...s, heimat: { name: 'Fern', pos: { x: 80, y: 80 } } }; // Heimfahrt sehr weit
+  const nah = [{ id: 'N1', name: 'Gasthof Nahe', ort: 'Dahinter', pos: { x: 1, y: 0 }, region: 0, preisNacht: 40 }];
+  const res = entscheideUbernachtung({ letzterH: LETZTER, ersterMorgen: ERSTER_MORGEN, hotels: nah, settings: sFern, routing: r });
+  assert.equal(res.art, 'hotel');
+  assert.equal(res.hotelId, 'N1');
+});
