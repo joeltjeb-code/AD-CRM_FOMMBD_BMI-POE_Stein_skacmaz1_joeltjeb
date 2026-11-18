@@ -105,3 +105,5 @@
   → Ergebnis: Tab-Bug reproduziert (jsdom) und gefixt (app/app.js, wechsleTab); 58/58 Tests grün; Ursachenanalyse zu OBG/Heimat/Übernightung/Kacheln; Rest als geplanter Nachschlag vorbereitet
 - [20:10] (Antwort auf Rückfragen) "Wie soll die KI-Komponente konkret angebunden werden?" → "Alles davon"; "Wie setzen wir OBG-Auswahl und Heimatadresse um?" → "Es gibt oben ein Dropdown für das OBG und eine Eingabemaske für die Heimatadresse"; "Wie fein soll die Abwesenheits-Deklaration sein?" → "Man kann einzelne Tage und Woche per Toggle abwählen können"
   → Ergebnis: Sofort-Fixes (Kachel-Label, Treueprogramm raus, 61/61 grün), Spec-Addendum Abschnitt 11, Plan-Addendum Tasks 14–19; Freigabe ausstehend
+- [20:35] "Gehe weiter vor" (Freigabe der Addenda)
+  → Ergebnis: Tasks 14–17 TDD-mäßig umgesetzt (4 Commits), jsdom-Durchlauf-Tests je Task, Suite 75/75; Checkpoint C zur manuellen Prüfung vorbereitet
