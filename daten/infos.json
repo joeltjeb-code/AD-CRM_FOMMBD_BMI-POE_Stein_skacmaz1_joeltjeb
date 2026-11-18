@@ -1,0 +1,13 @@
+{
+  "infos": [
+    { "id": "i-wkr-2026-11", "quelle": "Marketing", "datum": "2026-11-11",
+      "themen": ["wkr"], "zielgruppen": ["obg-D01", "obg-D02"],
+      "mehrwertNotiz": "Neue WKR-Broschüre mit Kundenvorteil" },
+    { "id": "i-sitnow-2026-11", "quelle": "Vertrieb", "datum": "2026-11-10",
+      "themen": ["sitnow"], "zielgruppen": ["alle"],
+      "mehrwertNotiz": "Abmeldung von SitNow betrifft laufende Konten" },
+    { "id": "i-protect-2026-11", "quelle": "Service", "datum": "2026-11-12",
+      "themen": ["protect"], "zielgruppen": ["obg-D03"],
+      "mehrwertNotiz": "Änderung Assistenz-/Protect-Systeme, umsetzungsrelevant" }
+  ]
+}

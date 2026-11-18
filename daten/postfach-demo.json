@@ -1,0 +1,14 @@
+{
+  "mails": [
+    { "id": "m1", "von": "vertrieb@example.com", "datum": "2026-11-10",
+      "betreff": "SitNow-Absage", "text": "Hinweis zur Absage von SitNow.", "themen": ["sitnow"] },
+    { "id": "m2", "von": "marketing@example.com", "datum": "2026-11-11",
+      "betreff": "WKR-Kampagne", "text": "Neue WKR-Broschüre.", "themen": ["wkr"] },
+    { "id": "m3", "von": "service@example.com", "datum": "2026-11-12",
+      "betreff": "Assistenz- und Protect-Systeme: Änderung",
+      "text": "Anpassung der Assistenz-/Protect-Systeme.", "themen": ["protect"] },
+    { "id": "m4", "von": "marketing@example.com", "datum": "2026-11-13",
+      "betreff": "Bremsen-Fokusprodukte",
+      "text": "Fokusprodukte Bremsen für das Quartal.", "themen": ["bremsen"] }
+  ]
+}
