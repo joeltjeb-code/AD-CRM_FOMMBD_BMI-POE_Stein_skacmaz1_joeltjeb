@@ -1,6 +1,7 @@
 import { erstelleDemoRouting } from './adapter/routing-adapter.js';
 import { erstelleSpeicher } from './adapter/speicher-adapter.js';
 import { planeWochen, frischauf } from './planung/planer.js';
+import { filtereNachObg } from './planung/auswahl.js';
 import { parseBefehl, wendeAn } from './planung/befehle.js';
 import { renderePlanraster } from './ui/woche.js';
 import { rendereEinstellungen } from './ui/einstellungen.js';
@@ -71,7 +72,8 @@ function kontext() {
 
 function neuPlanen() {
   plan = planeWochen({
-    haendler, hotels, settings,
+    haendler: filtereNachObg(haendler, settings.obg),
+    hotels, settings,
     routing: kontext().routing,
     startMontag: nextMondayIso(),
     anzahlWochen: 4,

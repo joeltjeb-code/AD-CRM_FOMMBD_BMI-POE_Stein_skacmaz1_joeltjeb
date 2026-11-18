@@ -1,6 +1,14 @@
 export const KADENZ = { standard: 85, prio: 40 };
 export const PRO_WOCHE = 12;
 
+// Planung nur über das gewählte Oberbetriebsgebiet (OBG).
+// Ohne Auswahl (leer/null) bleiben alle Händler im Horizont.
+export function filtereNachObg(haendler, obg) {
+  const gewaehlt = (obg ?? '').trim();
+  if (!gewaehlt) return [...haendler];
+  return haendler.filter((h) => h.obg === gewaehlt);
+}
+
 const TAG_MS = 24 * 60 * 60 * 1000;
 function tage(dIso) { return Date.parse(dIso + 'T00:00:00Z') / TAG_MS; }
 
