@@ -93,3 +93,6 @@
 
 - [18:45] "Die Spec schaut für mich schlüssig aus. Bitte geh wie folgt vor: Inline — Ausführung in dieser Session mit Checkpoints"
   → Ergebnis: executing-plans-Skill, Branch `feature/briefing-nachbereitung`; alle 10 Plan-Tasks TDD-treu umgesetzt (9 Feature-Commits); Gesamt-Suite 54/54 Tests grün; Checkpoints A und B mit Testberichten; Browser-Durchlauf bleibt manuell
+
+- [19:20] "Drei reale Gesprächszusammenfassungen als Nachbereitung erhalten — Anhänge waren allgemein, nicht Teil der spezifischen Vorlagen"
+  → Ergebnis: Design-Addendum (Spec Abschnitt 9) + Plan-Addendum (Tasks 11–13) + Umsetzung TDD: Themen-Anhänge-Katalog (`daten/themen-anhaenge.json`), Anhang-Zusammenführung in `entwurf.js` (Kampagnen + Themen + TVA-Pflicht, dedupliziert), optionales folgetermin-Feld, 3 Demo-Akten im Mail-Stil; Suite 58/58 grün
