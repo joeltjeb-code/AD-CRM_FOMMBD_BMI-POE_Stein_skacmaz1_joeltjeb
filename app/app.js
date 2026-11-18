@@ -4,7 +4,7 @@ import { planeWochen, frischauf } from './planung/planer.js';
 import { filtereNachObg } from './planung/auswahl.js';
 import { parseBefehl, wendeAn } from './planung/befehle.js';
 import { renderePlanraster } from './ui/woche.js';
-import { rendereEinstellungen, rendereAbwesenheiten } from './ui/einstellungen.js';
+import { rendereEinstellungen, rendereAbwesenheiten, posAusPlz } from './ui/einstellungen.js';
 import { baueBriefing } from './briefing/checkliste.js';
 import { baueSchnellblatt } from './briefing/schnellblatt.js';
 import { erstelleBericht, aufgabenAlsMassnahmen } from './bericht/vorlage.js';
@@ -14,6 +14,7 @@ import { ladeAkte, fuegePersoenlicheNotizHinzu, uebernimmAufgabe, speichereAkte 
 import { rendereBriefing } from './ui/briefing-view.js';
 import { rendereBerichtFormular } from './ui/bericht-view.js';
 import { rendereInfoVorschlaege } from './ui/infodist-view.js';
+import { hndNummer } from './ui/format.js';
 import { ladeMails } from './adapter/mail-adapter.js';
 import { ladeKpiWerte } from './adapter/scorecard-adapter.js';
 
@@ -37,16 +38,13 @@ let themenAnhaenge = { anhaengeKatalog: [] };
 let gewaehlt = null;
 const STANDARD_SETTINGS = {
   obg: 'D01',
-  heimat: { name: 'Heimatbüro', plz: '', pos: { x: -8, y: 10 } },
+  heimat: { name: 'Heimatbüro', plz: '', pos: posAusPlz('93047', 'D01') },
   altStartorte: [], // obsolet seit OBG/Heimat-Eingabe; bleibt als Feld für Kompatibilität
   bev: false,
   praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 60 },
 };
 let settings = speicher.lade('einstellungen', null);
-let plan = null;
-
-// Migration: alter Stand ohne obg/vollständiges heimat → Standard auffüllen,
-// damit gespeicherte Einstellungen beim Neustart nicht die App sprengen.
+const ALTE_HEIMAT_POS = { x: -8, y: 10 }; // Demo-Welt vor der Fahrzeit-Skalierung
 settings = {
   ...STANDARD_SETTINGS,
   ...(settings ?? {}),
@@ -54,6 +52,11 @@ settings = {
   praferenzen: { ...STANDARD_SETTINGS.praferenzen, ...(settings?.praferenzen ?? {}) },
   abwesenheiten: { wochen: {}, tage: {}, gruende: {}, ...(settings?.abwesenheiten ?? {}) },
 };
+// Migration: Heimat-Pos aus der alten Demo-Welt auf die neue Skalierung heben
+if (settings.heimat.pos?.x === ALTE_HEIMAT_POS.x && settings.heimat.pos?.y === ALTE_HEIMAT_POS.y) {
+  settings.heimat.pos = STANDARD_SETTINGS.heimat.pos;
+}
+let plan = null;
 
 function nextMondayIso() {
   const d = new Date();
@@ -132,8 +135,11 @@ function zeigeBriefing(haendlerId) {
   }
   const kpi = ladeKpiWerte(scorecard, haendlerId);
   const chip = document.getElementById('navHaendler');
-  chip.textContent = `${stamm.name} (${stamm.id})`;
+  chip.textContent = `${stamm.name} (${hndNummer(stamm.id)})`;
   chip.hidden = false;
+  // Berichts-Formular hält die Händlernummer der Auswahl aktuell
+  const kurzFeld = document.querySelector('#feld-haendler');
+  if (kurzFeld) kurzFeld.value = hndNummer(stamm.id);
   document.getElementById('briefingEingang').classList.add('versteckt');
   wechsleTab('briefing');
   rendereBriefing(document.getElementById('briefing'),
@@ -188,7 +194,15 @@ function berichtFreigeben(formwerte) {
 
 function zeigeInfoVerteilung() {
   const id = gewaehlt ?? wissensbasis.akten[0]?.haendlerId;
-  const akte = id && ladeAkte(wissensbasis, id);
+  // Händler ohne Akte (z. B. frisch aus der Planung gewählt) bekommen eine
+  // Ad-hoc-Akte aus den Stamm- und Planungsdaten — so zeigt der Tab immer die
+  // passenden Vorschläge statt der „Händler wählen"-Meldung.
+  const stamm = id && haendler.find((h) => h.id === id);
+  const akte = (id && ladeAkte(wissensbasis, id)) ?? (stamm ? {
+    haendlerId: stamm.id, stammdaten: { name: stamm.name },
+    persoenlicheNotizen: [], besuchHistorie: [], offeneMassnahmen: [],
+    prioThemen: stamm.prio ? ['wkr'] : [], folgeterminKadenzWochen: 6,
+  } : null);
   if (!akte) return;
   document.getElementById('infosEingang').classList.add('versteckt');
   wechsleTab('infos');
@@ -229,7 +243,21 @@ async function starten() {
   zeigeAbwesenheiten();
   plan = speicher.lade('plan', null);
   if (plan) zeichnen(); else neuPlanen();
-  rendereBerichtFormular(document.getElementById('bericht'), berichtFreigeben);
+  rendereBerichtFormular(document.getElementById('bericht'), berichtFreigeben, {
+    wissensbasis: wissensbasis,
+    // Händlernummer im Bericht wählt den global selektierten Händler —
+    // wir bleiben aber im Bericht (kein Tab-Wechsel wie beim Klick in den Plan).
+    onWaehl: (haendlerId) => {
+      const stamm = haendler.find((h) => h.id === haendlerId);
+      if (!stamm) return;
+      gewaehlt = haendlerId;
+      const chip = document.getElementById('navHaendler');
+      chip.textContent = `${stamm.name} (${hndNummer(stamm.id)})`;
+      chip.hidden = false;
+      const kurzFeld = document.querySelector('#feld-haendler');
+      if (kurzFeld) kurzFeld.value = hndNummer(stamm.id);
+    },
+  });
   for (const tab of document.querySelectorAll('[role=tab]')) {
     tab.addEventListener('click', () => {
       const tabId = tab.id.replace('tab-', '');

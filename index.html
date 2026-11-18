@@ -68,6 +68,75 @@
       padding: .3rem 1rem;
       white-space: nowrap;
     }
+    /* Kalenderwoche neben dem Wochenkopf */
+    h2 .kw {
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--ford-skyview);
+      vertical-align: middle;
+      margin-left: .35rem;
+    }
+    /* Abwesenheiten einklappbar */
+    details.abw-details summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--ford-blue);
+      font-size: 1.05rem;
+    }
+    details.abw-details summary .abw-hinweis {
+      font-size: .75rem;
+      font-weight: 400;
+      color: var(--off-black);
+      opacity: .6;
+      margin-left: .5rem;
+    }
+    /* Berichts-Formular: klare Blöcke statt Einzelfeld-Wüste */
+    .bericht-block {
+      background: var(--white);
+      border: 1px solid var(--light-gray);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(15rem, 1fr));
+      gap: .75rem 1.5rem;
+    }
+    .bericht-block h3 { grid-column: 1 / -1; margin: 0; }
+    .bericht-block .forderung { display: flex; flex-direction: column; gap: .25rem; }
+    .bericht-block .forderung.wide,
+    .bericht-block .forderung:has(textarea) { grid-column: 1 / -1; }
+    .bericht-block .hilfe { margin: 0; font-size: .75rem; color: var(--off-black); opacity: .6; }
+    input, textarea, select {
+      font: inherit;
+      border: 1px solid var(--light-gray);
+      border-radius: 4px;
+      padding: .4rem .55rem;
+      background: var(--white);
+    }
+    .hnd-maske { display: flex; align-items: stretch; gap: 0; max-width: 14rem; }
+    .hnd-praefix {
+      display: inline-flex; align-items: center;
+      background: var(--light-gray); color: var(--ford-blue);
+      font-weight: 600; padding: 0 .6rem;
+      border: 1px solid var(--light-gray); border-right: 0;
+      border-radius: 4px 0 0 4px;
+    }
+    .hnd-maske input {
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      border-radius: 0 4px 4px 0;
+      font-variant-numeric: tabular-nums;
+      width: 8.5rem;
+    }
+    .folge-maske { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .tipp-liste { display: flex; flex-wrap: wrap; gap: .35rem; }
+    .tipp-liste .tipp {
+      font: inherit; font-size: .8rem;
+      background: var(--light-gray); color: var(--ford-blue);
+      border: 1px solid var(--light-gray); border-radius: 999px;
+      padding: .2rem .7rem; cursor: pointer;
+    }
+    .tipp-liste .tipp:hover { background: var(--ford-skyview); color: var(--white); border-color: var(--ford-skyview); }
 
     main { padding: 1.5rem 2rem 3rem; max-width: 80rem; margin: 0 auto; }
     section[role=tabpanel] { display: block; }
@@ -104,6 +173,8 @@
       cursor: pointer;
     }
     button.aktion:hover { background: var(--ford-twilight); border-color: var(--ford-twilight); }
+    /* „Plan neu berechnen" hebt sich beim Hover in Ford Skyview ab (Nutzerwunsch) */
+    #neuPlanen:hover { background: #066FEF; border-color: #066FEF; }
     button.aktion.neben {
       background: var(--white);
       color: var(--ford-blue);
@@ -232,7 +303,12 @@
     </section>
 
     <section role="tabpanel" id="infosTab" aria-labelledby="tab-infos" class="versteckt">
-      <p class="eingang" id="infosEingang">W&auml;hlen Sie im Tab &bdquo;Plan&ldquo; einen H&auml;ndler aus.</p>
+      <p class="eingang" id="infosEingang"><b>Info-Verteilung</b> &ndash; was macht dieser Tab?
+        Im Postfach laufen thematische Infos ein (z.&nbsp;B. zu Wischer-, AKF&ndash; oder WSS-Aktionen).
+        Hier sehen Sie zum <b>im Tab Plan selektierten H&auml;ndler</b>, welche Infos thematisch
+        passen und noch nicht gesendet wurden. Sie entscheiden per H&auml;kchen, was der H&auml;ndler
+        bekommt &ndash; <i>nichts wird automatisch gesendet</i>. W&auml;hlen Sie im Tab
+        &bdquo;Plan&ldquo; einen H&auml;ndler aus.</p>
       <div id="infodist"></div>
     </section>
   </main>
