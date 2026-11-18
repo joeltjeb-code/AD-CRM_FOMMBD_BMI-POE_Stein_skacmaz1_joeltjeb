@@ -1,1439 +1,1439 @@
 [
  {
-  "id": "HD01-0A",
-  "name": "Hotel D01-0 A",
-  "ort": "Musterstadt-D01",
+  "id": "HD01-0a",
+  "name": "Hilton Dresden",
+  "ort": "Dresden",
   "pos": {
-   "x": 72.2,
-   "y": 11.6
+   "x": -1.5,
+   "y": -1
   },
   "region": 0,
   "obg": "D01",
   "preisNacht": 80
  },
  {
-  "id": "HD01-0B",
-  "name": "Hotel D01-0 B",
-  "ort": "Musterstadt-D01",
+  "id": "HD01-0b",
+  "name": "Holiday Inn Dresden Süd",
+  "ort": "Dresden",
   "pos": {
-   "x": 73.4,
-   "y": 12.8
+   "x": 1.5,
+   "y": 1
   },
   "region": 0,
   "obg": "D01",
   "preisNacht": 90
  },
  {
-  "id": "HD01-1A",
-  "name": "Hotel D01-1 A",
-  "ort": "Musterstadt-D01",
+  "id": "HD01-1a",
+  "name": "Motel One Dresden",
+  "ort": "Dresden",
   "pos": {
-   "x": 84.2,
-   "y": 11.6
+   "x": 50.5,
+   "y": 17
   },
   "region": 1,
   "obg": "D01",
   "preisNacht": 83
  },
  {
-  "id": "HD01-1B",
-  "name": "Hotel D01-1 B",
-  "ort": "Musterstadt-D01",
+  "id": "HD01-1b",
+  "name": "ibis styles Dresden Süd",
+  "ort": "Dresden",
   "pos": {
-   "x": 85.4,
-   "y": 12.8
+   "x": 53.5,
+   "y": 19
   },
   "region": 1,
   "obg": "D01",
   "preisNacht": 93
  },
  {
-  "id": "HD01-2A",
-  "name": "Hotel D01-2 A",
-  "ort": "Musterstadt-D01",
+  "id": "HD01-2a",
+  "name": "Mercure Dresden",
+  "ort": "Dresden",
   "pos": {
-   "x": 96.2,
-   "y": 11.6
+   "x": 102.5,
+   "y": 7
   },
   "region": 2,
   "obg": "D01",
   "preisNacht": 86
  },
  {
-  "id": "HD01-2B",
-  "name": "Hotel D01-2 B",
-  "ort": "Musterstadt-D01",
+  "id": "HD01-2b",
+  "name": "Best Western Dresden Süd",
+  "ort": "Dresden",
   "pos": {
-   "x": 97.4,
-   "y": 12.8
+   "x": 105.5,
+   "y": 9
   },
   "region": 2,
   "obg": "D01",
   "preisNacht": 96
  },
  {
-  "id": "HD01-3A",
-  "name": "Hotel D01-3 A",
-  "ort": "Musterstadt-D01",
+  "id": "HD01-3a",
+  "name": "Novotel Dresden",
+  "ort": "Dresden",
   "pos": {
-   "x": 72.2,
-   "y": 23.6
+   "x": 18.5,
+   "y": 63
   },
   "region": 3,
   "obg": "D01",
   "preisNacht": 89
  },
  {
-  "id": "HD01-3B",
-  "name": "Hotel D01-3 B",
-  "ort": "Musterstadt-D01",
+  "id": "HD01-3b",
+  "name": "H4 Hotel Dresden Süd",
+  "ort": "Dresden",
   "pos": {
-   "x": 73.4,
-   "y": 24.8
+   "x": 21.5,
+   "y": 65
   },
   "region": 3,
   "obg": "D01",
   "preisNacht": 99
  },
  {
-  "id": "HD01-4A",
-  "name": "Hotel D01-4 A",
-  "ort": "Musterstadt-D01",
+  "id": "HD01-4a",
+  "name": "Ramada Dresden",
+  "ort": "Dresden",
   "pos": {
-   "x": 84.2,
-   "y": 23.6
+   "x": 74.5,
+   "y": 69
   },
   "region": 4,
   "obg": "D01",
   "preisNacht": 92
  },
  {
-  "id": "HD01-4B",
-  "name": "Hotel D01-4 B",
-  "ort": "Musterstadt-D01",
+  "id": "HD01-4b",
+  "name": "Park Inn Dresden Süd",
+  "ort": "Dresden",
   "pos": {
-   "x": 85.4,
-   "y": 24.8
+   "x": 77.5,
+   "y": 71
   },
   "region": 4,
   "obg": "D01",
   "preisNacht": 102
  },
  {
-  "id": "HD02-0A",
-  "name": "Hotel D02-0 A",
-  "ort": "Musterstadt-D02",
+  "id": "HD02-0a",
+  "name": "Holiday Inn Leipzig",
+  "ort": "Leipzig",
   "pos": {
-   "x": 132.2,
-   "y": 11.6
+   "x": 178.5,
+   "y": -1
   },
   "region": 0,
   "obg": "D02",
   "preisNacht": 80
  },
  {
-  "id": "HD02-0B",
-  "name": "Hotel D02-0 B",
-  "ort": "Musterstadt-D02",
+  "id": "HD02-0b",
+  "name": "Motel One Leipzig Süd",
+  "ort": "Leipzig",
   "pos": {
-   "x": 133.4,
-   "y": 12.8
+   "x": 181.5,
+   "y": 1
   },
   "region": 0,
   "obg": "D02",
   "preisNacht": 90
  },
  {
-  "id": "HD02-1A",
-  "name": "Hotel D02-1 A",
-  "ort": "Musterstadt-D02",
+  "id": "HD02-1a",
+  "name": "ibis styles Leipzig",
+  "ort": "Leipzig",
   "pos": {
-   "x": 144.2,
-   "y": 11.6
+   "x": 230.5,
+   "y": 17
   },
   "region": 1,
   "obg": "D02",
   "preisNacht": 83
  },
  {
-  "id": "HD02-1B",
-  "name": "Hotel D02-1 B",
-  "ort": "Musterstadt-D02",
+  "id": "HD02-1b",
+  "name": "Mercure Leipzig Süd",
+  "ort": "Leipzig",
   "pos": {
-   "x": 145.4,
-   "y": 12.8
+   "x": 233.5,
+   "y": 19
   },
   "region": 1,
   "obg": "D02",
   "preisNacht": 93
  },
  {
-  "id": "HD02-2A",
-  "name": "Hotel D02-2 A",
-  "ort": "Musterstadt-D02",
+  "id": "HD02-2a",
+  "name": "Best Western Leipzig",
+  "ort": "Leipzig",
   "pos": {
-   "x": 156.2,
-   "y": 11.6
+   "x": 282.5,
+   "y": 7
   },
   "region": 2,
   "obg": "D02",
   "preisNacht": 86
  },
  {
-  "id": "HD02-2B",
-  "name": "Hotel D02-2 B",
-  "ort": "Musterstadt-D02",
+  "id": "HD02-2b",
+  "name": "Novotel Leipzig Süd",
+  "ort": "Leipzig",
   "pos": {
-   "x": 157.4,
-   "y": 12.8
+   "x": 285.5,
+   "y": 9
   },
   "region": 2,
   "obg": "D02",
   "preisNacht": 96
  },
  {
-  "id": "HD02-3A",
-  "name": "Hotel D02-3 A",
-  "ort": "Musterstadt-D02",
+  "id": "HD02-3a",
+  "name": "H4 Hotel Leipzig",
+  "ort": "Leipzig",
   "pos": {
-   "x": 132.2,
-   "y": 23.6
+   "x": 198.5,
+   "y": 63
   },
   "region": 3,
   "obg": "D02",
   "preisNacht": 89
  },
  {
-  "id": "HD02-3B",
-  "name": "Hotel D02-3 B",
-  "ort": "Musterstadt-D02",
+  "id": "HD02-3b",
+  "name": "Ramada Leipzig Süd",
+  "ort": "Leipzig",
   "pos": {
-   "x": 133.4,
-   "y": 24.8
+   "x": 201.5,
+   "y": 65
   },
   "region": 3,
   "obg": "D02",
   "preisNacht": 99
  },
  {
-  "id": "HD02-4A",
-  "name": "Hotel D02-4 A",
-  "ort": "Musterstadt-D02",
+  "id": "HD02-4a",
+  "name": "Park Inn Leipzig",
+  "ort": "Leipzig",
   "pos": {
-   "x": 144.2,
-   "y": 23.6
+   "x": 254.5,
+   "y": 69
   },
   "region": 4,
   "obg": "D02",
   "preisNacht": 92
  },
  {
-  "id": "HD02-4B",
-  "name": "Hotel D02-4 B",
-  "ort": "Musterstadt-D02",
+  "id": "HD02-4b",
+  "name": "NH Collection Leipzig Süd",
+  "ort": "Leipzig",
   "pos": {
-   "x": 145.4,
-   "y": 24.8
+   "x": 257.5,
+   "y": 71
   },
   "region": 4,
   "obg": "D02",
   "preisNacht": 102
  },
  {
-  "id": "HD03-0A",
-  "name": "Hotel D03-0 A",
-  "ort": "Musterstadt-D03",
+  "id": "HD03-0a",
+  "name": "Motel One Hamburg",
+  "ort": "Hamburg",
   "pos": {
-   "x": 192.2,
-   "y": 11.6
+   "x": 358.5,
+   "y": -1
   },
   "region": 0,
   "obg": "D03",
   "preisNacht": 80
  },
  {
-  "id": "HD03-0B",
-  "name": "Hotel D03-0 B",
-  "ort": "Musterstadt-D03",
+  "id": "HD03-0b",
+  "name": "ibis styles Hamburg Süd",
+  "ort": "Hamburg",
   "pos": {
-   "x": 193.4,
-   "y": 12.8
+   "x": 361.5,
+   "y": 1
   },
   "region": 0,
   "obg": "D03",
   "preisNacht": 90
  },
  {
-  "id": "HD03-1A",
-  "name": "Hotel D03-1 A",
-  "ort": "Musterstadt-D03",
+  "id": "HD03-1a",
+  "name": "Mercure Hamburg",
+  "ort": "Hamburg",
   "pos": {
-   "x": 204.2,
-   "y": 11.6
+   "x": 410.5,
+   "y": 17
   },
   "region": 1,
   "obg": "D03",
   "preisNacht": 83
  },
  {
-  "id": "HD03-1B",
-  "name": "Hotel D03-1 B",
-  "ort": "Musterstadt-D03",
+  "id": "HD03-1b",
+  "name": "Best Western Hamburg Süd",
+  "ort": "Hamburg",
   "pos": {
-   "x": 205.4,
-   "y": 12.8
+   "x": 413.5,
+   "y": 19
   },
   "region": 1,
   "obg": "D03",
   "preisNacht": 93
  },
  {
-  "id": "HD03-2A",
-  "name": "Hotel D03-2 A",
-  "ort": "Musterstadt-D03",
+  "id": "HD03-2a",
+  "name": "Novotel Hamburg",
+  "ort": "Hamburg",
   "pos": {
-   "x": 216.2,
-   "y": 11.6
+   "x": 462.5,
+   "y": 7
   },
   "region": 2,
   "obg": "D03",
   "preisNacht": 86
  },
  {
-  "id": "HD03-2B",
-  "name": "Hotel D03-2 B",
-  "ort": "Musterstadt-D03",
+  "id": "HD03-2b",
+  "name": "H4 Hotel Hamburg Süd",
+  "ort": "Hamburg",
   "pos": {
-   "x": 217.4,
-   "y": 12.8
+   "x": 465.5,
+   "y": 9
   },
   "region": 2,
   "obg": "D03",
   "preisNacht": 96
  },
  {
-  "id": "HD03-3A",
-  "name": "Hotel D03-3 A",
-  "ort": "Musterstadt-D03",
+  "id": "HD03-3a",
+  "name": "Ramada Hamburg",
+  "ort": "Hamburg",
   "pos": {
-   "x": 192.2,
-   "y": 23.6
+   "x": 378.5,
+   "y": 63
   },
   "region": 3,
   "obg": "D03",
   "preisNacht": 89
  },
  {
-  "id": "HD03-3B",
-  "name": "Hotel D03-3 B",
-  "ort": "Musterstadt-D03",
+  "id": "HD03-3b",
+  "name": "Park Inn Hamburg Süd",
+  "ort": "Hamburg",
   "pos": {
-   "x": 193.4,
-   "y": 24.8
+   "x": 381.5,
+   "y": 65
   },
   "region": 3,
   "obg": "D03",
   "preisNacht": 99
  },
  {
-  "id": "HD03-4A",
-  "name": "Hotel D03-4 A",
-  "ort": "Musterstadt-D03",
+  "id": "HD03-4a",
+  "name": "NH Collection Hamburg",
+  "ort": "Hamburg",
   "pos": {
-   "x": 204.2,
-   "y": 23.6
+   "x": 434.5,
+   "y": 69
   },
   "region": 4,
   "obg": "D03",
   "preisNacht": 92
  },
  {
-  "id": "HD03-4B",
-  "name": "Hotel D03-4 B",
-  "ort": "Musterstadt-D03",
+  "id": "HD03-4b",
+  "name": "Dorint Hamburg Süd",
+  "ort": "Hamburg",
   "pos": {
-   "x": 205.4,
-   "y": 24.8
+   "x": 437.5,
+   "y": 71
   },
   "region": 4,
   "obg": "D03",
   "preisNacht": 102
  },
  {
-  "id": "HD04-0A",
-  "name": "Hotel D04-0 A",
-  "ort": "Musterstadt-D04",
+  "id": "HD04-0a",
+  "name": "ibis styles Berlin",
+  "ort": "Berlin",
   "pos": {
-   "x": 12.2,
-   "y": 11.6
+   "x": 538.5,
+   "y": -1
   },
   "region": 0,
   "obg": "D04",
   "preisNacht": 80
  },
  {
-  "id": "HD04-0B",
-  "name": "Hotel D04-0 B",
-  "ort": "Musterstadt-D04",
+  "id": "HD04-0b",
+  "name": "Mercure Berlin Süd",
+  "ort": "Berlin",
   "pos": {
-   "x": 13.4,
-   "y": 12.8
+   "x": 541.5,
+   "y": 1
   },
   "region": 0,
   "obg": "D04",
   "preisNacht": 90
  },
  {
-  "id": "HD04-1A",
-  "name": "Hotel D04-1 A",
-  "ort": "Musterstadt-D04",
+  "id": "HD04-1a",
+  "name": "Best Western Berlin",
+  "ort": "Berlin",
   "pos": {
-   "x": 24.2,
-   "y": 11.6
+   "x": 590.5,
+   "y": 17
   },
   "region": 1,
   "obg": "D04",
   "preisNacht": 83
  },
  {
-  "id": "HD04-1B",
-  "name": "Hotel D04-1 B",
-  "ort": "Musterstadt-D04",
+  "id": "HD04-1b",
+  "name": "Novotel Berlin Süd",
+  "ort": "Berlin",
   "pos": {
-   "x": 25.4,
-   "y": 12.8
+   "x": 593.5,
+   "y": 19
   },
   "region": 1,
   "obg": "D04",
   "preisNacht": 93
  },
  {
-  "id": "HD04-2A",
-  "name": "Hotel D04-2 A",
-  "ort": "Musterstadt-D04",
+  "id": "HD04-2a",
+  "name": "H4 Hotel Berlin",
+  "ort": "Berlin",
   "pos": {
-   "x": 36.2,
-   "y": 11.6
+   "x": 642.5,
+   "y": 7
   },
   "region": 2,
   "obg": "D04",
   "preisNacht": 86
  },
  {
-  "id": "HD04-2B",
-  "name": "Hotel D04-2 B",
-  "ort": "Musterstadt-D04",
+  "id": "HD04-2b",
+  "name": "Ramada Berlin Süd",
+  "ort": "Berlin",
   "pos": {
-   "x": 37.4,
-   "y": 12.8
+   "x": 645.5,
+   "y": 9
   },
   "region": 2,
   "obg": "D04",
   "preisNacht": 96
  },
  {
-  "id": "HD04-3A",
-  "name": "Hotel D04-3 A",
-  "ort": "Musterstadt-D04",
+  "id": "HD04-3a",
+  "name": "Park Inn Berlin",
+  "ort": "Berlin",
   "pos": {
-   "x": 12.2,
-   "y": 23.6
+   "x": 558.5,
+   "y": 63
   },
   "region": 3,
   "obg": "D04",
   "preisNacht": 89
  },
  {
-  "id": "HD04-3B",
-  "name": "Hotel D04-3 B",
-  "ort": "Musterstadt-D04",
+  "id": "HD04-3b",
+  "name": "NH Collection Berlin Süd",
+  "ort": "Berlin",
   "pos": {
-   "x": 13.4,
-   "y": 24.8
+   "x": 561.5,
+   "y": 65
   },
   "region": 3,
   "obg": "D04",
   "preisNacht": 99
  },
  {
-  "id": "HD04-4A",
-  "name": "Hotel D04-4 A",
-  "ort": "Musterstadt-D04",
+  "id": "HD04-4a",
+  "name": "Dorint Berlin",
+  "ort": "Berlin",
   "pos": {
-   "x": 24.2,
-   "y": 23.6
+   "x": 614.5,
+   "y": 69
   },
   "region": 4,
   "obg": "D04",
   "preisNacht": 92
  },
  {
-  "id": "HD04-4B",
-  "name": "Hotel D04-4 B",
-  "ort": "Musterstadt-D04",
+  "id": "HD04-4b",
+  "name": "Hilton Berlin Süd",
+  "ort": "Berlin",
   "pos": {
-   "x": 25.4,
-   "y": 24.8
+   "x": 617.5,
+   "y": 71
   },
   "region": 4,
   "obg": "D04",
   "preisNacht": 102
  },
  {
-  "id": "HD05-0A",
-  "name": "Hotel D05-0 A",
-  "ort": "Musterstadt-D05",
+  "id": "HD05-0a",
+  "name": "Mercure Hannover",
+  "ort": "Hannover",
   "pos": {
-   "x": 72.2,
-   "y": 71.6
+   "x": -1.5,
+   "y": 149
   },
   "region": 0,
   "obg": "D05",
   "preisNacht": 80
  },
  {
-  "id": "HD05-0B",
-  "name": "Hotel D05-0 B",
-  "ort": "Musterstadt-D05",
+  "id": "HD05-0b",
+  "name": "Best Western Hannover Süd",
+  "ort": "Hannover",
   "pos": {
-   "x": 73.4,
-   "y": 72.8
+   "x": 1.5,
+   "y": 151
   },
   "region": 0,
   "obg": "D05",
   "preisNacht": 90
  },
  {
-  "id": "HD05-1A",
-  "name": "Hotel D05-1 A",
-  "ort": "Musterstadt-D05",
+  "id": "HD05-1a",
+  "name": "Novotel Hannover",
+  "ort": "Hannover",
   "pos": {
-   "x": 84.2,
-   "y": 71.6
+   "x": 50.5,
+   "y": 167
   },
   "region": 1,
   "obg": "D05",
   "preisNacht": 83
  },
  {
-  "id": "HD05-1B",
-  "name": "Hotel D05-1 B",
-  "ort": "Musterstadt-D05",
+  "id": "HD05-1b",
+  "name": "H4 Hotel Hannover Süd",
+  "ort": "Hannover",
   "pos": {
-   "x": 85.4,
-   "y": 72.8
+   "x": 53.5,
+   "y": 169
   },
   "region": 1,
   "obg": "D05",
   "preisNacht": 93
  },
  {
-  "id": "HD05-2A",
-  "name": "Hotel D05-2 A",
-  "ort": "Musterstadt-D05",
+  "id": "HD05-2a",
+  "name": "Ramada Hannover",
+  "ort": "Hannover",
   "pos": {
-   "x": 96.2,
-   "y": 71.6
+   "x": 102.5,
+   "y": 157
   },
   "region": 2,
   "obg": "D05",
   "preisNacht": 86
  },
  {
-  "id": "HD05-2B",
-  "name": "Hotel D05-2 B",
-  "ort": "Musterstadt-D05",
+  "id": "HD05-2b",
+  "name": "Park Inn Hannover Süd",
+  "ort": "Hannover",
   "pos": {
-   "x": 97.4,
-   "y": 72.8
+   "x": 105.5,
+   "y": 159
   },
   "region": 2,
   "obg": "D05",
   "preisNacht": 96
  },
  {
-  "id": "HD05-3A",
-  "name": "Hotel D05-3 A",
-  "ort": "Musterstadt-D05",
+  "id": "HD05-3a",
+  "name": "NH Collection Hannover",
+  "ort": "Hannover",
   "pos": {
-   "x": 72.2,
-   "y": 83.6
+   "x": 18.5,
+   "y": 213
   },
   "region": 3,
   "obg": "D05",
   "preisNacht": 89
  },
  {
-  "id": "HD05-3B",
-  "name": "Hotel D05-3 B",
-  "ort": "Musterstadt-D05",
+  "id": "HD05-3b",
+  "name": "Dorint Hannover Süd",
+  "ort": "Hannover",
   "pos": {
-   "x": 73.4,
-   "y": 84.8
+   "x": 21.5,
+   "y": 215
   },
   "region": 3,
   "obg": "D05",
   "preisNacht": 99
  },
  {
-  "id": "HD05-4A",
-  "name": "Hotel D05-4 A",
-  "ort": "Musterstadt-D05",
+  "id": "HD05-4a",
+  "name": "Hilton Hannover",
+  "ort": "Hannover",
   "pos": {
-   "x": 84.2,
-   "y": 83.6
+   "x": 74.5,
+   "y": 219
   },
   "region": 4,
   "obg": "D05",
   "preisNacht": 92
  },
  {
-  "id": "HD05-4B",
-  "name": "Hotel D05-4 B",
-  "ort": "Musterstadt-D05",
+  "id": "HD05-4b",
+  "name": "Holiday Inn Hannover Süd",
+  "ort": "Hannover",
   "pos": {
-   "x": 85.4,
-   "y": 84.8
+   "x": 77.5,
+   "y": 221
   },
   "region": 4,
   "obg": "D05",
   "preisNacht": 102
  },
  {
-  "id": "HD06-0A",
-  "name": "Hotel D06-0 A",
-  "ort": "Musterstadt-D06",
+  "id": "HD06-0a",
+  "name": "Best Western Köln",
+  "ort": "Köln",
   "pos": {
-   "x": 132.2,
-   "y": 71.6
+   "x": 178.5,
+   "y": 149
   },
   "region": 0,
   "obg": "D06",
   "preisNacht": 80
  },
  {
-  "id": "HD06-0B",
-  "name": "Hotel D06-0 B",
-  "ort": "Musterstadt-D06",
+  "id": "HD06-0b",
+  "name": "Novotel Köln Süd",
+  "ort": "Köln",
   "pos": {
-   "x": 133.4,
-   "y": 72.8
+   "x": 181.5,
+   "y": 151
   },
   "region": 0,
   "obg": "D06",
   "preisNacht": 90
  },
  {
-  "id": "HD06-1A",
-  "name": "Hotel D06-1 A",
-  "ort": "Musterstadt-D06",
+  "id": "HD06-1a",
+  "name": "H4 Hotel Köln",
+  "ort": "Köln",
   "pos": {
-   "x": 144.2,
-   "y": 71.6
+   "x": 230.5,
+   "y": 167
   },
   "region": 1,
   "obg": "D06",
   "preisNacht": 83
  },
  {
-  "id": "HD06-1B",
-  "name": "Hotel D06-1 B",
-  "ort": "Musterstadt-D06",
+  "id": "HD06-1b",
+  "name": "Ramada Köln Süd",
+  "ort": "Köln",
   "pos": {
-   "x": 145.4,
-   "y": 72.8
+   "x": 233.5,
+   "y": 169
   },
   "region": 1,
   "obg": "D06",
   "preisNacht": 93
  },
  {
-  "id": "HD06-2A",
-  "name": "Hotel D06-2 A",
-  "ort": "Musterstadt-D06",
+  "id": "HD06-2a",
+  "name": "Park Inn Köln",
+  "ort": "Köln",
   "pos": {
-   "x": 156.2,
-   "y": 71.6
+   "x": 282.5,
+   "y": 157
   },
   "region": 2,
   "obg": "D06",
   "preisNacht": 86
  },
  {
-  "id": "HD06-2B",
-  "name": "Hotel D06-2 B",
-  "ort": "Musterstadt-D06",
+  "id": "HD06-2b",
+  "name": "NH Collection Köln Süd",
+  "ort": "Köln",
   "pos": {
-   "x": 157.4,
-   "y": 72.8
+   "x": 285.5,
+   "y": 159
   },
   "region": 2,
   "obg": "D06",
   "preisNacht": 96
  },
  {
-  "id": "HD06-3A",
-  "name": "Hotel D06-3 A",
-  "ort": "Musterstadt-D06",
+  "id": "HD06-3a",
+  "name": "Dorint Köln",
+  "ort": "Köln",
   "pos": {
-   "x": 132.2,
-   "y": 83.6
+   "x": 198.5,
+   "y": 213
   },
   "region": 3,
   "obg": "D06",
   "preisNacht": 89
  },
  {
-  "id": "HD06-3B",
-  "name": "Hotel D06-3 B",
-  "ort": "Musterstadt-D06",
+  "id": "HD06-3b",
+  "name": "Hilton Köln Süd",
+  "ort": "Köln",
   "pos": {
-   "x": 133.4,
-   "y": 84.8
+   "x": 201.5,
+   "y": 215
   },
   "region": 3,
   "obg": "D06",
   "preisNacht": 99
  },
  {
-  "id": "HD06-4A",
-  "name": "Hotel D06-4 A",
-  "ort": "Musterstadt-D06",
+  "id": "HD06-4a",
+  "name": "Holiday Inn Köln",
+  "ort": "Köln",
   "pos": {
-   "x": 144.2,
-   "y": 83.6
+   "x": 254.5,
+   "y": 219
   },
   "region": 4,
   "obg": "D06",
   "preisNacht": 92
  },
  {
-  "id": "HD06-4B",
-  "name": "Hotel D06-4 B",
-  "ort": "Musterstadt-D06",
+  "id": "HD06-4b",
+  "name": "Motel One Köln Süd",
+  "ort": "Köln",
   "pos": {
-   "x": 145.4,
-   "y": 84.8
+   "x": 257.5,
+   "y": 221
   },
   "region": 4,
   "obg": "D06",
   "preisNacht": 102
  },
  {
-  "id": "HD07-0A",
-  "name": "Hotel D07-0 A",
-  "ort": "Musterstadt-D07",
+  "id": "HD07-0a",
+  "name": "Novotel Frankfurt",
+  "ort": "Frankfurt",
   "pos": {
-   "x": 192.2,
-   "y": 71.6
+   "x": 358.5,
+   "y": 149
   },
   "region": 0,
   "obg": "D07",
   "preisNacht": 80
  },
  {
-  "id": "HD07-0B",
-  "name": "Hotel D07-0 B",
-  "ort": "Musterstadt-D07",
+  "id": "HD07-0b",
+  "name": "H4 Hotel Frankfurt Süd",
+  "ort": "Frankfurt",
   "pos": {
-   "x": 193.4,
-   "y": 72.8
+   "x": 361.5,
+   "y": 151
   },
   "region": 0,
   "obg": "D07",
   "preisNacht": 90
  },
  {
-  "id": "HD07-1A",
-  "name": "Hotel D07-1 A",
-  "ort": "Musterstadt-D07",
+  "id": "HD07-1a",
+  "name": "Ramada Frankfurt",
+  "ort": "Frankfurt",
   "pos": {
-   "x": 204.2,
-   "y": 71.6
+   "x": 410.5,
+   "y": 167
   },
   "region": 1,
   "obg": "D07",
   "preisNacht": 83
  },
  {
-  "id": "HD07-1B",
-  "name": "Hotel D07-1 B",
-  "ort": "Musterstadt-D07",
+  "id": "HD07-1b",
+  "name": "Park Inn Frankfurt Süd",
+  "ort": "Frankfurt",
   "pos": {
-   "x": 205.4,
-   "y": 72.8
+   "x": 413.5,
+   "y": 169
   },
   "region": 1,
   "obg": "D07",
   "preisNacht": 93
  },
  {
-  "id": "HD07-2A",
-  "name": "Hotel D07-2 A",
-  "ort": "Musterstadt-D07",
+  "id": "HD07-2a",
+  "name": "NH Collection Frankfurt",
+  "ort": "Frankfurt",
   "pos": {
-   "x": 216.2,
-   "y": 71.6
+   "x": 462.5,
+   "y": 157
   },
   "region": 2,
   "obg": "D07",
   "preisNacht": 86
  },
  {
-  "id": "HD07-2B",
-  "name": "Hotel D07-2 B",
-  "ort": "Musterstadt-D07",
+  "id": "HD07-2b",
+  "name": "Dorint Frankfurt Süd",
+  "ort": "Frankfurt",
   "pos": {
-   "x": 217.4,
-   "y": 72.8
+   "x": 465.5,
+   "y": 159
   },
   "region": 2,
   "obg": "D07",
   "preisNacht": 96
  },
  {
-  "id": "HD07-3A",
-  "name": "Hotel D07-3 A",
-  "ort": "Musterstadt-D07",
+  "id": "HD07-3a",
+  "name": "Hilton Frankfurt",
+  "ort": "Frankfurt",
   "pos": {
-   "x": 192.2,
-   "y": 83.6
+   "x": 378.5,
+   "y": 213
   },
   "region": 3,
   "obg": "D07",
   "preisNacht": 89
  },
  {
-  "id": "HD07-3B",
-  "name": "Hotel D07-3 B",
-  "ort": "Musterstadt-D07",
+  "id": "HD07-3b",
+  "name": "Holiday Inn Frankfurt Süd",
+  "ort": "Frankfurt",
   "pos": {
-   "x": 193.4,
-   "y": 84.8
+   "x": 381.5,
+   "y": 215
   },
   "region": 3,
   "obg": "D07",
   "preisNacht": 99
  },
  {
-  "id": "HD07-4A",
-  "name": "Hotel D07-4 A",
-  "ort": "Musterstadt-D07",
+  "id": "HD07-4a",
+  "name": "Motel One Frankfurt",
+  "ort": "Frankfurt",
   "pos": {
-   "x": 204.2,
-   "y": 83.6
+   "x": 434.5,
+   "y": 219
   },
   "region": 4,
   "obg": "D07",
   "preisNacht": 92
  },
  {
-  "id": "HD07-4B",
-  "name": "Hotel D07-4 B",
-  "ort": "Musterstadt-D07",
+  "id": "HD07-4b",
+  "name": "ibis styles Frankfurt Süd",
+  "ort": "Frankfurt",
   "pos": {
-   "x": 205.4,
-   "y": 84.8
+   "x": 437.5,
+   "y": 221
   },
   "region": 4,
   "obg": "D07",
   "preisNacht": 102
  },
  {
-  "id": "HD08-0A",
-  "name": "Hotel D08-0 A",
-  "ort": "Musterstadt-D08",
+  "id": "HD08-0a",
+  "name": "H4 Hotel Stuttgart",
+  "ort": "Stuttgart",
   "pos": {
-   "x": 12.2,
-   "y": 71.6
+   "x": 538.5,
+   "y": 149
   },
   "region": 0,
   "obg": "D08",
   "preisNacht": 80
  },
  {
-  "id": "HD08-0B",
-  "name": "Hotel D08-0 B",
-  "ort": "Musterstadt-D08",
+  "id": "HD08-0b",
+  "name": "Ramada Stuttgart Süd",
+  "ort": "Stuttgart",
   "pos": {
-   "x": 13.4,
-   "y": 72.8
+   "x": 541.5,
+   "y": 151
   },
   "region": 0,
   "obg": "D08",
   "preisNacht": 90
  },
  {
-  "id": "HD08-1A",
-  "name": "Hotel D08-1 A",
-  "ort": "Musterstadt-D08",
+  "id": "HD08-1a",
+  "name": "Park Inn Stuttgart",
+  "ort": "Stuttgart",
   "pos": {
-   "x": 24.2,
-   "y": 71.6
+   "x": 590.5,
+   "y": 167
   },
   "region": 1,
   "obg": "D08",
   "preisNacht": 83
  },
  {
-  "id": "HD08-1B",
-  "name": "Hotel D08-1 B",
-  "ort": "Musterstadt-D08",
+  "id": "HD08-1b",
+  "name": "NH Collection Stuttgart Süd",
+  "ort": "Stuttgart",
   "pos": {
-   "x": 25.4,
-   "y": 72.8
+   "x": 593.5,
+   "y": 169
   },
   "region": 1,
   "obg": "D08",
   "preisNacht": 93
  },
  {
-  "id": "HD08-2A",
-  "name": "Hotel D08-2 A",
-  "ort": "Musterstadt-D08",
+  "id": "HD08-2a",
+  "name": "Dorint Stuttgart",
+  "ort": "Stuttgart",
   "pos": {
-   "x": 36.2,
-   "y": 71.6
+   "x": 642.5,
+   "y": 157
   },
   "region": 2,
   "obg": "D08",
   "preisNacht": 86
  },
  {
-  "id": "HD08-2B",
-  "name": "Hotel D08-2 B",
-  "ort": "Musterstadt-D08",
+  "id": "HD08-2b",
+  "name": "Hilton Stuttgart Süd",
+  "ort": "Stuttgart",
   "pos": {
-   "x": 37.4,
-   "y": 72.8
+   "x": 645.5,
+   "y": 159
   },
   "region": 2,
   "obg": "D08",
   "preisNacht": 96
  },
  {
-  "id": "HD08-3A",
-  "name": "Hotel D08-3 A",
-  "ort": "Musterstadt-D08",
+  "id": "HD08-3a",
+  "name": "Holiday Inn Stuttgart",
+  "ort": "Stuttgart",
   "pos": {
-   "x": 12.2,
-   "y": 83.6
+   "x": 558.5,
+   "y": 213
   },
   "region": 3,
   "obg": "D08",
   "preisNacht": 89
  },
  {
-  "id": "HD08-3B",
-  "name": "Hotel D08-3 B",
-  "ort": "Musterstadt-D08",
+  "id": "HD08-3b",
+  "name": "Motel One Stuttgart Süd",
+  "ort": "Stuttgart",
   "pos": {
-   "x": 13.4,
-   "y": 84.8
+   "x": 561.5,
+   "y": 215
   },
   "region": 3,
   "obg": "D08",
   "preisNacht": 99
  },
  {
-  "id": "HD08-4A",
-  "name": "Hotel D08-4 A",
-  "ort": "Musterstadt-D08",
+  "id": "HD08-4a",
+  "name": "ibis styles Stuttgart",
+  "ort": "Stuttgart",
   "pos": {
-   "x": 24.2,
-   "y": 83.6
+   "x": 614.5,
+   "y": 219
   },
   "region": 4,
   "obg": "D08",
   "preisNacht": 92
  },
  {
-  "id": "HD08-4B",
-  "name": "Hotel D08-4 B",
-  "ort": "Musterstadt-D08",
+  "id": "HD08-4b",
+  "name": "Mercure Stuttgart Süd",
+  "ort": "Stuttgart",
   "pos": {
-   "x": 25.4,
-   "y": 84.8
+   "x": 617.5,
+   "y": 221
   },
   "region": 4,
   "obg": "D08",
   "preisNacht": 102
  },
  {
-  "id": "HD09-0A",
-  "name": "Hotel D09-0 A",
-  "ort": "Musterstadt-D09",
+  "id": "HD09-0a",
+  "name": "Ramada München",
+  "ort": "München",
   "pos": {
-   "x": 72.2,
-   "y": 131.6
+   "x": -1.5,
+   "y": 299
   },
   "region": 0,
   "obg": "D09",
   "preisNacht": 80
  },
  {
-  "id": "HD09-0B",
-  "name": "Hotel D09-0 B",
-  "ort": "Musterstadt-D09",
+  "id": "HD09-0b",
+  "name": "Park Inn München Süd",
+  "ort": "München",
   "pos": {
-   "x": 73.4,
-   "y": 132.8
+   "x": 1.5,
+   "y": 301
   },
   "region": 0,
   "obg": "D09",
   "preisNacht": 90
  },
  {
-  "id": "HD09-1A",
-  "name": "Hotel D09-1 A",
-  "ort": "Musterstadt-D09",
+  "id": "HD09-1a",
+  "name": "NH Collection München",
+  "ort": "München",
   "pos": {
-   "x": 84.2,
-   "y": 131.6
+   "x": 50.5,
+   "y": 317
   },
   "region": 1,
   "obg": "D09",
   "preisNacht": 83
  },
  {
-  "id": "HD09-1B",
-  "name": "Hotel D09-1 B",
-  "ort": "Musterstadt-D09",
+  "id": "HD09-1b",
+  "name": "Dorint München Süd",
+  "ort": "München",
   "pos": {
-   "x": 85.4,
-   "y": 132.8
+   "x": 53.5,
+   "y": 319
   },
   "region": 1,
   "obg": "D09",
   "preisNacht": 93
  },
  {
-  "id": "HD09-2A",
-  "name": "Hotel D09-2 A",
-  "ort": "Musterstadt-D09",
+  "id": "HD09-2a",
+  "name": "Hilton München",
+  "ort": "München",
   "pos": {
-   "x": 96.2,
-   "y": 131.6
+   "x": 102.5,
+   "y": 307
   },
   "region": 2,
   "obg": "D09",
   "preisNacht": 86
  },
  {
-  "id": "HD09-2B",
-  "name": "Hotel D09-2 B",
-  "ort": "Musterstadt-D09",
+  "id": "HD09-2b",
+  "name": "Holiday Inn München Süd",
+  "ort": "München",
   "pos": {
-   "x": 97.4,
-   "y": 132.8
+   "x": 105.5,
+   "y": 309
   },
   "region": 2,
   "obg": "D09",
   "preisNacht": 96
  },
  {
-  "id": "HD09-3A",
-  "name": "Hotel D09-3 A",
-  "ort": "Musterstadt-D09",
+  "id": "HD09-3a",
+  "name": "Motel One München",
+  "ort": "München",
   "pos": {
-   "x": 72.2,
-   "y": 143.6
+   "x": 18.5,
+   "y": 363
   },
   "region": 3,
   "obg": "D09",
   "preisNacht": 89
  },
  {
-  "id": "HD09-3B",
-  "name": "Hotel D09-3 B",
-  "ort": "Musterstadt-D09",
+  "id": "HD09-3b",
+  "name": "ibis styles München Süd",
+  "ort": "München",
   "pos": {
-   "x": 73.4,
-   "y": 144.8
+   "x": 21.5,
+   "y": 365
   },
   "region": 3,
   "obg": "D09",
   "preisNacht": 99
  },
  {
-  "id": "HD09-4A",
-  "name": "Hotel D09-4 A",
-  "ort": "Musterstadt-D09",
+  "id": "HD09-4a",
+  "name": "Mercure München",
+  "ort": "München",
   "pos": {
-   "x": 84.2,
-   "y": 143.6
+   "x": 74.5,
+   "y": 369
   },
   "region": 4,
   "obg": "D09",
   "preisNacht": 92
  },
  {
-  "id": "HD09-4B",
-  "name": "Hotel D09-4 B",
-  "ort": "Musterstadt-D09",
+  "id": "HD09-4b",
+  "name": "Best Western München Süd",
+  "ort": "München",
   "pos": {
-   "x": 85.4,
-   "y": 144.8
+   "x": 77.5,
+   "y": 371
   },
   "region": 4,
   "obg": "D09",
   "preisNacht": 102
  },
  {
-  "id": "HD10-0A",
-  "name": "Hotel D10-0 A",
-  "ort": "Musterstadt-D10",
+  "id": "HD10-0a",
+  "name": "Park Inn Nürnberg",
+  "ort": "Nürnberg",
   "pos": {
-   "x": 132.2,
-   "y": 131.6
+   "x": 178.5,
+   "y": 299
   },
   "region": 0,
   "obg": "D10",
   "preisNacht": 80
  },
  {
-  "id": "HD10-0B",
-  "name": "Hotel D10-0 B",
-  "ort": "Musterstadt-D10",
+  "id": "HD10-0b",
+  "name": "NH Collection Nürnberg Süd",
+  "ort": "Nürnberg",
   "pos": {
-   "x": 133.4,
-   "y": 132.8
+   "x": 181.5,
+   "y": 301
   },
   "region": 0,
   "obg": "D10",
   "preisNacht": 90
  },
  {
-  "id": "HD10-1A",
-  "name": "Hotel D10-1 A",
-  "ort": "Musterstadt-D10",
+  "id": "HD10-1a",
+  "name": "Dorint Nürnberg",
+  "ort": "Nürnberg",
   "pos": {
-   "x": 144.2,
-   "y": 131.6
+   "x": 230.5,
+   "y": 317
   },
   "region": 1,
   "obg": "D10",
   "preisNacht": 83
  },
  {
-  "id": "HD10-1B",
-  "name": "Hotel D10-1 B",
-  "ort": "Musterstadt-D10",
+  "id": "HD10-1b",
+  "name": "Hilton Nürnberg Süd",
+  "ort": "Nürnberg",
   "pos": {
-   "x": 145.4,
-   "y": 132.8
+   "x": 233.5,
+   "y": 319
   },
   "region": 1,
   "obg": "D10",
   "preisNacht": 93
  },
  {
-  "id": "HD10-2A",
-  "name": "Hotel D10-2 A",
-  "ort": "Musterstadt-D10",
+  "id": "HD10-2a",
+  "name": "Holiday Inn Nürnberg",
+  "ort": "Nürnberg",
   "pos": {
-   "x": 156.2,
-   "y": 131.6
+   "x": 282.5,
+   "y": 307
   },
   "region": 2,
   "obg": "D10",
   "preisNacht": 86
  },
  {
-  "id": "HD10-2B",
-  "name": "Hotel D10-2 B",
-  "ort": "Musterstadt-D10",
+  "id": "HD10-2b",
+  "name": "Motel One Nürnberg Süd",
+  "ort": "Nürnberg",
   "pos": {
-   "x": 157.4,
-   "y": 132.8
+   "x": 285.5,
+   "y": 309
   },
   "region": 2,
   "obg": "D10",
   "preisNacht": 96
  },
  {
-  "id": "HD10-3A",
-  "name": "Hotel D10-3 A",
-  "ort": "Musterstadt-D10",
+  "id": "HD10-3a",
+  "name": "ibis styles Nürnberg",
+  "ort": "Nürnberg",
   "pos": {
-   "x": 132.2,
-   "y": 143.6
+   "x": 198.5,
+   "y": 363
   },
   "region": 3,
   "obg": "D10",
   "preisNacht": 89
  },
  {
-  "id": "HD10-3B",
-  "name": "Hotel D10-3 B",
-  "ort": "Musterstadt-D10",
+  "id": "HD10-3b",
+  "name": "Mercure Nürnberg Süd",
+  "ort": "Nürnberg",
   "pos": {
-   "x": 133.4,
-   "y": 144.8
+   "x": 201.5,
+   "y": 365
   },
   "region": 3,
   "obg": "D10",
   "preisNacht": 99
  },
  {
-  "id": "HD10-4A",
-  "name": "Hotel D10-4 A",
-  "ort": "Musterstadt-D10",
+  "id": "HD10-4a",
+  "name": "Best Western Nürnberg",
+  "ort": "Nürnberg",
   "pos": {
-   "x": 144.2,
-   "y": 143.6
+   "x": 254.5,
+   "y": 369
   },
   "region": 4,
   "obg": "D10",
   "preisNacht": 92
  },
  {
-  "id": "HD10-4B",
-  "name": "Hotel D10-4 B",
-  "ort": "Musterstadt-D10",
+  "id": "HD10-4b",
+  "name": "Novotel Nürnberg Süd",
+  "ort": "Nürnberg",
   "pos": {
-   "x": 145.4,
-   "y": 144.8
+   "x": 257.5,
+   "y": 371
   },
   "region": 4,
   "obg": "D10",
   "preisNacht": 102
  },
  {
-  "id": "HD11-0A",
-  "name": "Hotel D11-0 A",
-  "ort": "Musterstadt-D11",
+  "id": "HD11-0a",
+  "name": "NH Collection Bremen",
+  "ort": "Bremen",
   "pos": {
-   "x": 192.2,
-   "y": 131.6
+   "x": 358.5,
+   "y": 299
   },
   "region": 0,
   "obg": "D11",
   "preisNacht": 80
  },
  {
-  "id": "HD11-0B",
-  "name": "Hotel D11-0 B",
-  "ort": "Musterstadt-D11",
+  "id": "HD11-0b",
+  "name": "Dorint Bremen Süd",
+  "ort": "Bremen",
   "pos": {
-   "x": 193.4,
-   "y": 132.8
+   "x": 361.5,
+   "y": 301
   },
   "region": 0,
   "obg": "D11",
   "preisNacht": 90
  },
  {
-  "id": "HD11-1A",
-  "name": "Hotel D11-1 A",
-  "ort": "Musterstadt-D11",
+  "id": "HD11-1a",
+  "name": "Hilton Bremen",
+  "ort": "Bremen",
   "pos": {
-   "x": 204.2,
-   "y": 131.6
+   "x": 410.5,
+   "y": 317
   },
   "region": 1,
   "obg": "D11",
   "preisNacht": 83
  },
  {
-  "id": "HD11-1B",
-  "name": "Hotel D11-1 B",
-  "ort": "Musterstadt-D11",
+  "id": "HD11-1b",
+  "name": "Holiday Inn Bremen Süd",
+  "ort": "Bremen",
   "pos": {
-   "x": 205.4,
-   "y": 132.8
+   "x": 413.5,
+   "y": 319
   },
   "region": 1,
   "obg": "D11",
   "preisNacht": 93
  },
  {
-  "id": "HD11-2A",
-  "name": "Hotel D11-2 A",
-  "ort": "Musterstadt-D11",
+  "id": "HD11-2a",
+  "name": "Motel One Bremen",
+  "ort": "Bremen",
   "pos": {
-   "x": 216.2,
-   "y": 131.6
+   "x": 462.5,
+   "y": 307
   },
   "region": 2,
   "obg": "D11",
   "preisNacht": 86
  },
  {
-  "id": "HD11-2B",
-  "name": "Hotel D11-2 B",
-  "ort": "Musterstadt-D11",
+  "id": "HD11-2b",
+  "name": "ibis styles Bremen Süd",
+  "ort": "Bremen",
   "pos": {
-   "x": 217.4,
-   "y": 132.8
+   "x": 465.5,
+   "y": 309
   },
   "region": 2,
   "obg": "D11",
   "preisNacht": 96
  },
  {
-  "id": "HD11-3A",
-  "name": "Hotel D11-3 A",
-  "ort": "Musterstadt-D11",
+  "id": "HD11-3a",
+  "name": "Mercure Bremen",
+  "ort": "Bremen",
   "pos": {
-   "x": 192.2,
-   "y": 143.6
+   "x": 378.5,
+   "y": 363
   },
   "region": 3,
   "obg": "D11",
   "preisNacht": 89
  },
  {
-  "id": "HD11-3B",
-  "name": "Hotel D11-3 B",
-  "ort": "Musterstadt-D11",
+  "id": "HD11-3b",
+  "name": "Best Western Bremen Süd",
+  "ort": "Bremen",
   "pos": {
-   "x": 193.4,
-   "y": 144.8
+   "x": 381.5,
+   "y": 365
   },
   "region": 3,
   "obg": "D11",
   "preisNacht": 99
  },
  {
-  "id": "HD11-4A",
-  "name": "Hotel D11-4 A",
-  "ort": "Musterstadt-D11",
+  "id": "HD11-4a",
+  "name": "Novotel Bremen",
+  "ort": "Bremen",
   "pos": {
-   "x": 204.2,
-   "y": 143.6
+   "x": 434.5,
+   "y": 369
   },
   "region": 4,
   "obg": "D11",
   "preisNacht": 92
  },
  {
-  "id": "HD11-4B",
-  "name": "Hotel D11-4 B",
-  "ort": "Musterstadt-D11",
+  "id": "HD11-4b",
+  "name": "H4 Hotel Bremen Süd",
+  "ort": "Bremen",
   "pos": {
-   "x": 205.4,
-   "y": 144.8
+   "x": 437.5,
+   "y": 371
   },
   "region": 4,
   "obg": "D11",
   "preisNacht": 102
  },
  {
-  "id": "HD12-0A",
-  "name": "Hotel D12-0 A",
-  "ort": "Musterstadt-D12",
+  "id": "HD12-0a",
+  "name": "Dorint Kassel",
+  "ort": "Kassel",
   "pos": {
-   "x": 12.2,
-   "y": 131.6
+   "x": 538.5,
+   "y": 299
   },
   "region": 0,
   "obg": "D12",
   "preisNacht": 80
  },
  {
-  "id": "HD12-0B",
-  "name": "Hotel D12-0 B",
-  "ort": "Musterstadt-D12",
+  "id": "HD12-0b",
+  "name": "Hilton Kassel Süd",
+  "ort": "Kassel",
   "pos": {
-   "x": 13.4,
-   "y": 132.8
+   "x": 541.5,
+   "y": 301
   },
   "region": 0,
   "obg": "D12",
   "preisNacht": 90
  },
  {
-  "id": "HD12-1A",
-  "name": "Hotel D12-1 A",
-  "ort": "Musterstadt-D12",
+  "id": "HD12-1a",
+  "name": "Holiday Inn Kassel",
+  "ort": "Kassel",
   "pos": {
-   "x": 24.2,
-   "y": 131.6
+   "x": 590.5,
+   "y": 317
   },
   "region": 1,
   "obg": "D12",
   "preisNacht": 83
  },
  {
-  "id": "HD12-1B",
-  "name": "Hotel D12-1 B",
-  "ort": "Musterstadt-D12",
+  "id": "HD12-1b",
+  "name": "Motel One Kassel Süd",
+  "ort": "Kassel",
   "pos": {
-   "x": 25.4,
-   "y": 132.8
+   "x": 593.5,
+   "y": 319
   },
   "region": 1,
   "obg": "D12",
   "preisNacht": 93
  },
  {
-  "id": "HD12-2A",
-  "name": "Hotel D12-2 A",
-  "ort": "Musterstadt-D12",
+  "id": "HD12-2a",
+  "name": "ibis styles Kassel",
+  "ort": "Kassel",
   "pos": {
-   "x": 36.2,
-   "y": 131.6
+   "x": 642.5,
+   "y": 307
   },
   "region": 2,
   "obg": "D12",
   "preisNacht": 86
  },
  {
-  "id": "HD12-2B",
-  "name": "Hotel D12-2 B",
-  "ort": "Musterstadt-D12",
+  "id": "HD12-2b",
+  "name": "Mercure Kassel Süd",
+  "ort": "Kassel",
   "pos": {
-   "x": 37.4,
-   "y": 132.8
+   "x": 645.5,
+   "y": 309
   },
   "region": 2,
   "obg": "D12",
   "preisNacht": 96
  },
  {
-  "id": "HD12-3A",
-  "name": "Hotel D12-3 A",
-  "ort": "Musterstadt-D12",
+  "id": "HD12-3a",
+  "name": "Best Western Kassel",
+  "ort": "Kassel",
   "pos": {
-   "x": 12.2,
-   "y": 143.6
+   "x": 558.5,
+   "y": 363
   },
   "region": 3,
   "obg": "D12",
   "preisNacht": 89
  },
  {
-  "id": "HD12-3B",
-  "name": "Hotel D12-3 B",
-  "ort": "Musterstadt-D12",
+  "id": "HD12-3b",
+  "name": "Novotel Kassel Süd",
+  "ort": "Kassel",
   "pos": {
-   "x": 13.4,
-   "y": 144.8
+   "x": 561.5,
+   "y": 365
   },
   "region": 3,
   "obg": "D12",
   "preisNacht": 99
  },
  {
-  "id": "HD12-4A",
-  "name": "Hotel D12-4 A",
-  "ort": "Musterstadt-D12",
+  "id": "HD12-4a",
+  "name": "H4 Hotel Kassel",
+  "ort": "Kassel",
   "pos": {
-   "x": 24.2,
-   "y": 143.6
+   "x": 614.5,
+   "y": 369
   },
   "region": 4,
   "obg": "D12",
   "preisNacht": 92
  },
  {
-  "id": "HD12-4B",
-  "name": "Hotel D12-4 B",
-  "ort": "Musterstadt-D12",
+  "id": "HD12-4b",
+  "name": "Ramada Kassel Süd",
+  "ort": "Kassel",
   "pos": {
-   "x": 25.4,
-   "y": 144.8
+   "x": 617.5,
+   "y": 371
   },
   "region": 4,
   "obg": "D12",

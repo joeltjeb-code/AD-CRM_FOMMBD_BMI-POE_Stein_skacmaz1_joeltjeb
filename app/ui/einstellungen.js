@@ -8,20 +8,36 @@ export function obgOptionen() {
   });
 }
 
-// PLZ-Hash → Position im Demo-Gitter (0–40), deterministisch je PLZ.
-// Demo-Verfahren; in Phase 2 ersetzt der Import-Adapter echte PLZ-Zentren.
-export function posAusPlz(plz) {
-  const n = [...String(plz)].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) % 9973, 7);
-  return { x: Math.round(((n % 400) / 10) * 10) / 10, y: Math.round(((Math.floor(n / 400)) * 10) % 400) / 10 };
+// Demo-Welt: je OBG ein Block (4 Spalten × 3 Zeilen), darin 5 Cluster mit
+// Zentren im Abstand so, dass Fahrzeiten realistisch sind (intra ~30 min,
+// inter bis ~1,5 h bei der Demo-Routing-Formel km = hypot × Straßenfaktor).
+export const CLUSTER_ZENTREN = [[0, 0], [52, 18], [104, 8], [20, 64], [76, 70]];
+
+export function obgBlockUrsprung(obg) {
+  const m = /D(\d{1,2})/.exec(String(obg ?? ''));
+  const nr = m ? Math.max(0, Math.min(11, Number(m[1]) - 1)) : 0;
+  return { x: (nr % 4) * 180, y: Math.floor(nr / 4) * 150 };
 }
 
-export function heimatAusEingabe({ name, plz } = {}, fallback = {}) {
+// PLZ-Hash → Position im OBG-Block (nahe dem Block-Zentrum), deterministisch
+// je PLZ *und* Gebiet. Demo-Verfahren; Phase 2: echte PLZ-Zentren via Import.
+export function posAusPlz(plz, obg = 'D01') {
+  const n = [...String(plz)].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) % 9973, 7);
+  const jitterX = (n % 41) - 20;      // ±20
+  const jitterY = (Math.floor(n / 41) % 41) - 20;
+  const cx = CLUSTER_ZENTREN.reduce((s, z) => s + z[0], 0) / CLUSTER_ZENTREN.length;
+  const cy = CLUSTER_ZENTREN.reduce((s, z) => s + z[1], 0) / CLUSTER_ZENTREN.length;
+  const o = obgBlockUrsprung(obg);
+  return { x: Math.round((o.x + cx + jitterX) * 10) / 10, y: Math.round((o.y + cy + jitterY) * 10) / 10 };
+}
+
+export function heimatAusEingabe({ name, plz } = {}, fallback = {}, obg) {
   const basis = {
     name: (name ?? '').trim() || fallback.name || 'Heimatbüro',
     plz: (plz ?? '').trim(),
-    pos: fallback.pos ?? { x: -8, y: 10 },
+    pos: fallback.pos ?? posAusPlz('93047', obg ?? 'D01'),
   };
-  if (basis.plz) basis.pos = posAusPlz(basis.plz);
+  if (basis.plz) basis.pos = posAusPlz(basis.plz, obg ?? 'D01');
   return basis;
 }
 
@@ -73,7 +89,7 @@ export function leseEinstellungen(alt, form) {  const maxFahrt = Number(form.max
   return {
     ...alt,
     obg: (form.obg ?? '').trim() || alt.obg,
-    heimat: heimatAusEingabe({ name: form.heimatName, plz: form.heimatPlz }, alt.heimat ?? {}),
+    heimat: heimatAusEingabe({ name: form.heimatName, plz: form.heimatPlz }, alt.heimat ?? {}, (form.obg ?? '').trim() || alt.obg),
     bev: form.bev === true || form.bev === 'on' || form.bev === 'true',
     praferenzen: {
       ...alt.praferenzen,
@@ -115,12 +131,12 @@ export function rendereAbwesenheiten(container, plan, abw = {}, { onAendern } = 
       </div>`;
   }).join('');
   container.innerHTML = `
-    <fieldset>
-      <legend>Abwesenheiten</legend>
+    <details class="abw-details" open>
+      <summary>Abwesenheiten <span class="abw-hinweis">klicken zum Ein-/Ausklappen</span></summary>
       <p class="eingang">Abgew&auml;hlte Tage und Wochen werden nicht beplant; die Termine wandern in die aktiven Tage der Folge.</p>
       ${wochenBlocks || '<p class="leer">Noch kein Plan vorhanden.</p>'}
       <button type="button" name="abwSpeichern">Abwesenheiten anwenden</button>
-    </fieldset>`;
+    </details>`;
 
   container.querySelector('[name=abwSpeichern]').addEventListener('click', () => {
     onAendern?.(liesAbwesenheiten(container));
