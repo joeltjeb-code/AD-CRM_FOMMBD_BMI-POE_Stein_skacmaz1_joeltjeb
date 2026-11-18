@@ -1,4 +1,5 @@
 import { farbeFuer } from '../wissensbasis/farbcodierung.js';
+import { kachelLabel } from './kachel-label.js';
 
 export function renderePlanraster(container, plan, { onMove, onBefehl, onWaehl, haendlerVerlauf = {}, haendlerNamen = {}, heute }) {
   const teile = [];
@@ -9,7 +10,7 @@ export function renderePlanraster(container, plan, { onMove, onBefehl, onWaehl, 
         <h3>${tag.tag} (${tag.datum})${tag.ok ? '' : ` – ${tag.grund ?? 'ungültig'}`}</h3>
         <ul>${(tag.termine ?? []).map((x, si) =>
           `<li draggable="true" class="farbe-${farbeFuer(haendlerVerlauf[x.haendlerId] ?? null, heute)}" data-id="${x.haendlerId}" data-woche="${wi}" data-tag="${ti}" data-slot="${si}">
-             ${x.start}–${x.ende} ${haendlerNamen[x.haendlerId] ?? x.haendlerId}</li>`).join('')}
+             ${x.start}–${x.ende} ${kachelLabel(haendlerNamen[x.haendlerId], x.haendlerId)}</li>`).join('')}
         ${tag.leer ? '<li class="leer">kein Auftrag</li>' : ''}
         </ul>
         <p>Übernachtung: ${tag.uebernachtung?.art === 'hotel'

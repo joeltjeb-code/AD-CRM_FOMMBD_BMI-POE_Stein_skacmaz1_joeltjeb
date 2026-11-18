@@ -38,7 +38,7 @@ let settings = speicher.lade('einstellungen', {
   heimat: { name: 'Heimatbüro', pos: { x: -8, y: 10 } },
   altStartorte: [{ name: 'Büro Ost', pos: { x: 46, y: 2 } }, { name: 'Büro Süd', pos: { x: 2, y: 46 } }],
   bev: false,
-  praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 60, programme: ['Hilton Honors'] },
+  praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 60 },
 });
 let plan = null;
 

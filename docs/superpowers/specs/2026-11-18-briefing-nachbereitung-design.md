@@ -296,3 +296,52 @@ pypdf extrahiert).
   öffnet per Händlerauswahl den "Infos"-Tab.
 - Entfallen: Schaltflächen `Bericht erfassen` / `Info-Verteilung` in der
   globalen Leiste (durch Tabs ersetzt).
+
+## 11. Addendum (18.11.2026, nach Browser-Review durch den Nutzer)
+
+Anlass: Erster manueller Durchlauf am Ford-Interface. Befunde und daraus abgeleitete Anforderungen. Bereits ohne Spec umgesetzt (kleine, unmissverständliche Fixes): Tab-Panel-Umschaltung korrigiert (`wechsleTab`), Kacheln zeigen Namen **und** Identifier (`kachelLabel`), Treueprogramm vollständig entfernt (Settings, Hotel-Daten, Übernachtungs-Score).
+
+### 11.1 OBG-Auswahl und Heimatadresse (nicht vorhanden → Pflicht)
+
+| # | Anforderung |
+|---|---|
+| O1 | Kopfbereich des Tabs „Plan" enthält ein **Dropdown „OBG"** (Auswahl des zu planenden Gebietes) und eine **Eingabemaske „Heimatadresse"** (Ort/PLZ bzw. Koordinate) mit Speichern-Button |
+| O2 | OBG- und Heimat- Auswahl werden in localStorage persistiert (Schlüssel `einstellungen`) und beim Start wiederhergestellt |
+| O3 | Die Planung (Cluster → Fälligkeit → Prio) läuft **nur über die Händler des gewählten OBG**; Wechsel des OBG erzeugt den Plan neu |
+| O4 | Heimat-Position ersetzt die hart verdrahtete Demo-Koordinate; Demo-Koordinate bleibt Fallback ohne Eingabe |
+| O5 | Demo-Daten: Händler erhalten ein `obg`-Feld (Werte OBG 01–12 im Marktnummern-Schema, vollständig ausgedacht) |
+
+### 11.2 Startort und Übernachtung (Korrekturen)
+
+| # | Anforderung |
+|---|---|
+| S1 | `startortName` je Tag ergibt sich aus dem Ablauf: Tag beginnt im Heimatbüro; Folgetage nach Hotelnacht starten am Hotel (bislang steht „Heimatbüro" an jedem Tag) |
+| S2 | Übernachtungs-Entscheidung wird fairer gewichtet: Anfahrtseinsparung gegenüber Heimfahrt gegen reale Hotelkosten; Hotel darf Heimfahrt nicht „fast immer" schlagen (Konstante statt `preisNacht/10`, in Tests gegen beide Varianten kalibriert) |
+| S3 | Treueprogramm bleibt gestrichen (Nutzer-Entscheid) |
+
+### 11.3 Abwesenheiten (nicht vorhanden → Pflicht)
+
+| # | Anforderung |
+|---|---|
+| A1 | Im Tab „Plan": **Toggles für jede geplante Woche und jeden Wochentag** (Di–Fr); abgewählte Tage/Wochen werden nicht beplant |
+| A2 | Die Soll-Kapazität (12/Woche, 3/Tag) verteilt sich **nur auf aktive Tage**; vollständig abgewählte Wochen zählen nicht zur Soll-Kapazität des Horizonts |
+| A3 | Toggles persistieren in localStorage; Abwesenheits-Grund (Urlaub/Lehrgang/Event) ist optional als Freitext-Label je Toggle |
+| A4 | Abgewählte Termine bleiben in der Planung erhalten (kein Datenverlust), der Plan wird neu gerechnet |
+
+### 11.4 KI-Komponente (Entscheidung des Nutzers, 18.11.: „Alles davon")
+
+Bewertungskontext FOM (Business Model Innovation und Plattformökonomie): Der Agent braucht eine **sichtbare KI-/Datenanalyse-Komponente**. Umsetzung in drei Phasen, alles hinter Adaptern (Ansatz C bleibt gültig):
+
+| # | Anforderung | Adapter |
+|---|---|---|
+| K1 | **Stichpunkte → strukturierte Felder**: Das Formular akzeptiert Freitext-Stichpunkte; ein LLM (Mistral API) schlägt Themen, Vereinbarungen und Aufgaben (Verantwortlicher, Frist) als Vorschläge vor, die der Nutzer vor der Freigabe bestätigt/ändert. Ohne API-Key: Formular bleibt wie heute manuell (Fallback, kein Abbruch) | `text-adapter` |
+| K2 | **Themen-Klassifikation**: Bericht-Themen werden (LLM-basiert, Fallback Regel-Heuristik) auf Kampagne + allgemeine Themen-Anhänge gemappt statt per manueller Kampagnen-Auswahl | `text-adapter` |
+| K3 | **Händlerimport über Mistral OCR**: Excel/PDF-Referenzlisten werden per OCR 4.1 eingelesen und in das Händler-Datenmodell (inkl. `obg`) überführt — Anbindung des Imports-Designs vom 17.11. (Ansatz A) | neuer `import-adapter` |
+| K4 | Secrets ausschließlich in `~/.vibe/.env` (oder Runtime-Konfiguration des Nutzers), nie im Repository; kein Key → Fallback-Modus mit sichtbarem Hinweis im UI |
+| K5 | Prompt-Log dokumentiert jede KI-Nutzung (wie bei Vibe) — nachvollziehbar für die Hausarbeit |
+
+### 11.5 Explizit nicht Teil dieses Addendums
+
+- Echte Outlook-Mailbox (Phase 2, unverändert zurückgestellt)
+- Echte Routing-Daten (Route-Adapter bleibt Demo)
+- Ford-Assets (Ford F-1, Oval) — Richtlinien-Verbot bleibt

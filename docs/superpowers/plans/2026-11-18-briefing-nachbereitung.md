@@ -1136,3 +1136,79 @@ test('erstelleEntwurf ohne Katalog: Verhalten unverändert', () => {
 - Test: JSON-Validierung; Suite bleibt grün
 
 - [ ] **Steps:** Daten ergänzen, app.js verdrahten, `node --test tests/` grün, Commit `feat: demo-akten im mail-stil und ui-anbindung der themen-anhaenge`
+
+---
+
+## Addendum (18.11.2026, nach Browser-Review): Tasks 14–19
+
+Grundlage: Spec-Abschnitt 11. Reihenfolge so gewählt, dass nach jedem Task die Suite grün bleibt und im Browser etwas Sichtbares entsteht. TDD je Task; Commit nach jedem Task; Checkpoint C nach Task 17 (Browser-Durchlauf vor den KI-Tasks).
+
+### Task 14: OBG-Dropdown + Heimat-Eingabemaske (Spec 11.1)
+
+**Files:**
+- Modify: `app/ui/einstellungen.js` (Dropdown + Adress-Eingabefeld statt nur Name)
+- Modify: `app/app.js` (Settings-Default um `obg` und `heimat.pos` aus Eingabe erweitern)
+- Modify: `daten/haendler-demo.json` (+ `obg`-Feld je Händler, Werte OBG 01–12)
+- Test: `tests/ui/einstellungen.test.js` (neu: rendert Dropdown mit 12 Optionen, liest obg/heimat zurück), `tests/ui/woche.test.js` bleibt grün
+
+**Interface:**
+- `rendereEinstellungen(container, settings, { onSpeichern })` — Settings-Shape: `{ obg: 'OBG-01', heimat: { name, pos, plz }, bev, praferenzen }`
+
+- [ ] **Steps:** Test (Dropdown-Werte, Persistenz durch app.js-Speicher), rot, Implementierung, grün, Commit `feat: obg-dropdown und heimat-eingabemaske`
+
+### Task 15: Planung nach OBG gefiltert (Spec 11.1 O3)
+
+**Files:**
+- Modify: `app/app.js` (`neuPlanen` filtert `haendler` auf `h.obg === settings.obg`)
+- Modify: `app/planung/auswahl.js` (kein Verhalten-Change; Filter geschieht vor der Auswahl)
+- Test: `tests/planung/planer.test.js` (neuer Test: Plan enthält nur Händler des OBG, Wechsel des OBG erzeugt neuen Plan)
+
+- [ ] **Steps:** Test, rot, Implementierung, grün, Commit `feat: planung nach obg gefiltert`
+
+### Task 16: Startort je Tag + faire Übernachtungs-Wichtung (Spec 11.2)
+
+**Files:**
+- Modify: `app/planung/planer.js` (Folgetag nach Hotelnacht: `startortName` = Hotelname; Handy-Weiterschlag bleibt Heimatbüro)
+- Modify: `app/planung/uebernachtung.js` (Hotelkosten-Gewicht konfigurierbar, Standard so, dass kurze Heimfahrt gewinnen kann)
+- Test: `tests/planung/planer.test.js` (Startort-Folgetag), `tests/planung/uebernachtung.test.js` (teures weit-liegendes Hotel verliert gegen kurze Heimfahrt; nahes billiges Hotel gewinnt)
+
+- [ ] **Steps:** Tests, rot, Implementierung, grün, Commit `feat: startort-folgetage und faire uebernachtung`
+
+### Task 17: Abwesenheits-Toggles (Spec 11.3)
+
+**Files:**
+- Modify: `app/ui/einstellungen.js` (Toggle-Gruppe pro Woche/Di–Fr + optionales Freitext-Label)
+- Modify: `app/planung/planer.js` (ungenutzte Tage leer lassen; Soll-Kapazität auf aktive Tage verteilen)
+- Modify: `app/app.js` (Persistenz `abwesenheiten`, Plan redo bei Änderung)
+- Test: `tests/planung/abwesenheiten.test.js` (neu: 3/Tag × aktive Tage; abgewählter Tag bleibt leer; Wochen-Toggle entfernt Woche; Termine von abgewählten Tagen wandern nicht verloren, sondern werden im nächsten aktiven Slot geplant)
+
+**Interface:**
+- `planeWochen({ ..., abwesenheiten })` mit `abwesenheiten = { wochen: [w0..w3], tage: { 'w0-d2': true|false, ... } }`
+- Produces: Plan mit `tage[].abgewaehlt` und angepasster Auswahl
+
+- [ ] **Steps:** Tests, rot, Implementierung, grün, Commit `feat: abwesenheits-toggles pro tag und woche`
+- ⛔ **Checkpoint C:** Browser-Durchlauf (Tab-Navigation, OBG-Wechsel, Heimat-Eingabe, Abwesenheiten, Kacheln mit Name+ID) durch den Nutzer, dann Freigabe für die KI-Tasks
+
+### Task 18: KI hinter text-adapter — Stichpunkte→Felder und Themen-Klassifikation (Spec 11.4 K1, K2)
+
+**Files:**
+- Modify: `app/adapter/text-adapter.js` (neue Funktionen `strukturiereStichpunkte(text)` und `klassifiziereThemen(themen)`: Mistral-API-Call, Fallback auf Heuristik ohne Key)
+- Modify: `app/ui/bericht-view.js` (Button „KI-Vorschläge“, Vorschläge als editierbare Vorbelegung)
+- Modify: `app/bericht/entwurf.js` (Kampagne optional, wenn Klassifikation sie liefert)
+- Test: `tests/bericht/text-adapter.test.js` (Fallback-Heuristik deterministisch; Mistral-Pfad via injizierbarem Fetch gemockt)
+
+**Interface:**
+- `strukturiereStichpunkte(text) → Promise<{ themen: [], vereinbarungen: [], aufgaben: [{titel, verantwortlich, frist}], quelle: 'llm'|'heuristik' }>`
+- `klassifiziereThemen(themen) → Promise<{ kampagne: string|null, allgemeineAnhaenge: [] }>`
+- API-Key nur aus `~/.vibe/.env` / Browser-Konfiguration (Spec K4); kein Key → `quelle: 'heuristik'` + UI-Hinweis
+
+- [ ] **Steps:** Tests (Alle Heuristik-Fälle + ein Mock-LLM-Call), rot, Implementierung, grün, Commit `feat: ki-stichpunktanalyse und themen-klassifikation hinter text-adapter`
+
+### Task 19: Händlerimport über Mistral OCR (Spec 11.4 K3, Import-Design 17.11.)
+
+**Files:**
+- New: `app/adapter/import-adapter.js` — Vertrag: `importiere(pdfBytes | excelRows) → Promise<{ haendler: [{id, name, adresse, plz, obg, pos, ...}] }>` (OCR 4.1 für PDF, direktes Parsen für CSV/Excel-Export)
+- Modify: `app/ui/import-view.js` (Datei-Auswahl im Kopf, Vorschau + Import-Button, Fehler bei unklaren Zeilen)
+- Test: `tests/planung/import-adapter.test.js` (Mock-OCR-Antwort → Datenmodell inkl. `obg`-Ableitung über PLZ-Zentren gemäß Design 17.11.)
+
+- [ ] **Steps:** Test mit gemockter OCR-Antwort, rot, Implementierung, grün, Commit `feat: haendlerimport ueber ocr-adapter`

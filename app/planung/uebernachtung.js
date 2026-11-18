@@ -10,8 +10,7 @@ export function entscheideUbernachtung({ letzterH, ersterMorgen, hotels, setting
       : routing.fahrzeitMin(ho.pos, settings.heimat.pos);
     if (ersterMorgen && fMorgen > settings.praferenzen.maxFahrtErsterTerminMin) continue;
     const lieblings = settings.praferenzen.lieblingshotelIds.includes(ho.id) ? -30 : 0;
-    const programme = ho.programme.filter((p) => settings.praferenzen.programme.includes(p)).length * -10;
-    const score = fAbend + fMorgen + lieblings + programme + (ho.preisNacht ? ho.preisNacht / 10 : 0);
+    const score = fAbend + fMorgen + lieblings + (ho.preisNacht ? ho.preisNacht / 10 : 0);
     if (!bestes || score < bestes.score) bestes = { hotel: ho, score };
   }
 

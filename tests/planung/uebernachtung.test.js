@@ -5,12 +5,12 @@ import { entscheideUbernachtung } from '../../app/planung/uebernachtung.js';
 
 const r = erstelleDemoRouting();
 const HOTELS = [
-  { id: 'H1', name: 'Hotel Klause', ort: 'Musterdorf', pos: { x: 1, y: 1 }, region: 0, programme: ['Hilton Honors'], preisNacht: 90 },
-  { id: 'H2', name: 'Hotel Fern', ort: 'Anderswo', pos: { x: 30, y: 30 }, region: 0, programme: [], preisNacht: 80 },
+  { id: 'H1', name: 'Hotel Klause', ort: 'Musterdorf', pos: { x: 1, y: 1 }, region: 0, preisNacht: 90 },
+  { id: 'H2', name: 'Hotel Fern', ort: 'Anderswo', pos: { x: 30, y: 30 }, region: 0, preisNacht: 80 },
 ];
 const SETTINGS = {
   heimat: { name: 'Heimat', pos: { x: -8, y: 10 } },
-  praferenzen: { lieblingshotelIds: ['H1'], maxFahrtErsterTerminMin: 60, programme: ['Hilton Honors'] },
+  praferenzen: { lieblingshotelIds: ['H1'], maxFahrtErsterTerminMin: 60 },
 };
 const LETZTER = { pos: { x: 0, y: 0 }, cluster: 0 };
 const ERSTER_MORGEN = { pos: { x: 2, y: 2 } };
@@ -22,7 +22,7 @@ test('Werktag: nahes Lieblingshotel schlägt Heimfahrt', () => {
 });
 
 test('Freitag: ohne morgigen Termin gewinnt die Heimfahrt bei kurzer Strecke', () => {
-  const s = { ...SETTINGS, praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 60, programme: [] } };
+  const s = { ...SETTINGS, praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 60 } };
   const res = entscheideUbernachtung({ letzterH: LETZTER, ersterMorgen: null, hotels: HOTELS, settings: s, routing: r });
   assert.equal(res.art, 'heim');
   assert.ok(res.fahrzeitHeim > 0);
