@@ -251,3 +251,48 @@ Nach Sichtung dreier realer Nachbereitungs-Mails (als anonymisierte Muster mit D
   Muster angelehnt (themen-gegliederte `kernpunkte`, Themen AKF+/Wischer/WSS/
   Quick-Check, AFSB-/STP-Notizen) — vollständig ausgedachte Werte im
   Marktnummern-Schema.
+
+## 10. Ford-Design (Addendum, 18.11. abends)
+
+Auslöser: Endnutzer-Feedback "Interface zu technisch/komplex, nicht im Ford
+Design". Grundlage: `Ford Design/Ford_Brand_Identity_Guidelines_R09 (1).pdf`
+(temporär im Repo, wird nicht committet; PDF ist AES-verschlüsselt, Text via
+pypdf extrahiert).
+
+### 10.1 Angewandte Design-Tokens
+
+| Token | Wert | Verwendung |
+|---|---|---|
+| Ford Blue | `#00095B` | Header, Primär-Buttons, aktiver Tab, Kartentitel |
+| Ford Twilight | `#00142E` | Button-Hover |
+| Ford Skyview | `#066FEF` | Fokus-Outline, Akzent, Hover-Text |
+| Light Gray | `#F0F0F0` | Seitenhintergrund |
+| Off Black | `#0F0F0F` | Fließtext |
+| White | `#FFFFFF` | Karten/Hintergrund auf Blau (WCAG AA/AAA-Kombinationen laut Guideline) |
+
+- Typografie: `font-family: 'Ford F-1', 'Arial Nova', Arial, sans-serif` —
+  Ford F-1 ist lizenzpflichtig und nicht verfügbar; die Guideline nennt
+  **Arial Nova** als System-Ersatz. Body 16 px / leading 1,5 (Guideline:
+  Leading = Größe x 1,5), max. vier Größen (16/18/22/28), linksbündig,
+  sentence case, kein All-Caps, Headlines Medium (nicht Bold), Bold sparsam.
+- Layout: "Maximize impact, minimize complexity" — weiße Karten auf Light
+  Gray, 80/20-Hintergrund-zu-Fokus-Regel, klare CTAs.
+- Logo: kein Ford Oval eingebunden (Asset liegt nicht vor; eigenes Bauen ist
+  laut Guideline verboten). Header bleibt reiner Text.
+- Statusfarben (grün/orange/rot für Farbcodierung) bleiben als
+  funktionale Datenvisualisierung; Demo-Ausnahme, in der Guideline nicht
+  geregelt.
+
+### 10.2 Interface-Vereinfachung (Endnutzer-Fokus)
+
+- Tab-Navigation `Plan | Briefing | Bericht | Infos` (`role=tablist`) statt
+  parallel gestapelter Sektionen und Lostrennung von Tech-Begriffen.
+- Raw-IDs im Planraster ersetzt durch Händler-Namen (IDs bleiben in
+  Tooltip-Datenattribut bzw. Titelzeile).
+- Formularfelder mit echten `<label>`-Elementen und sprechenden Platzhaltern
+  (Bericht-Formular).
+- Klick auf Termin im Plan → springt automatisch in den Briefing-Tab.
+- Berichtsformular wird beim Start gerendert (Tab "Bericht"), Info-Verteilung
+  öffnet per Händlerauswahl den "Infos"-Tab.
+- Entfallen: Schaltflächen `Bericht erfassen` / `Info-Verteilung` in der
+  globalen Leiste (durch Tabs ersetzt).

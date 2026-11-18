@@ -2,30 +2,200 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>Außendienst-Assistent — Routenplanung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Au&szlig;endienst-Assistent</title>
   <style>
-    body { font-family: sans-serif; margin: 1rem; }
-    .woche { display: flex; gap: 1rem; flex-wrap: wrap; }
-    .tag { border: 1px solid #999; padding: .5rem; min-width: 15rem; }
-    .tag.fehler { border-color: #c00; color: #c00; }
-    li[draggable] { cursor: grab; }
-    .farbe-frisch { border-left: 4px solid green; }
-    .farbe-ok { border-left: 4px solid orange; }
-    .farbe-ueberfaellig { border-left: 4px solid red; }
-    .hinweis { color: #a00; font-weight: bold; }
+    :root {
+      --ford-blue: #00095B;
+      --ford-twilight: #00142E;
+      --ford-skyview: #066FEF;
+      --white: #FFFFFF;
+      --light-gray: #F0F0F0;
+      --off-black: #0F0F0F;
+      --status-frisch: #1a7f37;
+      --status-ok: #b25000;
+      --status-ueberfaellig: #b42318;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Ford F-1', 'Arial Nova', Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--off-black);
+      background: var(--light-gray);
+      margin: 0;
+      text-align: left;
+    }
+    header {
+      background: var(--ford-blue);
+      color: var(--white);
+      padding: 1.25rem 2rem;
+    }
+    header h1 { font-size: 1.75rem; font-weight: 500; margin: 0; }
+    header p { margin: .25rem 0 0; font-size: 1rem; color: var(--light-gray); }
+
+    nav[role=tablist] {
+      display: flex;
+      gap: .25rem;
+      background: var(--white);
+      padding: 0 2rem;
+      border-bottom: 1px solid var(--light-gray);
+    }
+    nav[role=tablist] button {
+      font: inherit;
+      font-weight: 500;
+      color: var(--off-black);
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      padding: .75rem 1rem;
+      cursor: pointer;
+    }
+    nav[role=tablist] button[aria-selected=true] {
+      color: var(--ford-blue);
+      border-bottom-color: var(--ford-blue);
+    }
+    nav[role=tablist] button:hover { color: var(--ford-skyview); }
+
+    main { padding: 1.5rem 2rem 3rem; max-width: 80rem; }
+    section[role=tabpanel] { display: block; }
+    section[role=tabpanel].versteckt { display: none; }
+    section[role=tabpanel] > .eingang {
+      font-size: 1.125rem; color: var(--off-black); margin: .25rem 0 1.25rem; max-width: 40rem;
+    }
+
+    .leiste { display: flex; gap: .75rem; flex-wrap: wrap; margin: 0 0 1.25rem; }
+    .karte {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 0 0 1.25rem;
+      box-shadow: 0 1px 3px rgba(0, 20, 46, .12);
+    }
+    .karte h3 {
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin: 0 0 .5rem;
+      color: var(--ford-blue);
+    }
+    ul { margin: .25rem 0; padding-left: 1.25rem; }
+    li { margin: .25rem 0; }
+
+    button.aktion {
+      font: inherit;
+      font-weight: 500;
+      background: var(--ford-blue);
+      color: var(--white);
+      border: 1px solid var(--ford-blue);
+      border-radius: 4px;
+      padding: .55rem 1.25rem;
+      cursor: pointer;
+    }
+    button.aktion:hover { background: var(--ford-twilight); border-color: var(--ford-twilight); }
+    button.aktion.neben {
+      background: var(--white);
+      color: var(--ford-blue);
+    }
+    button.aktion.neben:hover { border-color: var(--ford-skyview); color: var(--ford-skyview); }
+
+    .woche { display: flex; gap: 1rem; flex-wrap: wrap; align-items: stretch; }
+    .tag {
+      background: var(--white);
+      border-radius: 8px;
+      padding: .75rem 1rem;
+      min-width: 15rem;
+      flex: 1 1 15rem;
+      box-shadow: 0 1px 3px rgba(0, 20, 46, .12);
+      border-left: 4px solid transparent;
+    }
+    .tag h3 { font-size: 1rem; font-weight: 500; margin: 0 0 .5rem; color: var(--ford-blue); }
+    .tag.fehler { border-left-color: var(--status-ueberfaellig); }
+    .tag p { font-size: .875rem; color: var(--off-black); margin: .35rem 0 0; }
+    .tag .startort { color: #555; }
+    li[draggable] { cursor: grab; border-left: 3px solid var(--light-gray); padding-left: .5rem; list-style-position: inside; }
+    .farbe-frisch { border-left-color: var(--status-frisch) !important; }
+    .farbe-ok { border-left-color: var(--status-ok) !important; }
+    .farbe-ueberfaellig { border-left-color: var(--status-ueberfaellig) !important; }
+    .hinweis { color: var(--status-ok); font-weight: bold; }
+    .meldung { color: var(--status-ueberfaellig); font-weight: 500; }
+
+    form label {
+      display: block;
+      font-weight: 500;
+      margin: .75rem 0 .25rem;
+    }
+    form input, form textarea, form select {
+      font: inherit;
+      width: 100%;
+      max-width: 34rem;
+      display: block;
+      padding: .5rem .6rem;
+      border: 1px solid #9a9a9a;
+      border-radius: 4px;
+      background: var(--white);
+      color: var(--off-black);
+    }
+    form textarea { min-height: 4.5rem; }
+    form input:focus, form textarea:focus, form select:focus {
+      outline: 2px solid var(--ford-skyview);
+      outline-offset: 1px;
+    }
+    fieldset {
+      border: none;
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 0 0 1.25rem;
+      box-shadow: 0 1px 3px rgba(0, 20, 46, .12);
+    }
+    legend { font-weight: 500; color: var(--ford-blue); padding: 0; margin-bottom: .25rem; }
+    #befehlForm { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin: 1.25rem 0; }
+    #befehlForm input { max-width: 26rem; display: inline-block; width: auto; flex: 1 1 16rem; }
+    #berichtErgebnis pre { white-space: pre-wrap; background: var(--light-gray); border-radius: 4px; padding: .75rem 1rem; }
+    #berichtErgebnis a { color: var(--ford-skyview); }
+    section.leer { color: #555; font-style: italic; }
+    h2.abschnitt { font-size: 1.375rem; font-weight: 500; margin: 1.5rem 0 .75rem; }
   </style>
 </head>
 <body>
-  <h1>Außendienst-Assistent — Routenplanung</h1>
-  <div id="einstellungen"></div>
-  <button id="neuPlanen">Plan neu berechnen</button>
-  <button id="exportJson">Plan exportieren</button>
-  <button id="berichtBtn">Bericht erfassen</button>
-  <button id="infoBtn">Info-Verteilung</button>
-  <div id="briefing"></div>
-  <div id="bericht"></div>
-  <div id="infodist"></div>
-  <div id="plan"></div>
+  <header>
+    <h1>Au&szlig;endienst-Assistent</h1>
+    <p>Planung, Briefing und Nachbereitung f&uuml;r H&auml;ndlertermine</p>
+  </header>
+
+  <nav role="tablist" aria-label="Bereiche">
+    <button role="tab" id="tab-plan" aria-controls="planTab" aria-selected="true">Plan</button>
+    <button role="tab" id="tab-briefing" aria-controls="briefingTab" aria-selected="false">Briefing</button>
+    <button role="tab" id="tab-bericht" aria-controls="berichtTab" aria-selected="false">Bericht</button>
+    <button role="tab" id="tab-infos" aria-controls="infosTab" aria-selected="false">Infos</button>
+  </nav>
+
+  <main>
+    <section role="tabpanel" id="planTab" aria-labelledby="tab-plan">
+      <p class="eingang">Wochenplan f&uuml;r die n&auml;chsten vier Wochen. Ziehen Sie Termine per Drag &amp; Drop oder passen Sie den Plan unten per Textbefehl an. Klicken Sie einen Termin an, um das Briefing zu &ouml;ffnen.</p>
+      <div id="einstellungen"></div>
+      <div class="leiste">
+        <button id="neuPlanen" class="aktion">Plan neu berechnen</button>
+        <button id="exportJson" class="aktion neben">Plan exportieren</button>
+      </div>
+      <div id="plan"></div>
+    </section>
+
+    <section role="tabpanel" id="briefingTab" aria-labelledby="tab-briefing" class="versteckt">
+      <p class="eingang" id="briefingEingang">W&auml;hlen Sie im Tab &bdquo;Plan&ldquo; einen Termin aus, um das Briefing f&uuml;r diesen H&auml;ndler zu sehen.</p>
+      <div id="briefing"></div>
+    </section>
+
+    <section role="tabpanel" id="berichtTab" aria-labelledby="tab-bericht" class="versteckt">
+      <div id="bericht"></div>
+    </section>
+
+    <section role="tabpanel" id="infosTab" aria-labelledby="tab-infos" class="versteckt">
+      <p class="eingang" id="infosEingang">W&auml;hlen Sie im Tab &bdquo;Plan&ldquo; einen H&auml;ndler aus.</p>
+      <div id="infodist"></div>
+    </section>
+  </main>
+
   <script type="module" src="app/app.js"></script>
 </body>
 </html>

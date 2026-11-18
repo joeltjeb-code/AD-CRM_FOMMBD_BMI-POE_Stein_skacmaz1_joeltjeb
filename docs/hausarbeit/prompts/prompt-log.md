@@ -96,3 +96,6 @@
 
 - [19:20] "Drei reale Gesprächszusammenfassungen als Nachbereitung erhalten — Anhänge waren allgemein, nicht Teil der spezifischen Vorlagen"
   → Ergebnis: Design-Addendum (Spec Abschnitt 9) + Plan-Addendum (Tasks 11–13) + Umsetzung TDD: Themen-Anhänge-Katalog (`daten/themen-anhaenge.json`), Anhang-Zusammenführung in `entwurf.js` (Kampagnen + Themen + TVA-Pflicht, dedupliziert), optionales folgetermin-Feld, 3 Demo-Akten im Mail-Stil; Suite 58/58 grün
+
+- [19:33] "Interface ist zu technisch/komplex, nicht im Ford Design — Design Guidelines PDF in `Ford Design/`, bitte bestmöglich befolgen"
+  → Ergebnis: PDF via pypdf extrahiert (111 S.), Design-Tokens abgeleitet; UI-Rework mit Ford-Farben/-Typo und Tab-Navigation; Spec-Addendum Abschnitt 10; Suite 58/58 grün

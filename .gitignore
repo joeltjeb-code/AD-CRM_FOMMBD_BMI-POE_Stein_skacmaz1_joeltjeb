@@ -12,3 +12,9 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Temporär: Ford Design Guidelines (nur lokal, nicht committen)
+Ford Design/
+
+# Vibe Session-Scratchpad
+unified_harness_scratchpad/

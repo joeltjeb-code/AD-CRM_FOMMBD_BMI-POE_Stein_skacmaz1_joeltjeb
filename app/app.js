@@ -18,6 +18,14 @@ import { ladeKpiWerte } from './adapter/scorecard-adapter.js';
 
 const speicher = erstelleSpeicher();
 
+function wechsleTab(tabId) {
+  for (const tab of document.querySelectorAll('[role=tab]')) {
+    const aktiv = tab.id === `tab-${tabId}`;
+    tab.setAttribute('aria-selected', String(aktiv));
+    document.getElementById(`${tabId}Tab`).classList.toggle('versteckt', !aktiv);
+  }
+}
+
 let haendler = [];
 let hotels = [];
 let wissensbasis = { akten: [], gesendetInfos: [] };
@@ -68,6 +76,7 @@ function zeichnen(meldungEl, meldung) {
   renderePlanraster(document.getElementById('plan'), plan, {
     onWaehl: zeigeBriefing,
     haendlerVerlauf: verlauf,
+    haendlerNamen: Object.fromEntries(haendler.map((h) => [h.id, h.name])),
     heute,
     onMove: (haendlerId, w, t) => {
       const quelleWoche = plan.wochen.findIndex((x) =>
@@ -105,6 +114,8 @@ function zeigeBriefing(haendlerId) {
     speicher.speichere('wissensbasis', wissensbasis);
   }
   const kpi = ladeKpiWerte(scorecard, haendlerId);
+  document.getElementById('briefingEingang').classList.add('versteckt');
+  wechsleTab('briefing');
   rendereBriefing(document.getElementById('briefing'),
     baueBriefing({ haendlerStamm: { ...stamm, gf1: akte.stammdaten.anrede }, akte, kpi, heute: new Date().toISOString().slice(0, 10) }),
     baueSchnellblatt(kpi));
@@ -159,6 +170,8 @@ function zeigeInfoVerteilung() {
   const id = gewaehlt ?? wissensbasis.akten[0]?.haendlerId;
   const akte = id && ladeAkte(wissensbasis, id);
   if (!akte) return;
+  document.getElementById('infosEingang').classList.add('versteckt');
+  wechsleTab('infos');
   const v = vorschlaege({ mails: ladeMails(postfach), akte, gesendetInfos: wissensbasis.gesendetInfos });
   rendereInfoVorschlaege(document.getElementById('infodist'), v, (mailId) => {
     wissensbasis = registriereVersand(wissensbasis, akte.haendlerId, mailId, new Date().toISOString().slice(0, 10));
@@ -185,10 +198,11 @@ async function starten() {
   });
   plan = speicher.lade('plan', null);
   if (plan) zeichnen(); else neuPlanen();
+  rendereBerichtFormular(document.getElementById('bericht'), berichtFreigeben);
+  for (const tab of document.querySelectorAll('[role=tab]')) {
+    tab.addEventListener('click', () => wechsleTab(tab.id.replace('tab-', '')));
+  }
   document.getElementById('neuPlanen').addEventListener('click', neuPlanen);
-  document.getElementById('berichtBtn').addEventListener('click', () =>
-    rendereBerichtFormular(document.getElementById('bericht'), berichtFreigeben));
-  document.getElementById('infoBtn').addEventListener('click', zeigeInfoVerteilung);
   document.getElementById('exportJson').addEventListener('click', () => {
     const blob = new Blob([speicher.exportJson(plan)], { type: 'application/json' });
     const a = document.createElement('a');

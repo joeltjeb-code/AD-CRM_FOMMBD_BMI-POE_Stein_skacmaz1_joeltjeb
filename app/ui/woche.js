@@ -1,6 +1,6 @@
 import { farbeFuer } from '../wissensbasis/farbcodierung.js';
 
-export function renderePlanraster(container, plan, { onMove, onBefehl, onWaehl, haendlerVerlauf = {}, heute }) {
+export function renderePlanraster(container, plan, { onMove, onBefehl, onWaehl, haendlerVerlauf = {}, haendlerNamen = {}, heute }) {
   const teile = [];
   plan.wochen.forEach((woche, wi) => {
     teile.push(`<h2>Woche ab ${woche.montag}</h2><div class="woche" data-woche="${wi}">`);
@@ -9,7 +9,7 @@ export function renderePlanraster(container, plan, { onMove, onBefehl, onWaehl, 
         <h3>${tag.tag} (${tag.datum})${tag.ok ? '' : ` – ${tag.grund ?? 'ungültig'}`}</h3>
         <ul>${(tag.termine ?? []).map((x, si) =>
           `<li draggable="true" class="farbe-${farbeFuer(haendlerVerlauf[x.haendlerId] ?? null, heute)}" data-id="${x.haendlerId}" data-woche="${wi}" data-tag="${ti}" data-slot="${si}">
-             ${x.start}–${x.ende} ${x.haendlerId}</li>`).join('')}
+             ${x.start}–${x.ende} ${haendlerNamen[x.haendlerId] ?? x.haendlerId}</li>`).join('')}
         ${tag.leer ? '<li class="leer">kein Auftrag</li>' : ''}
         </ul>
         <p>Übernachtung: ${tag.uebernachtung?.art === 'hotel'
@@ -21,9 +21,9 @@ export function renderePlanraster(container, plan, { onMove, onBefehl, onWaehl, 
   });
   teile.push(`
     <form id="befehlForm">
-      <input name="befehl" placeholder="z. B. übernachte am Mittwoch im Hotel">
-      <button>Anpassen</button>
-      <span id="befehlMeldung"></span>
+      <input name="befehl" placeholder="z. B. &uuml;bernachte am Mittwoch im Hotel" aria-label="Plan per Textbefehl anpassen">
+      <button class="aktion">Anpassen</button>
+      <span id="befehlMeldung" class="meldung" role="status"></span>
     </form>`);
   container.innerHTML = teile.join('');
 
