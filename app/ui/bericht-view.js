@@ -1,10 +1,11 @@
 import { normaleHndEingabe, folgeterminString, sammleTeilnehmer, teilnehmerVorschlaege } from '../bericht/formular-helfer.js';
+import { strukturiereStichpunkte, klassifiziereThemen } from '../adapter/text-adapter.js';
 
 // Berichts-Formular in drei klaren Blöcken: Wer & Wann, Was war, Nächste
 // Schritte. Händlernummer als Maske [DEU][#####] (5 Zeichen, immer Caps),
 // Folgetermin über Datum/Uhrzeit-Masken, Teilnehmer mit Vorschlägem beim
 // Tippen. „Kampagnen-Mail" heißt jetzt „Fokuspunkt Vorlage".
-export function rendereBerichtFormular(container, onFreigeben, { onWaehl, wissensbasis, initialHaendlerId } = {}) {
+export function rendereBerichtFormular(container, onFreigeben, { onWaehl, wissensbasis, initialHaendlerId, kampagnen = [], anhaengeKatalog = [] } = {}) {
   const teilnehmerQuelle = sammleTeilnehmer(wissensbasis);
   const initial = initialHaendlerId ? normaleHndEingabe(initialHaendlerId).replace(/^DEU/, '') : '';
   container.innerHTML = `
@@ -40,6 +41,8 @@ export function rendereBerichtFormular(container, onFreigeben, { onWaehl, wissen
           <h3>Was war</h3>
           <div class="forderung">
             <label for="feld-stichpunkte">Stichpunkte zum Gespr&auml;ch</label>
+            <button type="button" id="kiVorschlaege" class="aktion neben">KI-Vorschl&auml;ge</button>
+            <p id="kiHinweis" class="hilfe" hidden></p>
             <textarea id="feld-stichpunkte" name="stichpunkte" placeholder="Kurze Notizen &ndash; Reihenfolge egal"></textarea>
           </div>
           <div class="forderung">
@@ -92,6 +95,47 @@ export function rendereBerichtFormular(container, onFreigeben, { onWaehl, wissen
 
   const formular = container.querySelector('#berichtForm');
   const kurzFeld = container.querySelector('#feld-haendler');
+
+  // KI-Vorschläge (Spec 11.4 K1/K2/K4): Stichpunkte -> Feldvorbelegung +
+  // Fokuspunkt-Klassifikation. Ohne Key deterministische Heuristik, der
+  // Hinweis nennt die Quelle (llm/heuristik). Alles bleibt editierbar.
+  const kiHinweis = container.querySelector('#kiHinweis');
+  container.querySelector('#kiVorschlaege').addEventListener('click', async () => {
+    const stichpunkte = container.querySelector('#feld-stichpunkte').value.trim();
+    if (!stichpunkte) {
+      kiHinweis.hidden = false;
+      kiHinweis.textContent = 'Erst Stichpunkte eintippen, dann Vorschläge abrufen.';
+      return;
+    }
+    const apiKey = globalThis.ASSISTENT_KONFIG?.mistralApiKey ?? '';
+    const ki = await strukturiereStichpunkte(stichpunkte, { apiKey });
+    // Vorbelegung: nur leere Felder überschreiben, vorhanden nicht doppeln.
+    const liste = (v) => v.split(',').map((s) => s.trim()).filter(Boolean);
+    const wiederhole = (feld, neu) => {
+      if (!neu.length) return;
+      const alt = liste(feld.value);
+      const altKlein = alt.map((s) => s.toLowerCase());
+      feld.value = [...alt, ...neu.filter((n) => !altKlein.includes(String(n).toLowerCase()))]
+        .join(', ');
+    };
+    wiederhole(container.querySelector('#feld-themen'), ki.themen);
+    wiederhole(container.querySelector('#feld-vereinbarungen'), ki.vereinbarungen);
+    const aufgabenFeld = container.querySelector('#feld-aufgaben');
+    if (ki.aufgaben.length) {
+      const zeile = (a) => [a.titel, a.verantwortlich, a.frist].filter(Boolean).join(' | ');
+      const alt = aufgabenFeld.value.split('\n').map((s) => s.trim()).filter(Boolean);
+      aufgabenFeld.value = [...alt, ...ki.aufgaben.map(zeile).filter((z) => !alt.includes(z))].join('\n');
+    }
+    if (ki.themen.length) {
+      const c = await klassifiziereThemen(ki.themen, { apiKey, kampagnen, anhaengeKatalog });
+      const kampagneFeld = container.querySelector('#feld-kampagne');
+      if (c.kampagne && !kampagneFeld.value) kampagneFeld.value = c.kampagne;
+    }
+    kiHinweis.hidden = false;
+    kiHinweis.textContent = ki.quelle === 'llm'
+      ? 'KI-Vorschläge eingetragen – bitte vor der Freigabe prüfen.'
+      : `${ki.hinweis ? `${ki.hinweis}. ` : ''}Regel-Vorschläge eingetragen (kein KI-Key gesetzt) – bitte prüfen.`;
+  });
 
   // Händlernummer: immer Caps, und bei gültiger Nummer wird dieser Händler
   // global selektiert (Nav-Chip, Briefing, Infos).

@@ -322,6 +322,10 @@ async function starten() {
   if (plan) { plan = frischauf(plan, kontext()); zeichnen(); } else neuPlanen();
   rendereBerichtFormular(document.getElementById('bericht'), berichtFreigeben, {
     wissensbasis: wissensbasis,
+    // KI-Klassifikation (Task 18) kennt beide Kataloge — ohne Key greift die
+    // Heuristik auf dieselben Daten zu.
+    kampagnen: bausteine.kampagnen,
+    anhaengeKatalog: themenAnhaenge.anhaengeKatalog,
     // Händlernummer im Bericht wählt den global selektierten Händler —
     // wir bleiben aber im Bericht (kein Tab-Wechsel wie beim Klick in den Plan).
     onWaehl: (haendlerId) => {
