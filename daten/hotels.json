@@ -1,0 +1,5816 @@
+[
+ {
+  "id": "AC-0357",
+  "name": "ibis Berlin Mitte",
+  "ort": "Berlin",
+  "brand": "ibis",
+  "pos": {
+   "x": 453.0,
+   "y": 346.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 92,
+  "koordinaten": {
+   "lat": 52.528676,
+   "lon": 13.41744
+  }
+ },
+ {
+  "id": "AC-0482",
+  "name": "Mercure Aachen Europaplatz",
+  "ort": "Aachen",
+  "brand": "Mercure",
+  "pos": {
+   "x": 92.0,
+   "y": 45.0
+  },
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 106,
+  "koordinaten": {
+   "lat": 50.781249,
+   "lon": 6.107808
+  }
+ },
+ {
+  "id": "AC-0491",
+  "name": "Mercure Frankfurt Eschborn Ost",
+  "ort": "Eschborn",
+  "brand": "Mercure",
+  "pos": {
+   "x": 97.0,
+   "y": 50.0
+  },
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 100,
+  "koordinaten": {
+   "lat": 50.138077,
+   "lon": 8.582898
+  }
+ },
+ {
+  "id": "AC-0492",
+  "name": "Mercure Freiburg am Münster",
+  "ort": "Freiburg",
+  "brand": "Mercure",
+  "pos": {
+   "x": 458.0,
+   "y": 351.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 47.99752,
+   "lon": 7.854613
+  }
+ },
+ {
+  "id": "AC-0493",
+  "name": "Fuerther Mercure Nue West",
+  "ort": "Fürth",
+  "brand": "Mercure",
+  "pos": {
+   "x": 99.0,
+   "y": 202.0
+  },
+  "region": 1,
+  "obg": "D05",
+  "preisNacht": 102,
+  "koordinaten": {
+   "lat": 49.481834,
+   "lon": 11.003334
+  }
+ },
+ {
+  "id": "AC-0497",
+  "name": "Mercure Düsseldorf Neuss",
+  "ort": "Neuss",
+  "brand": "Mercure",
+  "pos": {
+   "x": 282.0,
+   "y": 408.0
+  },
+  "region": 4,
+  "obg": "D10",
+  "preisNacht": 106,
+  "koordinaten": {
+   "lat": 51.167423,
+   "lon": 6.730918
+  }
+ },
+ {
+  "id": "AC-0498",
+  "name": "Novotel Nürnberg Messezentrum",
+  "ort": "Nürnberg",
+  "brand": "Novotel",
+  "pos": {
+   "x": 671.0,
+   "y": 347.0
+  },
+  "region": 2,
+  "obg": "D12",
+  "preisNacht": 107,
+  "koordinaten": {
+   "lat": 49.411813,
+   "lon": 11.112276
+  }
+ },
+ {
+  "id": "AC-0579",
+  "name": "ibis Styles Neuss",
+  "ort": "Neuss",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 463.0,
+   "y": 409.0
+  },
+  "region": 4,
+  "obg": "D11",
+  "preisNacht": 102,
+  "koordinaten": {
+   "lat": 51.193048,
+   "lon": 6.706037
+  }
+ },
+ {
+  "id": "AC-0657",
+  "name": "ibis Berlin Messe",
+  "ort": "Berlin",
+  "brand": "ibis",
+  "pos": {
+   "x": 616.0,
+   "y": 354.0
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 89,
+  "koordinaten": {
+   "lat": 52.506748,
+   "lon": 13.280307
+  }
+ },
+ {
+  "id": "AC-0705",
+  "name": "Mercure Hotel Koeln- West",
+  "ort": "Köln",
+  "brand": "Mercure",
+  "pos": {
+   "x": 48.0,
+   "y": 254.0
+  },
+  "region": 3,
+  "obg": "D05",
+  "preisNacht": 116,
+  "koordinaten": {
+   "lat": 50.919353,
+   "lon": 6.85602
+  }
+ },
+ {
+  "id": "AC-0718",
+  "name": "ibis Paderborn City",
+  "ort": "Paderborn",
+  "brand": "ibis",
+  "pos": {
+   "x": 113.0,
+   "y": 94.0
+  },
+  "region": 4,
+  "obg": "D01",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 51.721218,
+   "lon": 8.749144
+  }
+ },
+ {
+  "id": "AC-0738",
+  "name": "ibis Bremen City",
+  "ort": "Bremen",
+  "brand": "ibis",
+  "pos": {
+   "x": 584.0,
+   "y": 400.0
+  },
+  "region": 3,
+  "obg": "D12",
+  "preisNacht": 105,
+  "koordinaten": {
+   "lat": 53.077308,
+   "lon": 8.818202
+  }
+ },
+ {
+  "id": "AC-0739",
+  "name": "ibis Köln am Dom",
+  "ort": "Köln",
+  "brand": "ibis",
+  "pos": {
+   "x": 225.0,
+   "y": 251.0
+  },
+  "region": 3,
+  "obg": "D06",
+  "preisNacht": 80,
+  "koordinaten": {
+   "lat": 50.942563,
+   "lon": 6.957725
+  }
+ },
+ {
+  "id": "AC-0743",
+  "name": "Mercure Hotel Duisburg City",
+  "ort": "Duisburg",
+  "brand": "Mercure",
+  "pos": {
+   "x": 585.0,
+   "y": 101.0
+  },
+  "region": 3,
+  "obg": "D04",
+  "preisNacht": 130,
+  "koordinaten": {
+   "lat": 51.433406,
+   "lon": 6.773823
+  }
+ },
+ {
+  "id": "AC-0792",
+  "name": "Mercure München Neuperlach Süd",
+  "ort": "München",
+  "brand": "Mercure",
+  "pos": {
+   "x": 29.0,
+   "y": 41.0
+  },
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 104,
+  "koordinaten": {
+   "lat": 48.092203,
+   "lon": 11.644361
+  }
+ },
+ {
+  "id": "AC-0793",
+  "name": "ibis Düsseldorf Hauptbahnhof",
+  "ort": "Düsseldorf",
+  "brand": "ibis",
+  "pos": {
+   "x": 390.0,
+   "y": 192.0
+  },
+  "region": 0,
+  "obg": "D07",
+  "preisNacht": 104,
+  "koordinaten": {
+   "lat": 51.22042,
+   "lon": 6.79304
+  }
+ },
+ {
+  "id": "AC-0800",
+  "name": "ibis Ulm City",
+  "ort": "Ulm",
+  "brand": "ibis",
+  "pos": {
+   "x": 234.0,
+   "y": 410.0
+  },
+  "region": 3,
+  "obg": "D10",
+  "preisNacht": 81,
+  "koordinaten": {
+   "lat": 48.401819,
+   "lon": 9.987249
+  }
+ },
+ {
+  "id": "AC-0878",
+  "name": "Mercure München City Center",
+  "ort": "München",
+  "brand": "Mercure",
+  "pos": {
+   "x": 214.0,
+   "y": 46.0
+  },
+  "region": 0,
+  "obg": "D02",
+  "preisNacht": 109,
+  "koordinaten": {
+   "lat": 48.137948,
+   "lon": 11.560171
+  }
+ },
+ {
+  "id": "AC-0888",
+  "name": "ibis Nürnberg City am Plärrer",
+  "ort": "Nürnberg",
+  "brand": "ibis",
+  "pos": {
+   "x": 144.0,
+   "y": 35.0
+  },
+  "region": 2,
+  "obg": "D01",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 49.446666,
+   "lon": 11.068101
+  }
+ },
+ {
+  "id": "AC-0904",
+  "name": "ibis Regensburg City",
+  "ort": "Regensburg",
+  "brand": "ibis",
+  "pos": {
+   "x": 308.0,
+   "y": 44.0
+  },
+  "region": 2,
+  "obg": "D02",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 49.010451,
+   "lon": 12.102427
+  }
+ },
+ {
+  "id": "AC-0967",
+  "name": "ibis Aachen Marschiertor",
+  "ort": "Aachen",
+  "brand": "ibis",
+  "pos": {
+   "x": 270.0,
+   "y": 43.0
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 91,
+  "koordinaten": {
+   "lat": 50.767747,
+   "lon": 6.085763
+  }
+ },
+ {
+  "id": "AC-1016",
+  "name": "Mercure Hannover City",
+  "ort": "Hannover",
+  "brand": "Mercure",
+  "pos": {
+   "x": 80.0,
+   "y": 358.0
+  },
+  "region": 1,
+  "obg": "D09",
+  "preisNacht": 98,
+  "koordinaten": {
+   "lat": 52.366829,
+   "lon": 9.740032
+  }
+ },
+ {
+  "id": "AC-1049",
+  "name": "Novotel Frankfurt City",
+  "ort": "Frankfurt am Main",
+  "brand": "Novotel",
+  "pos": {
+   "x": 668.0,
+   "y": 344.0
+  },
+  "region": 2,
+  "obg": "D12",
+  "preisNacht": 122,
+  "koordinaten": {
+   "lat": 50.115482,
+   "lon": 8.642122
+  }
+ },
+ {
+  "id": "AC-1069",
+  "name": "ibis Nürnberg Altstadt",
+  "ort": "Nürnberg",
+  "brand": "ibis",
+  "pos": {
+   "x": 320.0,
+   "y": 56.0
+  },
+  "region": 2,
+  "obg": "D02",
+  "preisNacht": 93,
+  "koordinaten": {
+   "lat": 49.448088,
+   "lon": 11.080667
+  }
+ },
+ {
+  "id": "AC-1084",
+  "name": "ibis Mainz City",
+  "ort": "Mainz",
+  "brand": "ibis",
+  "pos": {
+   "x": 147.0,
+   "y": 190.0
+  },
+  "region": 2,
+  "obg": "D05",
+  "preisNacht": 98,
+  "koordinaten": {
+   "lat": 49.994691,
+   "lon": 8.280523
+  }
+ },
+ {
+  "id": "AC-1092",
+  "name": "ibis Augsburg Königsplatz",
+  "ort": "Augsburg",
+  "brand": "ibis",
+  "pos": {
+   "x": 99.0,
+   "y": 354.0
+  },
+  "region": 1,
+  "obg": "D09",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 48.362363,
+   "lon": 10.891987
+  }
+ },
+ {
+  "id": "AC-1104",
+  "name": "Mercure München City Schwabing",
+  "ort": "München",
+  "brand": "Mercure",
+  "pos": {
+   "x": 391.0,
+   "y": 45.0
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 125,
+  "koordinaten": {
+   "lat": 48.166424,
+   "lon": 11.586458
+  }
+ },
+ {
+  "id": "AC-1163",
+  "name": "Mercure Hotel Hamburg City",
+  "ort": "Hamburg",
+  "brand": "Mercure",
+  "pos": {
+   "x": 221.0,
+   "y": 30.0
+  },
+  "region": 0,
+  "obg": "D02",
+  "preisNacht": 130,
+  "koordinaten": {
+   "lat": 53.545363,
+   "lon": 10.0173
+  }
+ },
+ {
+  "id": "AC-1204",
+  "name": "Mercure Res Frankfurt Messe",
+  "ort": "Frankfurt am Main",
+  "brand": "Mercure",
+  "pos": {
+   "x": 146.0,
+   "y": 39.0
+  },
+  "region": 2,
+  "obg": "D01",
+  "preisNacht": 114,
+  "koordinaten": {
+   "lat": 50.116781,
+   "lon": 8.638955
+  }
+ },
+ {
+  "id": "AC-1206",
+  "name": "Mercure Severinshof Köln City",
+  "ort": "Köln",
+  "brand": "Mercure",
+  "pos": {
+   "x": 424.0,
+   "y": 247.0
+  },
+  "region": 3,
+  "obg": "D07",
+  "preisNacht": 116,
+  "koordinaten": {
+   "lat": 50.929514,
+   "lon": 6.957017
+  }
+ },
+ {
+  "id": "AC-1306",
+  "name": "Hotel Mondial am Dom Mgallery",
+  "ort": "Köln",
+  "brand": "MGallery",
+  "pos": {
+   "x": 592.0,
+   "y": 258.0
+  },
+  "region": 3,
+  "obg": "D08",
+  "preisNacht": 144,
+  "koordinaten": {
+   "lat": 50.94009,
+   "lon": 6.960014
+  }
+ },
+ {
+  "id": "AC-1307",
+  "name": "Mercure Saarbrücken City",
+  "ort": "Saarbrücken",
+  "brand": "Mercure",
+  "pos": {
+   "x": 213.0,
+   "y": 345.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 106,
+  "koordinaten": {
+   "lat": 49.237552,
+   "lon": 6.989343
+  }
+ },
+ {
+  "id": "AC-1374",
+  "name": "Mercure Hotel München Sud Messe",
+  "ort": "München",
+  "brand": "Mercure",
+  "pos": {
+   "x": 587.0,
+   "y": 34.0
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 104,
+  "koordinaten": {
+   "lat": 48.102137,
+   "lon": 11.659327
+  }
+ },
+ {
+  "id": "AC-1395",
+  "name": "ibis Hamburg Alster",
+  "ort": "Hamburg",
+  "brand": "ibis",
+  "pos": {
+   "x": 395.0,
+   "y": 47.0
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 86,
+  "koordinaten": {
+   "lat": 53.556984,
+   "lon": 10.004152
+  }
+ },
+ {
+  "id": "AC-1438",
+  "name": "ibis Augsburg Hauptbahnhof",
+  "ort": "Augsburg",
+  "brand": "ibis",
+  "pos": {
+   "x": 270.0,
+   "y": 343.0
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 48.365028,
+   "lon": 10.88992
+  }
+ },
+ {
+  "id": "AC-1439",
+  "name": "ibis Bamberg Altstadt",
+  "ort": "Bamberg",
+  "brand": "ibis",
+  "pos": {
+   "x": 451.0,
+   "y": 194.0
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 85,
+  "koordinaten": {
+   "lat": 49.890937,
+   "lon": 10.890552
+  }
+ },
+ {
+  "id": "AC-1445",
+  "name": "ibis Frankfurt Centrum",
+  "ort": "Frankfurt am Main",
+  "brand": "ibis",
+  "pos": {
+   "x": 325.0,
+   "y": 36.0
+  },
+  "region": 2,
+  "obg": "D02",
+  "preisNacht": 86,
+  "koordinaten": {
+   "lat": 50.102118,
+   "lon": 8.664662
+  }
+ },
+ {
+  "id": "AC-1447",
+  "name": "ibis Heidelberg Hauptbahnhof",
+  "ort": "Heidelberg",
+  "brand": "ibis",
+  "pos": {
+   "x": 583.0,
+   "y": 180.0
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 88,
+  "koordinaten": {
+   "lat": 49.403385,
+   "lon": 8.677354
+  }
+ },
+ {
+  "id": "AC-1449",
+  "name": "ibis Köln Centrum",
+  "ort": "Köln",
+  "brand": "ibis",
+  "pos": {
+   "x": 65.0,
+   "y": 396.0
+  },
+  "region": 3,
+  "obg": "D09",
+  "preisNacht": 90,
+  "koordinaten": {
+   "lat": 50.929936,
+   "lon": 6.944955
+  }
+ },
+ {
+  "id": "AC-1450",
+  "name": "ibis München City",
+  "ort": "München",
+  "brand": "ibis",
+  "pos": {
+   "x": 42.0,
+   "y": 179.0
+  },
+  "region": 0,
+  "obg": "D05",
+  "preisNacht": 86,
+  "koordinaten": {
+   "lat": 48.144043,
+   "lon": 11.559735
+  }
+ },
+ {
+  "id": "AC-1574",
+  "name": "Mercure Stuttgart Apt Messe",
+  "ort": "Stuttgart",
+  "brand": "Mercure",
+  "pos": {
+   "x": 276.0,
+   "y": 199.0
+  },
+  "region": 1,
+  "obg": "D06",
+  "preisNacht": 118,
+  "koordinaten": {
+   "lat": 48.712514,
+   "lon": 9.166213
+  }
+ },
+ {
+  "id": "AC-1578",
+  "name": "ibis Dresden Zentrum",
+  "ort": "Dresden",
+  "brand": "ibis",
+  "pos": {
+   "x": 248.0,
+   "y": 99.0
+  },
+  "region": 3,
+  "obg": "D02",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 51.043552,
+   "lon": 13.734927
+  }
+ },
+ {
+  "id": "AC-1582",
+  "name": "Mercure Hotel Potsdam City",
+  "ort": "Potsdam",
+  "brand": "Mercure",
+  "pos": {
+   "x": 228.0,
+   "y": 185.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 111,
+  "koordinaten": {
+   "lat": 52.394157,
+   "lon": 13.059694
+  }
+ },
+ {
+  "id": "AC-1589",
+  "name": "ibis Frankfurt Messe West",
+  "ort": "Frankfurt",
+  "brand": "ibis",
+  "pos": {
+   "x": 262.0,
+   "y": 210.0
+  },
+  "region": 1,
+  "obg": "D06",
+  "preisNacht": 83,
+  "koordinaten": {
+   "lat": 50.127213,
+   "lon": 8.631178
+  }
+ },
+ {
+  "id": "AC-1608",
+  "name": "ibis Nürnberg Hauptbahnhof",
+  "ort": "Nürnberg",
+  "brand": "ibis",
+  "pos": {
+   "x": 506.0,
+   "y": 37.0
+  },
+  "region": 2,
+  "obg": "D03",
+  "preisNacht": 93,
+  "koordinaten": {
+   "lat": 49.448591,
+   "lon": 11.082909
+  }
+ },
+ {
+  "id": "AC-1648",
+  "name": "ibis Erfurt Altstadt",
+  "ort": "Erfurt",
+  "brand": "ibis",
+  "pos": {
+   "x": 273.0,
+   "y": 346.0
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 87,
+  "koordinaten": {
+   "lat": 50.975433,
+   "lon": 11.030552
+  }
+ },
+ {
+  "id": "AC-1659",
+  "name": "Mercure Hamburg am Volkspark",
+  "ort": "Hamburg",
+  "brand": "Mercure",
+  "pos": {
+   "x": 588.0,
+   "y": 35.0
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 122,
+  "koordinaten": {
+   "lat": 53.574836,
+   "lon": 9.889451
+  }
+ },
+ {
+  "id": "AC-1697",
+  "name": "Mercure Würzburg Mainufer",
+  "ort": "Würzburg",
+  "brand": "Mercure",
+  "pos": {
+   "x": 45.0,
+   "y": 182.0
+  },
+  "region": 0,
+  "obg": "D05",
+  "preisNacht": 100,
+  "koordinaten": {
+   "lat": 49.796253,
+   "lon": 9.9231
+  }
+ },
+ {
+  "id": "AC-1702",
+  "name": "Mercure München Olympiapark",
+  "ort": "München",
+  "brand": "Mercure",
+  "pos": {
+   "x": 227.0,
+   "y": 184.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 129,
+  "koordinaten": {
+   "lat": 48.158507,
+   "lon": 11.545118
+  }
+ },
+ {
+  "id": "AC-1894",
+  "name": "Mercure Hotel Berlin Tempelhof",
+  "ort": "Berlin",
+  "brand": "Mercure",
+  "pos": {
+   "x": 91.0,
+   "y": 44.0
+  },
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 111,
+  "koordinaten": {
+   "lat": 52.478378,
+   "lon": 13.426339
+  }
+ },
+ {
+  "id": "AC-2004",
+  "name": "Mercure Hotel Koblenz",
+  "ort": "Koblenz",
+  "brand": "Mercure",
+  "pos": {
+   "x": 582.0,
+   "y": 29.0
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 117,
+  "koordinaten": {
+   "lat": 50.353722,
+   "lon": 7.600685
+  }
+ },
+ {
+  "id": "AC-2091",
+  "name": "Mercure Bad Oeynhausen City",
+  "ort": "Bad Oeynhausen",
+  "brand": "Mercure",
+  "pos": {
+   "x": 403.0,
+   "y": 30.0
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 105,
+  "koordinaten": {
+   "lat": 52.204937,
+   "lon": 8.799319
+  }
+ },
+ {
+  "id": "AC-2126",
+  "name": "Mercure Hotel Riesa",
+  "ort": "Riesa",
+  "brand": "Mercure",
+  "pos": {
+   "x": 222.0,
+   "y": 181.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 51.308679,
+   "lon": 13.295109
+  }
+ },
+ {
+  "id": "AC-2129",
+  "name": "Mercure Entenfang Hannover",
+  "ort": "Hannover",
+  "brand": "Mercure",
+  "pos": {
+   "x": 277.0,
+   "y": 352.0
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 100,
+  "koordinaten": {
+   "lat": 52.405929,
+   "lon": 9.679977
+  }
+ },
+ {
+  "id": "AC-2167",
+  "name": "ibis Köln Frechen",
+  "ort": "Frechen",
+  "brand": "ibis",
+  "pos": {
+   "x": 298.0,
+   "y": 401.0
+  },
+  "region": 4,
+  "obg": "D10",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 50.917246,
+   "lon": 6.837616
+  }
+ },
+ {
+  "id": "AC-2203",
+  "name": "ibis Frankfurt Airport",
+  "ort": "Kelsterbach",
+  "brand": "ibis",
+  "pos": {
+   "x": 502.0,
+   "y": 335.0
+  },
+  "region": 2,
+  "obg": "D11",
+  "preisNacht": 94,
+  "koordinaten": {
+   "lat": 50.054702,
+   "lon": 8.519187
+  }
+ },
+ {
+  "id": "AC-2205",
+  "name": "ibis Lübeck City",
+  "ort": "Lübeck",
+  "brand": "ibis",
+  "pos": {
+   "x": 400.0,
+   "y": 329.0
+  },
+  "region": 0,
+  "obg": "D11",
+  "preisNacht": 96,
+  "koordinaten": {
+   "lat": 53.873789,
+   "lon": 10.665945
+  }
+ },
+ {
+  "id": "AC-2206",
+  "name": "ibis Münster City",
+  "ort": "Münster",
+  "brand": "ibis",
+  "pos": {
+   "x": 41.0,
+   "y": 30.0
+  },
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 51.955523,
+   "lon": 7.630989
+  }
+ },
+ {
+  "id": "AC-2626",
+  "name": "ibis budget Dresden Kesselsdorf",
+  "ort": "Kesselsdorf -wilsdruff",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 100.0,
+   "y": 106.0
+  },
+  "region": 4,
+  "obg": "D01",
+  "preisNacht": 69,
+  "koordinaten": {
+   "lat": 51.03693,
+   "lon": 13.582303
+  }
+ },
+ {
+  "id": "AC-2631",
+  "name": "ibis budget Berlin Ost",
+  "ort": "Berlin",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 257.0,
+   "y": 55.0
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 74,
+  "koordinaten": {
+   "lat": 52.525608,
+   "lon": 13.529117
+  }
+ },
+ {
+  "id": "AC-2637",
+  "name": "ibis budget München Putzbrunn",
+  "ort": "Putzbrunn",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 51.0,
+   "y": 407.0
+  },
+  "region": 3,
+  "obg": "D09",
+  "preisNacht": 80,
+  "koordinaten": {
+   "lat": 48.077461,
+   "lon": 11.722963
+  }
+ },
+ {
+  "id": "AC-2645",
+  "name": "ibis budget Hamburg Quickborn",
+  "ort": "Quickborn",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 267.0,
+   "y": 365.0
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 67,
+  "koordinaten": {
+   "lat": 53.744366,
+   "lon": 9.943866
+  }
+ },
+ {
+  "id": "AC-2646",
+  "name": "ibis budget Augsburg Gersthofen",
+  "ort": "Gersthofen",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 292.0,
+   "y": 418.0
+  },
+  "region": 4,
+  "obg": "D10",
+  "preisNacht": 68,
+  "koordinaten": {
+   "lat": 48.43416,
+   "lon": 10.86673
+  }
+ },
+ {
+  "id": "AC-2688",
+  "name": "ibis budget Berlin Hoppegarten",
+  "ort": "Dahlwitz-hoppegarten",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 417.0,
+   "y": 238.0
+  },
+  "region": 3,
+  "obg": "D07",
+  "preisNacht": 68,
+  "koordinaten": {
+   "lat": 52.505963,
+   "lon": 13.631686
+  }
+ },
+ {
+  "id": "AC-2702",
+  "name": "ibis budget Duisburg City",
+  "ort": "Duisburg",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 64.0,
+   "y": 245.0
+  },
+  "region": 3,
+  "obg": "D05",
+  "preisNacht": 82,
+  "koordinaten": {
+   "lat": 51.437454,
+   "lon": 6.777405
+  }
+ },
+ {
+  "id": "AC-2704",
+  "name": "ibis budget Nürnberg City Messe",
+  "ort": "Nürnberg",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 690.0,
+   "y": 41.0
+  },
+  "region": 2,
+  "obg": "D04",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 49.429119,
+   "lon": 11.073512
+  }
+ },
+ {
+  "id": "AC-2705",
+  "name": "ibis budget Frankfurt Offenbach",
+  "ort": "Offenbach",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 67.0,
+   "y": 398.0
+  },
+  "region": 3,
+  "obg": "D09",
+  "preisNacht": 85,
+  "koordinaten": {
+   "lat": 50.085064,
+   "lon": 8.745338
+  }
+ },
+ {
+  "id": "AC-2711",
+  "name": "ibis budget Hamburg Altona",
+  "ort": "Hamburg",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 24.0,
+   "y": 186.0
+  },
+  "region": 0,
+  "obg": "D05",
+  "preisNacht": 70,
+  "koordinaten": {
+   "lat": 53.572798,
+   "lon": 9.939803
+  }
+ },
+ {
+  "id": "AC-2768",
+  "name": "ibis Berlin Dreilinden",
+  "ort": "Kleinmachnow",
+  "brand": "ibis",
+  "pos": {
+   "x": 472.0,
+   "y": 118.0
+  },
+  "region": 4,
+  "obg": "D03",
+  "preisNacht": 98,
+  "koordinaten": {
+   "lat": 52.404133,
+   "lon": 13.185927
+  }
+ },
+ {
+  "id": "AC-2906",
+  "name": "Mercure Offenburg Messeplatz",
+  "ort": "Offenburg",
+  "brand": "Mercure",
+  "pos": {
+   "x": 457.0,
+   "y": 350.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 127,
+  "koordinaten": {
+   "lat": 48.464741,
+   "lon": 7.933212
+  }
+ },
+ {
+  "id": "AC-2922",
+  "name": "Mercure Hotel Hagen",
+  "ort": "Hagen",
+  "brand": "Mercure",
+  "pos": {
+   "x": 408.0,
+   "y": 404.0
+  },
+  "region": 3,
+  "obg": "D11",
+  "preisNacht": 113,
+  "koordinaten": {
+   "lat": 51.35368,
+   "lon": 7.484758
+  }
+ },
+ {
+  "id": "AC-2924",
+  "name": "Congress Mercure Nürnberg",
+  "ort": "Nürnberg",
+  "brand": "Mercure",
+  "pos": {
+   "x": 134.0,
+   "y": 200.0
+  },
+  "region": 2,
+  "obg": "D05",
+  "preisNacht": 115,
+  "koordinaten": {
+   "lat": 49.424007,
+   "lon": 11.106656
+  }
+ },
+ {
+  "id": "AC-2927",
+  "name": "Mercure Hotel Lüdenscheid",
+  "ort": "Lüdenscheid",
+  "brand": "Mercure",
+  "pos": {
+   "x": 265.0,
+   "y": 63.0
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 118,
+  "koordinaten": {
+   "lat": 51.217604,
+   "lon": 7.610669
+  }
+ },
+ {
+  "id": "AC-2937",
+  "name": "Mercure Bad Ho. Friedrichsd",
+  "ort": "Friedrichsdorf",
+  "brand": "Mercure",
+  "pos": {
+   "x": 271.0,
+   "y": 44.0
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 113,
+  "koordinaten": {
+   "lat": 50.252426,
+   "lon": 8.635458
+  }
+ },
+ {
+  "id": "AC-2939",
+  "name": "Mercure Str Sindelfin Messe",
+  "ort": "Sindelfingen",
+  "brand": "Mercure",
+  "pos": {
+   "x": 117.0,
+   "y": 98.0
+  },
+  "region": 4,
+  "obg": "D01",
+  "preisNacht": 115,
+  "koordinaten": {
+   "lat": 48.704585,
+   "lon": 9.039484
+  }
+ },
+ {
+  "id": "AC-2941",
+  "name": "Mercure Hotel Hamm",
+  "ort": "Hamm",
+  "brand": "Mercure",
+  "pos": {
+   "x": 451.0,
+   "y": 194.0
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 102,
+  "koordinaten": {
+   "lat": 51.67845,
+   "lon": 7.813071
+  }
+ },
+ {
+  "id": "AC-3083",
+  "name": "ibis budget Krefeld Messe",
+  "ort": "Krefeld",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 396.0,
+   "y": 348.0
+  },
+  "region": 0,
+  "obg": "D11",
+  "preisNacht": 68,
+  "koordinaten": {
+   "lat": 51.327376,
+   "lon": 6.572029
+  }
+ },
+ {
+  "id": "AC-3087",
+  "name": "ibis budget München City Süd",
+  "ort": "München",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 400.0,
+   "y": 177.0
+  },
+  "region": 0,
+  "obg": "D07",
+  "preisNacht": 72,
+  "koordinaten": {
+   "lat": 48.107546,
+   "lon": 11.579536
+  }
+ },
+ {
+  "id": "AC-3120",
+  "name": "Mercure Berlin Checkpoint Char",
+  "ort": "Berlin",
+  "brand": "Mercure",
+  "pos": {
+   "x": 445.0,
+   "y": 65.0
+  },
+  "region": 1,
+  "obg": "D03",
+  "preisNacht": 107,
+  "koordinaten": {
+   "lat": 52.508738,
+   "lon": 13.393399
+  }
+ },
+ {
+  "id": "AC-3127",
+  "name": "Novotel Köln City",
+  "ort": "Köln",
+  "brand": "Novotel",
+  "pos": {
+   "x": 240.0,
+   "y": 393.0
+  },
+  "region": 3,
+  "obg": "D10",
+  "preisNacht": 114,
+  "koordinaten": {
+   "lat": 50.926762,
+   "lon": 6.963615
+  }
+ },
+ {
+  "id": "AC-3179",
+  "name": "ibis budget Karlsruhe",
+  "ort": "Karlsruhe",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 459.0,
+   "y": 204.0
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 82,
+  "koordinaten": {
+   "lat": 48.99543,
+   "lon": 8.450306
+  }
+ },
+ {
+  "id": "AC-3278",
+  "name": "Novotel Berlin Mitte",
+  "ort": "Berlin",
+  "brand": "Novotel",
+  "pos": {
+   "x": 624.0,
+   "y": 64.0
+  },
+  "region": 1,
+  "obg": "D04",
+  "preisNacht": 115,
+  "koordinaten": {
+   "lat": 52.512978,
+   "lon": 13.405055
+  }
+ },
+ {
+  "id": "AC-3279",
+  "name": "Novotel Düsseldorf City West",
+  "ort": "Düsseldorf",
+  "brand": "Novotel",
+  "pos": {
+   "x": 573.0,
+   "y": 197.0
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 116,
+  "koordinaten": {
+   "lat": 51.241248,
+   "lon": 6.735687
+  }
+ },
+ {
+  "id": "AC-3280",
+  "name": "Novotel City München",
+  "ort": "München",
+  "brand": "Novotel",
+  "pos": {
+   "x": 570.0,
+   "y": 194.0
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 102,
+  "koordinaten": {
+   "lat": 48.129516,
+   "lon": 11.58865
+  }
+ },
+ {
+  "id": "AC-3282",
+  "name": "ibis Hamburg Alsterring",
+  "ort": "Hamburg",
+  "brand": "ibis",
+  "pos": {
+   "x": 212.0,
+   "y": 196.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 83,
+  "koordinaten": {
+   "lat": 53.568848,
+   "lon": 10.061288
+  }
+ },
+ {
+  "id": "AC-3283",
+  "name": "ibis Würzburg City",
+  "ort": "Würzburg",
+  "brand": "ibis",
+  "pos": {
+   "x": 213.0,
+   "y": 197.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 49.802534,
+   "lon": 9.921169
+  }
+ },
+ {
+  "id": "AC-3284",
+  "name": "ibis Stuttgart Centrum",
+  "ort": "Stuttgart",
+  "brand": "ibis",
+  "pos": {
+   "x": 446.0,
+   "y": 216.0
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 85,
+  "koordinaten": {
+   "lat": 48.763616,
+   "lon": 9.16797
+  }
+ },
+ {
+  "id": "AC-3285",
+  "name": "ibis Dortmund City",
+  "ort": "Dortmund",
+  "brand": "ibis",
+  "pos": {
+   "x": 215.0,
+   "y": 324.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 86,
+  "koordinaten": {
+   "lat": 51.504181,
+   "lon": 7.476261
+  }
+ },
+ {
+  "id": "AC-3321",
+  "name": "ibis Berlin Spandau",
+  "ort": "Berlin",
+  "brand": "ibis",
+  "pos": {
+   "x": 85.0,
+   "y": 213.0
+  },
+  "region": 1,
+  "obg": "D05",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 52.533062,
+   "lon": 13.198292
+  }
+ },
+ {
+  "id": "AC-3365",
+  "name": "ibis Hannover City",
+  "ort": "Hannover",
+  "brand": "ibis",
+  "pos": {
+   "x": 448.0,
+   "y": 366.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 52.395996,
+   "lon": 9.735563
+  }
+ },
+ {
+  "id": "AC-3518",
+  "name": "ibis budget Hannover Hbf",
+  "ort": "Hannover",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 623.0,
+   "y": 361.0
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 85,
+  "koordinaten": {
+   "lat": 52.379326,
+   "lon": 9.740023
+  }
+ },
+ {
+  "id": "AC-3557",
+  "name": "Novotel Aachen City",
+  "ort": "Aachen",
+  "brand": "Novotel",
+  "pos": {
+   "x": 441.0,
+   "y": 59.0
+  },
+  "region": 1,
+  "obg": "D03",
+  "preisNacht": 127,
+  "koordinaten": {
+   "lat": 50.777675,
+   "lon": 6.09233
+  }
+ },
+ {
+  "id": "AC-3679",
+  "name": "ibis München Garching",
+  "ort": "Garching",
+  "brand": "ibis",
+  "pos": {
+   "x": 209.0,
+   "y": 191.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 81,
+  "koordinaten": {
+   "lat": 48.247369,
+   "lon": 11.630251
+  }
+ },
+ {
+  "id": "AC-3680",
+  "name": "ibis Hamburg St Pauli Messe",
+  "ort": "Hamburg",
+  "brand": "ibis",
+  "pos": {
+   "x": 386.0,
+   "y": 188.0
+  },
+  "region": 0,
+  "obg": "D07",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 53.550902,
+   "lon": 9.967196
+  }
+ },
+ {
+  "id": "AC-3697",
+  "name": "ibis Heilbronn City",
+  "ort": "Heilbronn",
+  "brand": "ibis",
+  "pos": {
+   "x": 503.0,
+   "y": 334.0
+  },
+  "region": 2,
+  "obg": "D11",
+  "preisNacht": 89,
+  "koordinaten": {
+   "lat": 49.14254,
+   "lon": 9.213899
+  }
+ },
+ {
+  "id": "AC-3709",
+  "name": "Mercure München Altstadt",
+  "ort": "München",
+  "brand": "Mercure",
+  "pos": {
+   "x": 48.0,
+   "y": 335.0
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 96,
+  "koordinaten": {
+   "lat": 48.13714,
+   "lon": 11.571127
+  }
+ },
+ {
+  "id": "AC-3737",
+  "name": "Novotel Hamburg Alster",
+  "ort": "Hamburg",
+  "brand": "Novotel",
+  "pos": {
+   "x": 579.0,
+   "y": 176.0
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 115,
+  "koordinaten": {
+   "lat": 53.558731,
+   "lon": 10.024762
+  }
+ },
+ {
+  "id": "AC-3744",
+  "name": "ibis Köln Messe",
+  "ort": "Köln",
+  "brand": "ibis",
+  "pos": {
+   "x": 422.0,
+   "y": 393.0
+  },
+  "region": 3,
+  "obg": "D11",
+  "preisNacht": 86,
+  "koordinaten": {
+   "lat": 50.943354,
+   "lon": 6.985846
+  }
+ },
+ {
+  "id": "AC-3745",
+  "name": "Novotel Suites Ber Potsdamer Pl",
+  "ort": "Berlin",
+  "brand": "Novotel Suites",
+  "pos": {
+   "x": 275.0,
+   "y": 198.0
+  },
+  "region": 1,
+  "obg": "D06",
+  "preisNacht": 108,
+  "koordinaten": {
+   "lat": 52.504619,
+   "lon": 13.383228
+  }
+ },
+ {
+  "id": "AC-3752",
+  "name": "ibis Berlin Potsdamer Platz",
+  "ort": "Berlin",
+  "brand": "ibis",
+  "pos": {
+   "x": 458.0,
+   "y": 201.0
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 89,
+  "koordinaten": {
+   "lat": 52.504624,
+   "lon": 13.383182
+  }
+ },
+ {
+  "id": "AC-3755",
+  "name": "Novotel Suites Hannover",
+  "ort": "Hannover",
+  "brand": "Novotel Suites",
+  "pos": {
+   "x": 76.0,
+   "y": 54.0
+  },
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 52.378896,
+   "lon": 9.741087
+  }
+ },
+ {
+  "id": "AC-4990",
+  "name": "Mercure Hotel Plaza Essen",
+  "ort": "Essen",
+  "brand": "Mercure",
+  "pos": {
+   "x": 473.0,
+   "y": 94.0
+  },
+  "region": 4,
+  "obg": "D03",
+  "preisNacht": 108,
+  "koordinaten": {
+   "lat": 51.444225,
+   "lon": 7.00579
+  }
+ },
+ {
+  "id": "AC-4993",
+  "name": "ibis Styles Hamburg Alster City",
+  "ort": "Hamburg",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 40.0,
+   "y": 327.0
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 53.575149,
+   "lon": 10.041821
+  }
+ },
+ {
+  "id": "AC-5008",
+  "name": "ibis Köln Airport",
+  "ort": "Köln",
+  "brand": "ibis",
+  "pos": {
+   "x": 597.0,
+   "y": 388.0
+  },
+  "region": 3,
+  "obg": "D12",
+  "preisNacht": 96,
+  "koordinaten": {
+   "lat": 50.918294,
+   "lon": 7.047729
+  }
+ },
+ {
+  "id": "AC-5058",
+  "name": "ibis budget Berlin Potsdamer Pl",
+  "ort": "Berlin",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 634.0,
+   "y": 197.0
+  },
+  "region": 1,
+  "obg": "D08",
+  "preisNacht": 81,
+  "koordinaten": {
+   "lat": 52.504932,
+   "lon": 13.384879
+  }
+ },
+ {
+  "id": "AC-5194",
+  "name": "ibis budget Hamburg City Ost",
+  "ort": "Hamburg",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 228.0,
+   "y": 337.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 72,
+  "koordinaten": {
+   "lat": 53.57531,
+   "lon": 10.074966
+  }
+ },
+ {
+  "id": "AC-5229",
+  "name": "Novotel Suites München Schwabing",
+  "ort": "München",
+  "brand": "Novotel Suites",
+  "pos": {
+   "x": 227.0,
+   "y": 336.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 48.179975,
+   "lon": 11.593131
+  }
+ },
+ {
+  "id": "AC-5239",
+  "name": "ibis München Schwabing",
+  "ort": "München",
+  "brand": "ibis",
+  "pos": {
+   "x": 388.0,
+   "y": 342.0
+  },
+  "region": 0,
+  "obg": "D11",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 48.179653,
+   "lon": 11.592953
+  }
+ },
+ {
+  "id": "AC-5251",
+  "name": "ibis budget Hamburg St. Pauli",
+  "ort": "Hamburg",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 392.0,
+   "y": 346.0
+  },
+  "region": 0,
+  "obg": "D11",
+  "preisNacht": 66,
+  "koordinaten": {
+   "lat": 53.550903,
+   "lon": 9.967029
+  }
+ },
+ {
+  "id": "AC-5326",
+  "name": "Mercure Aachen am Dom",
+  "ort": "Aachen",
+  "brand": "Mercure",
+  "pos": {
+   "x": 624.0,
+   "y": 62.0
+  },
+  "region": 1,
+  "obg": "D04",
+  "preisNacht": 123,
+  "koordinaten": {
+   "lat": 50.77494,
+   "lon": 6.087791
+  }
+ },
+ {
+  "id": "AC-5338",
+  "name": "Mercure Bad Dürkheim Sali.",
+  "ort": "Bad Dürkheim",
+  "brand": "Mercure",
+  "pos": {
+   "x": 684.0,
+   "y": 335.0
+  },
+  "region": 2,
+  "obg": "D12",
+  "preisNacht": 120,
+  "koordinaten": {
+   "lat": 49.465961,
+   "lon": 8.173575
+  }
+ },
+ {
+  "id": "AC-5341",
+  "name": "Mercure Hotel Berlin City",
+  "ort": "Berlin",
+  "brand": "Mercure",
+  "pos": {
+   "x": 91.0,
+   "y": 344.0
+  },
+  "region": 1,
+  "obg": "D09",
+  "preisNacht": 108,
+  "koordinaten": {
+   "lat": 52.53024,
+   "lon": 13.381882
+  }
+ },
+ {
+  "id": "AC-5347",
+  "name": "Pullman Berlin Schweizerhof",
+  "ort": "Berlin",
+  "brand": "Pullman",
+  "pos": {
+   "x": 277.0,
+   "y": 350.0
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 114,
+  "koordinaten": {
+   "lat": 52.506158,
+   "lon": 13.343712
+  }
+ },
+ {
+  "id": "AC-5356",
+  "name": "Mercure Trier Porta Nigra",
+  "ort": "Trier",
+  "brand": "Mercure",
+  "pos": {
+   "x": 309.0,
+   "y": 195.0
+  },
+  "region": 2,
+  "obg": "D06",
+  "preisNacht": 108,
+  "koordinaten": {
+   "lat": 49.760239,
+   "lon": 6.644096
+  }
+ },
+ {
+  "id": "AC-5366",
+  "name": "Pullman Köln",
+  "ort": "Köln",
+  "brand": "Pullman",
+  "pos": {
+   "x": 51.0,
+   "y": 107.0
+  },
+  "region": 3,
+  "obg": "D01",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 50.93987,
+   "lon": 6.945437
+  }
+ },
+ {
+  "id": "AC-5372",
+  "name": "Mercure Düsseldorf Ratingen",
+  "ort": "Ratingen",
+  "brand": "Mercure",
+  "pos": {
+   "x": 109.0,
+   "y": 115.0
+  },
+  "region": 4,
+  "obg": "D01",
+  "preisNacht": 130,
+  "koordinaten": {
+   "lat": 51.35047,
+   "lon": 6.864878
+  }
+ },
+ {
+  "id": "AC-5373",
+  "name": "Mercure Düsseldorf City Center",
+  "ort": "Düsseldorf",
+  "brand": "Mercure",
+  "pos": {
+   "x": 34.0,
+   "y": 346.0
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 51.21939,
+   "lon": 6.787725
+  }
+ },
+ {
+  "id": "AC-5375",
+  "name": "Mercure Erfurt Altstadt",
+  "ort": "Erfurt",
+  "brand": "Mercure",
+  "pos": {
+   "x": 448.0,
+   "y": 366.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 50.978365,
+   "lon": 11.034533
+  }
+ },
+ {
+  "id": "AC-5376",
+  "name": "Novotel Erlangen",
+  "ort": "Erlangen",
+  "brand": "Novotel",
+  "pos": {
+   "x": 681.0,
+   "y": 332.0
+  },
+  "region": 2,
+  "obg": "D12",
+  "preisNacht": 98,
+  "koordinaten": {
+   "lat": 49.592866,
+   "lon": 11.013377
+  }
+ },
+ {
+  "id": "AC-5379",
+  "name": "Mercure Frankfurt Eschborn Helfmann",
+  "ort": "Eschborn",
+  "brand": "Mercure",
+  "pos": {
+   "x": 272.0,
+   "y": 45.0
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 50.139643,
+   "lon": 8.584861
+  }
+ },
+ {
+  "id": "AC-5381",
+  "name": "Mercure Neu Isenburg",
+  "ort": "Neu Isenburg",
+  "brand": "Mercure",
+  "pos": {
+   "x": 38.0,
+   "y": 325.0
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 124,
+  "koordinaten": {
+   "lat": 50.047754,
+   "lon": 8.695288
+  }
+ },
+ {
+  "id": "AC-5383",
+  "name": "Novotel Freiburg",
+  "ort": "Freiburg im Breisgau",
+  "brand": "Novotel",
+  "pos": {
+   "x": 40.0,
+   "y": 27.0
+  },
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 126,
+  "koordinaten": {
+   "lat": 47.995369,
+   "lon": 7.841306
+  }
+ },
+ {
+  "id": "AC-5390",
+  "name": "Novotel Hannover",
+  "ort": "Hannover",
+  "brand": "Novotel",
+  "pos": {
+   "x": 275.0,
+   "y": 48.0
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 118,
+  "koordinaten": {
+   "lat": 52.390268,
+   "lon": 9.753371
+  }
+ },
+ {
+  "id": "AC-5391",
+  "name": "Mercure Hotel Hannover Mitte",
+  "ort": "Hannover",
+  "brand": "Mercure",
+  "pos": {
+   "x": 456.0,
+   "y": 49.0
+  },
+  "region": 1,
+  "obg": "D03",
+  "preisNacht": 119,
+  "koordinaten": {
+   "lat": 52.380129,
+   "lon": 9.729856
+  }
+ },
+ {
+  "id": "AC-5394",
+  "name": "Mercure Hotel Hamburg Mitte",
+  "ort": "Hamburg",
+  "brand": "Mercure",
+  "pos": {
+   "x": 587.0,
+   "y": 334.0
+  },
+  "region": 0,
+  "obg": "D12",
+  "preisNacht": 122,
+  "koordinaten": {
+   "lat": 53.564471,
+   "lon": 9.977163
+  }
+ },
+ {
+  "id": "AC-5400",
+  "name": "Novotel Karlsruhe City",
+  "ort": "Karlsruhe",
+  "brand": "Novotel",
+  "pos": {
+   "x": 617.0,
+   "y": 205.0
+  },
+  "region": 1,
+  "obg": "D08",
+  "preisNacht": 116,
+  "koordinaten": {
+   "lat": 49.003601,
+   "lon": 8.401146
+  }
+ },
+ {
+  "id": "AC-5402",
+  "name": "Mercure Krefeld",
+  "ort": "Krefeld",
+  "brand": "Mercure",
+  "pos": {
+   "x": 567.0,
+   "y": 339.0
+  },
+  "region": 0,
+  "obg": "D12",
+  "preisNacht": 118,
+  "koordinaten": {
+   "lat": 51.384678,
+   "lon": 6.605935
+  }
+ },
+ {
+  "id": "AC-5410",
+  "name": "Mercure Mannheim am Rathaus",
+  "ort": "Mannheim",
+  "brand": "Mercure",
+  "pos": {
+   "x": 571.0,
+   "y": 193.0
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 111,
+  "koordinaten": {
+   "lat": 49.490849,
+   "lon": 8.461704
+  }
+ },
+ {
+  "id": "AC-5413",
+  "name": "Sofitel München Bayerpost",
+  "ort": "München",
+  "brand": "Sofitel",
+  "pos": {
+   "x": 574.0,
+   "y": 346.0
+  },
+  "region": 0,
+  "obg": "D12",
+  "preisNacht": 156,
+  "koordinaten": {
+   "lat": 48.139495,
+   "lon": 11.55678
+  }
+ },
+ {
+  "id": "AC-5425",
+  "name": "Pullman Stuttgart Fontana",
+  "ort": "Stuttgart",
+  "brand": "Pullman",
+  "pos": {
+   "x": 634.0,
+   "y": 197.0
+  },
+  "region": 1,
+  "obg": "D08",
+  "preisNacht": 111,
+  "koordinaten": {
+   "lat": 48.726618,
+   "lon": 9.111672
+  }
+ },
+ {
+  "id": "AC-5441",
+  "name": "ibis budget Stuttgart City Nord",
+  "ort": "Stuttgart",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 77.0,
+   "y": 355.0
+  },
+  "region": 1,
+  "obg": "D09",
+  "preisNacht": 67,
+  "koordinaten": {
+   "lat": 48.810745,
+   "lon": 9.179282
+  }
+ },
+ {
+  "id": "AC-5513",
+  "name": "ibis budget Ber Alexanderplatz",
+  "ort": "Berlin",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 457.0,
+   "y": 350.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 76,
+  "koordinaten": {
+   "lat": 52.52515,
+   "lon": 13.420395
+  }
+ },
+ {
+  "id": "AC-5563",
+  "name": "Novotel Messe München",
+  "ort": "München Riem",
+  "brand": "Novotel",
+  "pos": {
+   "x": 669.0,
+   "y": 345.0
+  },
+  "region": 2,
+  "obg": "D12",
+  "preisNacht": 114,
+  "koordinaten": {
+   "lat": 48.133064,
+   "lon": 11.69264
+  }
+ },
+ {
+  "id": "AC-5626",
+  "name": "ibis budget München Ost Messe",
+  "ort": "Aschheim-dornach",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 600.0,
+   "y": 241.0
+  },
+  "region": 3,
+  "obg": "D08",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 48.146789,
+   "lon": 11.684199
+  }
+ },
+ {
+  "id": "AC-5694",
+  "name": "ibis Berlin City Sud",
+  "ort": "Berlin",
+  "brand": "ibis",
+  "pos": {
+   "x": 622.0,
+   "y": 360.0
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 90,
+  "koordinaten": {
+   "lat": 52.461141,
+   "lon": 13.444444
+  }
+ },
+ {
+  "id": "AC-6299",
+  "name": "ibis budget Flensburg Handewitt",
+  "ort": "Handewitt",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 652.0,
+   "y": 245.0
+  },
+  "region": 4,
+  "obg": "D08",
+  "preisNacht": 70,
+  "koordinaten": {
+   "lat": 54.777977,
+   "lon": 9.33468
+  }
+ },
+ {
+  "id": "AC-6711",
+  "name": "Novotel München Airport",
+  "ort": "München - Flughafen",
+  "brand": "Novotel",
+  "pos": {
+   "x": 473.0,
+   "y": 394.0
+  },
+  "region": 4,
+  "obg": "D11",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 48.354752,
+   "lon": 11.758225
+  }
+ },
+ {
+  "id": "AC-6903",
+  "name": "ibis München City West",
+  "ort": "München",
+  "brand": "ibis",
+  "pos": {
+   "x": 30.0,
+   "y": 42.0
+  },
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 48.134769,
+   "lon": 11.523435
+  }
+ },
+ {
+  "id": "AC-6965",
+  "name": "ibis Karlsruhe Hauptbahnhof",
+  "ort": "Karlsruhe",
+  "brand": "ibis",
+  "pos": {
+   "x": 95.0,
+   "y": 348.0
+  },
+  "region": 1,
+  "obg": "D09",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 48.995054,
+   "lon": 8.404252
+  }
+ },
+ {
+  "id": "AC-7000",
+  "name": "ibis Leipzig Nord Ost",
+  "ort": "Taucha",
+  "brand": "ibis",
+  "pos": {
+   "x": 48.0,
+   "y": 185.0
+  },
+  "region": 0,
+  "obg": "D05",
+  "preisNacht": 92,
+  "koordinaten": {
+   "lat": 51.372761,
+   "lon": 12.475767
+  }
+ },
+ {
+  "id": "AC-7002",
+  "name": "ibis Kassel Melsungen",
+  "ort": "Melsungen",
+  "brand": "ibis",
+  "pos": {
+   "x": 281.0,
+   "y": 407.0
+  },
+  "region": 4,
+  "obg": "D10",
+  "preisNacht": 94,
+  "koordinaten": {
+   "lat": 51.131545,
+   "lon": 9.522808
+  }
+ },
+ {
+  "id": "AC-7003",
+  "name": "ibis Eisenach",
+  "ort": "Eisenach",
+  "brand": "ibis",
+  "pos": {
+   "x": 586.0,
+   "y": 252.0
+  },
+  "region": 3,
+  "obg": "D08",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 50.994959,
+   "lon": 10.374312
+  }
+ },
+ {
+  "id": "AC-7012",
+  "name": "ibis Friedrichshafen Airport",
+  "ort": "Friedrichshafen",
+  "brand": "ibis",
+  "pos": {
+   "x": 443.0,
+   "y": 61.0
+  },
+  "region": 1,
+  "obg": "D03",
+  "preisNacht": 99,
+  "koordinaten": {
+   "lat": 47.671814,
+   "lon": 9.521402
+  }
+ },
+ {
+  "id": "AC-7032",
+  "name": "ibis budget Augsburg City",
+  "ort": "Augsburg",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 455.0,
+   "y": 348.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 72,
+  "koordinaten": {
+   "lat": 48.370278,
+   "lon": 10.878611
+  }
+ },
+ {
+  "id": "AC-7091",
+  "name": "ibis Styles Berlin Mitte",
+  "ort": "Berlin",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 80.0,
+   "y": 58.0
+  },
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 86,
+  "koordinaten": {
+   "lat": 52.530071,
+   "lon": 13.401002
+  }
+ },
+ {
+  "id": "AC-7191",
+  "name": "ibis Stuttgart Airport Messe",
+  "ort": "Leinfelden-echterdingen",
+  "brand": "ibis",
+  "pos": {
+   "x": 399.0,
+   "y": 28.0
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 96,
+  "koordinaten": {
+   "lat": 48.695747,
+   "lon": 9.167855
+  }
+ },
+ {
+  "id": "AC-7290",
+  "name": "ibis Konstanz",
+  "ort": "Konstanz",
+  "brand": "ibis",
+  "pos": {
+   "x": 460.0,
+   "y": 258.0
+  },
+  "region": 4,
+  "obg": "D07",
+  "preisNacht": 94,
+  "koordinaten": {
+   "lat": 47.668823,
+   "lon": 9.177534
+  }
+ },
+ {
+  "id": "AC-7329",
+  "name": "Adagio Berlin Kurfurstendamm",
+  "ort": "Berlin",
+  "brand": "Adagio Original",
+  "pos": {
+   "x": 259.0,
+   "y": 59.0
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 93,
+  "koordinaten": {
+   "lat": 52.499813,
+   "lon": 13.321487
+  }
+ },
+ {
+  "id": "AC-7469",
+  "name": "ibis budget Ulm City",
+  "ort": "Ulm",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 419.0,
+   "y": 390.0
+  },
+  "region": 3,
+  "obg": "D11",
+  "preisNacht": 70,
+  "koordinaten": {
+   "lat": 48.401871,
+   "lon": 9.986845
+  }
+ },
+ {
+  "id": "AC-7514",
+  "name": "ibis budget Dresden City",
+  "ort": "Dresden",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 420.0,
+   "y": 91.0
+  },
+  "region": 3,
+  "obg": "D03",
+  "preisNacht": 73,
+  "koordinaten": {
+   "lat": 51.050465,
+   "lon": 13.735056
+  }
+ },
+ {
+  "id": "AC-7561",
+  "name": "ibis Styles Frankfurt City",
+  "ort": "Frankfurt am Main",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 506.0,
+   "y": 37.0
+  },
+  "region": 2,
+  "obg": "D03",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 50.107052,
+   "lon": 8.667869
+  }
+ },
+ {
+  "id": "AC-7563",
+  "name": "Mercure Stuttgart Gerlingen",
+  "ort": "Gerlingen",
+  "brand": "Mercure",
+  "pos": {
+   "x": 148.0,
+   "y": 339.0
+  },
+  "region": 2,
+  "obg": "D09",
+  "preisNacht": 110,
+  "koordinaten": {
+   "lat": 48.80213,
+   "lon": 9.07601
+  }
+ },
+ {
+  "id": "AC-7843",
+  "name": "ibis budget Köln Messe",
+  "ort": "Köln",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 240.0,
+   "y": 91.0
+  },
+  "region": 3,
+  "obg": "D02",
+  "preisNacht": 66,
+  "koordinaten": {
+   "lat": 50.943333,
+   "lon": 6.985979
+  }
+ },
+ {
+  "id": "AC-7961",
+  "name": "ibis Berlin Kurfürstendamm",
+  "ort": "Berlin",
+  "brand": "ibis",
+  "pos": {
+   "x": 448.0,
+   "y": 66.0
+  },
+  "region": 1,
+  "obg": "D03",
+  "preisNacht": 99,
+  "koordinaten": {
+   "lat": 52.502363,
+   "lon": 13.344203
+  }
+ },
+ {
+  "id": "AC-7963",
+  "name": "ibis Styles Arnsberg Sauerland",
+  "ort": "Arnsberg",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 450.0,
+   "y": 193.0
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 51.4544,
+   "lon": 7.9667
+  }
+ },
+ {
+  "id": "AC-7968",
+  "name": "ibis budget Berlin Kudamm",
+  "ort": "Berlin",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 635.0,
+   "y": 48.0
+  },
+  "region": 1,
+  "obg": "D04",
+  "preisNacht": 65,
+  "koordinaten": {
+   "lat": 52.50286,
+   "lon": 13.34462
+  }
+ },
+ {
+  "id": "AC-8000",
+  "name": "ibis budget Leipzig City",
+  "ort": "Leipzig",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 65.0,
+   "y": 246.0
+  },
+  "region": 3,
+  "obg": "D05",
+  "preisNacht": 80,
+  "koordinaten": {
+   "lat": 51.342767,
+   "lon": 12.37641
+  }
+ },
+ {
+  "id": "AC-8027",
+  "name": "ibis budget Aachen City",
+  "ort": "Aachen",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 91.0,
+   "y": 194.0
+  },
+  "region": 1,
+  "obg": "D05",
+  "preisNacht": 65,
+  "koordinaten": {
+   "lat": 50.777291,
+   "lon": 6.092083
+  }
+ },
+ {
+  "id": "AC-8068",
+  "name": "ibis Styles Karlsruhe Ettlingen",
+  "ort": "Ettlingen",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 143.0,
+   "y": 184.0
+  },
+  "region": 2,
+  "obg": "D05",
+  "preisNacht": 80,
+  "koordinaten": {
+   "lat": 48.94511,
+   "lon": 8.40723
+  }
+ },
+ {
+  "id": "AC-8075",
+  "name": "ibis München City Süd",
+  "ort": "München",
+  "brand": "ibis",
+  "pos": {
+   "x": 222.0,
+   "y": 29.0
+  },
+  "region": 0,
+  "obg": "D02",
+  "preisNacht": 82,
+  "koordinaten": {
+   "lat": 48.11117,
+   "lon": 11.57789
+  }
+ },
+ {
+  "id": "AC-8077",
+  "name": "ibis Styles Nagold",
+  "ort": "Nagold",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 480.0,
+   "y": 251.0
+  },
+  "region": 4,
+  "obg": "D07",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 48.54964,
+   "lon": 8.72394
+  }
+ },
+ {
+  "id": "AC-8115",
+  "name": "Mercure Frankfurt City Center",
+  "ort": "Frankfurt am Main",
+  "brand": "Mercure",
+  "pos": {
+   "x": 686.0,
+   "y": 37.0
+  },
+  "region": 2,
+  "obg": "D04",
+  "preisNacht": 126,
+  "koordinaten": {
+   "lat": 50.10827,
+   "lon": 8.667662
+  }
+ },
+ {
+  "id": "AC-8159",
+  "name": "Sofitel Frankfurt Opera",
+  "ort": "Frankfurt am Main",
+  "brand": "Sofitel",
+  "pos": {
+   "x": 149.0,
+   "y": 192.0
+  },
+  "region": 2,
+  "obg": "D05",
+  "preisNacht": 141,
+  "koordinaten": {
+   "lat": 50.115941,
+   "lon": 8.673665
+  }
+ },
+ {
+  "id": "AC-8274",
+  "name": "Novotel Nürnberg Centre Ville",
+  "ort": "Nürnberg",
+  "brand": "Novotel",
+  "pos": {
+   "x": 322.0,
+   "y": 185.0
+  },
+  "region": 2,
+  "obg": "D06",
+  "preisNacht": 119,
+  "koordinaten": {
+   "lat": 49.44695,
+   "lon": 11.085784
+  }
+ },
+ {
+  "id": "AC-8285",
+  "name": "ibis budget Bonn Sud Konigswinte",
+  "ort": "Königswinter",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 225.0,
+   "y": 184.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 73,
+  "koordinaten": {
+   "lat": 50.683836,
+   "lon": 7.274945
+  }
+ },
+ {
+  "id": "AC-8288",
+  "name": "Adagio Köln City",
+  "ort": "Köln",
+  "brand": "Adagio Original",
+  "pos": {
+   "x": 428.0,
+   "y": 101.0
+  },
+  "region": 3,
+  "obg": "D03",
+  "preisNacht": 99,
+  "koordinaten": {
+   "lat": 50.9328,
+   "lon": 6.95614
+  }
+ },
+ {
+  "id": "AC-8375",
+  "name": "ibis budget Osnabrück City",
+  "ort": "Osnabrück",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 585.0,
+   "y": 403.0
+  },
+  "region": 3,
+  "obg": "D12",
+  "preisNacht": 79,
+  "koordinaten": {
+   "lat": 52.273024,
+   "lon": 8.05845
+  }
+ },
+ {
+  "id": "AC-8392",
+  "name": "ibis Styles Leipzig",
+  "ort": "Radefeld",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 448.0,
+   "y": 366.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 51.423229,
+   "lon": 12.300782
+  }
+ },
+ {
+  "id": "AC-8394",
+  "name": "ibis budget Bamberg",
+  "ort": "Bamberg",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 630.0,
+   "y": 193.0
+  },
+  "region": 1,
+  "obg": "D08",
+  "preisNacht": 77,
+  "koordinaten": {
+   "lat": 49.902651,
+   "lon": 10.896898
+  }
+ },
+ {
+  "id": "AC-8601",
+  "name": "ibis Berlin Hauptbahnhof",
+  "ort": "Berlin",
+  "brand": "ibis",
+  "pos": {
+   "x": 91.0,
+   "y": 194.0
+  },
+  "region": 1,
+  "obg": "D05",
+  "preisNacht": 100,
+  "koordinaten": {
+   "lat": 52.526914,
+   "lon": 13.370354
+  }
+ },
+ {
+  "id": "AC-8657",
+  "name": "Pullman München",
+  "ort": "München",
+  "brand": "Pullman",
+  "pos": {
+   "x": 385.0,
+   "y": 37.0
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 124,
+  "koordinaten": {
+   "lat": 48.17257,
+   "lon": 11.59413
+  }
+ },
+ {
+  "id": "AC-8668",
+  "name": "ibis Styles Speyer",
+  "ort": "Speyer",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 592.0,
+   "y": 108.0
+  },
+  "region": 3,
+  "obg": "D04",
+  "preisNacht": 85,
+  "koordinaten": {
+   "lat": 49.312787,
+   "lon": 8.441869
+  }
+ },
+ {
+  "id": "AC-8697",
+  "name": "ibis budget München Airport",
+  "ort": "Erding",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 76.0,
+   "y": 354.0
+  },
+  "region": 1,
+  "obg": "D09",
+  "preisNacht": 65,
+  "koordinaten": {
+   "lat": 48.306602,
+   "lon": 11.887675
+  }
+ },
+ {
+  "id": "AC-8726",
+  "name": "ibis budget München Olympiapark",
+  "ort": "München",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 582.0,
+   "y": 29.0
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 73,
+  "koordinaten": {
+   "lat": 48.188305,
+   "lon": 11.543611
+  }
+ },
+ {
+  "id": "AC-8740",
+  "name": "ibis Hamburg City",
+  "ort": "Hamburg",
+  "brand": "ibis",
+  "pos": {
+   "x": 48.0,
+   "y": 35.0
+  },
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 92,
+  "koordinaten": {
+   "lat": 53.548115,
+   "lon": 10.009499
+  }
+ },
+ {
+  "id": "AC-8741",
+  "name": "ibis budget Hamburg City",
+  "ort": "Hamburg",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 204.0,
+   "y": 36.0
+  },
+  "region": 0,
+  "obg": "D02",
+  "preisNacht": 67,
+  "koordinaten": {
+   "lat": 53.548057,
+   "lon": 10.00887
+  }
+ },
+ {
+  "id": "AC-8845",
+  "name": "ibis budget Ludwigsburg",
+  "ort": "Ludwigsburg",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 271.0,
+   "y": 344.0
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 66,
+  "koordinaten": {
+   "lat": 48.892682,
+   "lon": 9.183672
+  }
+ },
+ {
+  "id": "AC-8865",
+  "name": "ibis München City Arnulfpark",
+  "ort": "München",
+  "brand": "ibis",
+  "pos": {
+   "x": 26.0,
+   "y": 188.0
+  },
+  "region": 0,
+  "obg": "D05",
+  "preisNacht": 80,
+  "koordinaten": {
+   "lat": 48.145354,
+   "lon": 11.53984
+  }
+ },
+ {
+  "id": "AC-8866",
+  "name": "Novotel München Arnulfpark",
+  "ort": "München",
+  "brand": "Novotel",
+  "pos": {
+   "x": 207.0,
+   "y": 189.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 96,
+  "koordinaten": {
+   "lat": 48.145601,
+   "lon": 11.539065
+  }
+ },
+ {
+  "id": "AC-9008",
+  "name": "ibis Leipzig City",
+  "ort": "Leipzig",
+  "brand": "ibis",
+  "pos": {
+   "x": 225.0,
+   "y": 251.0
+  },
+  "region": 3,
+  "obg": "D06",
+  "preisNacht": 104,
+  "koordinaten": {
+   "lat": 51.342686,
+   "lon": 12.37634
+  }
+ },
+ {
+  "id": "AC-9066",
+  "name": "ibis budget Frankfurt City Ost",
+  "ort": "Frankfurt am Main",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 318.0,
+   "y": 204.0
+  },
+  "region": 2,
+  "obg": "D06",
+  "preisNacht": 81,
+  "koordinaten": {
+   "lat": 50.111251,
+   "lon": 8.71007
+  }
+ },
+ {
+  "id": "AC-9067",
+  "name": "ibis Styles Regensburg",
+  "ort": "Regensburg",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 499.0,
+   "y": 55.0
+  },
+  "region": 2,
+  "obg": "D03",
+  "preisNacht": 81,
+  "koordinaten": {
+   "lat": 49.02897,
+   "lon": 12.0824
+  }
+ },
+ {
+  "id": "AC-9068",
+  "name": "Mercure Berlin Zentrum",
+  "ort": "Berlin",
+  "brand": "Mercure",
+  "pos": {
+   "x": 268.0,
+   "y": 216.0
+  },
+  "region": 1,
+  "obg": "D06",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 52.499228,
+   "lon": 13.347975
+  }
+ },
+ {
+  "id": "AC-9069",
+  "name": "ibis München City Ost",
+  "ort": "München",
+  "brand": "ibis",
+  "pos": {
+   "x": 397.0,
+   "y": 174.0
+  },
+  "region": 0,
+  "obg": "D07",
+  "preisNacht": 83,
+  "koordinaten": {
+   "lat": 48.12985,
+   "lon": 11.626732
+  }
+ },
+ {
+  "id": "AC-9147",
+  "name": "Mercure Berlin Wittenbergplatz",
+  "ort": "Berlin",
+  "brand": "Mercure",
+  "pos": {
+   "x": 446.0,
+   "y": 214.0
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 129,
+  "koordinaten": {
+   "lat": 52.501029,
+   "lon": 13.342554
+  }
+ },
+ {
+  "id": "AC-9169",
+  "name": "Mercure Dtm Messe",
+  "ort": "Dortmund",
+  "brand": "Mercure",
+  "pos": {
+   "x": 408.0,
+   "y": 335.0
+  },
+  "region": 0,
+  "obg": "D11",
+  "preisNacht": 121,
+  "koordinaten": {
+   "lat": 51.49439,
+   "lon": 7.4556
+  }
+ },
+ {
+  "id": "AC-9224",
+  "name": "Mercure Frankfurt City Messe",
+  "ort": "Frankfurt am Main",
+  "brand": "Mercure",
+  "pos": {
+   "x": 494.0,
+   "y": 202.0
+  },
+  "region": 2,
+  "obg": "D07",
+  "preisNacht": 124,
+  "koordinaten": {
+   "lat": 50.109252,
+   "lon": 8.661615
+  }
+ },
+ {
+  "id": "AC-9274",
+  "name": "Adagio Access München Nord",
+  "ort": "München",
+  "brand": "Adagio Access",
+  "pos": {
+   "x": 575.0,
+   "y": 174.0
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 92,
+  "koordinaten": {
+   "lat": 48.188485,
+   "lon": 11.543509
+  }
+ },
+ {
+  "id": "AC-9282",
+  "name": "ibis Styles Konstanz",
+  "ort": "Konstanz",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 655.0,
+   "y": 248.0
+  },
+  "region": 4,
+  "obg": "D08",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 47.674051,
+   "lon": 9.157699
+  }
+ },
+ {
+  "id": "AC-9283",
+  "name": "ibis budget Konstanz",
+  "ort": "Konstanz",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 116.0,
+   "y": 399.0
+  },
+  "region": 4,
+  "obg": "D09",
+  "preisNacht": 69,
+  "koordinaten": {
+   "lat": 47.6739,
+   "lon": 9.15815
+  }
+ },
+ {
+  "id": "AC-9302",
+  "name": "Mercure Düsseldorf Zentrum",
+  "ort": "Düsseldorf",
+  "brand": "Mercure",
+  "pos": {
+   "x": 207.0,
+   "y": 341.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 121,
+  "koordinaten": {
+   "lat": 51.245745,
+   "lon": 6.779938
+  }
+ },
+ {
+  "id": "AC-9752",
+  "name": "ibis Styles Trier",
+  "ort": "Trier",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 492.0,
+   "y": 198.0
+  },
+  "region": 2,
+  "obg": "D07",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 49.755417,
+   "lon": 6.637639
+  }
+ },
+ {
+  "id": "AC-9753",
+  "name": "Mercure Hotel Wiesbaden City",
+  "ort": "Wiesbaden",
+  "brand": "Mercure",
+  "pos": {
+   "x": 465.0,
+   "y": 111.0
+  },
+  "region": 4,
+  "obg": "D03",
+  "preisNacht": 125,
+  "koordinaten": {
+   "lat": 50.078563,
+   "lon": 8.242863
+  }
+ },
+ {
+  "id": "AC-9841",
+  "name": "ibis Styles Tübingen",
+  "ort": "Tübingen",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 52.0,
+   "y": 408.0
+  },
+  "region": 3,
+  "obg": "D09",
+  "preisNacht": 94,
+  "koordinaten": {
+   "lat": 48.51692,
+   "lon": 9.06162
+  }
+ },
+ {
+  "id": "AC-9842",
+  "name": "ibis Styles Rastatt",
+  "ort": "Rastatt",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 573.0,
+   "y": 345.0
+  },
+  "region": 0,
+  "obg": "D12",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 48.85902,
+   "lon": 8.20764
+  }
+ },
+ {
+  "id": "AC-9939",
+  "name": "Aparthotel Adagio Frankfurt",
+  "ort": "Frankfurt am Main",
+  "brand": "Adagio Original",
+  "pos": {
+   "x": 689.0,
+   "y": 190.0
+  },
+  "region": 2,
+  "obg": "D08",
+  "preisNacht": 96,
+  "koordinaten": {
+   "lat": 50.114741,
+   "lon": 8.650194
+  }
+ },
+ {
+  "id": "AC-A003",
+  "name": "Mercure Düsseldorf Kaarst",
+  "ort": "Kaarst",
+  "brand": "Mercure",
+  "pos": {
+   "x": 98.0,
+   "y": 201.0
+  },
+  "region": 1,
+  "obg": "D05",
+  "preisNacht": 104,
+  "koordinaten": {
+   "lat": 51.2197,
+   "lon": 6.63775
+  }
+ },
+ {
+  "id": "AC-A004",
+  "name": "Mercure Köln Belfortstrasse",
+  "ort": "Köln",
+  "brand": "Mercure",
+  "pos": {
+   "x": 607.0,
+   "y": 98.0
+  },
+  "region": 3,
+  "obg": "D04",
+  "preisNacht": 105,
+  "koordinaten": {
+   "lat": 50.95233,
+   "lon": 6.96298
+  }
+ },
+ {
+  "id": "AC-A005",
+  "name": "Mercure Kamen Unna",
+  "ort": "Kamen",
+  "brand": "Mercure",
+  "pos": {
+   "x": 248.0,
+   "y": 249.0
+  },
+  "region": 3,
+  "obg": "D06",
+  "preisNacht": 106,
+  "koordinaten": {
+   "lat": 51.57192,
+   "lon": 7.67049
+  }
+ },
+ {
+  "id": "AC-A006",
+  "name": "Mercure Dortmund Centrum",
+  "ort": "Dortmund",
+  "brand": "Mercure",
+  "pos": {
+   "x": 564.0,
+   "y": 336.0
+  },
+  "region": 0,
+  "obg": "D12",
+  "preisNacht": 107,
+  "koordinaten": {
+   "lat": 51.512047,
+   "lon": 7.467771
+  }
+ },
+ {
+  "id": "AC-A007",
+  "name": "Mercure Bochum City",
+  "ort": "Bochum",
+  "brand": "Mercure",
+  "pos": {
+   "x": 205.0,
+   "y": 337.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 108,
+  "koordinaten": {
+   "lat": 51.48042,
+   "lon": 7.22364
+  }
+ },
+ {
+  "id": "AC-A008",
+  "name": "Mercure Hannover Oldenburger A",
+  "ort": "Hannover",
+  "brand": "Mercure",
+  "pos": {
+   "x": 618.0,
+   "y": 56.0
+  },
+  "region": 1,
+  "obg": "D04",
+  "preisNacht": 109,
+  "koordinaten": {
+   "lat": 52.41676,
+   "lon": 9.8271
+  }
+ },
+ {
+  "id": "AC-A052",
+  "name": "ibis budget Bremen City Center",
+  "ort": "Bremen",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 45.0,
+   "y": 101.0
+  },
+  "region": 3,
+  "obg": "D01",
+  "preisNacht": 72,
+  "koordinaten": {
+   "lat": 53.081288,
+   "lon": 8.813603
+  }
+ },
+ {
+  "id": "AC-A054",
+  "name": "Aparthotel Adagio Bremen",
+  "ort": "Bremen",
+  "brand": "Adagio Original",
+  "pos": {
+   "x": 227.0,
+   "y": 103.0
+  },
+  "region": 3,
+  "obg": "D02",
+  "preisNacht": 89,
+  "koordinaten": {
+   "lat": 53.081242,
+   "lon": 8.812802
+  }
+ },
+ {
+  "id": "AC-A061",
+  "name": "ibis München Airport Süd",
+  "ort": "Hallbergmoos",
+  "brand": "ibis",
+  "pos": {
+   "x": 622.0,
+   "y": 360.0
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 91,
+  "koordinaten": {
+   "lat": 48.3331,
+   "lon": 11.741388
+  }
+ },
+ {
+  "id": "AC-A219",
+  "name": "Novotel Münster City",
+  "ort": "Münster",
+  "brand": "Novotel",
+  "pos": {
+   "x": 210.0,
+   "y": 42.0
+  },
+  "region": 0,
+  "obg": "D02",
+  "preisNacht": 119,
+  "koordinaten": {
+   "lat": 51.954876,
+   "lon": 7.632117
+  }
+ },
+ {
+  "id": "AC-A220",
+  "name": "ibis budget Münster City",
+  "ort": "Münster",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 387.0,
+   "y": 39.0
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 72,
+  "koordinaten": {
+   "lat": 51.955982,
+   "lon": 7.632006
+  }
+ },
+ {
+  "id": "AC-A227",
+  "name": "ibis Regensburg Zentrum",
+  "ort": "Regensburg",
+  "brand": "ibis",
+  "pos": {
+   "x": 678.0,
+   "y": 54.0
+  },
+  "region": 2,
+  "obg": "D04",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 49.013293,
+   "lon": 12.109813
+  }
+ },
+ {
+  "id": "AC-A228",
+  "name": "Novotel Regensburg Zentrum",
+  "ort": "Regensburg",
+  "brand": "Novotel",
+  "pos": {
+   "x": 139.0,
+   "y": 205.0
+  },
+  "region": 2,
+  "obg": "D05",
+  "preisNacht": 113,
+  "koordinaten": {
+   "lat": 49.013293,
+   "lon": 12.109813
+  }
+ },
+ {
+  "id": "AC-A595",
+  "name": "Fairmont Hotel Vier Jahreszeiten",
+  "ort": "Hamburg",
+  "brand": "Fairmont",
+  "pos": {
+   "x": 394.0,
+   "y": 46.0
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 141,
+  "koordinaten": {
+   "lat": 53.555603,
+   "lon": 9.991689
+  }
+ },
+ {
+  "id": "AC-A6Q4",
+  "name": "ibis Styles Stuttgart Vaihinge",
+  "ort": "Stuttgart",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 270.0,
+   "y": 343.0
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 104,
+  "koordinaten": {
+   "lat": 48.726857,
+   "lon": 9.116758
+  }
+ },
+ {
+  "id": "AC-A7M5",
+  "name": "Mercure Stuttgart Zuffenhausen",
+  "ort": "Stuttgart",
+  "brand": "Mercure",
+  "pos": {
+   "x": 438.0,
+   "y": 356.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 99,
+  "koordinaten": {
+   "lat": 48.834766,
+   "lon": 9.161935
+  }
+ },
+ {
+  "id": "AC-A8M4",
+  "name": "Mercure Hotel Schweinfurt",
+  "ort": "Schweinfurt",
+  "brand": "Mercure",
+  "pos": {
+   "x": 628.0,
+   "y": 366.0
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 123,
+  "koordinaten": {
+   "lat": 50.041533,
+   "lon": 10.237023
+  }
+ },
+ {
+  "id": "AC-A9F7",
+  "name": "ibis Styles Pforzheim",
+  "ort": "Pforzheim",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 593.0,
+   "y": 109.0
+  },
+  "region": 3,
+  "obg": "D04",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 48.888009,
+   "lon": 8.697793
+  }
+ },
+ {
+  "id": "AC-B0C7",
+  "name": "25hours Hotel Das Tour",
+  "ort": "Düsseldorf",
+  "brand": "25hours",
+  "pos": {
+   "x": 396.0,
+   "y": 348.0
+  },
+  "region": 0,
+  "obg": "D11",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 51.231352,
+   "lon": 6.796221
+  }
+ },
+ {
+  "id": "AC-B0C8",
+  "name": "25hours Hotel The Royal Bavarian",
+  "ort": "München",
+  "brand": "25hours",
+  "pos": {
+   "x": 237.0,
+   "y": 238.0
+  },
+  "region": 3,
+  "obg": "D06",
+  "preisNacht": 102,
+  "koordinaten": {
+   "lat": 48.139724,
+   "lon": 11.561639
+  }
+ },
+ {
+  "id": "AC-B0C9",
+  "name": "25hours Hotel The Circle",
+  "ort": "Köln",
+  "brand": "25hours",
+  "pos": {
+   "x": 58.0,
+   "y": 239.0
+  },
+  "region": 3,
+  "obg": "D05",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 50.94182,
+   "lon": 6.94449
+  }
+ },
+ {
+  "id": "AC-B0R0",
+  "name": "Mercure Mannheim am Friedenspl",
+  "ort": "Mannheim",
+  "brand": "Mercure",
+  "pos": {
+   "x": 44.0,
+   "y": 331.0
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 127,
+  "koordinaten": {
+   "lat": 49.478643,
+   "lon": 8.493411
+  }
+ },
+ {
+  "id": "AC-B0V1",
+  "name": "ibis Styles Vechta",
+  "ort": "Vechta",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 636.0,
+   "y": 349.0
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 52.729837,
+   "lon": 8.280904
+  }
+ },
+ {
+  "id": "AC-B127",
+  "name": "ibis Styles Hamburg Hafencity",
+  "ort": "Hamburg",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 585.0,
+   "y": 32.0
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 104,
+  "koordinaten": {
+   "lat": 53.540515,
+   "lon": 9.997195
+  }
+ },
+ {
+  "id": "AC-B129",
+  "name": "Novotel Hamburg Hafen City",
+  "ort": "Hamburg",
+  "brand": "Novotel",
+  "pos": {
+   "x": 47.0,
+   "y": 184.0
+  },
+  "region": 0,
+  "obg": "D05",
+  "preisNacht": 105,
+  "koordinaten": {
+   "lat": 53.57532,
+   "lon": 10.01534
+  }
+ },
+ {
+  "id": "AC-B138",
+  "name": "25hours Hamburg Hafencity",
+  "ort": "Hamburg",
+  "brand": "25hours",
+  "pos": {
+   "x": 207.0,
+   "y": 189.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 99,
+  "koordinaten": {
+   "lat": 53.5414631,
+   "lon": 9.9984652
+  }
+ },
+ {
+  "id": "AC-B140",
+  "name": "25hours Hamburg Altes Hafenamt",
+  "ort": "Hamburg",
+  "brand": "25hours",
+  "pos": {
+   "x": 385.0,
+   "y": 187.0
+  },
+  "region": 0,
+  "obg": "D07",
+  "preisNacht": 122,
+  "koordinaten": {
+   "lat": 53.5422781,
+   "lon": 9.9984229
+  }
+ },
+ {
+  "id": "AC-B141",
+  "name": "25hours Hotel The Goldman",
+  "ort": "Frankfurt am Main",
+  "brand": "25hours",
+  "pos": {
+   "x": 130.0,
+   "y": 346.0
+  },
+  "region": 2,
+  "obg": "D09",
+  "preisNacht": 123,
+  "koordinaten": {
+   "lat": 50.111688,
+   "lon": 8.712788
+  }
+ },
+ {
+  "id": "AC-B142",
+  "name": "25hours Hotel The Trip",
+  "ort": "Frankfurt",
+  "brand": "25hours",
+  "pos": {
+   "x": 439.0,
+   "y": 207.0
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 124,
+  "koordinaten": {
+   "lat": 50.1096,
+   "lon": 8.66335
+  }
+ },
+ {
+  "id": "AC-B143",
+  "name": "25hours Hotel Bikini Berlin",
+  "ort": "Berlin",
+  "brand": "25hours",
+  "pos": {
+   "x": 620.0,
+   "y": 208.0
+  },
+  "region": 1,
+  "obg": "D08",
+  "preisNacht": 125,
+  "koordinaten": {
+   "lat": 52.50572,
+   "lon": 13.33776
+  }
+ },
+ {
+  "id": "AC-B1A2",
+  "name": "Adagio Access Freiburg",
+  "ort": "Freiburg",
+  "brand": "Adagio Access",
+  "pos": {
+   "x": 622.0,
+   "y": 360.0
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 96,
+  "koordinaten": {
+   "lat": 48.01313,
+   "lon": 7.848347
+  }
+ },
+ {
+  "id": "AC-B1M9",
+  "name": "ibis Styles München Airport",
+  "ort": "München",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 34.0,
+   "y": 346.0
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 85,
+  "koordinaten": {
+   "lat": 48.354,
+   "lon": 11.759083
+  }
+ },
+ {
+  "id": "AC-B1T8",
+  "name": "ibis Landshut City",
+  "ort": "Landshut",
+  "brand": "ibis",
+  "pos": {
+   "x": 77.0,
+   "y": 55.0
+  },
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 93,
+  "koordinaten": {
+   "lat": 48.54626,
+   "lon": 12.13403
+  }
+ },
+ {
+  "id": "AC-B1Y6",
+  "name": "Hotel Das Stue Berlin",
+  "ort": "Berlin",
+  "brand": "",
+  "pos": {
+   "x": 80.0,
+   "y": 358.0
+  },
+  "region": 1,
+  "obg": "D09",
+  "preisNacht": 87,
+  "koordinaten": {
+   "lat": 52.509991,
+   "lon": 13.345841
+  }
+ },
+ {
+  "id": "AC-B218",
+  "name": "Novotel Düsseldorf Airport",
+  "ort": "Düsseldorf",
+  "brand": "Novotel",
+  "pos": {
+   "x": 566.0,
+   "y": 338.0
+  },
+  "region": 0,
+  "obg": "D12",
+  "preisNacht": 98,
+  "koordinaten": {
+   "lat": 51.283918,
+   "lon": 6.784652
+  }
+ },
+ {
+  "id": "AC-B219",
+  "name": "ibis Düsseldorf Airport",
+  "ort": "Düsseldorf",
+  "brand": "ibis",
+  "pos": {
+   "x": 27.0,
+   "y": 39.0
+  },
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 100,
+  "koordinaten": {
+   "lat": 51.283918,
+   "lon": 6.784652
+  }
+ },
+ {
+  "id": "AC-B279",
+  "name": "Mercure Hotel Plaza Magdeburg",
+  "ort": "Magdeburg",
+  "brand": "Mercure",
+  "pos": {
+   "x": 474.0,
+   "y": 95.0
+  },
+  "region": 4,
+  "obg": "D03",
+  "preisNacht": 105,
+  "koordinaten": {
+   "lat": 52.10905,
+   "lon": 11.59725
+  }
+ },
+ {
+  "id": "AC-B280",
+  "name": "ibis Styles Magdeburg",
+  "ort": "Magdeburg",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 651.0,
+   "y": 117.0
+  },
+  "region": 4,
+  "obg": "D04",
+  "preisNacht": 100,
+  "koordinaten": {
+   "lat": 52.1336607629,
+   "lon": 11.6342843406
+  }
+ },
+ {
+  "id": "AC-B2A2",
+  "name": "ibis Styles Hamburg Barmbek",
+  "ort": "Hamburg",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 581.0,
+   "y": 180.0
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 53.5863149,
+   "lon": 10.0469485
+  }
+ },
+ {
+  "id": "AC-B2S6",
+  "name": "ibis Styles Gelsenkirchen",
+  "ort": "Gelsenkirchen",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 388.0,
+   "y": 192.0
+  },
+  "region": 0,
+  "obg": "D07",
+  "preisNacht": 96,
+  "koordinaten": {
+   "lat": 51.506744,
+   "lon": 7.103804
+  }
+ },
+ {
+  "id": "AC-B3F5",
+  "name": "ibis budget Bayreuth",
+  "ort": "Bayreuth",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 35.0,
+   "y": 324.0
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 83,
+  "koordinaten": {
+   "lat": 49.951509,
+   "lon": 11.578838
+  }
+ },
+ {
+  "id": "AC-B3F6",
+  "name": "ibis Styles Bayreuth",
+  "ort": "Bayreuth",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 216.0,
+   "y": 325.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 82,
+  "koordinaten": {
+   "lat": 49.951509,
+   "lon": 11.578838
+  }
+ },
+ {
+  "id": "AC-B3H4",
+  "name": "Adagio Access Stuttgart Airport",
+  "ort": "Leinfelden-echterdingen",
+  "brand": "Adagio Access",
+  "pos": {
+   "x": 586.0,
+   "y": 35.0
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 90,
+  "koordinaten": {
+   "lat": 48.6980176,
+   "lon": 9.1652823
+  }
+ },
+ {
+  "id": "AC-B3X9",
+  "name": "ibis Styles Bad Reichenhall",
+  "ort": "Bad Reichenhall",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 691.0,
+   "y": 44.0
+  },
+  "region": 2,
+  "obg": "D04",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 47.725506,
+   "lon": 12.879536
+  }
+ },
+ {
+  "id": "AC-B4C5",
+  "name": "Novotel Hamburg Central Station",
+  "ort": "Hamburg",
+  "brand": "Novotel",
+  "pos": {
+   "x": 30.0,
+   "y": 342.0
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 126,
+  "koordinaten": {
+   "lat": 53.550144,
+   "lon": 10.003064
+  }
+ },
+ {
+  "id": "AC-B4C6",
+  "name": "ibis Styles Coburg",
+  "ort": "Coburg",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 135.0,
+   "y": 201.0
+  },
+  "region": 2,
+  "obg": "D05",
+  "preisNacht": 92,
+  "koordinaten": {
+   "lat": 50.2582000386,
+   "lon": 10.9586393559
+  }
+ },
+ {
+  "id": "AC-B4G0",
+  "name": "Mercure Frankfurt Airport Langen",
+  "ort": "Langen",
+  "brand": "Mercure",
+  "pos": {
+   "x": 308.0,
+   "y": 44.0
+  },
+  "region": 2,
+  "obg": "D02",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 50.003437,
+   "lon": 8.65651
+  }
+ },
+ {
+  "id": "AC-B4H6",
+  "name": "Mövenpick Hotel Münster",
+  "ort": "Münster",
+  "brand": "Mövenpick",
+  "pos": {
+   "x": 576.0,
+   "y": 48.0
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 138,
+  "koordinaten": {
+   "lat": 51.95543,
+   "lon": 7.605067
+  }
+ },
+ {
+  "id": "AC-B4H9",
+  "name": "Mövenpick München Airport",
+  "ort": "Hallbergmoos",
+  "brand": "Mövenpick",
+  "pos": {
+   "x": 91.0,
+   "y": 44.0
+  },
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 141,
+  "koordinaten": {
+   "lat": 48.33159,
+   "lon": 11.742494
+  }
+ },
+ {
+  "id": "AC-B4I0",
+  "name": "Mövenpick Nürnberg Airport",
+  "ort": "Nürnberg",
+  "brand": "Mövenpick",
+  "pos": {
+   "x": 500.0,
+   "y": 206.0
+  },
+  "region": 2,
+  "obg": "D07",
+  "preisNacht": 163,
+  "koordinaten": {
+   "lat": 49.49326,
+   "lon": 11.079889
+  }
+ },
+ {
+  "id": "AC-B4I2",
+  "name": "Mövenpick Hamburg",
+  "ort": "Hamburg",
+  "brand": "Mövenpick",
+  "pos": {
+   "x": 218.0,
+   "y": 325.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 165,
+  "koordinaten": {
+   "lat": 53.56465,
+   "lon": 9.970611
+  }
+ },
+ {
+  "id": "AC-B4I4",
+  "name": "Mövenpick Stuttgart Airport",
+  "ort": "Stuttgart",
+  "brand": "Mövenpick",
+  "pos": {
+   "x": 632.0,
+   "y": 345.0
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 136,
+  "koordinaten": {
+   "lat": 48.691352,
+   "lon": 9.193349
+  }
+ },
+ {
+  "id": "AC-B4S9",
+  "name": "Adagio Heidelberg",
+  "ort": "Heidelberg",
+  "brand": "Adagio Original",
+  "pos": {
+   "x": 30.0,
+   "y": 342.0
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 49.405011,
+   "lon": 8.676125
+  }
+ },
+ {
+  "id": "AC-B4T0",
+  "name": "Mövenpick Stuttgart Messe",
+  "ort": "Stuttgart",
+  "brand": "Mövenpick",
+  "pos": {
+   "x": 79.0,
+   "y": 57.0
+  },
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 163,
+  "koordinaten": {
+   "lat": 48.692004,
+   "lon": 9.191206
+  }
+ },
+ {
+  "id": "AC-B547",
+  "name": "ibis Styles München Perlach",
+  "ort": "München",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 208.0,
+   "y": 340.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 48.100771,
+   "lon": 11.64646
+  }
+ },
+ {
+  "id": "AC-B626",
+  "name": "ibis Styles Berlin Treptow",
+  "ort": "Berlin",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 258.0,
+   "y": 356.0
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 83,
+  "koordinaten": {
+   "lat": 52.458925,
+   "lon": 13.513098
+  }
+ },
+ {
+  "id": "AC-B655",
+  "name": "Adagio Access Hamburg",
+  "ort": "Hamburg",
+  "brand": "Adagio Access",
+  "pos": {
+   "x": 403.0,
+   "y": 330.0
+  },
+  "region": 0,
+  "obg": "D11",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 53.5621273,
+   "lon": 10.0253858
+  }
+ },
+ {
+  "id": "AC-B6I6",
+  "name": "ibis Styles Dresden Neustadt",
+  "ort": "Dresden",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 599.0,
+   "y": 90.0
+  },
+  "region": 3,
+  "obg": "D04",
+  "preisNacht": 94,
+  "koordinaten": {
+   "lat": 51.073189,
+   "lon": 13.741772
+  }
+ },
+ {
+  "id": "AC-B6J0",
+  "name": "ibis Styles Darmstadt",
+  "ort": "Darmstadt",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 599.0,
+   "y": 240.0
+  },
+  "region": 3,
+  "obg": "D08",
+  "preisNacht": 93,
+  "koordinaten": {
+   "lat": 49.86308,
+   "lon": 8.6263
+  }
+ },
+ {
+  "id": "AC-B740",
+  "name": "Mercure Lübeck City Center",
+  "ort": "Lübeck",
+  "brand": "Mercure",
+  "pos": {
+   "x": 583.0,
+   "y": 330.0
+  },
+  "region": 0,
+  "obg": "D12",
+  "preisNacht": 127,
+  "koordinaten": {
+   "lat": 53.866064,
+   "lon": 10.672163
+  }
+ },
+ {
+  "id": "AC-B7A9",
+  "name": "TRIBE Baden Baden",
+  "ort": "Baden-baden",
+  "brand": "TRIBE",
+  "pos": {
+   "x": 210.0,
+   "y": 192.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 48.774799,
+   "lon": 8.27803
+  }
+ },
+ {
+  "id": "AC-B7N7",
+  "name": "Congress Hotel Weimar By Mercure",
+  "ort": "Weimar",
+  "brand": "Mercure",
+  "pos": {
+   "x": 107.0,
+   "y": 113.0
+  },
+  "region": 4,
+  "obg": "D01",
+  "preisNacht": 81,
+  "koordinaten": {
+   "lat": 50.933704,
+   "lon": 11.288616
+  }
+ },
+ {
+  "id": "AC-B7U6",
+  "name": "ibis Styles Friedrichshafen",
+  "ort": "Friedrichshafen",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 639.0,
+   "y": 52.0
+  },
+  "region": 1,
+  "obg": "D04",
+  "preisNacht": 101,
+  "koordinaten": {
+   "lat": 47.665808,
+   "lon": 9.446078
+  }
+ },
+ {
+  "id": "AC-B829",
+  "name": "Mercure Mainz City Center",
+  "ort": "Mainz",
+  "brand": "Mercure",
+  "pos": {
+   "x": 310.0,
+   "y": 196.0
+  },
+  "region": 2,
+  "obg": "D06",
+  "preisNacht": 99,
+  "koordinaten": {
+   "lat": 50.00302,
+   "lon": 8.2615
+  }
+ },
+ {
+  "id": "AC-B842",
+  "name": "Adagio Stuttgart Neckarpark",
+  "ort": "Stuttgart",
+  "brand": "Adagio Original",
+  "pos": {
+   "x": 263.0,
+   "y": 61.0
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 87,
+  "koordinaten": {
+   "lat": 48.796111,
+   "lon": 9.225111
+  }
+ },
+ {
+  "id": "AC-B852",
+  "name": "Mercure Hotel Mönchengladbach",
+  "ort": "Mönchengladbach",
+  "brand": "Mercure",
+  "pos": {
+   "x": 681.0,
+   "y": 332.0
+  },
+  "region": 2,
+  "obg": "D12",
+  "preisNacht": 113,
+  "koordinaten": {
+   "lat": 51.199623,
+   "lon": 6.434792
+  }
+ },
+ {
+  "id": "AC-B8G6",
+  "name": "ibis Styles Bielefeld",
+  "ort": "Bielefeld",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 668.0,
+   "y": 194.0
+  },
+  "region": 2,
+  "obg": "D08",
+  "preisNacht": 82,
+  "koordinaten": {
+   "lat": 52.020034,
+   "lon": 8.534867
+  }
+ },
+ {
+  "id": "AC-B8L6",
+  "name": "ibis Styles Singen",
+  "ort": "Singen",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 313.0,
+   "y": 49.0
+  },
+  "region": 2,
+  "obg": "D02",
+  "preisNacht": 81,
+  "koordinaten": {
+   "lat": 47.755814,
+   "lon": 8.840272
+  }
+ },
+ {
+  "id": "AC-B8L8",
+  "name": "ibis budget Singen",
+  "ort": "Singen",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 495.0,
+   "y": 51.0
+  },
+  "region": 2,
+  "obg": "D03",
+  "preisNacht": 79,
+  "koordinaten": {
+   "lat": 47.755814,
+   "lon": 8.840272
+  }
+ },
+ {
+  "id": "AC-B8T4",
+  "name": "Mercure Hotel Gera City",
+  "ort": "Gera",
+  "brand": "Mercure",
+  "pos": {
+   "x": 585.0,
+   "y": 251.0
+  },
+  "region": 3,
+  "obg": "D08",
+  "preisNacht": 104,
+  "koordinaten": {
+   "lat": 50.883764,
+   "lon": 12.069974
+  }
+ },
+ {
+  "id": "AC-B907",
+  "name": "ibis budget Berlin Airport",
+  "ort": "Berlin",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 460.0,
+   "y": 353.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 66,
+  "koordinaten": {
+   "lat": 52.398948,
+   "lon": 13.542721
+  }
+ },
+ {
+  "id": "AC-B913",
+  "name": "ibis Berlin Airport",
+  "ort": "Berlin",
+  "brand": "ibis",
+  "pos": {
+   "x": 617.0,
+   "y": 355.0
+  },
+  "region": 1,
+  "obg": "D12",
+  "preisNacht": 98,
+  "koordinaten": {
+   "lat": 52.399429,
+   "lon": 13.543866
+  }
+ },
+ {
+  "id": "AC-B9D1",
+  "name": "The Hoxton Charlottenburg",
+  "ort": "Berlin",
+  "brand": "The Hoxton",
+  "pos": {
+   "x": 89.0,
+   "y": 42.0
+  },
+  "region": 1,
+  "obg": "D01",
+  "preisNacht": 98,
+  "koordinaten": {
+   "lat": 52.500824,
+   "lon": 13.329118
+  }
+ },
+ {
+  "id": "AC-C025",
+  "name": "Mercure Mittellandkanal",
+  "ort": "Hannover",
+  "brand": "Mercure",
+  "pos": {
+   "x": 81.0,
+   "y": 209.0
+  },
+  "region": 1,
+  "obg": "D05",
+  "preisNacht": 128,
+  "koordinaten": {
+   "lat": 52.405315,
+   "lon": 9.737386
+  }
+ },
+ {
+  "id": "AC-C1H0",
+  "name": "Atomis Hotel München Airport",
+  "ort": "Oberding",
+  "brand": "Mercure",
+  "pos": {
+   "x": 602.0,
+   "y": 243.0
+  },
+  "region": 3,
+  "obg": "D08",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 48.3420967,
+   "lon": 11.8330538
+  }
+ },
+ {
+  "id": "AC-C1T5",
+  "name": "TRIBE Düsseldorf",
+  "ort": "Düsseldorf",
+  "brand": "TRIBE",
+  "pos": {
+   "x": 508.0,
+   "y": 189.0
+  },
+  "region": 2,
+  "obg": "D07",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 51.219389,
+   "lon": 6.788929
+  }
+ },
+ {
+  "id": "AC-C2M4",
+  "name": "ibis Styles Aalen",
+  "ort": "Aalen",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 217.0,
+   "y": 176.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 92,
+  "koordinaten": {
+   "lat": 48.835904,
+   "lon": 10.091003
+  }
+ },
+ {
+  "id": "AC-C2V3",
+  "name": "ibis Styles Neckarsulm",
+  "ort": "Neckarsulm",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 580.0,
+   "y": 179.0
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 49.192759,
+   "lon": 9.226994
+  }
+ },
+ {
+  "id": "AC-C365",
+  "name": "Muze Handwritten Collection",
+  "ort": "Düsseldorf",
+  "brand": "Handwritten Collection",
+  "pos": {
+   "x": 216.0,
+   "y": 25.0
+  },
+  "region": 0,
+  "obg": "D02",
+  "preisNacht": 110,
+  "koordinaten": {
+   "lat": 51.231891,
+   "lon": 6.787558
+  }
+ },
+ {
+  "id": "AC-C487",
+  "name": "Mercure Pforzheim",
+  "ort": "Pforzheim",
+  "brand": "Mercure",
+  "pos": {
+   "x": 56.0,
+   "y": 239.0
+  },
+  "region": 3,
+  "obg": "D05",
+  "preisNacht": 127,
+  "koordinaten": {
+   "lat": 48.903461,
+   "lon": 8.655548
+  }
+ },
+ {
+  "id": "AC-C524",
+  "name": "ibis Styles Rosenheim",
+  "ort": "Rosenheim",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 471.0,
+   "y": 267.0
+  },
+  "region": 4,
+  "obg": "D07",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 47.852778,
+   "lon": 12.125
+  }
+ },
+ {
+  "id": "AC-C525",
+  "name": "Greet Hotel Potsdam",
+  "ort": "Potsdam",
+  "brand": "Greet",
+  "pos": {
+   "x": 396.0,
+   "y": 198.0
+  },
+  "region": 0,
+  "obg": "D07",
+  "preisNacht": 96,
+  "koordinaten": {
+   "lat": 52.393918,
+   "lon": 13.011888
+  }
+ },
+ {
+  "id": "AC-C5G3",
+  "name": "Mercure Living Heide",
+  "ort": "Heide",
+  "brand": "Mercure Living",
+  "pos": {
+   "x": 415.0,
+   "y": 261.0
+  },
+  "region": 3,
+  "obg": "D07",
+  "preisNacht": 109,
+  "koordinaten": {
+   "lat": 54.198463,
+   "lon": 9.096818
+  }
+ },
+ {
+  "id": "AC-C5N0",
+  "name": "Merseburg Handwritten",
+  "ort": "Merseburg",
+  "brand": "Handwritten Collection",
+  "pos": {
+   "x": 404.0,
+   "y": 400.0
+  },
+  "region": 3,
+  "obg": "D11",
+  "preisNacht": 107,
+  "koordinaten": {
+   "lat": 51.361774,
+   "lon": 11.999513
+  }
+ },
+ {
+  "id": "AC-C5N1",
+  "name": "ibis Styles Köln Airport",
+  "ort": "Troisdorf",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 617.0,
+   "y": 205.0
+  },
+  "region": 1,
+  "obg": "D08",
+  "preisNacht": 91,
+  "koordinaten": {
+   "lat": 50.807103,
+   "lon": 7.131327
+  }
+ },
+ {
+  "id": "AC-C5S4",
+  "name": "ibis Styles Ber Hennigsdorf",
+  "ort": "Hennigsdorf",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 593.0,
+   "y": 409.0
+  },
+  "region": 3,
+  "obg": "D12",
+  "preisNacht": 93,
+  "koordinaten": {
+   "lat": 52.63696,
+   "lon": 13.19907
+  }
+ },
+ {
+  "id": "AC-C5S6",
+  "name": "ibis Styles Lübeck",
+  "ort": "Lübeck",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 35.0,
+   "y": 47.0
+  },
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 53.851,
+   "lon": 10.65955
+  }
+ },
+ {
+  "id": "AC-C662",
+  "name": "Webers Hotel im Ruhrturm Essen",
+  "ort": "Essen",
+  "brand": "",
+  "pos": {
+   "x": 659.0,
+   "y": 100.0
+  },
+  "region": 4,
+  "obg": "D04",
+  "preisNacht": 86,
+  "koordinaten": {
+   "lat": 51.443742,
+   "lon": 7.033275
+  }
+ },
+ {
+  "id": "AC-C6R3",
+  "name": "ibis budget Weinheim",
+  "ort": "Weinheim",
+  "brand": "ibis budget",
+  "pos": {
+   "x": 217.0,
+   "y": 24.0
+  },
+  "region": 0,
+  "obg": "D02",
+  "preisNacht": 79,
+  "koordinaten": {
+   "lat": 49.547972,
+   "lon": 8.634667
+  }
+ },
+ {
+  "id": "AC-C6S2",
+  "name": "Mercure Frankfurt Offenbach",
+  "ort": "Offenbach am Main",
+  "brand": "Mercure",
+  "pos": {
+   "x": 222.0,
+   "y": 329.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 109,
+  "koordinaten": {
+   "lat": 50.102043,
+   "lon": 8.787465
+  }
+ },
+ {
+  "id": "AC-C6U5",
+  "name": "IntercityHotel Ber Apt Ter 1,2",
+  "ort": "Berlin",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 264.0,
+   "y": 62.0
+  },
+  "region": 1,
+  "obg": "D02",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 52.36413,
+   "lon": 13.512822
+  }
+ },
+ {
+  "id": "AC-C701",
+  "name": "Steigenberger Hotel De Saxe",
+  "ort": "Dresden",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 62.0,
+   "y": 243.0
+  },
+  "region": 3,
+  "obg": "D05",
+  "preisNacht": 128,
+  "koordinaten": {
+   "lat": 51.05069,
+   "lon": 13.741221
+  }
+ },
+ {
+  "id": "AC-C704",
+  "name": "IntercityHotel Berlin Airport",
+  "ort": "Berlin",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 457.0,
+   "y": 50.0
+  },
+  "region": 1,
+  "obg": "D03",
+  "preisNacht": 86,
+  "koordinaten": {
+   "lat": 52.392237,
+   "lon": 13.518501
+  }
+ },
+ {
+  "id": "AC-C705",
+  "name": "IntercityHotel Dresden",
+  "ort": "Dresden",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 246.0,
+   "y": 247.0
+  },
+  "region": 3,
+  "obg": "D06",
+  "preisNacht": 87,
+  "koordinaten": {
+   "lat": 51.041937,
+   "lon": 13.731187
+  }
+ },
+ {
+  "id": "AC-C708",
+  "name": "Steigenberger Hotel Bremen",
+  "ort": "Bremen",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 404.0,
+   "y": 100.0
+  },
+  "region": 3,
+  "obg": "D03",
+  "preisNacht": 99,
+  "koordinaten": {
+   "lat": 53.081782,
+   "lon": 8.788646
+  }
+ },
+ {
+  "id": "AC-C710",
+  "name": "Steigenberger Airport Berlin",
+  "ort": "Berlin",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 639.0,
+   "y": 52.0
+  },
+  "region": 1,
+  "obg": "D04",
+  "preisNacht": 122,
+  "koordinaten": {
+   "lat": 52.363814,
+   "lon": 13.511917
+  }
+ },
+ {
+  "id": "AC-C711",
+  "name": "Steigenberger Hotel am Kanzler",
+  "ort": "Berlin",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 100.0,
+   "y": 203.0
+  },
+  "region": 1,
+  "obg": "D05",
+  "preisNacht": 123,
+  "koordinaten": {
+   "lat": 52.523682,
+   "lon": 13.367887
+  }
+ },
+ {
+  "id": "AC-C713",
+  "name": "IntercityHotel Darmstadt",
+  "ort": "Darmstadt",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 45.0,
+   "y": 401.0
+  },
+  "region": 3,
+  "obg": "D09",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 49.873687,
+   "lon": 8.630687
+  }
+ },
+ {
+  "id": "AC-C715",
+  "name": "IntercityHotel Dortmund",
+  "ort": "Dortmund",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 27.0,
+   "y": 39.0
+  },
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 51.516059,
+   "lon": 7.460168
+  }
+ },
+ {
+  "id": "AC-C716",
+  "name": "IntercityHotel Berlin Ostbahnh",
+  "ort": "Berlin",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 260.0,
+   "y": 208.0
+  },
+  "region": 1,
+  "obg": "D06",
+  "preisNacht": 98,
+  "koordinaten": {
+   "lat": 52.510221,
+   "lon": 13.433331
+  }
+ },
+ {
+  "id": "AC-C718",
+  "name": "IntercityHotel Berlin Hbf",
+  "ort": "Berlin",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 442.0,
+   "y": 210.0
+  },
+  "region": 1,
+  "obg": "D07",
+  "preisNacht": 100,
+  "koordinaten": {
+   "lat": 52.52368,
+   "lon": 13.36705
+  }
+ },
+ {
+  "id": "AC-C719",
+  "name": "IntercityHotel Celle",
+  "ort": "Celle",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 591.0,
+   "y": 107.0
+  },
+  "region": 3,
+  "obg": "D04",
+  "preisNacht": 80,
+  "koordinaten": {
+   "lat": 52.625812,
+   "lon": 10.085812
+  }
+ },
+ {
+  "id": "AC-C720",
+  "name": "IntercityHotel Duisburg",
+  "ort": "Duisburg",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 228.0,
+   "y": 254.0
+  },
+  "region": 3,
+  "obg": "D06",
+  "preisNacht": 81,
+  "koordinaten": {
+   "lat": 51.429529,
+   "lon": 6.771869
+  }
+ },
+ {
+  "id": "AC-C725",
+  "name": "Steigenberger Hotel Bielefeld",
+  "ort": "Bielefeld",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 137.0,
+   "y": 353.0
+  },
+  "region": 2,
+  "obg": "D09",
+  "preisNacht": 122,
+  "koordinaten": {
+   "lat": 52.028934,
+   "lon": 8.533744
+  }
+ },
+ {
+  "id": "AC-C727",
+  "name": "Steigenberger Airport Frankfurt",
+  "ort": "Frankfurt",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 627.0,
+   "y": 215.0
+  },
+  "region": 1,
+  "obg": "D08",
+  "preisNacht": 124,
+  "koordinaten": {
+   "lat": 50.058054,
+   "lon": 8.589911
+  }
+ },
+ {
+  "id": "AC-C728",
+  "name": "IntercityHotel Frankfurt Apt",
+  "ort": "Frankfurt",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 88.0,
+   "y": 366.0
+  },
+  "region": 1,
+  "obg": "D09",
+  "preisNacht": 89,
+  "koordinaten": {
+   "lat": 50.032812,
+   "lon": 8.592187
+  }
+ },
+ {
+  "id": "AC-C729",
+  "name": "IntercityHotel Frankfurt Hbf",
+  "ort": "Frankfurt",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 269.0,
+   "y": 342.0
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 90,
+  "koordinaten": {
+   "lat": 50.105191,
+   "lon": 8.662902
+  }
+ },
+ {
+  "id": "AC-C731",
+  "name": "IntercityHotel Hamburg-altona",
+  "ort": "Hamburg",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 575.0,
+   "y": 347.0
+  },
+  "region": 0,
+  "obg": "D12",
+  "preisNacht": 92,
+  "koordinaten": {
+   "lat": 53.552586,
+   "lon": 9.935866
+  }
+ },
+ {
+  "id": "AC-C732",
+  "name": "IntercityHotel Hamburg-hbf",
+  "ort": "Hamburg",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 36.0,
+   "y": 48.0
+  },
+  "region": 0,
+  "obg": "D01",
+  "preisNacht": 93,
+  "koordinaten": {
+   "lat": 53.554027,
+   "lon": 10.003053
+  }
+ },
+ {
+  "id": "AC-C733",
+  "name": "IntercityHotel Hamburg Dammtor",
+  "ort": "Hamburg",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 217.0,
+   "y": 24.0
+  },
+  "region": 0,
+  "obg": "D02",
+  "preisNacht": 94,
+  "koordinaten": {
+   "lat": 53.560016,
+   "lon": 9.981112
+  }
+ },
+ {
+  "id": "AC-C734",
+  "name": "IntercityHotel Hamburg Barmbek",
+  "ort": "Hamburg",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 398.0,
+   "y": 25.0
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 53.588127,
+   "lon": 10.045613
+  }
+ },
+ {
+  "id": "AC-C736",
+  "name": "Zleep Hamburg Volkspark",
+  "ort": "Hamburg",
+  "brand": "Zleep",
+  "pos": {
+   "x": 580.0,
+   "y": 27.0
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 82,
+  "koordinaten": {
+   "lat": 53.5922,
+   "lon": 9.9247
+  }
+ },
+ {
+  "id": "AC-C738",
+  "name": "IntercityHotel Heidelberg",
+  "ort": "Heidelberg",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 222.0,
+   "y": 329.0
+  },
+  "region": 0,
+  "obg": "D10",
+  "preisNacht": 99,
+  "koordinaten": {
+   "lat": 49.404932,
+   "lon": 8.67596
+  }
+ },
+ {
+  "id": "AC-C739",
+  "name": "Steigenberger Heringsdorf",
+  "ort": "Heringsdorf",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 327.0,
+   "y": 38.0
+  },
+  "region": 2,
+  "obg": "D02",
+  "preisNacht": 121,
+  "koordinaten": {
+   "lat": 53.9509,
+   "lon": 14.1744
+  }
+ },
+ {
+  "id": "AC-C745",
+  "name": "MAXX Jena",
+  "ort": "Jena",
+  "brand": "MAXX",
+  "pos": {
+   "x": 585.0,
+   "y": 32.0
+  },
+  "region": 0,
+  "obg": "D04",
+  "preisNacht": 85,
+  "koordinaten": {
+   "lat": 50.880151,
+   "lon": 11.600518
+  }
+ },
+ {
+  "id": "AC-C746",
+  "name": "IntercityHotel Karlsruhe",
+  "ort": "Karlsruhe",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 278.0,
+   "y": 351.0
+  },
+  "region": 1,
+  "obg": "D10",
+  "preisNacht": 86,
+  "koordinaten": {
+   "lat": 48.993294,
+   "lon": 8.398263
+  }
+ },
+ {
+  "id": "AC-C747",
+  "name": "Zleep Frankfurt Airport",
+  "ort": "Kelsterbach",
+  "brand": "Zleep",
+  "pos": {
+   "x": 691.0,
+   "y": 342.0
+  },
+  "region": 2,
+  "obg": "D12",
+  "preisNacht": 72,
+  "koordinaten": {
+   "lat": 50.053484,
+   "lon": 8.519315
+  }
+ },
+ {
+  "id": "AC-C749",
+  "name": "IntercityHotel Kiel",
+  "ort": "Kiel",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 224.0,
+   "y": 100.0
+  },
+  "region": 3,
+  "obg": "D02",
+  "preisNacht": 89,
+  "koordinaten": {
+   "lat": 54.314187,
+   "lon": 10.132562
+  }
+ },
+ {
+  "id": "AC-C750",
+  "name": "Steigenberger Hotel Köln",
+  "ort": "Köln",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 246.0,
+   "y": 247.0
+  },
+  "region": 3,
+  "obg": "D06",
+  "preisNacht": 102,
+  "koordinaten": {
+   "lat": 50.935791,
+   "lon": 6.9379
+  }
+ },
+ {
+  "id": "AC-C751",
+  "name": "Steigenberger Inselhtl Konstanz",
+  "ort": "Konstanz",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 303.0,
+   "y": 404.0
+  },
+  "region": 4,
+  "obg": "D10",
+  "preisNacht": 103,
+  "koordinaten": {
+   "lat": 47.664218,
+   "lon": 9.178233
+  }
+ },
+ {
+  "id": "AC-C754",
+  "name": "Steigenberger Icon Grandhtl Ha",
+  "ort": "Leipzig",
+  "brand": "Steigenberger Icon",
+  "pos": {
+   "x": 405.0,
+   "y": 251.0
+  },
+  "region": 3,
+  "obg": "D07",
+  "preisNacht": 163,
+  "koordinaten": {
+   "lat": 51.340694,
+   "lon": 12.376169
+  }
+ },
+ {
+  "id": "AC-C755",
+  "name": "IntercityHotel Leipzig",
+  "ort": "Leipzig",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 586.0,
+   "y": 252.0
+  },
+  "region": 3,
+  "obg": "D08",
+  "preisNacht": 95,
+  "koordinaten": {
+   "lat": 51.344704,
+   "lon": 12.376158
+  }
+ },
+ {
+  "id": "AC-C756",
+  "name": "IntercityHotel Lübeck",
+  "ort": "Lübeck",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 27.0,
+   "y": 339.0
+  },
+  "region": 0,
+  "obg": "D09",
+  "preisNacht": 96,
+  "koordinaten": {
+   "lat": 53.866444,
+   "lon": 10.672163
+  }
+ },
+ {
+  "id": "AC-C761",
+  "name": "IntercityHotel Mainz",
+  "ort": "Mainz",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 492.0,
+   "y": 198.0
+  },
+  "region": 2,
+  "obg": "D07",
+  "preisNacht": 80,
+  "koordinaten": {
+   "lat": 49.998937,
+   "lon": 8.258062
+  }
+ },
+ {
+  "id": "AC-C765",
+  "name": "Steigenberger Hotel München",
+  "ort": "München",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 52.0,
+   "y": 258.0
+  },
+  "region": 3,
+  "obg": "D05",
+  "preisNacht": 102,
+  "koordinaten": {
+   "lat": 48.17459,
+   "lon": 11.590296
+  }
+ },
+ {
+  "id": "AC-C767",
+  "name": "IntercityHotel Paderborn",
+  "ort": "Paderborn",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 290.0,
+   "y": 116.0
+  },
+  "region": 4,
+  "obg": "D02",
+  "preisNacht": 86,
+  "koordinaten": {
+   "lat": 51.713329,
+   "lon": 8.740701
+  }
+ },
+ {
+  "id": "AC-C768",
+  "name": "MAXX Hotel Potsdam",
+  "ort": "Potsdam",
+  "brand": "MAXX",
+  "pos": {
+   "x": 575.0,
+   "y": 197.0
+  },
+  "region": 0,
+  "obg": "D08",
+  "preisNacht": 87,
+  "koordinaten": {
+   "lat": 52.400055,
+   "lon": 13.045966
+  }
+ },
+ {
+  "id": "AC-C769",
+  "name": "IntercityHotel Rostock",
+  "ort": "Rostock",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 652.0,
+   "y": 268.0
+  },
+  "region": 4,
+  "obg": "D08",
+  "preisNacht": 88,
+  "koordinaten": {
+   "lat": 54.078014,
+   "lon": 12.133235
+  }
+ },
+ {
+  "id": "AC-C774",
+  "name": "IntercityHotel Stralsund",
+  "ort": "Stralsund",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 141.0,
+   "y": 182.0
+  },
+  "region": 2,
+  "obg": "D05",
+  "preisNacht": 93,
+  "koordinaten": {
+   "lat": 54.308687,
+   "lon": 13.079062
+  }
+ },
+ {
+  "id": "AC-C775",
+  "name": "Steigenberger Graf Zeppelin Str",
+  "ort": "Stuttgart",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 450.0,
+   "y": 43.0
+  },
+  "region": 1,
+  "obg": "D03",
+  "preisNacht": 97,
+  "koordinaten": {
+   "lat": 48.783633,
+   "lon": 9.179506
+  }
+ },
+ {
+  "id": "AC-C776",
+  "name": "Jaz in the City Stuttgart",
+  "ort": "Stuttgart",
+  "brand": "Jaz in the City",
+  "pos": {
+   "x": 631.0,
+   "y": 44.0
+  },
+  "region": 1,
+  "obg": "D04",
+  "preisNacht": 98,
+  "koordinaten": {
+   "lat": 48.792115,
+   "lon": 9.182218
+  }
+ },
+ {
+  "id": "AC-C779",
+  "name": "IntercityHotel Wiesbaden",
+  "ort": "Wiesbaden",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 658.0,
+   "y": 99.0
+  },
+  "region": 4,
+  "obg": "D04",
+  "preisNacht": 98,
+  "koordinaten": {
+   "lat": 50.070105,
+   "lon": 8.242753
+  }
+ },
+ {
+  "id": "AC-C780",
+  "name": "Steigenberger Hotel Hamburg",
+  "ort": "Hamburg",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 39.0,
+   "y": 176.0
+  },
+  "region": 0,
+  "obg": "D05",
+  "preisNacht": 123,
+  "koordinaten": {
+   "lat": 53.549257,
+   "lon": 9.98559
+  }
+ },
+ {
+  "id": "AC-C781",
+  "name": "Steigenberger Icon Frankfurt",
+  "ort": "Frankfurt",
+  "brand": "Steigenberger Icon",
+  "pos": {
+   "x": 452.0,
+   "y": 345.0
+  },
+  "region": 1,
+  "obg": "D11",
+  "preisNacht": 160,
+  "koordinaten": {
+   "lat": 50.110141,
+   "lon": 8.675814
+  }
+ },
+ {
+  "id": "AC-C785",
+  "name": "IntercityHotel Hannover",
+  "ort": "Hannover",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 276.0,
+   "y": 199.0
+  },
+  "region": 1,
+  "obg": "D06",
+  "preisNacht": 83,
+  "koordinaten": {
+   "lat": 52.376422,
+   "lon": 9.737882
+  }
+ },
+ {
+  "id": "AC-C786",
+  "name": "IntercityHotel Herford",
+  "ort": "Herford",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 65.0,
+   "y": 96.0
+  },
+  "region": 3,
+  "obg": "D01",
+  "preisNacht": 84,
+  "koordinaten": {
+   "lat": 52.1188,
+   "lon": 8.6746
+  }
+ },
+ {
+  "id": "AC-C790",
+  "name": "IntercityHotel Saarbrücken",
+  "ort": "Saarbrücken",
+  "brand": "IntercityHotel",
+  "pos": {
+   "x": 149.0,
+   "y": 340.0
+  },
+  "region": 2,
+  "obg": "D09",
+  "preisNacht": 88,
+  "koordinaten": {
+   "lat": 49.238589,
+   "lon": 6.988136
+  }
+ },
+ {
+  "id": "AC-C7A0",
+  "name": "Steigenberger Hotel Bad Homburg",
+  "ort": "Bad Homburg",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 119.0,
+   "y": 100.0
+  },
+  "region": 4,
+  "obg": "D01",
+  "preisNacht": 114,
+  "koordinaten": {
+   "lat": 50.226396,
+   "lon": 8.621998
+  }
+ },
+ {
+  "id": "AC-C7A1",
+  "name": "Steigenberger Bad Neuenahr",
+  "ort": "Bad Neuenahr",
+  "brand": "Steigenberger",
+  "pos": {
+   "x": 328.0,
+   "y": 39.0
+  },
+  "region": 2,
+  "obg": "D02",
+  "preisNacht": 115,
+  "koordinaten": {
+   "lat": 50.542225,
+   "lon": 7.136977
+  }
+ },
+ {
+  "id": "AC-C7A4",
+  "name": "Steigenberger Icon Baden Baden",
+  "ort": "Baden Baden",
+  "brand": "Steigenberger Icon",
+  "pos": {
+   "x": 123.0,
+   "y": 254.0
+  },
+  "region": 4,
+  "obg": "D05",
+  "preisNacht": 163,
+  "koordinaten": {
+   "lat": 48.7607,
+   "lon": 8.2401
+  }
+ },
+ {
+  "id": "AC-C7A5",
+  "name": "Steigenberger Icon Grandhotel",
+  "ort": "Petersberg",
+  "brand": "Steigenberger Icon",
+  "pos": {
+   "x": 484.0,
+   "y": 105.0
+  },
+  "region": 4,
+  "obg": "D03",
+  "preisNacht": 164,
+  "koordinaten": {
+   "lat": 50.685521,
+   "lon": 7.207835
+  }
+ },
+ {
+  "id": "AC-C7A6",
+  "name": "Steigenberger Icon Parkhotel",
+  "ort": "Düsseldorf",
+  "brand": "Steigenberger Icon",
+  "pos": {
+   "x": 384.0,
+   "y": 36.0
+  },
+  "region": 0,
+  "obg": "D03",
+  "preisNacht": 165,
+  "koordinaten": {
+   "lat": 51.226758,
+   "lon": 6.778477
+  }
+ },
+ {
+  "id": "AC-C7B0",
+  "name": "Mercure Bonn City Center",
+  "ort": "Bonn",
+  "brand": "Mercure",
+  "pos": {
+   "x": 460.0,
+   "y": 406.0
+  },
+  "region": 4,
+  "obg": "D11",
+  "preisNacht": 109,
+  "koordinaten": {
+   "lat": 50.731998,
+   "lon": 7.09556
+  }
+ },
+ {
+  "id": "AC-C7Z9",
+  "name": "ibis Styles Saarbrücken",
+  "ort": "Saarbrücken",
+  "brand": "ibis Styles",
+  "pos": {
+   "x": 387.0,
+   "y": 339.0
+  },
+  "region": 0,
+  "obg": "D11",
+  "preisNacht": 105,
+  "koordinaten": {
+   "lat": 49.23839,
+   "lon": 6.9904
+  }
+ },
+ {
+  "id": "AC-C800",
+  "name": "Mercure Hildesheim Center",
+  "ort": "Hildesheim",
+  "brand": "Mercure",
+  "pos": {
+   "x": 439.0,
+   "y": 57.0
+  },
+  "region": 1,
+  "obg": "D03",
+  "preisNacht": 116,
+  "koordinaten": {
+   "lat": 52.15983,
+   "lon": 9.954098
+  }
+ },
+ {
+  "id": "AC-HA595",
+  "name": "Fairmont Hotel Vier Jahreszeiten",
+  "ort": "Hamburg",
+  "brand": "Fairmont",
+  "pos": {
+   "x": 208.0,
+   "y": 187.0
+  },
+  "region": 0,
+  "obg": "D06",
+  "preisNacht": 145,
+  "koordinaten": {
+   "lat": 53.555603,
+   "lon": 9.991689
+  }
+ }
+]

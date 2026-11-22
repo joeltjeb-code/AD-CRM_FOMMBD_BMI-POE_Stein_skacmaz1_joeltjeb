@@ -44,7 +44,7 @@ function schliesseResetDialog() { document.getElementById('resetDialog')?.setAtt
 // Seite neu laden — die App startet dann wieder auf dem geladenen Bestand
 // aus dem Repo (bzw. auf den Demo-Daten, wenn keine Basis vorliegt).
 function zuruecksetzenAufBasis() {
-  speicher.speichere('importierteHaendler', []);
+  speicher.entferne('importierteHaendler');
   globalThis.location?.reload?.();
 }
 
@@ -378,6 +378,13 @@ async function starten() {
     ]);
   } catch {
     datenBasis = 'demo';
+  }
+  // Hotels: echte Accor-Basis (nur Status "Open") vorziehen — fehlt sie,
+  // bleibt die Demo-Hotelliste aktiv (gleicher Mechanismus wie datenBasis).
+  try {
+    hotels = await ladeDatenMitRetry('daten/hotels.json');
+  } catch {
+    // hotels-demo.json bleibt als Fallback geladen
   }
   setzePlzZentren(plzZentren);
   // Heimat-Position selbstheilend: gespeicherte Einstellungen tragen noch
