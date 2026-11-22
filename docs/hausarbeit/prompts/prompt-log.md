@@ -121,3 +121,9 @@
   → Ergebnis: .gitignore + FOM_Data/, AGENTS.md aktueller Stand 18.11., README-Projektabschnitt, Merge auf main; Restliste T18 (KI text-adapter), T19 (OCR-Import), echte PLZ-Koordinaten, echte Händlerliste, Maillinbox Phase 2
 - [22:08] "Feierabend"
   → Ergebnis: Finale Tageszusammenfassung im Tagebuch, alle Änderungen committed (main auf Merge-Stand 972c664, Suite 92/92), offene Punkte T18/T19 dokumentiert
+
+- [20:31] "Hallo, ist die tagesdatei zur Dokumentation schon erstellt?"
+  → Ergebnis: Tagesdatei 2026-11-22.md angelegt (Session-Start-Checkliste), Prompt-Log geprüft, Stand der letzten Session (18.11.) referenziert, offene Aufgaben T18/T19 usw. notiert
+
+- [20:35] "Okay. Dann gehen wir mal #1 an"
+  → Ergebnis: Task 18 (KI text-adapter) TDD umgesetzt auf `feature/ki-text-adapter`: strukturiereStichpunkte + klassifiziereThemen mit Mistral-Call (injizierbarer Fetch) und Heuristik-Fallback, Button „KI-Vorschläge" im Bericht mit editierbarer Vorbelegung; Suite 102/102, jsdom 9 Checks ok, 2 Feature-Commits (ccce0d9, 14a22d3)
