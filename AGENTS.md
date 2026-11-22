@@ -57,9 +57,9 @@ never in this repository.
 
 ## Aktueller Stand
 
-*Letzter Stand (18.11.2026, Branch `feature/briefing-nachbereitung`, Suite 92/92 grün):*
+*Letzter Stand (22.11.2026, Branch `main` (gemerged aus `feature/ki-text-adapter`), Suite 102/102 grün):*
 - **Routenplanung:** Planungslogik getestet (Cluster → Fälligkeit → Prio, Tagesskelett mit Wechselpuffer + Mittagspause, Übernachtung Heimat/Hotel mit Präferenzen), 4-Wochen-Plan, Drag & Drop mit Trickle-Down und bester Einsattposition, Textbefehle, Abwesenheiten je Tag/Woche (KW-Anzeige).
-- **Briefing / Bericht / Infos:** Briefing mit KPIs + Pflichthemen + Schnellblatt, Bericht mit Feldblöcken, Händlernummer-Maske, Folgetermin-Maske, Teilnehmer-Vorschlägen, Freigabe → Wissensbasis, Info-Verteilung per Postfach-Anhängen.
+- **Briefing / Bericht / Infos:** Briefing mit KPIs + Pflichthemen + Schnellblatt, Bericht mit Feldblöcken, Händlernummer-Maske, Folgetermin-Maske, Teilnehmer-Vorschlägen, **KI-Vorschläge-Button (T18: Stichpunkte → Feldvorbelegung + Fokuspunkt-Klassifikation, Mistral-Call mit Heuristik-Fallback, Key nur Runtime-Konfig)**, Freigabe → Wissensbasis, Info-Verteilung per Postfach-Anhängen.
 - **Demo-Daten:** 720 Händler (12 OBG × 60) mit Fahrzeit-Streuung, 120 Hotels (18 Marken × Stadtteile), Scorecard/Postfach/Wissensbasis demo.
-- **Start:** `python3 -m http.server 8000`, App im Browser; Tests: `node --test tests/`.
-- **Nächste Schritte:** KI text-adapter (T18: Mistral-API für Stichpunkte→Bericht + Themen-Klassifikation, Heuristik-Fallback), Händlerimport per Mistral OCR (T19) als Weg zu echten PLZ-Koordinaten, dann echte Händlerliste hochladen.
+- **Start:** `python3 -m http.server 8000`, App im Browser; Tests: `node --test tests/` (102).
+- **Nächste Schritte:** Händlerimport per Mistral OCR (T19) als Weg zu echten PLZ-Koordinaten, dann echte Händlerliste hochladen; danach Outlook-Anbindung (Phase 2, zurückgestellt). T18 ist abgeschlossen.

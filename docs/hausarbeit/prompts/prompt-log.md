@@ -127,3 +127,6 @@
 
 - [20:35] "Okay. Dann gehen wir mal #1 an"
   → Ergebnis: Task 18 (KI text-adapter) TDD umgesetzt auf `feature/ki-text-adapter`: strukturiereStichpunkte + klassifiziereThemen mit Mistral-Call (injizierbarer Fetch) und Heuristik-Fallback, Button „KI-Vorschläge" im Bericht mit editierbarer Vorbelegung; Suite 102/102, jsdom 9 Checks ok, 2 Feature-Commits (ccce0d9, 14a22d3)
+
+- [21:05] "Dann merge den Branch bitte bevor wir weitergehen. Ich will unbeding Merge Konflikte verhindern"
+  → Ergebnis: Fast-Forward-Merge `feature/ki-text-adapter` → `main` (`--ff-only`, keine Konflikte möglich, da main nicht divergiert war); Suite auf main 102/102 grün; AGENTS.md „Aktueller Stand" auf 22.11. aktualisiert (T18 abgeschlossen, T19 als nächstes)
