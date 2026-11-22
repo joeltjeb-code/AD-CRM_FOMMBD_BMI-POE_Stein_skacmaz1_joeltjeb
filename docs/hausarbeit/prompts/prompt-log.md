@@ -133,3 +133,6 @@
 
 - [21:20] "Super. Dann will ich jetzt bitte mit der nächsten aufgabe weitermachen, wenn das risikolos möglich ist"
   → Ergebnis: Task 19 (Händlerimport per Mistral OCR) TDD auf neuem Branch `feature/haendlerimport-ocr`: import-adapter (CSV + OCR-Pfad, Nummern-Format-Validierung, OBG-Filter D01–D12, Warnungen), Import-Kasten im Plan-Tab mit Vorschau/Übersicht/Reset; Suite 114/114, jsdom 10 Checks ok, 2 Feature-Commits (7236f05, 6e35ed0)
+
+- [21:50] "Also ist die erste Grundlage vor einem Neuupload jetzt die Liste aus Dummy Data mit all den bestehenden Infos? ... Eine neu hochgeladene Liste überschreibt dann immer die Infos ... als Speicher abgelegt. ... mit Hilfe von KI Vorschläge für die Zuordnung von Spalten ... ersten 10 Zeilen ... Dropdown"
+  → Ergebnis: alle drei Punkte umgesetzt: (1) echte Liste ist Basis — daten/haendler.json mit 972 Händlern via tools/import_betreuungsliste.py, App lädt sie mit Demo-Fallback; (2) Versionsspeicher daten/betreuungslisten/ (quelldatei versioniert), Neuupload überschreibt; (3) schlageZuordnung (KI/Heuristik) mit 10-Zeilen-Vorschau + Dropdown je Spalte; Suite 119/119, jsdom 13+5 Checks ok, Commits 0b80aed, b8f5ce7, c2d0d7f
