@@ -7,6 +7,7 @@ import { filtereNachObg } from './planung/auswahl.js';
 import { parseBefehl, wendeAn } from './planung/befehle.js';
 import { renderePlanraster } from './ui/woche.js';
 import { rendereEinstellungen, rendereAbwesenheiten, posAusPlz } from './ui/einstellungen.js';
+import { rendereImport } from './ui/import-view.js';
 import { baueBriefing } from './briefing/checkliste.js';
 import { baueSchnellblatt } from './briefing/schnellblatt.js';
 import { erstelleBericht, aufgabenAlsMassnahmen } from './bericht/vorlage.js';
@@ -309,6 +310,24 @@ async function starten() {
     return;
   }
   wissensbasis = speicher.lade('wissensbasis', wissensbasis);
+  // Importierte Betreuungsliste (Task 19) schlägt die Demo-Daten, solange
+  // eine vorhanden ist (leer = Demo zurück).
+  const importiert = speicher.lade('importierteHaendler', []);
+  if (Array.isArray(importiert) && importiert.length) haendler = importiert;
+  rendereImport(document.getElementById('importBereich'), {
+    onUebernehmen: (liste) => {
+      if (!liste?.length) return;
+      haendler = liste;
+      speicher.speichere('importierteHaendler', liste);
+      neuPlanen();
+    },
+    onReset: () => {
+      // Demo zurück = importierte Liste leeren + neu laden; danach startet
+      // die App wieder auf den Demo-Daten, ohne Restzustände.
+      speicher.speichere('importierteHaendler', []);
+      globalThis.location?.reload?.();
+    },
+  });
   rendereEinstellungen(document.getElementById('einstellungen'), settings, {
     onSpeichern: (neu) => { settings = neu; speicher.speichere('einstellungen', settings); neuPlanen(); },
   });
