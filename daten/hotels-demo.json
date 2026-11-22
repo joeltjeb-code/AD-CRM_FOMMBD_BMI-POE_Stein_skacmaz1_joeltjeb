@@ -4,8 +4,8 @@
   "name": "NH Collection Dresden Industriepark",
   "ort": "Dresden-Industriepark",
   "pos": {
-   "x": -7.8,
-   "y": 6.1
+   "x": 40.0,
+   "y": 30.0
   },
   "region": 0,
   "obg": "D01",
@@ -16,8 +16,8 @@
   "name": "art'otel Dresden Lindenhof",
   "ort": "Dresden-Lindenhof",
   "pos": {
-   "x": 12.4,
-   "y": -3.4000000000000004
+   "x": 41.0,
+   "y": 31.0
   },
   "region": 0,
   "obg": "D01",
@@ -28,8 +28,8 @@
   "name": "ibis styles Dresden Lindenhof",
   "ort": "Dresden-Lindenhof",
   "pos": {
-   "x": 49.0,
-   "y": 21.7
+   "x": 81.0,
+   "y": 58.0
   },
   "region": 1,
   "obg": "D01",
@@ -40,8 +40,8 @@
   "name": "Mercure Dresden Industriepark",
   "ort": "Dresden-Industriepark",
   "pos": {
-   "x": 56.6,
-   "y": 13.9
+   "x": 82.0,
+   "y": 59.0
   },
   "region": 1,
   "obg": "D01",
@@ -52,8 +52,8 @@
   "name": "Motel One Dresden West",
   "ort": "Dresden-West",
   "pos": {
-   "x": 96.3,
-   "y": 5.1
+   "x": 143.0,
+   "y": 37.0
   },
   "region": 2,
   "obg": "D01",
@@ -64,8 +64,8 @@
   "name": "InterCityHotel Dresden Flughafen",
   "ort": "Dresden-Flughafen",
   "pos": {
-   "x": 101.5,
-   "y": 19.7
+   "x": 144.0,
+   "y": 38.0
   },
   "region": 2,
   "obg": "D01",
@@ -76,8 +76,8 @@
   "name": "InterCityHotel Dresden West",
   "ort": "Dresden-West",
   "pos": {
-   "x": 17.3,
-   "y": 55.4
+   "x": 48.0,
+   "y": 103.0
   },
   "region": 3,
   "obg": "D01",
@@ -88,8 +88,8 @@
   "name": "Best Western Dresden Altstadt",
   "ort": "Dresden-Altstadt",
   "pos": {
-   "x": 23.5,
-   "y": 73.9
+   "x": 49.0,
+   "y": 104.0
   },
   "region": 3,
   "obg": "D01",
@@ -100,8 +100,8 @@
   "name": "Park Inn Dresden West",
   "ort": "Dresden-West",
   "pos": {
-   "x": 75.6,
-   "y": 58.5
+   "x": 114.0,
+   "y": 98.0
   },
   "region": 4,
   "obg": "D01",
@@ -112,8 +112,8 @@
   "name": "Mercure Dresden Lindenhof",
   "ort": "Dresden-Lindenhof",
   "pos": {
-   "x": 72.3,
-   "y": 66.5
+   "x": 115.0,
+   "y": 99.0
   },
   "region": 4,
   "obg": "D01",
@@ -124,8 +124,8 @@
   "name": "Hilton Leipzig Domplatz",
   "ort": "Leipzig-Domplatz",
   "pos": {
-   "x": 179.7,
-   "y": -4.7
+   "x": 218.0,
+   "y": 28.0
   },
   "region": 0,
   "obg": "D02",
@@ -136,8 +136,8 @@
   "name": "Holiday Inn Leipzig Süd",
   "ort": "Leipzig-Süd",
   "pos": {
-   "x": 183.8,
-   "y": 2.4
+   "x": 219.0,
+   "y": 29.0
   },
   "region": 0,
   "obg": "D02",
@@ -148,8 +148,8 @@
   "name": "Hyperion Leipzig Altstadt",
   "ort": "Leipzig-Altstadt",
   "pos": {
-   "x": 225.0,
-   "y": 12.3
+   "x": 259.0,
+   "y": 56.0
   },
   "region": 1,
   "obg": "D02",
@@ -160,8 +160,8 @@
   "name": "City Class Leipzig Nord",
   "ort": "Leipzig-Nord",
   "pos": {
-   "x": 241.4,
-   "y": 14.7
+   "x": 260.0,
+   "y": 57.0
   },
   "region": 1,
   "obg": "D02",
@@ -172,8 +172,8 @@
   "name": "NH Collection Leipzig Zentrum",
   "ort": "Leipzig-Zentrum",
   "pos": {
-   "x": 278.7,
-   "y": 3.3
+   "x": 321.0,
+   "y": 35.0
   },
   "region": 2,
   "obg": "D02",
@@ -184,8 +184,8 @@
   "name": "Novotel Leipzig Elbpark",
   "ort": "Leipzig-Elbpark",
   "pos": {
-   "x": 287.5,
-   "y": 16.5
+   "x": 322.0,
+   "y": 36.0
   },
   "region": 2,
   "obg": "D02",
@@ -196,8 +196,8 @@
   "name": "Hyperion Leipzig Lindenhof",
   "ort": "Leipzig-Lindenhof",
   "pos": {
-   "x": 200.9,
-   "y": 64.9
+   "x": 226.0,
+   "y": 101.0
   },
   "region": 3,
   "obg": "D02",
@@ -208,8 +208,8 @@
   "name": "ibis styles Leipzig Terrassen",
   "ort": "Leipzig-Terrassen",
   "pos": {
-   "x": 201.1,
-   "y": 58.2
+   "x": 227.0,
+   "y": 102.0
   },
   "region": 3,
   "obg": "D02",
@@ -220,8 +220,8 @@
   "name": "Novotel Leipzig Rheinufer",
   "ort": "Leipzig-Rheinufer",
   "pos": {
-   "x": 262.2,
-   "y": 66.0
+   "x": 292.0,
+   "y": 96.0
   },
   "region": 4,
   "obg": "D02",
@@ -232,8 +232,8 @@
   "name": "Holiday Inn Leipzig Altstadt",
   "ort": "Leipzig-Altstadt",
   "pos": {
-   "x": 252.3,
-   "y": 66.3
+   "x": 293.0,
+   "y": 97.0
   },
   "region": 4,
   "obg": "D02",
@@ -244,8 +244,8 @@
   "name": "InterCityHotel Hamburg Domplatz",
   "ort": "Hamburg-Domplatz",
   "pos": {
-   "x": 365.0,
-   "y": -7.9
+   "x": 396.0,
+   "y": 26.0
   },
   "region": 0,
   "obg": "D03",
@@ -256,8 +256,8 @@
   "name": "Mercure Hamburg Elbpark",
   "ort": "Hamburg-Elbpark",
   "pos": {
-   "x": 358.9,
-   "y": -0.10000000000000009
+   "x": 397.0,
+   "y": 27.0
   },
   "region": 0,
   "obg": "D03",
@@ -268,8 +268,8 @@
   "name": "NH Collection Hamburg Nord",
   "ort": "Hamburg-Nord",
   "pos": {
-   "x": 400.3,
-   "y": 23.4
+   "x": 458.0,
+   "y": 54.0
   },
   "region": 1,
   "obg": "D03",
@@ -280,8 +280,8 @@
   "name": "ibis styles Hamburg Nord",
   "ort": "Hamburg-Nord",
   "pos": {
-   "x": 419.6,
-   "y": 29.6
+   "x": 438.0,
+   "y": 55.0
   },
   "region": 1,
   "obg": "D03",
@@ -292,8 +292,8 @@
   "name": "art'otel Hamburg Bahnhof",
   "ort": "Hamburg-Bahnhof",
   "pos": {
-   "x": 468.6,
-   "y": 10.4
+   "x": 499.0,
+   "y": 54.0
   },
   "region": 2,
   "obg": "D03",
@@ -304,8 +304,8 @@
   "name": "Adina Hamburg Ost",
   "ort": "Hamburg-Ost",
   "pos": {
-   "x": 476.2,
-   "y": 2.5
+   "x": 500.0,
+   "y": 34.0
   },
   "region": 2,
   "obg": "D03",
@@ -316,8 +316,8 @@
   "name": "H4 Hotel Hamburg Hafen",
   "ort": "Hamburg-Hafen",
   "pos": {
-   "x": 379.6,
-   "y": 53.5
+   "x": 425.0,
+   "y": 99.0
   },
   "region": 3,
   "obg": "D03",
@@ -328,8 +328,8 @@
   "name": "City Class Hamburg Markt",
   "ort": "Hamburg-Markt",
   "pos": {
-   "x": 373.7,
-   "y": 73.3
+   "x": 426.0,
+   "y": 100.0
   },
   "region": 3,
   "obg": "D03",
@@ -340,8 +340,8 @@
   "name": "City Class Hamburg Altstadt",
   "ort": "Hamburg-Altstadt",
   "pos": {
-   "x": 438.4,
-   "y": 64.5
+   "x": 470.0,
+   "y": 115.0
   },
   "region": 4,
   "obg": "D03",
@@ -352,8 +352,8 @@
   "name": "ibis styles Hamburg Lindenhof",
   "ort": "Hamburg-Lindenhof",
   "pos": {
-   "x": 430.5,
-   "y": 65.9
+   "x": 471.0,
+   "y": 116.0
   },
   "region": 4,
   "obg": "D03",
@@ -364,8 +364,8 @@
   "name": "Mercure Berlin Zentrum",
   "ort": "Berlin-Zentrum",
   "pos": {
-   "x": 534.0,
-   "y": -8.9
+   "x": 574.0,
+   "y": 45.0
   },
   "region": 0,
   "obg": "D04",
@@ -376,8 +376,8 @@
   "name": "Best Western Berlin Altstadt",
   "ort": "Berlin-Altstadt",
   "pos": {
-   "x": 540.4,
-   "y": 6.4
+   "x": 575.0,
+   "y": 46.0
   },
   "region": 0,
   "obg": "D04",
@@ -388,8 +388,8 @@
   "name": "Ramada Berlin Waldrand",
   "ort": "Berlin-Waldrand",
   "pos": {
-   "x": 596.9,
-   "y": 18.0
+   "x": 636.0,
+   "y": 52.0
   },
   "region": 1,
   "obg": "D04",
@@ -400,8 +400,8 @@
   "name": "ibis styles Berlin Rheinufer",
   "ort": "Berlin-Rheinufer",
   "pos": {
-   "x": 604.7,
-   "y": 15.8
+   "x": 637.0,
+   "y": 53.0
   },
   "region": 1,
   "obg": "D04",
@@ -412,8 +412,8 @@
   "name": "Hilton Berlin Rheinufer",
   "ort": "Berlin-Rheinufer",
   "pos": {
-   "x": 633.7,
-   "y": 0.2999999999999998
+   "x": 677.0,
+   "y": 52.0
   },
   "region": 2,
   "obg": "D04",
@@ -424,8 +424,8 @@
   "name": "InterCityHotel Berlin Ost",
   "ort": "Berlin-Ost",
   "pos": {
-   "x": 653.5,
-   "y": 7.5
+   "x": 678.0,
+   "y": 53.0
   },
   "region": 2,
   "obg": "D04",
@@ -436,8 +436,8 @@
   "name": "ibis styles Berlin West",
   "ort": "Berlin-West",
   "pos": {
-   "x": 550.7,
-   "y": 70.8
+   "x": 603.0,
+   "y": 97.0
   },
   "region": 3,
   "obg": "D04",
@@ -448,8 +448,8 @@
   "name": "InterCityHotel Berlin Bahnhof",
   "ort": "Berlin-Bahnhof",
   "pos": {
-   "x": 562.8,
-   "y": 74.0
+   "x": 604.0,
+   "y": 98.0
   },
   "region": 3,
   "obg": "D04",
@@ -460,8 +460,8 @@
   "name": "Hyperion Berlin Elbpark",
   "ort": "Berlin-Elbpark",
   "pos": {
-   "x": 610.9,
-   "y": 63.8
+   "x": 648.0,
+   "y": 113.0
   },
   "region": 4,
   "obg": "D04",
@@ -472,8 +472,8 @@
   "name": "Dorint Berlin Messe",
   "ort": "Berlin-Messe",
   "pos": {
-   "x": 627.2,
-   "y": 67.7
+   "x": 649.0,
+   "y": 114.0
   },
   "region": 4,
   "obg": "D04",
@@ -484,8 +484,8 @@
   "name": "Stadthotel Hannover Industriepark",
   "ort": "Hannover-Industriepark",
   "pos": {
-   "x": -7.3,
-   "y": 141.0
+   "x": 32.0,
+   "y": 193.0
   },
   "region": 0,
   "obg": "D05",
@@ -496,8 +496,8 @@
   "name": "Hyperion Hannover Seepark",
   "ort": "Hannover-Seepark",
   "pos": {
-   "x": -1.5999999999999996,
-   "y": 160.0
+   "x": 33.0,
+   "y": 194.0
   },
   "region": 0,
   "obg": "D05",
@@ -508,8 +508,8 @@
   "name": "Adina Hannover Messe",
   "ort": "Hannover-Messe",
   "pos": {
-   "x": 44.1,
-   "y": 168.7
+   "x": 94.0,
+   "y": 200.0
   },
   "region": 1,
   "obg": "D05",
@@ -520,8 +520,8 @@
   "name": "InterCityHotel Hannover Nord",
   "ort": "Hannover-Nord",
   "pos": {
-   "x": 50.5,
-   "y": 179.9
+   "x": 95.0,
+   "y": 201.0
   },
   "region": 1,
   "obg": "D05",
@@ -532,8 +532,8 @@
   "name": "Motel One Hannover Hafen",
   "ort": "Hannover-Hafen",
   "pos": {
-   "x": 103.3,
-   "y": 153.8
+   "x": 135.0,
+   "y": 200.0
   },
   "region": 2,
   "obg": "D05",
@@ -544,8 +544,8 @@
   "name": "Dorint Hannover Industriepark",
   "ort": "Hannover-Industriepark",
   "pos": {
-   "x": 97.4,
-   "y": 161.5
+   "x": 136.0,
+   "y": 201.0
   },
   "region": 2,
   "obg": "D05",
@@ -556,8 +556,8 @@
   "name": "Hyperion Hannover Altstadt",
   "ort": "Hannover-Altstadt",
   "pos": {
-   "x": 18.4,
-   "y": 203.0
+   "x": 61.0,
+   "y": 245.0
   },
   "region": 3,
   "obg": "D05",
@@ -568,8 +568,8 @@
   "name": "Ramada Hannover Hafen",
   "ort": "Hannover-Hafen",
   "pos": {
-   "x": 17.6,
-   "y": 216.2
+   "x": 62.0,
+   "y": 246.0
   },
   "region": 3,
   "obg": "D05",
@@ -580,8 +580,8 @@
   "name": "Best Western Hannover Lindenhof",
   "ort": "Hannover-Lindenhof",
   "pos": {
-   "x": 73.9,
-   "y": 217.7
+   "x": 106.0,
+   "y": 261.0
   },
   "region": 4,
   "obg": "D05",
@@ -592,8 +592,8 @@
   "name": "Hilton Hannover Domplatz",
   "ort": "Hannover-Domplatz",
   "pos": {
-   "x": 84.1,
-   "y": 224.0
+   "x": 107.0,
+   "y": 262.0
   },
   "region": 4,
   "obg": "D05",
@@ -604,8 +604,8 @@
   "name": "Ramada Köln Messe",
   "ort": "Köln-Messe",
   "pos": {
-   "x": 175.0,
-   "y": 150.0
+   "x": 210.0,
+   "y": 191.0
   },
   "region": 0,
   "obg": "D06",
@@ -616,8 +616,8 @@
   "name": "H4 Hotel Köln Stadion",
   "ort": "Köln-Stadion",
   "pos": {
-   "x": 176.6,
-   "y": 148.3
+   "x": 211.0,
+   "y": 192.0
   },
   "region": 0,
   "obg": "D06",
@@ -628,8 +628,8 @@
   "name": "H4 Hotel Köln West",
   "ort": "Köln-West",
   "pos": {
-   "x": 235.5,
-   "y": 163.8
+   "x": 272.0,
+   "y": 198.0
   },
   "region": 1,
   "obg": "D06",
@@ -640,8 +640,8 @@
   "name": "Adina Köln Industriepark",
   "ort": "Köln-Industriepark",
   "pos": {
-   "x": 232.8,
-   "y": 171.9
+   "x": 273.0,
+   "y": 199.0
   },
   "region": 1,
   "obg": "D06",
@@ -652,8 +652,8 @@
   "name": "Dorint Köln Ost",
   "ort": "Köln-Ost",
   "pos": {
-   "x": 279.2,
-   "y": 152.0
+   "x": 313.0,
+   "y": 198.0
   },
   "region": 2,
   "obg": "D06",
@@ -664,8 +664,8 @@
   "name": "Adina Köln Waldrand",
   "ort": "Köln-Waldrand",
   "pos": {
-   "x": 287.5,
-   "y": 150.9
+   "x": 314.0,
+   "y": 199.0
   },
   "region": 2,
   "obg": "D06",
@@ -676,8 +676,8 @@
   "name": "art'otel Köln Zentrum",
   "ort": "Köln-Zentrum",
   "pos": {
-   "x": 203.1,
-   "y": 202.7
+   "x": 239.0,
+   "y": 243.0
   },
   "region": 3,
   "obg": "D06",
@@ -688,8 +688,8 @@
   "name": "Hyperion Köln Seepark",
   "ort": "Köln-Seepark",
   "pos": {
-   "x": 204.5,
-   "y": 211.0
+   "x": 240.0,
+   "y": 244.0
   },
   "region": 3,
   "obg": "D06",
@@ -700,8 +700,8 @@
   "name": "Adina Köln Ost",
   "ort": "Köln-Ost",
   "pos": {
-   "x": 245.2,
-   "y": 208.5
+   "x": 284.0,
+   "y": 259.0
   },
   "region": 4,
   "obg": "D06",
@@ -712,8 +712,8 @@
   "name": "Stadthotel Köln Domplatz",
   "ort": "Köln-Domplatz",
   "pos": {
-   "x": 264.7,
-   "y": 220.2
+   "x": 285.0,
+   "y": 260.0
   },
   "region": 4,
   "obg": "D06",
@@ -724,8 +724,8 @@
   "name": "Hilton Frankfurt Zentrum",
   "ort": "Frankfurt-Zentrum",
   "pos": {
-   "x": 362.1,
-   "y": 154.2
+   "x": 388.0,
+   "y": 189.0
   },
   "region": 0,
   "obg": "D07",
@@ -736,8 +736,8 @@
   "name": "Hilton Frankfurt Elbpark",
   "ort": "Frankfurt-Elbpark",
   "pos": {
-   "x": 353.3,
-   "y": 143.7
+   "x": 389.0,
+   "y": 190.0
   },
   "region": 0,
   "obg": "D07",
@@ -748,8 +748,8 @@
   "name": "Mercure Frankfurt Domplatz",
   "ort": "Frankfurt-Domplatz",
   "pos": {
-   "x": 409.4,
-   "y": 162.2
+   "x": 450.0,
+   "y": 196.0
   },
   "region": 1,
   "obg": "D07",
@@ -760,8 +760,8 @@
   "name": "Stadthotel Frankfurt West",
   "ort": "Frankfurt-West",
   "pos": {
-   "x": 406.0,
-   "y": 167.6
+   "x": 451.0,
+   "y": 197.0
   },
   "region": 1,
   "obg": "D07",
@@ -772,8 +772,8 @@
   "name": "Ramada Frankfurt Flughafen",
   "ort": "Frankfurt-Flughafen",
   "pos": {
-   "x": 455.3,
-   "y": 163.0
+   "x": 491.0,
+   "y": 196.0
   },
   "region": 2,
   "obg": "D07",
@@ -784,8 +784,8 @@
   "name": "Ramada Frankfurt Seepark",
   "ort": "Frankfurt-Seepark",
   "pos": {
-   "x": 475.7,
-   "y": 157.7
+   "x": 492.0,
+   "y": 197.0
   },
   "region": 2,
   "obg": "D07",
@@ -796,8 +796,8 @@
   "name": "Best Western Frankfurt Bahnhof",
   "ort": "Frankfurt-Bahnhof",
   "pos": {
-   "x": 369.3,
-   "y": 216.0
+   "x": 417.0,
+   "y": 241.0
   },
   "region": 3,
   "obg": "D07",
@@ -808,8 +808,8 @@
   "name": "Hyperion Frankfurt Domplatz",
   "ort": "Frankfurt-Domplatz",
   "pos": {
-   "x": 376.2,
-   "y": 211.7
+   "x": 418.0,
+   "y": 242.0
   },
   "region": 3,
   "obg": "D07",
@@ -820,8 +820,8 @@
   "name": "Novotel Frankfurt Messe",
   "ort": "Frankfurt-Messe",
   "pos": {
-   "x": 429.0,
-   "y": 220.8
+   "x": 462.0,
+   "y": 257.0
   },
   "region": 4,
   "obg": "D07",
@@ -832,8 +832,8 @@
   "name": "InterCityHotel Frankfurt Stadion",
   "ort": "Frankfurt-Stadion",
   "pos": {
-   "x": 431.7,
-   "y": 219.0
+   "x": 463.0,
+   "y": 258.0
   },
   "region": 4,
   "obg": "D07",
@@ -844,8 +844,8 @@
   "name": "Motel One Stuttgart Waldrand",
   "ort": "Stuttgart-Waldrand",
   "pos": {
-   "x": 545.4,
-   "y": 149.5
+   "x": 566.0,
+   "y": 187.0
   },
   "region": 0,
   "obg": "D08",
@@ -856,8 +856,8 @@
   "name": "Novotel Stuttgart Zentrum",
   "ort": "Stuttgart-Zentrum",
   "pos": {
-   "x": 534.5,
-   "y": 156.6
+   "x": 567.0,
+   "y": 188.0
   },
   "region": 0,
   "obg": "D08",
@@ -868,8 +868,8 @@
   "name": "Stadthotel Stuttgart Seepark",
   "ort": "Stuttgart-Seepark",
   "pos": {
-   "x": 597.9,
-   "y": 159.1
+   "x": 628.0,
+   "y": 194.0
   },
   "region": 1,
   "obg": "D08",
@@ -880,8 +880,8 @@
   "name": "Hyperion Stuttgart Ost",
   "ort": "Stuttgart-Ost",
   "pos": {
-   "x": 589.4,
-   "y": 163.8
+   "x": 629.0,
+   "y": 195.0
   },
   "region": 1,
   "obg": "D08",
@@ -892,8 +892,8 @@
   "name": "Best Western Stuttgart Terrassen",
   "ort": "Stuttgart-Terrassen",
   "pos": {
-   "x": 636.5,
-   "y": 164.6
+   "x": 690.0,
+   "y": 194.0
   },
   "region": 2,
   "obg": "D08",
@@ -904,8 +904,8 @@
   "name": "Dorint Stuttgart Altstadt",
   "ort": "Stuttgart-Altstadt",
   "pos": {
-   "x": 654.9,
-   "y": 163.4
+   "x": 670.0,
+   "y": 195.0
   },
   "region": 2,
   "obg": "D08",
@@ -916,8 +916,8 @@
   "name": "Dorint Stuttgart West",
   "ort": "Stuttgart-West",
   "pos": {
-   "x": 559.3,
-   "y": 203.1
+   "x": 595.0,
+   "y": 260.0
   },
   "region": 3,
   "obg": "D08",
@@ -928,8 +928,8 @@
   "name": "Best Western Stuttgart Industriepark",
   "ort": "Stuttgart-Industriepark",
   "pos": {
-   "x": 560.7,
-   "y": 212.4
+   "x": 596.0,
+   "y": 240.0
   },
   "region": 3,
   "obg": "D08",
@@ -940,8 +940,8 @@
   "name": "Stadthotel Stuttgart Bahnhof",
   "ort": "Stuttgart-Bahnhof",
   "pos": {
-   "x": 612.4,
-   "y": 217.8
+   "x": 661.0,
+   "y": 255.0
   },
   "region": 4,
   "obg": "D08",
@@ -952,8 +952,8 @@
   "name": "Novotel Stuttgart Messe",
   "ort": "Stuttgart-Messe",
   "pos": {
-   "x": 615.5,
-   "y": 220.6
+   "x": 662.0,
+   "y": 256.0
   },
   "region": 4,
   "obg": "D08",
@@ -964,8 +964,8 @@
   "name": "art'otel München Flughafen",
   "ort": "München-Flughafen",
   "pos": {
-   "x": -6.7,
-   "y": 307.9
+   "x": 45.0,
+   "y": 335.0
   },
   "region": 0,
   "obg": "D09",
@@ -976,8 +976,8 @@
   "name": "Motel One München Messe",
   "ort": "München-Messe",
   "pos": {
-   "x": 0.5,
-   "y": 311.0
+   "x": 46.0,
+   "y": 336.0
   },
   "region": 0,
   "obg": "D09",
@@ -988,8 +988,8 @@
   "name": "art'otel München Nord",
   "ort": "München-Nord",
   "pos": {
-   "x": 55.6,
-   "y": 317.5
+   "x": 86.0,
+   "y": 363.0
   },
   "region": 1,
   "obg": "D09",
@@ -1000,8 +1000,8 @@
   "name": "City Class München Messe",
   "ort": "München-Messe",
   "pos": {
-   "x": 51.6,
-   "y": 325.2
+   "x": 87.0,
+   "y": 364.0
   },
   "region": 1,
   "obg": "D09",
@@ -1012,8 +1012,8 @@
   "name": "Hilton München Stadion",
   "ort": "München-Stadion",
   "pos": {
-   "x": 103.6,
-   "y": 310.2
+   "x": 148.0,
+   "y": 342.0
   },
   "region": 2,
   "obg": "D09",
@@ -1024,8 +1024,8 @@
   "name": "ibis styles München Messe",
   "ort": "München-Messe",
   "pos": {
-   "x": 107.9,
-   "y": 319.4
+   "x": 149.0,
+   "y": 343.0
   },
   "region": 2,
   "obg": "D09",
@@ -1036,8 +1036,8 @@
   "name": "Novotel München Hafen",
   "ort": "München-Hafen",
   "pos": {
-   "x": 8.3,
-   "y": 367.6
+   "x": 53.0,
+   "y": 408.0
   },
   "region": 3,
   "obg": "D09",
@@ -1048,8 +1048,8 @@
   "name": "Holiday Inn München Flughafen",
   "ort": "München-Flughafen",
   "pos": {
-   "x": 28.3,
-   "y": 356.6
+   "x": 54.0,
+   "y": 409.0
   },
   "region": 3,
   "obg": "D09",
@@ -1060,8 +1060,8 @@
   "name": "Hyperion München Rheinufer",
   "ort": "München-Rheinufer",
   "pos": {
-   "x": 77.6,
-   "y": 359.4
+   "x": 119.0,
+   "y": 403.0
   },
   "region": 4,
   "obg": "D09",
@@ -1072,8 +1072,8 @@
   "name": "art'otel München Ost",
   "ort": "München-Ost",
   "pos": {
-   "x": 87.4,
-   "y": 362.3
+   "x": 120.0,
+   "y": 404.0
   },
   "region": 4,
   "obg": "D09",
@@ -1084,8 +1084,8 @@
   "name": "ibis styles Nürnberg Terrassen",
   "ort": "Nürnberg-Terrassen",
   "pos": {
-   "x": 181.2,
-   "y": 306.2
+   "x": 223.0,
+   "y": 333.0
   },
   "region": 0,
   "obg": "D10",
@@ -1096,8 +1096,8 @@
   "name": "Park Inn Nürnberg Flughafen",
   "ort": "Nürnberg-Flughafen",
   "pos": {
-   "x": 179.2,
-   "y": 293.3
+   "x": 224.0,
+   "y": 334.0
   },
   "region": 0,
   "obg": "D10",
@@ -1108,8 +1108,8 @@
   "name": "Dorint Nürnberg Elbpark",
   "ort": "Nürnberg-Elbpark",
   "pos": {
-   "x": 226.0,
-   "y": 319.4
+   "x": 264.0,
+   "y": 361.0
   },
   "region": 1,
   "obg": "D10",
@@ -1120,8 +1120,8 @@
   "name": "Mercure Nürnberg Ost",
   "ort": "Nürnberg-Ost",
   "pos": {
-   "x": 226.0,
-   "y": 313.4
+   "x": 265.0,
+   "y": 362.0
   },
   "region": 1,
   "obg": "D10",
@@ -1132,8 +1132,8 @@
   "name": "Holiday Inn Nürnberg Domplatz",
   "ort": "Nürnberg-Domplatz",
   "pos": {
-   "x": 287.1,
-   "y": 299.3
+   "x": 326.0,
+   "y": 340.0
   },
   "region": 2,
   "obg": "D10",
@@ -1144,8 +1144,8 @@
   "name": "City Class Nürnberg Rheinufer",
   "ort": "Nürnberg-Rheinufer",
   "pos": {
-   "x": 289.5,
-   "y": 318.0
+   "x": 327.0,
+   "y": 341.0
   },
   "region": 2,
   "obg": "D10",
@@ -1156,8 +1156,8 @@
   "name": "Park Inn Nürnberg Terrassen",
   "ort": "Nürnberg-Terrassen",
   "pos": {
-   "x": 199.1,
-   "y": 357.0
+   "x": 231.0,
+   "y": 406.0
   },
   "region": 3,
   "obg": "D10",
@@ -1168,8 +1168,8 @@
   "name": "Park Inn Nürnberg Zentrum",
   "ort": "Nürnberg-Zentrum",
   "pos": {
-   "x": 197.4,
-   "y": 368.5
+   "x": 232.0,
+   "y": 407.0
   },
   "region": 3,
   "obg": "D10",
@@ -1180,8 +1180,8 @@
   "name": "InterCityHotel Nürnberg Terrassen",
   "ort": "Nürnberg-Terrassen",
   "pos": {
-   "x": 258.1,
-   "y": 369.3
+   "x": 297.0,
+   "y": 401.0
   },
   "region": 4,
   "obg": "D10",
@@ -1192,8 +1192,8 @@
   "name": "art'otel Nürnberg Rheinufer",
   "ort": "Nürnberg-Rheinufer",
   "pos": {
-   "x": 255.5,
-   "y": 380.9
+   "x": 298.0,
+   "y": 402.0
   },
   "region": 4,
   "obg": "D10",
@@ -1204,8 +1204,8 @@
   "name": "Ramada Bremen Stadion",
   "ort": "Bremen-Stadion",
   "pos": {
-   "x": 353.1,
-   "y": 306.0
+   "x": 401.0,
+   "y": 329.0
   },
   "region": 0,
   "obg": "D11",
@@ -1216,8 +1216,8 @@
   "name": "Hilton Bremen Industriepark",
   "ort": "Bremen-Industriepark",
   "pos": {
-   "x": 364.6,
-   "y": 311.7
+   "x": 402.0,
+   "y": 330.0
   },
   "region": 0,
   "obg": "D11",
@@ -1228,8 +1228,8 @@
   "name": "Holiday Inn Bremen Lindenhof",
   "ort": "Bremen-Lindenhof",
   "pos": {
-   "x": 406.4,
-   "y": 316.4
+   "x": 442.0,
+   "y": 359.0
   },
   "region": 1,
   "obg": "D11",
@@ -1240,8 +1240,8 @@
   "name": "art'otel Bremen West",
   "ort": "Bremen-West",
   "pos": {
-   "x": 420.1,
-   "y": 313.6
+   "x": 443.0,
+   "y": 360.0
   },
   "region": 1,
   "obg": "D11",
@@ -1252,8 +1252,8 @@
   "name": "NH Collection Bremen Seepark",
   "ort": "Bremen-Seepark",
   "pos": {
-   "x": 452.5,
-   "y": 306.4
+   "x": 504.0,
+   "y": 338.0
   },
   "region": 2,
   "obg": "D11",
@@ -1264,8 +1264,8 @@
   "name": "Novotel Bremen Flughafen",
   "ort": "Bremen-Flughafen",
   "pos": {
-   "x": 457.6,
-   "y": 306.9
+   "x": 505.0,
+   "y": 339.0
   },
   "region": 2,
   "obg": "D11",
@@ -1276,8 +1276,8 @@
   "name": "Novotel Bremen Markt",
   "ort": "Bremen-Markt",
   "pos": {
-   "x": 376.9,
-   "y": 359.2
+   "x": 409.0,
+   "y": 404.0
   },
   "region": 3,
   "obg": "D11",
@@ -1288,8 +1288,8 @@
   "name": "Park Inn Bremen Zentrum",
   "ort": "Bremen-Zentrum",
   "pos": {
-   "x": 381.3,
-   "y": 363.7
+   "x": 410.0,
+   "y": 405.0
   },
   "region": 3,
   "obg": "D11",
@@ -1300,8 +1300,8 @@
   "name": "City Class Bremen Süd",
   "ort": "Bremen-Süd",
   "pos": {
-   "x": 435.9,
-   "y": 371.1
+   "x": 475.0,
+   "y": 399.0
   },
   "region": 4,
   "obg": "D11",
@@ -1312,8 +1312,8 @@
   "name": "Motel One Bremen Stadion",
   "ort": "Bremen-Stadion",
   "pos": {
-   "x": 441.2,
-   "y": 380.2
+   "x": 476.0,
+   "y": 400.0
   },
   "region": 4,
   "obg": "D11",
@@ -1324,8 +1324,8 @@
   "name": "H4 Hotel Kassel Altstadt",
   "ort": "Kassel-Altstadt",
   "pos": {
-   "x": 536.8,
-   "y": 297.2
+   "x": 579.0,
+   "y": 327.0
   },
   "region": 0,
   "obg": "D12",
@@ -1336,8 +1336,8 @@
   "name": "InterCityHotel Kassel Bahnhof",
   "ort": "Kassel-Bahnhof",
   "pos": {
-   "x": 546.5,
-   "y": 307.6
+   "x": 580.0,
+   "y": 328.0
   },
   "region": 0,
   "obg": "D12",
@@ -1348,8 +1348,8 @@
   "name": "InterCityHotel Kassel Terrassen",
   "ort": "Kassel-Terrassen",
   "pos": {
-   "x": 580.4,
-   "y": 306.2
+   "x": 620.0,
+   "y": 355.0
   },
   "region": 1,
   "obg": "D12",
@@ -1360,8 +1360,8 @@
   "name": "Motel One Kassel Rheinufer",
   "ort": "Kassel-Rheinufer",
   "pos": {
-   "x": 593.6,
-   "y": 311.4
+   "x": 621.0,
+   "y": 356.0
   },
   "region": 1,
   "obg": "D12",
@@ -1372,8 +1372,8 @@
   "name": "Ramada Kassel Nord",
   "ort": "Kassel-Nord",
   "pos": {
-   "x": 650.6,
-   "y": 312.6
+   "x": 682.0,
+   "y": 334.0
   },
   "region": 2,
   "obg": "D12",
@@ -1384,8 +1384,8 @@
   "name": "NH Collection Kassel Seepark",
   "ort": "Kassel-Seepark",
   "pos": {
-   "x": 655.9,
-   "y": 302.1
+   "x": 683.0,
+   "y": 335.0
   },
   "region": 2,
   "obg": "D12",
@@ -1396,8 +1396,8 @@
   "name": "Novotel Kassel Terrassen",
   "ort": "Kassel-Terrassen",
   "pos": {
-   "x": 560.7,
-   "y": 368.4
+   "x": 587.0,
+   "y": 400.0
   },
   "region": 3,
   "obg": "D12",
@@ -1408,8 +1408,8 @@
   "name": "InterCityHotel Kassel Süd",
   "ort": "Kassel-Süd",
   "pos": {
-   "x": 563.2,
-   "y": 370.6
+   "x": 588.0,
+   "y": 401.0
   },
   "region": 3,
   "obg": "D12",
@@ -1420,8 +1420,8 @@
   "name": "InterCityHotel Kassel Stadion",
   "ort": "Kassel-Stadion",
   "pos": {
-   "x": 613.6,
-   "y": 376.4
+   "x": 653.0,
+   "y": 416.0
   },
   "region": 4,
   "obg": "D12",
@@ -1432,8 +1432,8 @@
   "name": "Ramada Kassel Lindenhof",
   "ort": "Kassel-Lindenhof",
   "pos": {
-   "x": 617.0,
-   "y": 363.6
+   "x": 654.0,
+   "y": 396.0
   },
   "region": 4,
   "obg": "D12",

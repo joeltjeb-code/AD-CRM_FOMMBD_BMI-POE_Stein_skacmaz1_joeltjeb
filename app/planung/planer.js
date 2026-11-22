@@ -7,6 +7,16 @@ export { SKELETT };
 
 export const TAGE_NAMEN = ['Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
 
+// Hotels des Planungsgebiets: ohne OBG-Feld = für alle Gebiete zugelassen
+// (Fixtures); mit OBG-Feld nur das passende. Früher hing die Hotelauswahl
+// an einem Cluster-Index-Abgleich (region === cluster) — das brach bei neu
+// berechneten Clustern (PLZ-Geografie): Hotels lagen im falschen Gebiet und
+// die Auswahl fiel immer auf die Heimfahrt. Gebietsfilter explizit, Auswahl
+// rein per Fahrzeit-Score (uebernachtung.js).
+export function hotelsFuerObg(hotels, obg) {
+  return hotels.filter((ho) => !ho.obg || ho.obg === obg);
+}
+
 // Abwesenheits-Schlüssel: Wochen 'w0'..'w3', Tage 'w<wi>-d<ti>' (ti = Di..Fr).
 // true = abwesend. Aktiv je Woche: 0 (Wochen-Absage) bis 4 abzüglich Tage.
 export function aktiveTageJeWoche(abwesenheiten = {}, anzahlWochen = 4) {
@@ -116,7 +126,7 @@ export function planeWochen({ haendler, hotels, settings, routing, startMontag, 
   const dealersById = Object.fromEntries(mitCluster.map((h) => [h.id, h]));
   // Hotels vorfiltern: Demo-Datensatz hält Hotels je OBG bereit ('obg'-Feld);
   // Hotellisten ohne 'obg' (z. B. Fixtures) bleiben ungefiltert.
-  const hotelsObg = hotels.filter((ho) => !ho.obg || ho.obg === settings.obg);
+  const hotelsObg = hotelsFuerObg(hotels, settings.obg);
   const kandidaten = faelligeKandidaten(mitCluster, startMontag);
   const aktiv = aktiveTageJeWoche(settings.abwesenheiten, anzahlWochen);
   const wochen = verteileMitKapazitaeten(kandidaten, aktiv.map((a) => a * 3));

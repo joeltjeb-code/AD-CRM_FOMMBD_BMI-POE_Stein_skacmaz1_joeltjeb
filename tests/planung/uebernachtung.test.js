@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import { strict as assert } from 'node:assert';
 import { erstelleDemoRouting } from '../../app/adapter/routing-adapter.js';
 import { entscheideUbernachtung } from '../../app/planung/uebernachtung.js';
+import { hotelsFuerObg } from '../../app/planung/planer.js';
 
 const r = erstelleDemoRouting();
 const HOTELS = [
@@ -49,4 +50,25 @@ test('Weite Heimfahrt schlägt nach: nahes, günstiges Hotel gewinnt', () => {
   const res = entscheideUbernachtung({ letzterH: LETZTER, ersterMorgen: ERSTER_MORGEN, hotels: nah, settings: sFern, routing: r });
   assert.equal(res.art, 'hotel');
   assert.equal(res.hotelId, 'N1');
+});
+
+test('Regression 22.11.: Hotelauswahl unabhängig vom Cluster-Index', () => {
+  // Die alte Filterung (region === cluster) schluckte alle Hotelnächte, sobald
+  // die Cluster neu nummeriert wurden (PLZ-Geografie). Ein nahes Hotel mit
+  // 'falscher' region muss trotzdem gewählt werden.
+  const falschMarkiert = [{ id: 'F1', name: 'Hotel Nah', ort: 'Hier', pos: { x: 1, y: 1 }, region: 3, preisNacht: 90 }];
+  const s = { ...SETTINGS, praferenzen: { lieblingshotelIds: [], maxFahrtErsterTerminMin: 60 } };
+  const sFern = { ...s, heimat: { name: 'Fern', pos: { x: 90, y: 90 } } };
+  const res = entscheideUbernachtung({ letzterH: LETZTER, ersterMorgen: ERSTER_MORGEN, hotels: falschMarkiert, settings: sFern, routing: r });
+  assert.equal(res.art, 'hotel');
+  assert.equal(res.hotelId, 'F1');
+});
+
+test('hotelsFuerObg: fremde Gebiete fliegen raus, ohne OBG bleibt drin', () => {
+  const liste = hotelsFuerObg([
+    { id: 'A', obg: 'D01' },
+    { id: 'B', obg: 'D02' },
+    { id: 'C' },
+  ], 'D01');
+  assert.deepEqual(liste.map((h) => h.id), ['A', 'C']);
 });

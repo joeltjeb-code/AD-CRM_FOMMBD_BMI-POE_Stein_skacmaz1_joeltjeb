@@ -148,3 +148,9 @@
 
 - [22:25] "Kannst du bitte noch die Postleitzahl einordnung für die Kalkulation der Fahrzeiten umsetzen oder gibt es da Probleme?"
   → Ergebnis: kein Problem; Spec 3.3 umgesetzt — daten/plz-zentren.json (946 Einträge, je OBG), posAusPlz mit Lookup + identischem JS/Python-Fallback, Import-Skript nutzt Lookup + pflegt Tabelle rekursiv, kalibrierte Fahrzeiten (median 30 / p95 108 / max 162 min), Suite 123/123, Python↔JS identisch
+
+- [22:40] "Sollte ich dann nicht besser eine Liste mit korrekten PLZs hochladen?" + "Dann lasse ich die Daten erstmal so, wie sie gerade sind."
+  → Ergebnis: Analyse: korrekte PLZ zu anonymisierten/erfundenen Orten bringt nichts und wäre inkonsistent; Empfehlung: anonymisierte Basis behalten, echten Geodaten-Pfad nur mit erlaubter echter Liste bauen
+
+- [22:45] "Ich habe jetzt nur den Eindruck, dass die Logik mit Startort und Übernachtung nicht mehr passt"
+  → Ergebnis: berechtigter Eindruck — Diagnose bestätigt 0 Hotelnächte/immer Heimatstart: (1) Filter region===cluster kaputt nach PLZ-Geografie, (2) frischauf bekam alle OBG-Hotels, (3) Hotels an alter Welt ausgerichtet. Fix: hotelsFuerObg + Score-Auswahl ohne Cluster-Abgleich + hotels neu positioniert + heimat selbstheilend; D01 9/7, D05 10/6 Hotelnächte; Suite 125/125

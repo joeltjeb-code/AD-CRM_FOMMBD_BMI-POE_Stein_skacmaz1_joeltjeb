@@ -1,6 +1,6 @@
 import { erstelleDemoRouting } from './adapter/routing-adapter.js';
 import { erstelleSpeicher } from './adapter/speicher-adapter.js';
-import { planeWochen, frischauf } from './planung/planer.js';
+import { planeWochen, frischauf, hotelsFuerObg } from './planung/planer.js';
 import { istPlanGueltig } from './planung/validierung.js';
 import { besteEinsattposition } from './planung/reihenfolge.js';
 import { filtereNachObg } from './planung/auswahl.js';
@@ -89,7 +89,9 @@ function kontext() {
     dealersById,
     settings,
     routing: erstelleDemoRouting({ bevAufschlagMin: settings.bev ? 10 : 0 }),
-    hotels,
+    // nur Hotels des Planungsgebiets — sonst kann die ÜN-Entscheidung ein
+    // Hotel in einem fremden OBG-Block wählen
+    hotels: hotelsFuerObg(hotels, settings.obg),
   };
 }
 
@@ -378,6 +380,18 @@ async function starten() {
     datenBasis = 'demo';
   }
   setzePlzZentren(plzZentren);
+  // Heimat-Position selbstheilend: gespeicherte Einstellungen tragen noch
+  // Positionen aus der alten Welt (vor der PLZ-Einordnung) — nach jeder
+  // Positions-Änderung wird beim Start aus PLZ+OBG neu gerechnet und
+  // gespeichert. Ein fehlerhafter Heimatpunkt (falscher Startort) wäre sonst
+  // dauerhaft in localStorage konserviert.
+  if (settings.heimat?.plz) {
+    const neu = posAusPlz(settings.heimat.plz, settings.obg);
+    if (JSON.stringify(neu) !== JSON.stringify(settings.heimat.pos)) {
+      settings.heimat.pos = neu;
+      speicher.speichere('einstellungen', settings);
+    }
+  }
   wissensbasis = speicher.lade('wissensbasis', wissensbasis);
   // Importierte Betreuungsliste (Task 19) schlägt die Demo-Daten, solange
   // eine vorhanden ist (leer = Demo zurück).

@@ -2,8 +2,12 @@ export function entscheideUbernachtung({ letzterH, ersterMorgen, hotels, setting
   const fahrtHeim = routing.fahrzeitMin(letzterH.pos, settings.heimat.pos);
   const heimScore = fahrtHeim + (ersterMorgen ? routing.fahrzeitMin(settings.heimat.pos, ersterMorgen.pos) : 0);
 
+  // Gebiets-Zuschnitt passiert vorher (hotelsFuerObg) — die Auswahl selbst
+  // bewertet nur Fahrzeiten, Preis und Lieblingshotel. KEIN Cluster-Index-
+  // Abgleich (region === cluster) mehr: der brach bei neu berechnerten
+  // Clustern und machte jede Hotelnacht unmöglich.
   let bestes = null;
-  for (const ho of hotels.filter((x) => x.region === letzterH.cluster)) {
+  for (const ho of hotels) {
     const fAbend = routing.fahrzeitMin(letzterH.pos, ho.pos);
     const fMorgen = ersterMorgen
       ? routing.fahrzeitMin(ho.pos, ersterMorgen.pos)
