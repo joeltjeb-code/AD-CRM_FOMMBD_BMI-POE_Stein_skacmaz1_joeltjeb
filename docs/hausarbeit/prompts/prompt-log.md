@@ -160,3 +160,6 @@
 
 - [23:40] "Lege mir bitte einen neuen Task an, dass ich mich nochmal drum kümmern muss richtige Händlerdaten einzupflegen. Aktuell ist die Mischung aus Demodaten und realen Hoteldaten schlecht"
   → Ergebnis: T20 (offen) in AGENTS.md angelegt — echte Händlerstammdaten einpflegen, danach Fahrzeiten-/ÜN-Kalibrierung neu prüfen; Prio-Liste/OCR-Punkte bleiben offen
+
+- [Nachtabschluss] "1) Git-Init prüfen 2) Merge-Konflikte prüfen 3) add+commit 4) detaillierte Code-Doku und Prozesserklärung von heute in neuem Textfile mit Aktuelldatum-Titel"
+  → Ergebnis: Git initialisiert (origin = github.com/joeltjeb-code/AD-CRM_FOMMBD_BMI-POE_Stein_skacmaz1_joeltjeb), kein Konflikt, Working Tree committed; Prozessdoku in docs/hausarbeit/process/2026-11-22-22-19-actions.md
