@@ -1,10 +1,12 @@
 import { importiere, csvTabelle, schlageZuordnung, baueHaendler } from '../adapter/import-adapter.js';
 
-// Task 19 / K3 + Nutzerwunsch 22.11.: Import-Kasten im Plan-Kopf.
-// Ablauf: Datei wählen -> KI schlägt die Spalten-Zuordnung vor -> Vorschau
-// der ersten 10 Zeilen, je Spalte ein Dropdown zum Ändern -> Übernehmen.
-// CSV/Excel-Export direkt, PDF über Mistral OCR. Importierte Händler gehen
-// an die App (ersetzen die geladene Basis, via localStorage-Pfad).
+// Task 19 / K3 + Nutzerwunsch 22.11.: Import-Seite „Stammdaten – Manueller
+// Import" (erreichbar über das Stammdaten-Menü). Ablauf: Datei wählen ->
+// KI schlägt die Spalten-Zuordnung vor -> Vorschau der ersten 10 Zeilen,
+// je Spalte ein Dropdown zum Ändern -> Übernehmen. CSV/Excel-Export direkt,
+// PDF über Mistral OCR. Importierte Händler gehen an die App (ersetzen die
+// geladene Basis, via localStorage-Pfad). „Zurücksetzen" fragt nur an — die
+// Lösch-Entscheidung trifft das Modal (onResetFordern).
 
 const ZIELE = [
   ['nummer', 'Händlernummer'],
@@ -20,7 +22,7 @@ const ZIELE = [
   ['gf1', 'GF1'],
 ];
 
-export function rendereImport(container, { onUebernehmen, onReset, basis = 'real' } = {}) {
+export function rendereImport(container, { onUebernehmen, onResetFordern, basis = 'real' } = {}) {
   function leseText(datei) {
     // FileReader funktioniert überall (Browser und jsdom); text() wäre der
     // moderne Pfad, ist aber nicht in allen Kontexten vorhanden.
@@ -33,18 +35,17 @@ export function rendereImport(container, { onUebernehmen, onReset, basis = 'real
   }
 
   container.innerHTML = `
-    <details id="importKasten">
-      <summary>H&auml;ndlerdaten importieren (Betreuungsliste)</summary>
+    <section class="import-flaeche" aria-label="Betreuungsliste importieren">
       <p class="hilfe" id="importBasisHinweis"></p>
       <div class="leiste">
         <input id="importDatei" type="file" accept=".csv,.txt,.pdf" aria-label="Datei w&auml;hlen">
         <button id="importStart" class="aktion neben" disabled>Import &amp; &Uuml;bernehmen</button>
-        <button id="importReset" class="aktion neben">Demo-Daten zur&uuml;ck</button>
+        <button id="importReset" class="aktion neben">Zur&uuml;cksetzen</button>
       </div>
       <p id="importVorschau" class="hilfe"></p>
       <div id="importZuordnung" hidden></div>
       <div id="importErgebnis"></div>
-    </details>`;
+    </section>`;
 
   const dateiFeld = container.querySelector('#importDatei');
   const startKnopf = container.querySelector('#importStart');
@@ -152,10 +153,7 @@ export function rendereImport(container, { onUebernehmen, onReset, basis = 'real
   });
 
   container.querySelector('#importReset').addEventListener('click', () => {
-    ergebnis.innerHTML = '';
-    vorschau.textContent = 'Demo-Daten werden wiederhergestellt …';
-    startKnopf.disabled = true;
-    dateiFeld.value = '';
-    onReset?.();
+    // Nur anfragen — das Bestätigungs-Modal (app.js) entscheidet über die Löschung.
+    onResetFordern?.();
   });
 }

@@ -30,6 +30,22 @@ function wechsleTab(tabId) {
   document.querySelectorAll('[role=tabpanel]').forEach((panel) => {
     panel.classList.toggle('versteckt', panel.id !== `${tabId}Tab`);
   });
+  // „Stammdaten" ist kein Tab, sondern ein Dropdown — seine Überschrift
+  // bekommt trotzdem die aktive Markierung, wenn die Seite offen ist.
+  document.getElementById('navStammdaten')
+    ?.classList.toggle('stammdaten-aktiv', tabId === 'stammdaten');
+}
+
+// Reset-Bestätigung (Modal mittig): von überall offen/zu setzen
+function oeffneResetDialog() { document.getElementById('resetDialog')?.removeAttribute('hidden'); }
+function schliesseResetDialog() { document.getElementById('resetDialog')?.setAttribute('hidden', ''); }
+
+// Reset auf die Rohdaten-Basis: eigene importierte Liste verwerfen und die
+// Seite neu laden — die App startet dann wieder auf dem geladenen Bestand
+// aus dem Repo (bzw. auf den Demo-Daten, wenn keine Basis vorliegt).
+function zuruecksetzenAufBasis() {
+  speicher.speichere('importierteHaendler', []);
+  globalThis.location?.reload?.();
 }
 
 let haendler = [];
@@ -277,6 +293,43 @@ function bindeStatischeListener() {
       if (tabId === 'infos') zeigeInfoVerteilung();
     });
   }
+  // „Stammdaten"-Dropdown links neben Plan: Hover öffnet per CSS, Klick
+  // toggelt (für Touch), Klick außerhalb schließt. Die Menüpunkte steuern
+  // den Import-Kasten im Plan-Tab.
+  const stammdaten = document.getElementById('navStammdaten');
+  const stammdatenKnopf = document.getElementById('stammdatenKnopf');
+  function schliesseStammdaten() {
+    stammdaten?.classList.remove('open');
+    stammdatenKnopf?.setAttribute('aria-expanded', 'false');
+  }
+  stammdatenKnopf?.addEventListener('click', (ereignis) => {
+    ereignis.stopPropagation();
+    const offen = stammdaten.classList.toggle('open');
+    stammdatenKnopf.setAttribute('aria-expanded', String(offen));
+  });
+  document.addEventListener('click', (ereignis) => {
+    if (stammdaten && !stammdaten.contains(ereignis.target)) schliesseStammdaten();
+  });
+  document.getElementById('stammdatenImport')?.addEventListener('click', () => {
+    schliesseStammdaten();
+    // Eigene Seite „Stammdaten – Manueller Import" (ersetzt den Kasten im Plan-Tab)
+    wechsleTab('stammdaten');
+  });
+  document.getElementById('stammdatenReset')?.addEventListener('click', () => {
+    schliesseStammdaten();
+    oeffneResetDialog();
+  });
+  // Lösch-Bestätigung: Modal mittig, Abbrechen schließt, „Final Löschen" führt
+  // das Reset (Händlerbasis auf den Rohdatensatz im Repo) wirklich aus.
+  document.getElementById('resetAbbrechen')?.addEventListener('click', schliesseResetDialog);
+  document.getElementById('resetFinal')?.addEventListener('click', () => {
+    schliesseResetDialog();
+    zuruecksetzenAufBasis();
+  });
+  document.getElementById('resetDialog')?.addEventListener('click', (ereignis) => {
+    // Klick auf die abgedunkelte Fläche (außerhalb des Fensters) = Abbrechen
+    if (ereignis.target.id === 'resetDialog') schliesseResetDialog();
+  });
   document.getElementById('neuPlanen').addEventListener('click', () => {
     if (!haendler.length) return; // Daten noch nicht (bzw. fehlerhaft) geladen
     neuPlanen();
@@ -331,12 +384,7 @@ async function starten() {
       speicher.speichere('importierteHaendler', liste);
       neuPlanen();
     },
-    onReset: () => {
-      // Demo zurück = importierte Liste leeren + neu laden; danach startet
-      // die App wieder auf den Demo-Daten, ohne Restzustände.
-      speicher.speichere('importierteHaendler', []);
-      globalThis.location?.reload?.();
-    },
+    onResetFordern: oeffneResetDialog,
   });
   rendereEinstellungen(document.getElementById('einstellungen'), settings, {
     onSpeichern: (neu) => { settings = neu; speicher.speichere('einstellungen', settings); neuPlanen(); },

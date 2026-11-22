@@ -57,6 +57,84 @@
       border-bottom-color: var(--ford-skyview);
     }
     nav[role=tablist] button:hover { color: var(--ford-skyview); }
+    /* Dropdown „Stammdaten" links neben den Tabs: Menü bei Hover oder Klick */
+    .nav-dropdown { position: relative; display: flex; align-items: stretch; }
+    .nav-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 12rem;
+      margin: 0;
+      padding: .25rem 0;
+      list-style: none;
+      background: var(--white);
+      border: 1px solid var(--light-gray);
+      border-radius: 4px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, .15);
+      z-index: 30;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown.open .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      border-bottom: none;
+      padding: .5rem 1rem;
+    }
+    .nav-dropdown.stammdaten-aktiv > button {
+      color: var(--ford-skyview);
+      border-bottom-color: var(--ford-skyview);
+    }
+    .nav-dropdown-menu button:hover { background: var(--light-gray); }
+    /* Lösch-Warnung: Modal mittig, Overlay abdunkelnd. Wichtig: [hidden]
+       muss gegen das display:flex der Klasse gewinnen, sonst schließt das
+       Modal nicht wieder. */
+    .modal-overlay[hidden] { display: none; }
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, .45);
+      z-index: 100;
+    }
+    .modal-fenster {
+      background: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 16px 32px rgba(0, 0, 0, .3);
+      max-width: 32rem;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    .modal-fenster h2 {
+      color: #c0272d;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+    .modal-aktionen {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1.25rem;
+    }
+    .modal-aktionen button {
+      font: inherit;
+      font-weight: 500;
+      color: var(--white);
+      border: none;
+      border-radius: 4px;
+      padding: .6rem 1.5rem;
+      cursor: pointer;
+    }
+    .modal-abbrechen { background: var(--ford-skyview); }
+    .modal-abbrechen:hover { background: #0559c4; }
+    .modal-loeschen { background: #c0272d; }
+    .modal-loeschen:hover { background: #a01f24; }
     .nav-chip {
       margin-left: auto;
       align-self: center;
@@ -284,6 +362,13 @@
   </header>
 
   <nav role="tablist" aria-label="Bereiche">
+    <div class="nav-dropdown" id="navStammdaten">
+      <button type="button" id="stammdatenKnopf" aria-haspopup="true" aria-expanded="false">Stammdaten</button>
+      <ul class="nav-dropdown-menu" aria-label="Stammdaten-Aktionen">
+        <li><button type="button" id="stammdatenImport">Manueller Import</button></li>
+        <li><button type="button" id="stammdatenReset">Zur&uuml;cksetzen</button></li>
+      </ul>
+    </div>
     <button role="tab" id="tab-plan" aria-controls="planTab" aria-selected="true">Plan</button>
     <button role="tab" id="tab-briefing" aria-controls="briefingTab" aria-selected="false">Briefing</button>
     <button role="tab" id="tab-bericht" aria-controls="berichtTab" aria-selected="false">Bericht</button>
@@ -295,7 +380,6 @@
     <section role="tabpanel" id="planTab" aria-labelledby="tab-plan">
       <p class="eingang">Wochenplan f&uuml;r die n&auml;chsten vier Wochen. Ziehen Sie Termine per Drag &amp; Drop oder passen Sie den Plan unten per Textbefehl an. Klicken Sie einen Termin an, um das Briefing zu &ouml;ffnen.</p>
       <div id="einstellungen"></div>
-      <div id="importBereich"></div>
       <div id="abwesenheiten"></div>
       <div class="leiste">
         <button id="neuPlanen" class="aktion">Plan neu berechnen</button>
@@ -322,7 +406,28 @@
         &bdquo;Plan&ldquo; einen H&auml;ndler aus.</p>
       <div id="infodist"></div>
     </section>
+
+    <section role="tabpanel" id="stammdatenTab" aria-labelledby="stammdatenTitel" class="versteckt">
+      <h2 id="stammdatenTitel">Stammdaten &ndash; Manueller Import</h2>
+      <p class="eingang">Hier laden Sie eine neue Betreuungsliste hoch (CSV/Excel-Export direkt, PDF per
+        Mistral-OCR). Die KI schl&auml;gt die Spalten-Zuordnung vor, Sie best&auml;tigen sie in der
+        Vorschau. Eine &uuml;bernommene Liste ersetzt die bisherige H&auml;ndlerbasis.</p>
+      <div id="importBereich"></div>
+    </section>
   </main>
+
+  <div id="resetDialog" class="modal-overlay" hidden>
+    <div class="modal-fenster" role="dialog" aria-modal="true" aria-labelledby="resetTitel">
+      <h2 id="resetTitel">VORSICHT DATENL&Ouml;SCHUNG</h2>
+      <p>Alle eigenen H&auml;ndlerstammdaten werden gel&ouml;scht und das Programm wird auf den ersten
+        H&auml;ndlerrohdatensatz zur&uuml;ckgesetzt.</p>
+      <p><b>Diese &Auml;nderung ist nicht umkehrbar.</b></p>
+      <div class="modal-aktionen">
+        <button type="button" id="resetAbbrechen" class="modal-abbrechen">Abbrechen</button>
+        <button type="button" id="resetFinal" class="modal-loeschen">Final L&ouml;schen</button>
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="app/app.js"></script>
 </body>
