@@ -309,12 +309,22 @@ async function starten() {
     zeigeStartfehler(e);
     return;
   }
+  // Als Grundlage (Design 3.5): die importierte Betreuungsliste, solange sie
+  // im Repo liegt — fehlt sie, bleibt die Demo-Welt aktiv (sichtbar im
+  // Import-Kasten vermerkt).
+  let datenBasis = 'real';
+  try {
+    haendler = await ladeDatenMitRetry('daten/haendler.json');
+  } catch {
+    datenBasis = 'demo';
+  }
   wissensbasis = speicher.lade('wissensbasis', wissensbasis);
   // Importierte Betreuungsliste (Task 19) schlägt die Demo-Daten, solange
   // eine vorhanden ist (leer = Demo zurück).
   const importiert = speicher.lade('importierteHaendler', []);
-  if (Array.isArray(importiert) && importiert.length) haendler = importiert;
+  if (Array.isArray(importiert) && importiert.length) { haendler = importiert; datenBasis = 'real'; }
   rendereImport(document.getElementById('importBereich'), {
+    basis: datenBasis,
     onUebernehmen: (liste) => {
       if (!liste?.length) return;
       haendler = liste;

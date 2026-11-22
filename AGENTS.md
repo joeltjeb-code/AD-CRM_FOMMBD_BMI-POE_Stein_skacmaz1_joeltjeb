@@ -57,9 +57,9 @@ never in this repository.
 
 ## Aktueller Stand
 
-*Letzter Stand (22.11.2026, Branch `main` (T18 + T19 gemerged), Suite 114/114 grün):*
+*Letzter Stand (22.11.2026, Branch `main`, Suite 119/119 grün):*
 - **Routenplanung:** Planungslogik getestet (Cluster → Fälligkeit → Prio, Tagesskelett mit Wechselpuffer + Mittagspause, Übernachtung Heimat/Hotel mit Präferenzen), 4-Wochen-Plan, Drag & Drop mit Trickle-Down und bester Einsattposition, Textbefehle, Abwesenheiten je Tag/Woche (KW-Anzeige).
 - **Briefing / Bericht / Infos:** Briefing mit KPIs + Pflichthemen + Schnellblatt, Bericht mit Feldblöcken, Händlernummer-Maske, Folgetermin-Maske, Teilnehmer-Vorschlägen, **KI-Vorschläge-Button (T18: Stichpunkte → Feldvorbelegung + Fokuspunkt-Klassifikation, Mistral-Call mit Heuristik-Fallback, Key nur Runtime-Konfig)**, Freigabe → Wissensbasis, Info-Verteilung per Postfach-Anhängen.
-- **Demo-Daten:** 720 Händler (12 OBG × 60) mit Fahrzeit-Streuung, 120 Hotels (18 Marken × Stadtteile), Scorecard/Postfach/Wissensbasis demo; **Import-Kasten im Plan-Tab (T19): CSV/Excel-Export direkt oder PDF via Mistral OCR, Nummern-Format-Validierung, OBG-Filter D01–D12, importierte Liste schlägt Demo-Daten (localStorage), Reset möglich**.
-- **Start:** `python3 -m http.server 8000`, App im Browser; Tests: `node --test tests/` (114).
+- **Datenbasis:** echte Betreuungsliste — `daten/haendler.json` (972 Händler, D01–D12) erzeugt von `tools/import_betreuungsliste.py` aus der anonymisierten Liste in `Dummy_Data/` (bleibt lokal, `.gitignore`); Quelldateien versioniert in `daten/betreuungslisten/`; ein Neuupload im Import-Kasten (Tab Plan) überschreibt die wirksame Liste (localStorage) und sollte zusätzlich per Skript/Agent als neue Version in `daten/betreuungslisten/` abgelegt werden; Demo-Daten bleiben Fallback (`haendler-demo.json`).
+- **Start:** `python3 -m http.server 8000`, App im Browser; Tests: `node --test tests/` (119).
 - **Nächste Schritte:** echte PLZ-Koordinaten statt Demo-Jitter, echte Händlerliste hochladen (CSV aus der Betreuungsliste oder PDF+OCR-Key); danach Outlook-Anbindung (Phase 2, zurückgestellt). T18 und T19 sind abgeschlossen.
