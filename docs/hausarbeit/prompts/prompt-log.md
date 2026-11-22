@@ -157,3 +157,6 @@
 
 - [22:50] "Ich habe unter daten --> Hotels --> Accor_Export eine CSV mit allen Accor Standorten in Deutschland hochgeladen. Berücksichtige für die Routenplanung bitte nur Hotels mit dem Status Open. Gib im Webfrontend dann gerne auch die korrekten Namen an"
   → Ergebnis: tools/import_hotels_accor.py (nur DE + Open: 342 von 652, 310 Deleted/Closed verworfen), korrekt geschriebene Marken-/Hotelnamen (ibis, 25hours, Mövenpick …, Umlaute zurückgeschrieben), daten/hotels.json im bekannten Format; app.js lädt die echte Basis mit Demo-Fallback; neuer Test hotels-basis.test.js; zusätzlich vorbestehender Reset-Fix (entferne statt []); Suite 131/131, jsdom ALLE OK
+
+- [23:40] "Lege mir bitte einen neuen Task an, dass ich mich nochmal drum kümmern muss richtige Händlerdaten einzupflegen. Aktuell ist die Mischung aus Demodaten und realen Hoteldaten schlecht"
+  → Ergebnis: T20 (offen) in AGENTS.md angelegt — echte Händlerstammdaten einpflegen, danach Fahrzeiten-/ÜN-Kalibrierung neu prüfen; Prio-Liste/OCR-Punkte bleiben offen
