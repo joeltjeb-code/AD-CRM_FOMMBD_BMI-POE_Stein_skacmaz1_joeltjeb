@@ -1,11 +1,26 @@
-import { importiere, csvZuZeilen } from '../adapter/import-adapter.js';
+import { importiere, csvTabelle, schlageZuordnung, baueHaendler } from '../adapter/import-adapter.js';
 
-// Task 19 / K3: Datei-Auswahl im Plan-Kopf (unterhalb der Einstellungen).
-// CSV/Excel-Export direkt, PDF über Mistral OCR. Vor dem Import gibt es eine
-// Vorschau (erkannte Händler), danach Zusammenfassung + Warnungen. Importierte
-// Händler gehen an die App (overwrite der Demo-Daten, via localStorage-Pfad).
+// Task 19 / K3 + Nutzerwunsch 22.11.: Import-Kasten im Plan-Kopf.
+// Ablauf: Datei wählen -> KI schlägt die Spalten-Zuordnung vor -> Vorschau
+// der ersten 10 Zeilen, je Spalte ein Dropdown zum Ändern -> Übernehmen.
+// CSV/Excel-Export direkt, PDF über Mistral OCR. Importierte Händler gehen
+// an die App (ersetzen die geladene Basis, via localStorage-Pfad).
 
-export function rendereImport(container, { onUebernehmen, onReset } = {}) {
+const ZIELE = [
+  ['nummer', 'Händlernummer'],
+  ['name', 'Händlername'],
+  ['strasse', 'Straße'],
+  ['plz', 'PLZ'],
+  ['ort', 'Ort'],
+  ['obg', 'OBG (Gebiet)'],
+  ['kategorie', 'Händlerkategorie'],
+  ['betreuung', 'Betreuung'],
+  ['betreuungKategorie', 'Betreuungskategorie'],
+  ['region', 'Region'],
+  ['gf1', 'GF1'],
+];
+
+export function rendereImport(container, { onUebernehmen, onReset, basis = 'real' } = {}) {
   function leseText(datei) {
     // FileReader funktioniert überall (Browser und jsdom); text() wäre der
     // moderne Pfad, ist aber nicht in allen Kontexten vorhanden.
@@ -16,36 +31,96 @@ export function rendereImport(container, { onUebernehmen, onReset } = {}) {
       leser.readAsText(datei);
     });
   }
+
   container.innerHTML = `
     <details id="importKasten">
       <summary>H&auml;ndlerdaten importieren (Betreuungsliste)</summary>
-      <div class="leiste import-zeile">
+      <p class="hilfe" id="importBasisHinweis"></p>
+      <div class="leiste">
         <input id="importDatei" type="file" accept=".csv,.txt,.pdf" aria-label="Datei w&auml;hlen">
         <button id="importStart" class="aktion neben" disabled>Import &amp; &Uuml;bernehmen</button>
         <button id="importReset" class="aktion neben">Demo-Daten zur&uuml;ck</button>
       </div>
       <p id="importVorschau" class="hilfe"></p>
+      <div id="importZuordnung" hidden></div>
       <div id="importErgebnis"></div>
     </details>`;
 
   const dateiFeld = container.querySelector('#importDatei');
   const startKnopf = container.querySelector('#importStart');
   const vorschau = container.querySelector('#importVorschau');
+  const zuordnungBlock = container.querySelector('#importZuordnung');
   const ergebnis = container.querySelector('#importErgebnis');
-  let datei = null;
+  const basisHinweis = container.querySelector('#importBasisHinweis');
 
-  vorschau.textContent = 'CSV/Excel-Export (.;-getrennt) oder PDF der Betreuungsliste wählen.';
+  basisHinweis.textContent = basis === 'real'
+    ? 'Grundlage: importierte Betreuungsliste aus dem Repo (daten/haendler.json).'
+    : 'Grundlage: Demo-Daten (720 Händler) — es liegt noch keine importierte Liste im Repo.';
+
+  let datei = null;
+  let tabelle = { spalten: [], zeilen: [] };
+  let zuordnung = {};
+
+  const zellText = (s) => String(s ?? '')
+    .replace(/[<>&]/g, (z) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[z]));
+
+  function zeigeZuordnung() {
+    if (!tabelle.spalten.length) { zuordnungBlock.hidden = true; return; }
+    const schluessel = Object.keys(zuordnung).filter((s) => zuordnung[s]);
+    const zeilen = tabelle.zeilen.slice(0, 10);
+    const mappingLeiste = tabelle.spalten.map((s) => `
+      <div class="import-mapping">
+        <label for="map-${zellText(s)}">${zellText(s)}</label>
+        <select id="map-${zellText(s)}" data-spalte="${zellText(s)}">
+          <option value="">— ignorieren —</option>
+          ${ZIELE.map(([w, l]) => `<option value="${w}"${zuordnung[s] === w ? ' selected' : ''}>${l}</option>`).join('')}
+        </select>
+      </div>`).join('');
+    const kopf = schluessel.map((s) => `<th>${ZIELE.find(([w]) => w === zuordnung[s])?.[1] ?? zellText(s)}</th>`).join('');
+    const koerper = zeilen.map((z) => `<tr>${schluessel.map((s) => `<td>${zellText(z[s])}</td>`).join('')}</tr>`).join('');
+    zuordnungBlock.innerHTML = `
+      <p class="hilfe">Spalten-Zuordnung prüfen und bei Bedarf ändern (Vorschlag: KI/Regeln):</p>
+      <div class="import-mappings">${mappingLeiste}</div>
+      <table class="import-preview"><thead><tr>${kopf}</tr></thead><tbody>${koerper}</tbody></table>
+      <p class="hilfe">Zeigt die ersten ${zeilen.length} von ${tabelle.zeilen.length} Zeilen.</p>`;
+    zuordnungBlock.hidden = false;
+    zuordnungBlock.querySelectorAll('select').forEach((s) => {
+      s.addEventListener('change', () => {
+        const spalte = s.dataset.spalte;
+        // jsdom-Entitäten zurück auf den Original-Titel
+        const original = tabelle.spalten.find((x) => zellText(x) === spalte);
+        if (original) zuordnung[original] = s.value || null;
+        zeigeZuordnung();
+      });
+    });
+  }
+
+  function fertigeZuordnung(resultat) {
+    zuordnung = { ...resultat.zuordnung };
+    zeigeZuordnung();
+    const benutzt = Object.values(zuordnung).filter(Boolean).length;
+    vorschau.textContent = `${tabelle.zeilen.length} Zeilen erkannt; ${benutzt} Spalten zugeordnet`
+      + (resultat.quelle === 'llm' ? ' (KI-Vorschlag).' : resultat.hinweis ? ` (${resultat.hinweis}).` : ' (Regel-Vorschlag, kein KI-Key gesetzt).');
+    startKnopf.disabled = !benutzt || !Object.entries(zuordnung).some(([, z]) => z === 'nummer');
+  }
 
   dateiFeld.addEventListener('change', async () => {
     datei = dateiFeld.files?.[0] ?? null;
     ergebnis.innerHTML = '';
+    zuordnungBlock.hidden = true;
     if (!datei) { startKnopf.disabled = true; vorschau.textContent = 'Keine Datei gewählt.'; return; }
     if (/\.(csv|txt)$/i.test(datei.name)) {
-      const zeilen = csvZuZeilen(await leseText(datei));
-      const gueltig = zeilen.filter((z) => /^DEU[0-9A-Z]{5}$/i.test((z.nummer ?? '').trim())).length;
-      vorschau.textContent = `${datei.name}: ${zeilen.length} Zeilen gelesen, davon ${gueltig} mit gültiger Händlernummer.`;
-      startKnopf.disabled = gueltig === 0;
+      const apiKey = globalThis.ASSISTENT_KONFIG?.mistralApiKey ?? '';
+      tabelle = csvTabelle(await leseText(datei));
+      if (!tabelle.spalten.length) {
+        vorschau.textContent = 'Keine Händlerliste erkannt — es fehlt eine Spalte mit Händlernummer.';
+        startKnopf.disabled = true;
+        return;
+      }
+      const resultat = await schlageZuordnung(tabelle.spalten, { apiKey });
+      fertigeZuordnung(resultat);
     } else {
+      tabelle = { spalten: [], zeilen: [] };
       vorschau.textContent = `${datei.name}: PDF erkannt — wird beim Import per Mistral OCR gelesen (Key nötig).`;
       startKnopf.disabled = false;
     }
@@ -54,18 +129,22 @@ export function rendereImport(container, { onUebernehmen, onReset } = {}) {
   startKnopf.addEventListener('click', async () => {
     ergebnis.textContent = 'Import läuft …';
     try {
-      const r = /\.(csv|txt)$/i.test(datei.name)
-        ? await importiere({ csv: await leseText(datei) })
-        : await importiere({ pdfBytes: new Uint8Array(await datei.arrayBuffer()) },
-            { apiKey: globalThis.ASSISTENT_KONFIG?.mistralApiKey ?? '' });
+      let r;
+      if (/\.(csv|txt)$/i.test(datei.name)) {
+        const { haendler, warnungen, verworfen } = baueHaendler(tabelle.zeilen, { zuordnung });
+        r = { ok: true, quelle: 'csv', haendler, warnungen, verworfen,
+          zusammenfassung: `${haendler.length} Händler importiert, ${verworfen} verworfen` };
+      } else {
+        r = await importiere({ pdfBytes: new Uint8Array(await datei.arrayBuffer()) },
+          { apiKey: globalThis.ASSISTENT_KONFIG?.mistralApiKey ?? '' });
+      }
       if (!r.ok) {
         ergebnis.innerHTML = `<p class="import-fehler">Import nicht möglich: ${r.begruendung}</p>`;
         return;
       }
       ergebnis.innerHTML = `
         <p><b>${r.zusammenfassung}</b> (Quelle: ${r.quelle})</p>
-        ${r.warnungen.length ? `<p class="import-fehler">Hinweise: ${r.warnungen.slice(0, 5).join(' · ')}${r.warnungen.length > 5 ? ' …' : ''}</p>` : ''}
-        <p class="hilfe">Händler übernehmen und Plan neu rechnen?</p>`;
+        ${r.warnungen?.length ? `<p class="import-fehler">Hinweise: ${r.warnungen.slice(0, 5).join(' · ')}${r.warnungen.length > 5 ? ' …' : ''}</p>` : ''}`;
       onUebernehmen?.(r.haendler);
     } catch (e) {
       ergebnis.innerHTML = `<p class="import-fehler">Unerwarteter Fehler: ${e?.message ?? e}</p>`;
@@ -74,7 +153,7 @@ export function rendereImport(container, { onUebernehmen, onReset } = {}) {
 
   container.querySelector('#importReset').addEventListener('click', () => {
     ergebnis.innerHTML = '';
-    vorschau.textContent = 'Demo-Daten werden wiederhergestellt.';
+    vorschau.textContent = 'Demo-Daten werden wiederhergestellt …';
     startKnopf.disabled = true;
     dateiFeld.value = '';
     onReset?.();
