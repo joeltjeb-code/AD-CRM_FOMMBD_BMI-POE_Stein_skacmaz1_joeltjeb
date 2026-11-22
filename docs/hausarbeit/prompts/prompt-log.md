@@ -136,3 +136,15 @@
 
 - [21:50] "Also ist die erste Grundlage vor einem Neuupload jetzt die Liste aus Dummy Data mit all den bestehenden Infos? ... Eine neu hochgeladene Liste überschreibt dann immer die Infos ... als Speicher abgelegt. ... mit Hilfe von KI Vorschläge für die Zuordnung von Spalten ... ersten 10 Zeilen ... Dropdown"
   → Ergebnis: alle drei Punkte umgesetzt: (1) echte Liste ist Basis — daten/haendler.json mit 972 Händlern via tools/import_betreuungsliste.py, App lädt sie mit Demo-Fallback; (2) Versionsspeicher daten/betreuungslisten/ (quelldatei versioniert), Neuupload überschreibt; (3) schlageZuordnung (KI/Heuristik) mit 10-Zeilen-Vorschau + Dropdown je Spalte; Suite 119/119, jsdom 13+5 Checks ok, Commits 0b80aed, b8f5ce7, c2d0d7f
+
+- [22:10] "Danke, gefunden. Ich will das als neuen Button links neben Plan oben im Menü haben. Der Überpunkt soll "Stammdaten" heißen. Als ausklappbare Unterpunkte, wenn man über dem Feld mit der Maus schwebt soll "Manueller Import" und "Zurücksetzen" stehen"
+  → Ergebnis: Nav-Dropdown „Stammdaten" links neben Plan (Hover/Klick), Unterpunkte Manueller Import + Zurücksetzen; Suite 119/119, jsdom-Gegenprobe vorbereitet
+
+- [22:12] "Ich will aber, dass mich der Button Manueller Import auf eine neue Seite führt, wo dieser Import durchgeführt wird und damit das aufklapp Interface für Händlerdaten importieren aus dem Tab Plan ersetzt. Wenn ich auf Zurücksetzen klicke soll bitte ein Popup Fenster mittig vom Screen erscheinen, wo gefragt wird: 'VORSICHT DATENLÖSCHUNG [fett, rot, zentriert] ... Diese Änderung ist nicht umkehrbar' — zwei Buttons: Abbrechen (Ford Skyview) und Final Löschen (rot)"
+  → Ergebnis: eigene Stammdaten-Seite (details-Kasten ersetzt), Warn-Modal mittig mit exakten Texten und beiden Buttons; Suite 119/119
+
+- [22:18] "Das Popup Fenster funktioniert es schließt sich aber nicht, wenn man auch Abbrechen klickt. Den Button Final Löschen habe ich nicht ausprobiert"
+  → Ergebnis: CSS-Bug gefunden (display:flex übersteuerte hidden-Attribut), Fix über .modal-overlay[hidden]-Regel; jsdom 19 Checks grün, Nutzer bestätigt Funktion
+
+- [22:25] "Kannst du bitte noch die Postleitzahl einordnung für die Kalkulation der Fahrzeiten umsetzen oder gibt es da Probleme?"
+  → Ergebnis: kein Problem; Spec 3.3 umgesetzt — daten/plz-zentren.json (946 Einträge, je OBG), posAusPlz mit Lookup + identischem JS/Python-Fallback, Import-Skript nutzt Lookup + pflegt Tabelle rekursiv, kalibrierte Fahrzeiten (median 30 / p95 108 / max 162 min), Suite 123/123, Python↔JS identisch

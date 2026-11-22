@@ -57,9 +57,10 @@ never in this repository.
 
 ## Aktueller Stand
 
-*Letzter Stand (22.11.2026, Branch `main`, Suite 119/119 grün):*
+*Letzter Stand (22.11.2026, Branch `main`, Suite 123/123 grün):*
 - **Routenplanung:** Planungslogik getestet (Cluster → Fälligkeit → Prio, Tagesskelett mit Wechselpuffer + Mittagspause, Übernachtung Heimat/Hotel mit Präferenzen), 4-Wochen-Plan, Drag & Drop mit Trickle-Down und bester Einsattposition, Textbefehle, Abwesenheiten je Tag/Woche (KW-Anzeige).
 - **Briefing / Bericht / Infos:** Briefing mit KPIs + Pflichthemen + Schnellblatt, Bericht mit Feldblöcken, Händlernummer-Maske, Folgetermin-Maske, Teilnehmer-Vorschlägen, **KI-Vorschläge-Button (T18: Stichpunkte → Feldvorbelegung + Fokuspunkt-Klassifikation, Mistral-Call mit Heuristik-Fallback, Key nur Runtime-Konfig)**, Freigabe → Wissensbasis, Info-Verteilung per Postfach-Anhängen.
-- **Datenbasis:** echte Betreuungsliste — `daten/haendler.json` (972 Händler, D01–D12) erzeugt von `tools/import_betreuungsliste.py` aus der anonymisierten Liste in `Dummy_Data/` (bleibt lokal, `.gitignore`); Quelldateien versioniert in `daten/betreuungslisten/`; ein Neuupload im Import-Kasten (Tab Plan) überschreibt die wirksame Liste (localStorage) und sollte zusätzlich per Skript/Agent als neue Version in `daten/betreuungslisten/` abgelegt werden; Demo-Daten bleiben Fallback (`haendler-demo.json`).
-- **Start:** `python3 -m http.server 8000`, App im Browser; Tests: `node --test tests/` (119).
-- **Nächste Schritte:** echte PLZ-Koordinaten statt Demo-Jitter, echte Händlerliste hochladen (CSV aus der Betreuungsliste oder PDF+OCR-Key); danach Outlook-Anbindung (Phase 2, zurückgestellt). T18 und T19 sind abgeschlossen.
+- **Datenbasis:** echte Betreuungsliste — `daten/haendler.json` (972 Händler, D01–D12) erzeugt von `tools/import_betreuungsliste.py` aus der anonymisierten Liste in `Dummy_Data/` (bleibt lokal, `.gitignore`); Quelldateien versioniert in `daten/betreuungslisten/`; ein Neuupload überschreibt die wirksame Liste (localStorage) und sollte zusätzlich per Skript/Agent als neue Version in `daten/betreuungslisten/` abgelegt werden; Demo-Daten bleiben Fallback (`haendler-demo.json`). **Stammdaten-UI:** Nav-Dropdown „Stammdaten" (links neben Plan) mit „Manueller Import" (eigene Seite, KI-Spaltenzuordnung + 10-Zeilen-Vorschau) und „Zurücksetzen" (Warn-Modal, Fragen vor der Löschung).
+- **PLZ-Einordnung (Spec 3.3):** `daten/plz-zentren.json` (statisch, 946 Einträge je OBG) — `posAusPlz` nutzt Lookup mit identischem JS/Python-Fallback (`tools/plz_zentren.py`), Import-Skript pflegt die Tabelle automatisch; kalibriert auf median 30 / p95 108 / max 162 min (echter Planer, alle 12 OBGs).
+- **Start:** `python3 -m http.server 8000`, App im Browser; Tests: `node --test tests/` (123).
+- **Nächste Schritte:** Prio-Liste als Datei (`daten/prio.json`), Händlerliste-Updates per Upload/OCR-Key; danach Outlook-Anbindung (Phase 2, zurückgestellt). T18 und T19 sind abgeschlossen.

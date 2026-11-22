@@ -5,8 +5,9 @@ Design 3.2/3.4 (docs/superpowers/specs/2026-11-17-haendlerimport-obg-design.md):
 - Header-Zeile automatisch finden (erste Zeile, die "Markt Händlernummer" enthält)
 - Zeilen ohne gültige Händlernummer (Format DEU + 5 Zeichen) verwerfen, mit Warnung
 - OBG-Filter: standardmäßig nur D01–D12 (Planungsgebiete), --alle-obg übernimmt den Rest
-- Position: dasselbe deterministische Demo-Verfahren wie die App (posAusPlz),
-  je PLZ und OBG — Ersatz, bis echte PLZ-Zentren importiert sind
+- Position: Lookup in daten/plz-zentren.json (je OBG und PLZ; erzeugt/aktualisiert
+  von tools/plz_zentren.py). Unbekannte PLZ: deterministischer Fallback + Warnung,
+  kein stillschweigendes Raten
 - Archiv: Kopie der Quelldatei nach daten/betreuungslisten/<stamp>_<name>
   (Versionsspeicher im Repo für künftige Vergleiche / rekursives Lernen)
 
@@ -34,25 +35,35 @@ REPO = Path(__file__).resolve().parent.parent
 HND_NUMMER = re.compile(r"^DEU[0-9A-Z]{5}$")
 PLANUNGS_OBG = re.compile(r"^D(0[1-9]|1[0-2])$")
 
-CLUSTER_ZENTREN = [(0, 0), (52, 18), (104, 8), (20, 64), (76, 70)]
+# PLZ-Einordnung: Lookup in daten/plz-zentren.json (Spec 3.3, von
+# tools/plz_zentren.py erzeugt/gepflegt). Unbekannte PLZ: deterministischer
+# Fallback (dasselbe Verfahren wie die App), mit Warnung — kein stilles Raten.
+try:
+    from plz_zentren import pos_aus_plz_funktion
+except ImportError:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from plz_zentren import pos_aus_plz_funktion
+
+PLZ_PATH = Path(__file__).resolve().parent.parent / "daten" / "plz-zentren.json"
 
 
-def obg_block_ursprung(obg):
-    m = re.search(r"D(\d{1,2})", str(obg or ""))
-    nr = max(0, min(11, int(m.group(1)) - 1)) if m else 0
-    return (nr % 4) * 180, (nr // 4) * 150
+def lade_plz_zentren(pfad=PLZ_PATH):
+    if Path(pfad).exists():
+        return json.loads(Path(pfad).read_text(encoding="utf-8")).get("zonen", {})
+    return {}
 
 
-def pos_aus_plz(plz, obg="D01"):
-    n = 7
-    for ch in str(plz):
-        n = (n * 31 + ord(ch)) % 9973
-    jx = n % 41 - 20
-    jy = n // 41 % 41 - 20
-    cx = sum(z[0] for z in CLUSTER_ZENTREN) / len(CLUSTER_ZENTREN)
-    cy = sum(z[1] for z in CLUSTER_ZENTREN) / len(CLUSTER_ZENTREN)
-    ox, oy = obg_block_ursprung(obg)
-    return {"x": round((ox + cx + jx) * 10) / 10, "y": round((oy + cy + jy) * 10) / 10}
+def pos_aus_plz(plz, obg="D01", zonen=None, warnungen=None):
+    plz_norm = str(plz or "").strip()
+    m = re.search(r"^D\d{1,2}", str(obg or ""))
+    gebiet = m.group(0) if m else "D01"
+    if plz_norm:
+        eintrag = (zonen or {}).get(gebiet, {}).get(plz_norm)
+        if eintrag:
+            return {"x": eintrag["x"], "y": eintrag["y"]}
+        if warnungen is not None:
+            warnungen.append(f"PLZ {plz_norm} nicht in plz-zentren.json ({gebiet}) — deterministischer Fallback")
+    return pos_aus_plz_funktion(plz_norm, gebiet)
 
 
 def finde_kopfzeile(zeilen):
@@ -113,6 +124,11 @@ def main():
     if args.prio_liste and Path(args.prio_liste).exists():
         prio = set(json.loads(Path(args.prio_liste).read_text(encoding="utf-8")))
 
+    zonen = lade_plz_zentren()
+    if not zonen:
+        print("Hinweis: daten/plz-zentren.json fehlt/leer — PLZ landen im deterministischen Fallback.")
+    print(f"PLZ-Tabelle: {sum(len(z) for z in zonen.values())} Einträge geladen")
+
     mappe = openpyxl.load_workbook(quelle, read_only=True)
     blatt = mappe.active
     zeilen = list(blatt.iter_rows(values_only=True))
@@ -154,7 +170,7 @@ def main():
             "id": nummer,
             "name": wert(zeile, "name") or nummer,
             "adresse": f"{wert(zeile, 'strasse')}, {plz} {wert(zeile, 'ort')}".strip(", "),
-            "pos": pos_aus_plz(plz, obg or "D01"),
+            "pos": pos_aus_plz(plz, obg or "D01", zonen=zonen, warnungen=warnungen),
             "obg": obg or "leer",
             "region": wert(zeile, "region"),
             "kategorie": wert(zeile, "kategorie"),
@@ -170,6 +186,15 @@ def main():
     ziel = REPO / args.output
     ziel.parent.mkdir(parents=True, exist_ok=True)
     ziel.write_text(json.dumps(händler, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # Rekursive Pflege der PLZ-Tabelle: neue PLZ ergänzen (bestehende bleiben
+    # stabil), damit der nächste Import sie als Lookup trifft.
+    from plz_zentren import lade, speichere, ergaenze
+    tabelle = lade(PLZ_PATH)
+    neu = ergaenze(tabelle, ziel)
+    speichere(tabelle, PLZ_PATH)
+    if neu:
+        print(f"plz-zentren.json: {neu} neue PLZ-Einträge ergänzt")
 
     stamp = datetime.now().strftime("%Y-%m-%d_%H%M")
     archiv = REPO / args.archiv

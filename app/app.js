@@ -6,7 +6,7 @@ import { besteEinsattposition } from './planung/reihenfolge.js';
 import { filtereNachObg } from './planung/auswahl.js';
 import { parseBefehl, wendeAn } from './planung/befehle.js';
 import { renderePlanraster } from './ui/woche.js';
-import { rendereEinstellungen, rendereAbwesenheiten, posAusPlz } from './ui/einstellungen.js';
+import { rendereEinstellungen, rendereAbwesenheiten, posAusPlz, setzePlzZentren } from './ui/einstellungen.js';
 import { rendereImport } from './ui/import-view.js';
 import { baueBriefing } from './briefing/checkliste.js';
 import { baueSchnellblatt } from './briefing/schnellblatt.js';
@@ -362,15 +362,22 @@ async function starten() {
     zeigeStartfehler(e);
     return;
   }
+  // PLZ-Mittelpunkt-Tabelle (Spec 3.3): Lookup für die Positionsbestimmung
+  // aus Postleitzahlen. Fehlt sie, greift der deterministische Fallback.
+  let plzZentren = null;
   // Als Grundlage (Design 3.5): die importierte Betreuungsliste, solange sie
   // im Repo liegt — fehlt sie, bleibt die Demo-Welt aktiv (sichtbar im
   // Import-Kasten vermerkt).
   let datenBasis = 'real';
   try {
-    haendler = await ladeDatenMitRetry('daten/haendler.json');
+    [haendler, plzZentren] = await Promise.all([
+      ladeDatenMitRetry('daten/haendler.json'),
+      ladeDatenMitRetry('daten/plz-zentren.json').catch(() => null),
+    ]);
   } catch {
     datenBasis = 'demo';
   }
+  setzePlzZentren(plzZentren);
   wissensbasis = speicher.lade('wissensbasis', wissensbasis);
   // Importierte Betreuungsliste (Task 19) schlägt die Demo-Daten, solange
   // eine vorhanden ist (leer = Demo zurück).

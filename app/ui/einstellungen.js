@@ -20,16 +20,52 @@ export function obgBlockUrsprung(obg) {
   return { x: (nr % 4) * 180, y: Math.floor(nr / 4) * 150 };
 }
 
-// PLZ-Hash → Position im OBG-Block (nahe dem Block-Zentrum), deterministisch
-// je PLZ *und* Gebiet. Demo-Verfahren; Phase 2: echte PLZ-Zentren via Import.
+// PLZ-Einordnung (Spec 3.3, 22.11.): statisch erzeugte PLZ-Mittelpunkte in
+// `daten/plz-zentren.json` — Händler mit gleichem PLZ-Präfix landen räumlich
+// beieinander (Cluster-Zonen), gleiche PLZ immer auf exakt derselben Position.
+// Lookup je OBG (Planungsgebiet); unbekannte PLZ: derselbe deterministische
+// Fallback, mit dem auch die Tabelle erzeugt wurde (tools/plz_zentren.py).
+// WICHTIG: Konstanten perfekt mit tools/plz_zentren.py synchron halten —
+// tests/ui/pos-aus-plz.test.js prüft die Synchronität gegen die echte Datei.
+export const PLZ_ZONEN_STREU = 28;  // Anker-Streuung der 2-stelligen Präfixe um die Cluster-Zone
+export const PLZ_STREU = 6;         // Streuung der restlichen PLZ-Stellen um den Anker
+export const PLZ_BLOCKRAND = 36;    // Randabstand, damit alle Anker im OBG-Block liegen
+
+export function hashText(text, seed) {
+  let n = seed;
+  for (const ch of String(text)) n = (n * 31 + ch.charCodeAt(0)) % 9973;
+  return n;
+}
+
+let plzZentrenTabelle = null;
+export function setzePlzZentren(daten) {
+  plzZentrenTabelle = daten?.zonen ?? null;
+}
+
+function plzFormat(zahl, modul, streu) { return zahl % modul - streu; }
+
 export function posAusPlz(plz, obg = 'D01') {
-  const n = [...String(plz)].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) % 9973, 7);
-  const jitterX = (n % 41) - 20;      // ±20
-  const jitterY = (Math.floor(n / 41) % 41) - 20;
-  const cx = CLUSTER_ZENTREN.reduce((s, z) => s + z[0], 0) / CLUSTER_ZENTREN.length;
-  const cy = CLUSTER_ZENTREN.reduce((s, z) => s + z[1], 0) / CLUSTER_ZENTREN.length;
-  const o = obgBlockUrsprung(obg);
-  return { x: Math.round((o.x + cx + jitterX) * 10) / 10, y: Math.round((o.y + cy + jitterY) * 10) / 10 };
+  const plzNorm = String(plz ?? '').trim();
+  const gebiet = (/^D\d{1,2}/.exec(String(obg ?? '')) ?? ['D01'])[0];
+  const eintrag = plzZentrenTabelle?.[gebiet]?.[plzNorm];
+  if (eintrag?.x !== undefined) return { x: eintrag.x, y: eintrag.y };
+  return posAusPlzFunktion(plzNorm, gebiet);
+}
+
+// Deterministisches Verfahren (Spiegel von tools/plz_zentren.py).
+export function posAusPlzFunktion(plzNorm, gebiet = 'D01') {
+  const o = obgBlockUrsprung(gebiet);
+  const prefix = plzNorm.slice(0, 2).padStart(2, '0');
+  const zone = CLUSTER_ZENTREN[hashText(prefix, 7) % CLUSTER_ZENTREN.length];
+  const a = hashText(prefix, 11), b = hashText(plzNorm || '0', 3);
+  const jx = plzFormat(a, PLZ_ZONEN_STREU * 2 + 1, PLZ_ZONEN_STREU);
+  const jy = plzFormat(Math.floor(a / 23), PLZ_ZONEN_STREU * 2 + 1, PLZ_ZONEN_STREU);
+  const px = plzFormat(b, PLZ_STREU * 2 + 1, PLZ_STREU);
+  const py = plzFormat(Math.floor(b / 13), PLZ_STREU * 2 + 1, PLZ_STREU);
+  return {
+    x: Math.round((o.x + PLZ_BLOCKRAND + zone[0] + jx + px) * 10) / 10,
+    y: Math.round((o.y + PLZ_BLOCKRAND + zone[1] + jy + py) * 10) / 10,
+  };
 }
 
 export function heimatAusEingabe({ name, plz } = {}, fallback = {}, obg) {
