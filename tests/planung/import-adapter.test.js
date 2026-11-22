@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { csvZuZeilen, baueHaendler, importiere } from '../../app/adapter/import-adapter.js';
+import { csvZuZeilen, csvTabelle, schlageZuordnung, baueHaendler, importiere } from '../../app/adapter/import-adapter.js';
 
 // Task 19 / K3: Händlerimport (Design 17.11 + Spec 11.4).
 // CSV/Excel-Export direkt parsen, PDF über Mistral OCR (mockbar). Zeilen
@@ -158,4 +158,62 @@ test('importiere: OCR ohne erkennbare Tabelle -> ok:false', async () => {
   });
   assert.equal(r.ok, false);
   assert.ok(r.begruendung.includes('Händlernummer'));
+});
+
+// --- KI-Spaltenerkennung (abweichende Formate, nach Nutzerwunsch 22.11.) ---
+
+const TABELLE = 'Spielgruppe;Haendlernr;Filialname;Weg;PLZID;Stadtfeld;Gebiet;Ansprechpartner\n' +
+  'Alpha;DEU91AAA;Motorwerk Süd;Weg 1;93047;Regensburg;D03;Herr A\n' +
+  'Beta;DEU91BBB;Motorwerk Nord;Weg 2;93051;Regensburg;D04;Frau B';
+
+test('csvTabelle: liefert Original-Spalten und Zeilen (Schlüssel = Kopfzeile)', () => {
+  const t = csvTabelle(TABELLE, { trennzeichen: ';' });
+  assert.deepEqual(t.spalten, ['Spielgruppe', 'Haendlernr', 'Filialname', 'Weg', 'PLZID', 'Stadtfeld', 'Gebiet', 'Ansprechpartner']);
+  assert.equal(t.zeilen.length, 2);
+  assert.equal(t.zeilen[0]['Haendlernr'], 'DEU91AAA');
+});
+
+test('csvTabelle: Kopf ganz woanders (Deckblattzeilen oben)', () => {
+  const t = csvTabelle('Bericht Q4\n\n' + TABELLE, { trennzeichen: ';' });
+  assert.equal(t.spalten[1], 'Haendlernr');
+  assert.equal(t.zeilen.length, 2);
+});
+
+test('schlageZuordnung: Heuristik erkennt abweichend benannte Spalten', async () => {
+  const r = await schlageZuordnung(csvTabelle(TABELLE, { trennzeichen: ';' }).spalten, {
+    fetchImpl: async () => { throw new Error('darf nicht gerufen werden'); },
+  });
+  assert.equal(r.quelle, 'heuristik');
+  assert.equal(r.zuordnung['Haendlernr'], 'nummer');
+  assert.equal(r.zuordnung['Filialname'], 'name');
+  assert.equal(r.zuordnung['Weg'], 'strasse');
+  assert.equal(r.zuordnung['PLZID'], 'plz');
+  assert.equal(r.zuordnung['Stadtfeld'], 'ort');
+  assert.equal(r.zuordnung['Gebiet'], 'obg');
+  assert.equal(r.zuordnung['Spielgruppe'], null); // kein Ziel -> ignorieren
+});
+
+test('schlageZuordnung: mit Key entscheidet das Modell, nur bekannte Ziele', async () => {
+  const llm = { zuordnung: { 'Haendlernr': 'nummer', 'Filialname': 'name', 'Weg': 'karriereleiter' } };
+  const r = await schlageZuordnung(['Haendlernr', 'Filialname', 'Weg'], {
+    apiKey: 'test-key',
+    fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({
+      choices: [{ message: { content: JSON.stringify(llm) } }] }) }),
+  });
+  assert.equal(r.quelle, 'llm');
+  assert.equal(r.zuordnung['Haendlernr'], 'nummer');
+  assert.equal(r.zuordnung['Filialname'], 'name');
+  assert.equal(r.zuordnung['Weg'], null); // 'karriereleiter' ist kein Ziel
+});
+
+test('baueHaendler: zuordnung-Override mappt abweichende Spalten zu', () => {
+  const t = csvTabelle(TABELLE, { trennzeichen: ';' });
+  const zuordnung = { 'Haendlernr': 'nummer', 'Filialname': 'name', 'Weg': 'strasse',
+    'PLZID': 'plz', 'Stadtfeld': 'ort', 'Gebiet': 'obg', 'Spielgruppe': null };
+  const r = baueHaendler(t.zeilen, { zuordnung });
+  assert.equal(r.haendler.length, 2);
+  assert.equal(r.haendler[0].id, 'DEU91AAA');
+  assert.equal(r.haendler[0].name, 'Motorwerk Süd');
+  assert.equal(r.haendler[0].adresse, 'Weg 1, 93047 Regensburg');
+  assert.equal(r.haendler[0].obg, 'D03');
 });
