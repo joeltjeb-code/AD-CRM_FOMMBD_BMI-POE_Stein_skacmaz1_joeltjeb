@@ -130,3 +130,6 @@
 
 - [21:05] "Dann merge den Branch bitte bevor wir weitergehen. Ich will unbeding Merge Konflikte verhindern"
   → Ergebnis: Fast-Forward-Merge `feature/ki-text-adapter` → `main` (`--ff-only`, keine Konflikte möglich, da main nicht divergiert war); Suite auf main 102/102 grün; AGENTS.md „Aktueller Stand" auf 22.11. aktualisiert (T18 abgeschlossen, T19 als nächstes)
+
+- [21:20] "Super. Dann will ich jetzt bitte mit der nächsten aufgabe weitermachen, wenn das risikolos möglich ist"
+  → Ergebnis: Task 19 (Händlerimport per Mistral OCR) TDD auf neuem Branch `feature/haendlerimport-ocr`: import-adapter (CSV + OCR-Pfad, Nummern-Format-Validierung, OBG-Filter D01–D12, Warnungen), Import-Kasten im Plan-Tab mit Vorschau/Übersicht/Reset; Suite 114/114, jsdom 10 Checks ok, 2 Feature-Commits (7236f05, 6e35ed0)
