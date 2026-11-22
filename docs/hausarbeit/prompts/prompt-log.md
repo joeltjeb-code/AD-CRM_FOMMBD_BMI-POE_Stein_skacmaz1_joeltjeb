@@ -155,7 +155,7 @@
 - [22:45] "Ich habe jetzt nur den Eindruck, dass die Logik mit Startort und Übernachtung nicht mehr passt"
   → Ergebnis: berechtigter Eindruck — Diagnose bestätigt 0 Hotelnächte/immer Heimatstart: (1) Filter region===cluster kaputt nach PLZ-Geografie, (2) frischauf bekam alle OBG-Hotels, (3) Hotels an alter Welt ausgerichtet. Fix: hotelsFuerObg + Score-Auswahl ohne Cluster-Abgleich + hotels neu positioniert + heimat selbstheilend; D01 9/7, D05 10/6 Hotelnächte; Suite 125/125
 
-- [22:50] "Ich habe unter daten --> Hotels --> Accor_Export eine CSV mit allen Accor Standorten in Deutschland hochgeladen. Berücksichtige für die Routenplanung bitte nur Hotels mit dem Status Open. Gib im Webfrontend dann gerne auch die korrekten Namen an"
+- [23:20] "Ich habe unter daten --> Hotels --> Accor_Export eine CSV mit allen Accor Standorten in Deutschland hochgeladen. Berücksichtige für die Routenplanung bitte nur Hotels mit dem Status Open. Gib im Webfrontend dann gerne auch die korrekten Namen an"
   → Ergebnis: tools/import_hotels_accor.py (nur DE + Open: 342 von 652, 310 Deleted/Closed verworfen), korrekt geschriebene Marken-/Hotelnamen (ibis, 25hours, Mövenpick …, Umlaute zurückgeschrieben), daten/hotels.json im bekannten Format; app.js lädt die echte Basis mit Demo-Fallback; neuer Test hotels-basis.test.js; zusätzlich vorbestehender Reset-Fix (entferne statt []); Suite 131/131, jsdom ALLE OK
 
 - [23:40] "Lege mir bitte einen neuen Task an, dass ich mich nochmal drum kümmern muss richtige Händlerdaten einzupflegen. Aktuell ist die Mischung aus Demodaten und realen Hoteldaten schlecht"
