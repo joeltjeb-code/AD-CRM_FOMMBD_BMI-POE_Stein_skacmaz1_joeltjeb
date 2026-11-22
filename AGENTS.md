@@ -57,9 +57,9 @@ never in this repository.
 
 ## Aktueller Stand
 
-*Letzter Stand (22.11.2026, Branch `main` (gemerged aus `feature/ki-text-adapter`), Suite 102/102 grün):*
+*Letzter Stand (22.11.2026, Branch `main` (T18 + T19 gemerged), Suite 114/114 grün):*
 - **Routenplanung:** Planungslogik getestet (Cluster → Fälligkeit → Prio, Tagesskelett mit Wechselpuffer + Mittagspause, Übernachtung Heimat/Hotel mit Präferenzen), 4-Wochen-Plan, Drag & Drop mit Trickle-Down und bester Einsattposition, Textbefehle, Abwesenheiten je Tag/Woche (KW-Anzeige).
 - **Briefing / Bericht / Infos:** Briefing mit KPIs + Pflichthemen + Schnellblatt, Bericht mit Feldblöcken, Händlernummer-Maske, Folgetermin-Maske, Teilnehmer-Vorschlägen, **KI-Vorschläge-Button (T18: Stichpunkte → Feldvorbelegung + Fokuspunkt-Klassifikation, Mistral-Call mit Heuristik-Fallback, Key nur Runtime-Konfig)**, Freigabe → Wissensbasis, Info-Verteilung per Postfach-Anhängen.
-- **Demo-Daten:** 720 Händler (12 OBG × 60) mit Fahrzeit-Streuung, 120 Hotels (18 Marken × Stadtteile), Scorecard/Postfach/Wissensbasis demo.
-- **Start:** `python3 -m http.server 8000`, App im Browser; Tests: `node --test tests/` (102).
-- **Nächste Schritte:** Händlerimport per Mistral OCR (T19) als Weg zu echten PLZ-Koordinaten, dann echte Händlerliste hochladen; danach Outlook-Anbindung (Phase 2, zurückgestellt). T18 ist abgeschlossen.
+- **Demo-Daten:** 720 Händler (12 OBG × 60) mit Fahrzeit-Streuung, 120 Hotels (18 Marken × Stadtteile), Scorecard/Postfach/Wissensbasis demo; **Import-Kasten im Plan-Tab (T19): CSV/Excel-Export direkt oder PDF via Mistral OCR, Nummern-Format-Validierung, OBG-Filter D01–D12, importierte Liste schlägt Demo-Daten (localStorage), Reset möglich**.
+- **Start:** `python3 -m http.server 8000`, App im Browser; Tests: `node --test tests/` (114).
+- **Nächste Schritte:** echte PLZ-Koordinaten statt Demo-Jitter, echte Händlerliste hochladen (CSV aus der Betreuungsliste oder PDF+OCR-Key); danach Outlook-Anbindung (Phase 2, zurückgestellt). T18 und T19 sind abgeschlossen.
